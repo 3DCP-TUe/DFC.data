@@ -1,2 +1,1 @@
-# 3DSneakPeek
-Data structure for 3DCP
+# 3DSneakPeek: 3DCP Database
