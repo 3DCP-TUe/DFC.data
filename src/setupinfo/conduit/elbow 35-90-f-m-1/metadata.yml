@@ -1,3 +1,17 @@
 atrr:
   class: conduit
   name: elbow 35-90-f-m-1
+
+dimensions:
+  length: -
+  volume: -
+
+couplings:
+  inlets:
+    - type: system 22 female mortar coupling
+      size: 35
+      connection: 1.25" female BSP
+  outlets:
+    - type: system 22 male mortar coupling
+      size: 35
+      connection: 1.25" female BSP

@@ -1,3 +1,16 @@
 atrr:
   class: conduit
   name: adapter 35-fl-m-1
+
+dimensions:
+  length: -
+  volume: -
+
+couplings:
+  inlets:
+    - type: Flange
+      size: DN40
+  outlets:
+    - type: system 22 male mortar coupling
+      size: 35
+      connection: 1.25" female BSP

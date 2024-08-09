@@ -1,3 +1,4 @@
 atrr:
-  class: dosing systems
+  class: material delivery systems
+  subclass: dosing systems
   name: bronkhorst

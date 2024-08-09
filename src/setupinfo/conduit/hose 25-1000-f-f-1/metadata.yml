@@ -1,3 +1,17 @@
 atrr:
   class: conduit
   name: hose 25-1000-f-f-1
+
+dimensions:
+  length: -
+  volume: -
+
+couplings:
+  inlets:
+    - type: system 22 female mortar coupling
+      size: 35
+      connection: hosetail
+  outlets:
+    - type: system 22 male mortar coupling
+      size: 35
+      connection: hosetail

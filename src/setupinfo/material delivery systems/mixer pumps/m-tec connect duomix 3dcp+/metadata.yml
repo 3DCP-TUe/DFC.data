@@ -1,3 +1,4 @@
 atrr:
-  class: mixer pumps
+  class: material delivery systems
+  subclass: mixer pumps
   name: m-tec connect duomix 3dcp+

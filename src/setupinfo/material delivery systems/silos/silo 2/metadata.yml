@@ -1,3 +1,4 @@
 atrr:
-  class: silos
+  class: material delivery systems
+  subclass: silos
   name: silo 2

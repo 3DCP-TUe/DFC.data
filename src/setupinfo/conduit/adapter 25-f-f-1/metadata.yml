@@ -1,3 +1,17 @@
 atrr:
   class: conduit
-  name: adapter 25-25-f-f-1
+  name: adapter 25-f-f-1
+
+dimensions:
+  length: -
+  volume: -
+
+couplings:
+  inlets:
+    - type: system 22 female mortar coupling
+      size: 25
+      connection: 1" female BSP
+  outlets:
+    - type: system 22 male mortar coupling
+      size: 25
+      connection: 1" female BSP
