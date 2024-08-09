@@ -5,7 +5,6 @@
 ```
 +-- database
 |   +-- session_yyyy_mm_dd
-|   |   +-- setupinfo
 |   |   +-- node-red-3dseep
 |   |   |   +-- analysis
 |   |   |   |   +-- analysis.m
@@ -35,9 +34,9 @@
 |   |   |   +-- ...
 |   |   +-- metadata_session.yml
 |   +-- session_yyyy_mm_dd
-|   |   +-- setupinfo
 |   |   +-- node-red-3dseep
 |   |   +-- ...
+|   +-- setupinfo
 |   +-- metadata_record.yml
 ```
 
