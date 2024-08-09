@@ -1,4 +1,4 @@
-#General metadata of this recording
+# General metadata of this recording
 attr:
   authors: 
     - name: Arjen Deetman
@@ -18,19 +18,19 @@ materials:
     system: silo 1
     production_date: 2024-06-05
 
-#Motion system
+# Motion system
 motion_systems:
   - id: gantry robot
 
-#Software
+# Software
 software:
   - name: Node-RED-3DSeeP
     version: 0.4.0
   - name: Droplet Detective
     version: 0.1.0
 
-#Material delivery system
-ontology:
+# System layout
+system_layout:
   systems:
     - id: silo 1
       connected_to:
@@ -46,11 +46,17 @@ ontology:
         - hose 35-1000-f-m-1
     - id: hose 35-1000-f-m-1
       connected_to:
+        - adapter 35-f-fl-1
+    - id: adapter 35-f-fl-1
+      connected_to:
         - pressure sensor 35-25-f-m-1
     - id: pressure sensor 35-25-f-m-1
       connected_to:
         - coriolis 35-fl-fl-1
     - id: coriolis 35-fl-fl-1
+      connected_to: 
+        - adapter 35-fl-m-1
+    - id: adapter 35-fl-m-1
       connected_to: 
         - pressure sensor 35-25-f-m-2
     - id: pressure sensor 35-25-f-m-2
@@ -70,7 +76,7 @@ ontology:
         - nozzle round-25-1
     - id: nozzle round-25-1
 
-#IO configuration
+# IO configuration
 io_configuration:
   material_delivery_plc:
     AI0: pressure sensor 35-25-1
