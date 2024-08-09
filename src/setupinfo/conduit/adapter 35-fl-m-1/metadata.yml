@@ -8,7 +8,7 @@ dimensions:
 
 couplings:
   inlets:
-    - type: Flange
+    - type: flange
       size: DN40
   outlets:
     - type: system 22 male mortar coupling

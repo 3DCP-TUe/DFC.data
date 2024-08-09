@@ -1,3 +1,15 @@
 atrr:
   class: sensor
   name: coriolis 35-fl-fl-1
+
+dimensions:
+  length: -
+  volume: -
+
+couplings:
+  inlets:
+    - type: flange
+      size: DN40
+  outlets:
+    - type: flange
+      size: DN40
