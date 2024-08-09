@@ -1,0 +1,19 @@
+atrr:
+  class: "nozzle"
+  name: "round-25-1"
+  note: "roud nozzle"
+  material: "Prusament PETG"
+  diameter: "25 mm"
+
+couplings:
+  inlets: clamp round 38.5
+
+dimensions:
+  length 1: 24.5
+  length 2: 75.5
+  length 3: 20
+  inlet outer diameter: 38.5
+  inlet inner diameter: 27
+  nozzle diameter: 25.0
+  diameter: 25
+  volume: 0.039272519
