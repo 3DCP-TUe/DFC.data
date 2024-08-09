@@ -1,6 +1,6 @@
 atrr:
   class: nozzle
-  name: round-25-1
+  name: nozzle round-25-1
   note: roud nozzle
   material: Prusament PETG
   diameter: 25 mm
