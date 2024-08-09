@@ -46,11 +46,11 @@ system_layout:
         - hose 35-1000-f-m-1
     - id: hose 35-1000-f-m-1
       connected_to:
-        - adapter 35-f-fl-1
-    - id: adapter 35-f-fl-1
-      connected_to:
         - pressure sensor 35-25-f-m-1
     - id: pressure sensor 35-25-f-m-1
+      connected_to:
+        - adapter 35-f-fl-1
+    - id: adapter 35-f-fl-1
       connected_to:
         - coriolis 35-fl-fl-1
     - id: coriolis 35-fl-fl-1
@@ -64,8 +64,8 @@ system_layout:
         - hose 35-10000-f-m-1
     - id: hose 35-10000-f-m-1
       connected_to: 
-        - elbow 90-35-f-m-1
-    - id: elbow 90-35-f-m-1
+        - elbow 35-90-f-m-1
+    - id: elbow 35-90-f-m-1
       connected_to: 
         - pressure sensor 35-10-f-m-1
     - id: pressure sensor 35-10-f-m-1
