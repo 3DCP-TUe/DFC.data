@@ -1,9 +1,9 @@
 atrr:
-  class: "nozzle"
-  name: "round-25-1"
-  note: "roud nozzle"
-  material: "Prusament PETG"
-  diameter: "25 mm"
+  class: nozzle
+  name: round-25-1
+  note: roud nozzle
+  material: Prusament PETG
+  diameter: 25 mm
 
 couplings:
   inlets: clamp round 38.5
