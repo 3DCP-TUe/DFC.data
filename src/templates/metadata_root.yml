@@ -1,6 +1,9 @@
 attr:
   author: Arjen Deetman; Derk Bos
   institution: Eindhoven University of Technology (TU/e)
-  description: Experimental study to correlate slug test with the mortar temperature
+  description: Experimental study to correlate slug test results with the mortar temperature
   keywords: 3dcp; slug test
-  project: NWO Additive manufacturing of functional construction materials on-demand with project number 17895
+  projects: 
+    - funder: NWO (Dutch Research Council)
+      title: Additive manufacturing of functional construction materials on-demand
+      grant_number: 17895
