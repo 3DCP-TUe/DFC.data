@@ -49,7 +49,7 @@ class: conduit
 class: material delivery systems
     subclass: dosing systems
     subclass: mixer pumps
-    sublcass: pumps
+    subclass: pumps
     subclass: silos/storage
 class: motion systems
 class: printheads  
