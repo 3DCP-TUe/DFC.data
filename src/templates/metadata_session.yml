@@ -1,8 +1,15 @@
 #General metadata of this recording
 attr:
-  author: Arjen Deetman; Derk Bos
-  institution: Eindhoven University of Technology (TU/e)
+  authors: 
+    - name: Arjen Deetman
+      institution: Eindhoven University of Technology (TU/e)
+    - name: Derk Bos
+      institution: Eindhoven University of Technology (TU/e)
+  contributors: 
+    - name: Rob Wolfs
+      institution: Eindhoven University of Technology (TU/e)
   note: Correlation between slug test and mortar temperature
+  date: 2024-08-05
 
 #Motion system
 motion_systems:
@@ -20,7 +27,7 @@ ontology:
   systems:
     - id: silo-1
       connected_to:
-        - silo-1
+        - mai multimix
     - id: water cooler
       connected_to:
         - mai multimix
