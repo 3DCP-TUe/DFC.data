@@ -8,6 +8,13 @@ attr:
 motion_systems:
   - id: gantry robot
 
+#Software
+software:
+  - name: Node-RED-3DSeeP
+    version: 0.4.0
+  - name: Droplet Detective
+    version: 0.1.0
+
 #Material delivery system
 ontology:
   systems:
