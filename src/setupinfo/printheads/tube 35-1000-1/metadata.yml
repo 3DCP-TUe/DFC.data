@@ -1,0 +1,17 @@
+atrr:
+  class: printheads
+  name: tube 35-1000-1
+
+dimensions:
+  length: -
+  volume: -
+
+couplings:
+  inlets:
+    - type: system 22 female mortar coupling
+      size: 35
+      connection: 1.25" female BSP
+  outlets:
+    - type: slip-on
+      outer diameter: 41
+      inner diameter: 35

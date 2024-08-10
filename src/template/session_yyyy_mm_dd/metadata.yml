@@ -75,6 +75,8 @@ system_layout:
       connected_to:
         - nozzle round-25-1
     - id: nozzle round-25-1
+    - id: static mixing primix-35-8-2
+      inserted_in: tube 35-1000-1
 
 # IO configuration
 io_configuration:

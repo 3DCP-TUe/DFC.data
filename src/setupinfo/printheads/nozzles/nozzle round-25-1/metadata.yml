@@ -1,5 +1,5 @@
 atrr:
-  class: printhead
+  class: printheads
   subclass: nozzles
   name: nozzle round-25-1
   description: 3D printed round nozzle, created with Salad Slicer. 
@@ -7,14 +7,15 @@ atrr:
 
 dimensions:
   length: 95.5
-  length 1: 24.5
-  length 2: 75.5
-  length 3: 20
-  inlet outer diameter: 38.5
-  inlet inner diameter: 27
+  length 1: 75.5
+  length 2: 20
   nozzle diameter: 25.0
   volume: 0.039272519
 
 couplings:
   inlets: 
-    - type: clamp round 38.5
+    - type: slip-on
+      length: 24.5
+      outer diameter: 41
+      inner diameter: 35
+      secured: band clamp
