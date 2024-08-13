@@ -61,8 +61,8 @@ system_layout:
         - pressure sensor 35-25-f-m-2
     - id: pressure sensor 35-25-f-m-2
       connected_to:
-        - hose 35-10000-f-m-1
-    - id: hose 35-10000-f-m-1
+        - hose 35-13300-f-m-1
+    - id: hose 35-13300-f-m-1
       connected_to: 
         - elbow 35-90-f-m-1
     - id: elbow 35-90-f-m-1

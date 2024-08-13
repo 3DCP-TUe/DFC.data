@@ -3,8 +3,8 @@ atrr:
   name: coriolis 35-fl-fl-1
 
 dimensions:
-  length: -
-  volume: -
+  length: 820
+  volume: 0.789
 
 couplings:
   inlets:

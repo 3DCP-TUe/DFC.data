@@ -3,8 +3,8 @@ atrr:
   name: pressure sensor 35-25-f-m-1
 
 dimensions:
-  length: -
-  volume: -
+  length: 260
+  volume: 0.209
 
 couplings:
   inlets:

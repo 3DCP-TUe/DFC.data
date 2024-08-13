@@ -1,11 +1,11 @@
 atrr:
   class: printheads
   subclass: static
-  name: tube 35-1000-1
+  name: tube 35-600-1
 
 dimensions:
-  length: 1013
-  volume: 0.975
+  length: 621
+  volume: 0.597
 
 couplings:
   inlets:
