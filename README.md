@@ -42,8 +42,9 @@
 
 The analysis folders are meant to provide quick insights into the data. For example, time series plots of viscocity and pressure readings. 
 
-## Component structure
+## Setup info structure
 
+### Folder structure
 ```
 class: conduit
 class: material delivery systems
@@ -65,7 +66,7 @@ class: sensors
 
 Inserts are components that are placed inside other components. Examples include feeding screws used in dosing systems and mixing blades.
 
-Component structure
+### Component folder structure
 
 ```
 +-- components
