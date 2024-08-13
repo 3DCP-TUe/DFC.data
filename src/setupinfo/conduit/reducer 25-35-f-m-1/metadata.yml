@@ -3,15 +3,25 @@ atrr:
   name: reducer 25-35-f-m-1
 
 dimensions:
-  length: -
-  volume: -
+  length: 95
+  volume: 0.054
 
 couplings:
   inlets:
     - type: system 22 female mortar coupling
       size: 25
-      connection: hosetail
+      connection: 1.25" female BSP
   outlets:
     - type: system 22 male mortar coupling
-      size: 25
-      connection: hosetail
+      size: 29
+      connection: 1.25" female BSP
+
+parts:
+  - type: system 22 female mortar coupling
+    size: 25
+    connection: 1" female BSP
+  - type: pipe nipple
+    connection: male R1" x male R1"
+  - type: system 22 male mortar coupling
+    size: 29
+    connection: 1" female BSP

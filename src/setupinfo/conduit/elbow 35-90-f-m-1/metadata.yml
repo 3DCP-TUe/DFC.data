@@ -3,8 +3,8 @@ atrr:
   name: elbow 35-90-f-m-1
 
 dimensions:
-  length: -
-  volume: -
+  length: 199
+  volume: 0.191
 
 couplings:
   inlets:
@@ -15,3 +15,13 @@ couplings:
     - type: system 22 male mortar coupling
       size: 35
       connection: 1.25" female BSP
+
+parts:
+  - type: system 22 female mortar coupling
+    size: 35
+    connection: 1.25" female BSP
+  - type: steel pipe Fitting, 90 degrees elbow
+    connection: 1.25" male BSP x 1.25" male BSP
+  - type: system 22 male mortar coupling
+    size: 35
+    connection: 1.25" female BSP

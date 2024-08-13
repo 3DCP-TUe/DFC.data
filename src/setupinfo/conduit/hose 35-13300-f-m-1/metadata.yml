@@ -1,10 +1,10 @@
 atrr:
   class: conduit
-  name: hose 35-1500-f-m-1
+  name: hose 35-13600-f-m-1
 
 dimensions:
-  length: 1615
-  volume: 1.554
+  length: 13605
+  volume: 13.090
 
 couplings:
   inlets:

@@ -3,8 +3,8 @@ atrr:
   name: hose 25-1000-m-m-1
 
 dimensions:
-  length: -
-  volume: -
+  length: 1099
+  volume: 0.539
 
 couplings:
   inlets:
@@ -15,3 +15,16 @@ couplings:
     - type: system 22 male mortar coupling
       size: 25
       connection: hosetail
+
+parts:
+  - type: system 22 male mortar coupling
+    size: 25
+    connection: hosetail
+  - type: mortar hose
+    manufacturer: SEMPERIT
+    size: 25
+    external diameter: 37 
+    internal diameter: 25
+  - type: system 22 male mortar coupling
+    size: 25
+    connection: hosetail

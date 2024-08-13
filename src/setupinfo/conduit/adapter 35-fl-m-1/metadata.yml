@@ -3,8 +3,8 @@ atrr:
   name: adapter 35-fl-m-1
 
 dimensions:
-  length: -
-  volume: -
+  length: 184
+  volume: 0.177
 
 couplings:
   inlets:
@@ -14,3 +14,13 @@ couplings:
     - type: system 22 male mortar coupling
       size: 35
       connection: 1.25" female BSP
+
+parts:
+  - type: flange
+    size: DN40
+    connection: weld
+  - type: seamless pipe
+    size: 41x3 
+  - type: system 22 male mortar coupling
+    size: 35
+    connection: 1.25" female BSP
