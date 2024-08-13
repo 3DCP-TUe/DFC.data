@@ -128,6 +128,8 @@ io_configuration:
     DI6: 
     DI7: 
     DI8: 
+    DI9: 
+    DI10: 
     DO1: 
     DO2: 
     DO3: 

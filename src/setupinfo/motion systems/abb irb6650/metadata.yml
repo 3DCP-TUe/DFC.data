@@ -1,3 +1,5 @@
 atrr:
   class: motion systems
-  name: gantry robot
+  name: ABB IRB6650
+  controller: ABB IRC5
+  degrees of freedom: 6

@@ -2,3 +2,8 @@ atrr:
   class: material delivery systems
   subclass: silos
   name: silo 1
+
+couplings:
+  outlets:
+    - type: flange
+      size: DN250

@@ -1,5 +1,6 @@
 atrr:
   class: printheads
+  subclass: static
   name: tube 35-1000-1
 
 dimensions:
