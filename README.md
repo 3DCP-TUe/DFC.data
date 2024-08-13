@@ -47,18 +47,34 @@ The analysis folders are meant to provide quick insights into the data. For exam
 ```
 class: conduit
 class: material delivery systems
+    main object: material delivery plc
     subclass: dosing systems
     subclass: inserts
     subclass: mixer pumps
     subclass: pumps
     subclass: silos/storage
 class: motion systems
-class: printheads  
+class: printheads
+    main object: printhead plc
     subclass: inserts
     subclass: nozzles
-    subclass: tubes
-    subclass: inline mixers
+    subclass: static
+    subclass: dynamic
 class: sensors
 ```
 
 Inserts are components that are placed inside other components. Examples include feeding screws used in dosing systems and mixing blades.
+
+Component structure
+
+```
++-- components
+|   +-- name
+|   |   +-- docs
+|   |   |   +-- doc.pdf
+|   |   |   +-- ...
+|   |   +-- metadata.yml
+|   |   +-- name.stl
+|   |   +-- name.jpg
+|   |   +-- ...
+```
