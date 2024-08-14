@@ -79,3 +79,17 @@ Inserts are components that are placed inside other components. Examples include
 |   |   +-- name.jpg
 |   |   +-- ...
 ```
+
+### Coding system for couplings
+
+To discuss: 
+
+```
+MC25f   Mortar coupling, 25 mm, female          alternative: MT25
+MC35m   Mortar coupling, 35 mm, male            alternative: VT35
+F40     Flange DN40
+T93     Tri-clamp diameter 93 mm
+P6      Push-in fitting 6 mm outer diameter
+S42     Slip-on 42 mm outer diameter
+GEKA    GEKA coupling
+```
