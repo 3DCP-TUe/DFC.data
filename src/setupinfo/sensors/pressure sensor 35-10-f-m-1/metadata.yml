@@ -4,14 +4,16 @@ atrr:
 
 dimensions:
   length: 264
-  volume: 0.212
+  volume: 0.216
 
 couplings:
   inlets:
-    - type: system 22 female mortar coupling
+    - type: system 23.5 female mortar coupling
       size: 35
       connection: 1.25" female BSP
   outlets:
-    - type: system 22 male mortar coupling
+    - type: system 23.5 male mortar coupling
       size: 35
       connection: 1.25" female BSP
+
+# https://portal.wika.com/serial/?s=1A02Fa17Q20

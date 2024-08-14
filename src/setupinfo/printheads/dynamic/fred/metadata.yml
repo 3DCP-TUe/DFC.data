@@ -1,0 +1,4 @@
+atrr:
+  class: printheads
+  subclass: dynamic
+  name: fred

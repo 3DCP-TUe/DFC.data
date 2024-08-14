@@ -1,0 +1,20 @@
+atrr:
+  class: printheads
+  subclass: inserts
+  name: static mixer helical-32-8-2
+
+dimensions:
+  length: 448
+  volume: -0.069
+  mass: 0.522
+
+parts:
+  - type: helical static mixing chain
+    manufacturer: PRIMIX
+    name: PMS32-8-316L-CHAIN
+    number of elements: 8
+    material: stainless steel 316L
+
+compatible with:
+  - id: tube 35-600-1
+  - id: tube 35-1000-1

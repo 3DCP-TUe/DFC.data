@@ -1,0 +1,19 @@
+atrr:
+  class: printheads
+  subclass: inserts
+  name: static mixer helical-25-2-2
+
+dimensions:
+  length: 85
+  volume: -0.007
+  mass: 0.057
+
+parts:
+  - type: helical static mixing chain
+    manufacturer: PRIMIX
+    name: PMS25-2-316L-CHAIN
+    number of elements: 2
+    material: stainless steel 316L
+
+compatible with:
+  - id: tube-25-1000-1 
