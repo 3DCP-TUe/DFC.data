@@ -20,11 +20,12 @@ parts:
   - type: system 23.5 female mortar coupling
     size: 35
     connection: hosetail
-  - type: mortar hose
-    manufacturer: X-tools
+  - type: mortar hose 35
+    manufacturer: PET Austria GmbH
     size: 35
-    external diameter: 50 
+    external diameter: 49 
     internal diameter: 35
+    wall thickness: 7
   - type: system 23.5 male mortar coupling
     size: 35
     connection: hosetail

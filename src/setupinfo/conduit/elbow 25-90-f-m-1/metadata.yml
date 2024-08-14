@@ -1,0 +1,27 @@
+atrr:
+  class: conduit
+  name: elbow 25-90-f-m-1
+
+dimensions:
+  length: 192
+  volume: 0.094
+
+couplings:
+  inlets:
+    - type: system 22 female mortar coupling
+      size: 25
+      connection: 1" female BSP
+  outlets:
+    - type: system 22 male mortar coupling
+      size: 25
+      connection: 1" female BSP
+
+parts:
+  - type: system 22 female mortar coupling
+    size: 25
+    connection: 1" female BSP
+  - type: steel pipe Fitting, 90 degrees elbow
+    connection: 1" male BSP x 1" male BSP
+  - type: system 22 male mortar coupling
+    size: 25
+    connection: 1" female BSP

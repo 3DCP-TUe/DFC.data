@@ -1,14 +1,14 @@
 atrr:
   class: conduit
-  name: hose 35-13600-f-m-1
+  name: adapter 35-m-m-1
 
 dimensions:
-  length: 13605
-  volume: 13.090
-
+  length: 154
+  volume: 0.134
+  
 couplings:
   inlets:
-    - type: system 23.5 female mortar coupling
+    - type: system 23.5 male mortar coupling
       size: 35
       connection: 1.25" female BSP
   outlets:
@@ -17,15 +17,12 @@ couplings:
       connection: 1.25" female BSP
 
 parts:
-  - type: system 23.5 female mortar coupling
+  - type: system 23.5 male mortar coupling
     size: 35
     connection: 1.25" female BSP
-  - type: type: mortar hose 35 with 2x nozzle 1.25" AG
-    manufacturer: PET Austria GmbH
+  - type: hexagon nipple
     size: 35
-    external diameter: 49 
-    internal diameter: 35
-    wall thickness: 7
+    connection: male R1.25" x male R1.25"
   - type: system 23.5 male mortar coupling
     size: 35
     connection: 1.25" female BSP

@@ -1,0 +1,17 @@
+atrr:
+  class: conduit
+  name: reducer 93-64-tri-tri-2
+
+dimensions:
+  length: 60
+  volume: 0.180
+
+couplings:
+  inlets:
+    - type: tri-clamp 3"
+      flange diameter: 93
+      inner diameter: 73
+    outlets:
+    - type: tri-clamp 2"
+      flange diameter: 64
+      inner diameter: 47.6

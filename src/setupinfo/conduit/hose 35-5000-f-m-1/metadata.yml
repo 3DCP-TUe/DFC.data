@@ -1,10 +1,10 @@
 atrr:
   class: conduit
-  name: hose 35-1500-f-m-1
+  name: hose 35-5000-f-m-1
 
 dimensions:
-  length: 1615
-  volume: 1.554
+  length: 5007
+  volume: 4.817
 
 couplings:
   inlets:
@@ -14,13 +14,13 @@ couplings:
   outlets:
     - type: system 23.5 male mortar coupling
       size: 35
-      connection: hosetail
+      connection: 1.25" female BSP
 
 parts:
   - type: system 23.5 female mortar coupling
     size: 35
     connection: hosetail
-  - type: mortar hose 35
+  - type: mortar hose 25 with 1x nozzle 1.25" AG
     manufacturer: PET Austria GmbH
     size: 35
     external diameter: 49 
@@ -28,4 +28,4 @@ parts:
     wall thickness: 7
   - type: system 23.5 male mortar coupling
     size: 35
-    connection: hosetail
+    connection: 1.25" female BSP
