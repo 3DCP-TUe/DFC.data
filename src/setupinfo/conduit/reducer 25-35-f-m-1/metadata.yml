@@ -10,11 +10,11 @@ couplings:
   inlets:
     - type: system 22 female mortar coupling
       size: 25
-      connection: 1.25" female BSP
+      connection: 1" female BSP
   outlets:
-    - type: system 22 male mortar coupling
+    - type: system 23.5 male mortar coupling
       size: 29
-      connection: 1.25" female BSP
+      connection: 1" female BSP
 
 parts:
   - type: system 22 female mortar coupling
@@ -22,6 +22,6 @@ parts:
     connection: 1" female BSP
   - type: pipe nipple
     connection: male R1" x male R1"
-  - type: system 22 male mortar coupling
+  - type: system 23.5 male mortar coupling
     size: 29
     connection: 1" female BSP

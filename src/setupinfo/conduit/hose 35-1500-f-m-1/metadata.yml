@@ -8,16 +8,16 @@ dimensions:
 
 couplings:
   inlets:
-    - type: system 22 female mortar coupling
+    - type: system 23.5 female mortar coupling
       size: 35
       connection: hosetail
   outlets:
-    - type: system 22 male mortar coupling
+    - type: system 23.5 male mortar coupling
       size: 35
       connection: hosetail
 
 parts:
-  - type: system 22 female mortar coupling
+  - type: system 23.5 female mortar coupling
     size: 35
     connection: hosetail
   - type: mortar hose
@@ -25,6 +25,6 @@ parts:
     size: 35
     external diameter: 50 
     internal diameter: 35
-  - type: system 22 male mortar coupling
+  - type: system 23.5 male mortar coupling
     size: 35
     connection: hosetail
