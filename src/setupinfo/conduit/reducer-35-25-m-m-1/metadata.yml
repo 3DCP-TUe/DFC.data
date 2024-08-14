@@ -3,8 +3,8 @@ atrr:
   name: reducer 35-25-m-m-1
 
 dimensions:
-  length: 99
-  volume: 0.057
+  length: 100
+  volume: 0.056
 
 couplings:
   inlets:

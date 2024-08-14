@@ -8,10 +8,10 @@ dimensions:
 
 couplings:
   inlets:
-    - type: tri-clamp 3"
-      flange diameter: 93
+    - type: tri-clamp
+      size: 91
       inner diameter: 73
     outlets:
-    - type: tri-clamp 2"
-      flange diameter: 64
+    - type: tri-clamp
+      size: 64
       inner diameter: 47.6
