@@ -2,3 +2,6 @@ atrr:
   class: material delivery systems
   subclass: inserts
   name: dosing screw m-tec-1
+
+compatible with:
+  - id: m-tec connect duomix 3dcp+
