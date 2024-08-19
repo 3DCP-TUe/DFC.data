@@ -1,5 +1,21 @@
 # 3D Sneak Peek: 3DCP Database
 
+## Software structure
+
+```
++-- software package
+|   +-- example
+|   |   +-- data.csv
+|   |   +-- metadata.yml
+|   +-- src
+|   |   +-- analysis
+|   |   |   script.py
+|   |   file1.py
+|   |   ...
+|   +-- utils
+|   |   ...
+```
+
 ## Database structure
 
 ```
@@ -69,7 +85,7 @@ Inserts are components that are placed inside other components. Examples include
 ### Component folder structure
 
 ```
-+-- components
++-- component
 |   +-- name
 |   |   +-- docs
 |   |   |   +-- doc.pdf
@@ -85,24 +101,28 @@ Inserts are components that are placed inside other components. Examples include
 To discuss: 
 
 ```
-MC25f   Mortar coupling, 25 mm, female          alternative: MT25
-MC35m   Mortar coupling, 35 mm, male            alternative: VT35
-F40     Flange DN40
-T93     Tri-clamp flange diameter 93 mm
-P6      Push-in fitting 6 mm outer diameter
-S42     Slip-on 42 mm outer diameter
+MC25F   Mortar coupling, 25 mm, female
+MC35M   Mortar coupling, 35 mm, male
+FL40    Flange DN40
+TC93    Tri-clamp flange diameter 93 mm
+PI6     Push-in fitting 6 mm outer diameter
+SO42    Slip-on 42 mm outer diameter
 GEKA    GEKA coupling
+PFD     Pressure flange for D-pump     (options: A, B, C, d, R, T, L-pump)
+SFR     Suction flange for R-pump      (options: A, B, C, d, R, T, L-pump)
 ```
 
 Examples
 
+Logic `COUPLING_IN-COUPLING_OUT-DIAMETER-CUSTOM_PROPERTY-ID_NUMBER`
+
 ```
-HOSE D35-L5000-MT35-VT35-1
-REDUCER T93-T64-1
-ELBOW D35-A90-MT35-VT35-1
-ADAPTER D35-F40-VT35-1
-CORIOLIS D35-F40-F40-1
-PRESSURE SENSOR D35-MT35-VT35-25BAR-1
-PRESSURE SENSOR D35-MT35-VT35-25BAR-2
-PRESSURE SENSOR D35-MT35-VT35-10BAR-1
+HOSE MC35F-MC35M-D35-L5000--1
+REDUCER TC93-TC64-D..-D..1
+ELBOW MC35F-MC35M-D35-A90-1
+ADAPTER FL40-MC35M-D35-1
+CORIOLIS SENSOR FL40-FL40D-D35-1
+PRESSURE SENSOR MC35F-MC35M-D35-25BAR-1
+PRESSURE SENSOR MC35F-MC35M-D35-25BAR-2
+PRESSURE SENSOR MC35F-MC35M-D35-10BAR-1
 ```
