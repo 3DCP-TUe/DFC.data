@@ -5,6 +5,8 @@ atrr:
 dimensions:
   length: 264
   volume: 0.216
+  length before: 114
+  length after: 150
 
 couplings:
   inlets:
