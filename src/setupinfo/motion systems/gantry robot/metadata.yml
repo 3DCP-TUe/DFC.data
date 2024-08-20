@@ -3,3 +3,18 @@ atrr:
   name: gantry robot
   controller: SINUMERIK
   degrees of freedom: 4
+  payload: 200
+
+joints:
+  - joint 1:
+    axis limits: [0 9350]
+    type: prismatic
+  - joint 2:
+    axis limits: [0 4480]
+    type: prismatic
+  - joint 3:
+    axis limits: [0 2150]
+    type: prismatic
+  - joint 4:
+    axis limits: [-inf inf]
+    type: revolute
