@@ -107,8 +107,6 @@ Inserts are components that are placed inside other components. Examples include
 
 #### Coding system
 
-To discuss: 
-
 ```
 MC25F   Mortar coupling, 25 mm, female          (options: 25, 35, 50, female, male)
 MC35M   Mortar coupling, 35 mm, male            (options: 25, 35, 50, female, male)
@@ -121,9 +119,9 @@ PFD     Pressure flange for D-pump              (options: A, B, C, D, R, T, L-pu
 SFR     Suction flange for R-pump               (options: A, B, C, D, R, T, L-pump)
 ```
 
-Examples
+Logic used for a a component: `COUPLING_IN-COUPLING_OUT-DIAMETER-CUSTOM_PROPERTY-ID_NUMBER`
 
-Logic `COUPLING_IN-COUPLING_OUT-DIAMETER-CUSTOM_PROPERTY-ID_NUMBER`
+Examples are:
 
 ```
 HOSE MC35F-MC35M-D35-L5000-1
@@ -137,6 +135,14 @@ PRESSURE SENSOR MC35F-MC35M-D35-10BAR-1
 ```
 
 ## Version numbering
+
+The 3D Sneak Peak project uses the following versioning scheme: 
+
+```
+0.x.x ---> MAJOR version: Incompatible changes; for example, restructuring the database format and metadata files.
+x.0.x ---> MINOR version: Functionality added in a backward-compatible manner; for example, new system components.
+x.x.0 ---> PATCH version: Small backward-compatible changes; for example, small corrections in a component property.
+```
 
 ## Contact information
 
