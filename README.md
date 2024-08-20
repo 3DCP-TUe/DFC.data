@@ -1,5 +1,10 @@
 # 3D Sneak Peek: 3DCP Database
 
+<p align="center">
+  <img src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg">
+</p>
+
+## Introduction 
 This repository contains the template and setup information library for the 3D Sneak Peek database. The aim of this project is to collect experimental data about 3D concrete printing in a structured way and distribute this data to the community. This repository includes the system library of the equipment at TU/e and the templates for data records and software packages.
 
 ## Structure
@@ -152,8 +157,6 @@ To support these principles, we license our software under the General Public Li
 
 ## License
 
-Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
-
 This work is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 
@@ -161,4 +164,3 @@ This work is licensed under a
 
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
-[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
