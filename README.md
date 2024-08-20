@@ -119,7 +119,7 @@ PFD     Pressure flange for D-pump              (options: A, B, C, D, R, T, L-pu
 SFR     Suction flange for R-pump               (options: A, B, C, D, R, T, L-pump)
 ```
 
-Logic used for a a component: `COUPLING_IN-COUPLING_OUT-DIAMETER-CUSTOM_PROPERTY-ID_NUMBER`
+Logic used for a component: `COUPLING_IN-COUPLING_OUT-DIAMETER-CUSTOM_PROPERTY-ID_NUMBER`
 
 Examples are:
 
@@ -156,7 +156,7 @@ We are committed to the principles of open science to ensure that our work can b
 - Unique Resources and Data: We have equipment and facilities that are not available at other institutes. We generate data that other institutes cannot produce, and we share this data openly.
 - Data and Software Sharing: We share our data and software and encourage others to do the same. If others use our data and software, they must also share their software and data under similar terms.
 
-To support these principles, we license our software under the General Public License version 3 or later (free to use, share with source code) and our data and documentation under CC BY-SA (free to use, with attribution, and share-alike). By adhering to these principles, we aim to encourage an open and collaborative scientific community. We hope and expect that if you use our resources, you will do the same. 
+To support these principles, we license our software under the General Public License version 3 or later (free to use, share with source code) and our data and documentation under CC BY-SA (free to use, with attribution, and share-alike). By adhering to these principles, we aim to encourage an open and collaborative scientific community. We expect that if you use our resources, you will do the same. 
 
 ## License
 
