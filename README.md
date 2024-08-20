@@ -13,6 +13,7 @@ This repository contains the template and setup information library for the 3D S
 +-- software package
 |   +-- database template
 |   |   +-- data.csv
+|   |   +-- metadata.ymal
 |   |   +-- ...
 |   +-- src
 |   |   +-- analysis
@@ -64,11 +65,13 @@ This repository contains the template and setup information library for the 3D S
 |   +-- metadata_record.yml
 ```
 
-The analysis folders are meant to provide quick insights into the data. For example, time series plots of viscocity and pressure readings. 
+The analysis folders are meant to provide quick insights into the data. For example, time series plots of viscocity and pressure readings. Each software packages provides templates - example files - to generate this output. 
 
 ### Setup info structure
 
 #### Folder structure
+
+The components as categorized as follows: 
 
 ```
 class: conduit
@@ -108,30 +111,30 @@ Inserts are components that are placed inside other components. Examples include
 #### Coding system
 
 ```
-MC25F   Mortar coupling, 25 mm, female          (options: 25, 35, 50, female, male)
-MC35M   Mortar coupling, 35 mm, male            (options: 25, 35, 50, female, male)
-FL40    Flange DN40                             (options: 5, 10, 15, 20, 25, 32, 40, etc.)
-TC93    Tri-clamp flange diameter 93 mm         (options: 25, 51, 64, 78, 91, 119, etc.)
-PI6     Push-in fitting 6 mm outer diameter     (options: 4, 6, 8, 10, 12, etc.)
-SO42    Slip-on 42 mm outer diameter
-GEKA    GEKA coupling
-PFD     Pressure flange for D-pump              (options: A, B, C, D, R, T, L-pump)
-SFR     Suction flange for R-pump               (options: A, B, C, D, R, T, L-pump)
+mc25f   Mortar coupling, 25 mm, female          (options: 25, 35, 50, female, male)
+mc35m   Mortar coupling, 35 mm, male            (options: 25, 35, 50, female, male)
+fl40    Flange DN40                             (options: 5, 10, 15, 20, 25, 32, 40, etc.)
+tc93    Tri-clamp flange diameter 93 mm         (options: 25, 51, 64, 78, 91, 119, etc.)
+pi6     Push-in fitting 6 mm outer diameter     (options: 4, 6, 8, 10, 12, etc.)
+so42    Slip-on 42 mm outer diameter
+geka    GEKA coupling
+pfd     Pressure flange for D-pump              (options: A, B, C, D, R, T, L-pump)
+sfr     Suction flange for R-pump               (options: A, B, C, D, R, T, L-pump)
 ```
 
-Logic used for a component: `COUPLING_IN-COUPLING_OUT-DIAMETER-CUSTOM_PROPERTY-ID_NUMBER`
+Logic used for a component: `COUPLING_IN-COUPLING_OUT-DIAMETER-OPTIONAL_DIAMETER_2-CUSTOM_PROPERTY-ID_NUMBER`
 
 Examples are:
 
 ```
-HOSE MC35F-MC35M-D35-L5000-1
-REDUCER TC93-TC64-D73-D50-1
-ELBOW MC35F-MC35M-D35-A90-1
-ADAPTER FL40-MC35M-D35-1
-CORIOLIS SENSOR FL40-FL40-D35-1
-PRESSURE SENSOR MC35F-MC35M-D35-25BAR-1
-PRESSURE SENSOR MC35F-MC35M-D35-25BAR-2
-PRESSURE SENSOR MC35F-MC35M-D35-10BAR-1
+hose mc35f-mc35m-d35-l5000-1
+reducer tc93-tc64-d73-d50-1
+elbow mc35f-mc35m-d35-a90-1
+adapter fl40-mc35m-d35-1
+coriolis sensor fl40-fl40-d35-1
+pressure sensor mc35f-mc35m-d35-25bar-1
+pressure sensor mc35f-mc35m-d35-25bar-2
+pressure sensor mc35f-mc35m-d35-10bar-1
 ```
 
 ## Version numbering
@@ -167,6 +170,6 @@ This work is licensed under a
 
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
-[cc-by]: http://creativecommons.org/licenses/by/4.0/
-[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
