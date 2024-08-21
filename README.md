@@ -23,6 +23,7 @@ This repository contains the template and setup information library for the 3D S
 |   |   ...
 |   +-- utils
 |   |   ...
+|   +-- README.md
 ```
 
 ### Database structure
