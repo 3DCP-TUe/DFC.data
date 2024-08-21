@@ -17,5 +17,5 @@ parts:
     material: stainless steel 316L
 
 compatible with:
-  - id: tube 35-600-1
-  - id: tube 35-1000-1
+  - id: tube mc35f-so41-d35-l600-1 
+  - id: tube mc35f-so41-d35-l1000-1 
