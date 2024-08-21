@@ -1,7 +1,7 @@
 atrr:
   class: conduit
   name: elbow mc25f-mc25m-a90-1
-  description:
+  description: Rigid 90 degrees connection from mortar coupling to mortar coupling. 
 
 dimensions:
   length: 192

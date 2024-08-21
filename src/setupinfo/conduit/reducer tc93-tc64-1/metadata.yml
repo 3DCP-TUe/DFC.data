@@ -1,7 +1,7 @@
 atrr:
   class: conduit
   name: reducer tc93-tc64-1
-  description:
+  description: Cross section reducer from 73 to 47.6 mm.
 
 dimensions:
   length: 127

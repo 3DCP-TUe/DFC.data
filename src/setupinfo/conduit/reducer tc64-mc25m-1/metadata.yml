@@ -1,7 +1,7 @@
 atrr:
   class: conduit
   name: reducer tc64-mc25m-1
-  description:
+  description: Cross section reducer from 47.6 to 25 mm. 
 
 dimensions:
   length: -

@@ -1,7 +1,7 @@
 atrr:
   class: conduit
   name: adapter mc35f-fl40-1
-  description:
+  description: Adapter from mortar coupling to flange connection. 
 
 dimensions:
   length: 144

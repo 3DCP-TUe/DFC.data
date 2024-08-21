@@ -1,7 +1,7 @@
 atrr:
   class: conduit
   name: hose mc35f-mc35m-d35-l13300-1
-  description:
+  description: Mortar hose with a length of 13.3 meter. 
 
 dimensions:
   length: 13605

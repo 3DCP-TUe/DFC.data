@@ -1,7 +1,7 @@
 atrr:
   class: conduit
   name: reducer mc35m-mc25m-1
-  description:
+  description: Cross section reducer from 35 to 25 mm.
 
 dimensions:
   length: 100

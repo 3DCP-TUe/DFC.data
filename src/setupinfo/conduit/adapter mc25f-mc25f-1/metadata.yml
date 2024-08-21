@@ -1,7 +1,7 @@
 atrr:
   class: conduit
   name: adapter mc25f-mc25f-1
-  description:
+  description: Adapter from mortar coupling to mortar coupling. 
 
 dimensions:
   length: 83
