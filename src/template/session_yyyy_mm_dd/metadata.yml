@@ -28,6 +28,8 @@ software:
     version: 0.4.0
   - name: Droplet Detective
     version: 0.1.0
+  - name: Concrete Candy Tracker
+    version: 0.3.0
 
 # System layout
 system_layout:
@@ -37,49 +39,49 @@ system_layout:
         - mai multimix
     - id: mai multimix
       connected_to:
-        - reducer 25-35-f-m-1
-    - id: reducer 25-35-f-m-1
+        - reducer mc25f-mc35m-1
+    - id: reducer mc25f-mc35m-1
       connected_to:
-        - hose 35-1000-f-m-1
-    - id: hose 35-1000-f-m-1
+        - hose mc35f-mc35f-d35-l1000-1
+    - id: hose mc35f-mc35f-d35-l1000-1
       connected_to:
-        - pressure sensor 35-25-f-m-1
-    - id: pressure sensor 35-25-f-m-1
+        - pressure sensor mc35f-mc35m-d35-25bar-1
+    - id: pressure sensor mc35f-mc35m-d35-25bar-1
       connected_to:
-        - adapter 35-f-fl-1
-    - id: adapter 35-f-fl-1
+        - adapter mc35f-fl40-1
+    - id: adapter mc35f-fl40-1
       connected_to:
-        - coriolis 35-fl-fl-1
-    - id: coriolis 35-fl-fl-1
+        - coriolis fl40-fl40-d35-1
+    - id: coriolis fl40-fl40-d35-1
       connected_to: 
-        - adapter 35-fl-m-1
-    - id: adapter 35-fl-m-1
+        - adapter fl40-mc35m-1
+    - id: adapter fl40-mc35m-1
       connected_to: 
-        - pressure sensor 35-25-f-m-2
-    - id: pressure sensor 35-25-f-m-2
+        - pressure sensor mc35f-mc35m-d35-25bar-2
+    - id: pressure sensor mc35f-mc35m-d35-25bar-2
       connected_to:
-        - hose 35-13300-f-m-1
-    - id: hose 35-13300-f-m-1
+        - hose mc35f-mc35m-d35-l13300-1
+    - id: hose mc35f-mc35m-d35-l13300-1
       connected_to: 
-        - elbow 35-90-f-m-1
-    - id: elbow 35-90-f-m-1
+        - elbow mc35f-mc35m-a90-1
+    - id: elbow mc35f-mc35m-a90-1
       connected_to: 
-        - pressure sensor 35-10-f-m-1
-    - id: pressure sensor 35-10-f-m-1
+        - pressure sensor mc35f-mc35m-d35-10bar-1
+    - id: pressure sensor mc35f-mc35m-d35-10bar-1
       connected_to: 
-        - tube 35-1000-1
-    - id: tube 35-1000-1
+        - tube mc35f-so41-d35-l1000-1
+    - id: tube mc35f-so41-d35-l1000-1
       connected_to:
-        - nozzle round-25-1
-    - id: nozzle round-25-1
-    - id: static mixing primix-35-8-2
-      inserted_in: tube 35-1000-1
+        - nozzle round-so41-d25-1
+    - id: nozzle round-so41-d25-1
+    - id: static mixer helical-d35-n8-1
+      inserted_in: tube mc35f-so41-d35-l1000-1
 
 # IO configuration
 io_configuration:
   material_delivery_plc:
-    AI0: pressure sensor 35-25-1
-    AI1: pressure sensor 35-25-2
+    AI0: pressure sensor mc35f-mc35m-d35-25bar-1
+    AI1: pressure sensor mc35f-mc35m-d35-25bar-2
     AI2: 
     AI3: 
     AI4: 
@@ -97,7 +99,7 @@ io_configuration:
     DO2: 
     DO3: 
   printhead_plc:
-    BOX1_AI0: pressure sensor 35-10-1
+    BOX1_AI0: pressure sensor mc35f-mc35m-d35-10bar-1
     BOX1_AI2: 
     BOX1_AI3: 
     BOX1_AI4: 
