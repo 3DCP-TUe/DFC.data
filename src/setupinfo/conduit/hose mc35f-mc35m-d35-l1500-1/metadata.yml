@@ -1,0 +1,32 @@
+atrr:
+  class: conduit
+  name: hose mc35f-mc35m-d35-l1500-1
+  description:
+
+dimensions:
+  length: 1615
+  volume: 1.554
+
+couplings:
+  inlets:
+    - type: system 23.5 female mortar coupling
+      size: 35
+      connection: hosetail
+  outlets:
+    - type: system 23.5 male mortar coupling
+      size: 35
+      connection: hosetail
+
+parts:
+  - type: system 23.5 female mortar coupling
+    size: 35
+    connection: hosetail
+  - type: mortar hose 35
+    manufacturer: PET Austria GmbH
+    size: 35
+    external diameter: 49 
+    internal diameter: 35
+    wall thickness: 7
+  - type: system 23.5 male mortar coupling
+    size: 35
+    connection: hosetail

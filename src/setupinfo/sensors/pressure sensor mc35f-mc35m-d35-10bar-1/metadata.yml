@@ -1,0 +1,22 @@
+atrr:
+  class: sensor
+  name: pressure sensor mc35f-mc35m-d35-10bar-1
+  description: Mortar pressure sensor. 
+
+dimensions:
+  length: 264
+  volume: 0.216
+  length before: 114
+  length after: 150
+
+couplings:
+  inlets:
+    - type: system 23.5 female mortar coupling
+      size: 35
+      connection: 1.25" female BSP
+  outlets:
+    - type: system 23.5 male mortar coupling
+      size: 35
+      connection: 1.25" female BSP
+
+# https://portal.wika.com/serial/?s=1A02Fa17Q20

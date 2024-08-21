@@ -2,3 +2,4 @@ atrr:
   class: printheads
   subclass: dynamic
   name: fred
+  description: Open motorized in-line mixer with separate extruder and injection ports. 

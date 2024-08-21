@@ -1,0 +1,26 @@
+atrr:
+  class: conduit
+  name: reducer tc64-mc25m-1
+  description:
+
+dimensions:
+  length: -
+  volume: 0.052
+
+couplings:
+  inlets:
+    - type: tri-clamp
+      size: 64
+      inner diameter: 47.6
+  outlets:
+    - type: system 22 male mortar coupling
+      size: 25
+      connection: 1" female BSP
+
+parts:
+  - type: tri-clamp - BSP threaded male adaptor 
+    connection: tri-clamp 2" x 1" male BSP
+    material: stainless steel 316L
+  - type: system 22 male mortar coupling
+    size: 25
+    connection: 1" female BSP

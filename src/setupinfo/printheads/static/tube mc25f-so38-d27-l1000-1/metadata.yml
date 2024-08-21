@@ -1,0 +1,29 @@
+atrr:
+  class: printheads
+  subclass: static
+  name: tube mc25f-so38-d27-l1000-1
+  description: Sraight steel pipe with female mortar coupling.  
+
+dimensions:
+  length: 1014
+  volume: 0.584
+
+couplings:
+  inlets:
+    - type: system 22 female mortar coupling
+      size: 25
+      connection: 1" female BSP
+  outlets:
+    - type: slip-on
+      outer diameter: 38
+      inner diameter: 27
+
+parts:
+  - type: system 22 female mortar coupling
+    size: 25
+    connection: 1" female BSP
+  - type: seamless pipe
+    material: steel
+    outer diameter: 38
+    inner diameter: 27
+    wall thickness: 5.5

@@ -1,0 +1,29 @@
+atrr:
+  class: printheads
+  subclass: static
+  name: tube mc35f-so42-d35-l600-1
+  description: Sraight steel pipe with female mortar coupling.
+
+dimensions:
+  length: 621
+  volume: 0.597
+
+couplings:
+  inlets:
+    - type: system 23.5 female mortar coupling
+      size: 35
+      connection: 1.25" female BSP
+  outlets:
+    - type: slip-on
+      outer diameter: 41
+      inner diameter: 35
+
+parts:
+  - type: system 23.5 female mortar coupling
+    size: 35
+    connection: 1.25" female BSP
+  - type: seamless pipe
+    material: steel
+    outer diameter: 41
+    inner diameter: 35
+    wall thickness: 3

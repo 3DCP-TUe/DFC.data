@@ -2,8 +2,11 @@ atrr:
   class: material delivery systems
   subclass: silos
   name: silo 1
+  description: Silo for storage of dry materials. 
 
 couplings:
+  inlets:
+    - type: manhole
   outlets:
     - type: flange
       size: DN250

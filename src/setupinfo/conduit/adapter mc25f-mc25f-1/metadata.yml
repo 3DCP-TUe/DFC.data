@@ -1,0 +1,29 @@
+atrr:
+  class: conduit
+  name: adapter mc25f-mc25f-1
+  description:
+
+dimensions:
+  length: 83
+  volume: 0.042
+
+couplings:
+  inlets:
+    - type: system 22 female mortar coupling
+      size: 25
+      connection: 1" female BSP
+  outlets:
+    - type: system 22 male mortar coupling
+      size: 25
+      connection: 1" female BSP
+
+parts:
+  - type: system 22 female mortar coupling
+    size: 25
+    connection: 1" female BSP
+  - type: hexagon nipple
+    size: 25
+    connection: male R1" x male R1"
+  - type: system 22 male mortar coupling
+    size: 25
+    connection: 1" female BSP

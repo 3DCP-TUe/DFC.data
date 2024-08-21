@@ -1,7 +1,0 @@
-atrr:
-  class: material delivery systems
-  subclass: inserts
-  name: mixing blade m-tec-2
-
-compatible with:
-  - id: m-tec connect duomix 3dcp+

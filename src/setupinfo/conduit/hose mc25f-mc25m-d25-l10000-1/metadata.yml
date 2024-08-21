@@ -1,0 +1,32 @@
+atrr:
+  class: conduit
+  name: hose mc25f-mc25m-d25-l10000-1
+  description:
+
+dimensions:
+  length: 10005
+  volume: 4.911
+
+couplings:
+  inlets:
+    - type: system 22 female mortar coupling
+      size: 25
+      connection: 1" female BSP
+  outlets:
+    - type: system 22 male mortar coupling
+      size: 25
+      connection: 1" female BSP
+
+parts:
+  - type: system 22 female mortar coupling
+    size: 25
+    connection: 1" female BSP
+  - type: mortar hose 25 with 2x nozzle 1" AG
+    manufacturer: PET Austria GmbH
+    size: 25
+    external diameter: 39 
+    internal diameter: 25
+    wall thickness: 7
+  - type: system 22 male mortar coupling
+    size: 25
+    connection: 1" female BSP

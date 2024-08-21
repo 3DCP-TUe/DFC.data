@@ -8,7 +8,7 @@ attr:
   contributors: 
     - name: Rob Wolfs
       institution: Eindhoven University of Technology (TU/e)
-  note: Correlation between slug test and mortar temperature
+  note: Experiment to study the correlation between pressure and temperature
   date: 2024-08-05
 
 # Materials
@@ -33,9 +33,6 @@ software:
 system_layout:
   systems:
     - id: silo 1
-      connected_to:
-        - mai multimix
-    - id: water cooler
       connected_to:
         - mai multimix
     - id: mai multimix

@@ -1,6 +1,7 @@
 atrr:
   class: material delivery systems
   name: material delivery plc
+  description: PLC for data acquiston and control. 
 
 io:
   - name: AI0

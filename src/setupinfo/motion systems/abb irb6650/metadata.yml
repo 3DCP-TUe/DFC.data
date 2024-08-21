@@ -1,6 +1,7 @@
 atrr:
   class: motion systems
   name: ABB IRB6650-125/3.2
+  description: Six axis industrial robotic arm with spherical wrist and tool changer. 
   controller: ABB IRC5
   degrees of freedom: 6
   payload: 125

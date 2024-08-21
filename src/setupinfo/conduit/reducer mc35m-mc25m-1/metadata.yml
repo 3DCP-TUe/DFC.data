@@ -1,0 +1,16 @@
+atrr:
+  class: conduit
+  name: reducer mc35m-mc25m-1
+  description:
+
+dimensions:
+  length: 100
+  volume: 0.056
+
+couplings:
+  inlets:
+    - type: system 23.5 female mortar coupling
+      size: 35
+  outlets:
+    - type: system 22 male mortar coupling
+      size: 25

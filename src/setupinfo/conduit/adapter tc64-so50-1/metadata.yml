@@ -1,0 +1,18 @@
+atrr:
+  class: conduit
+  name: adapter tc64-so50-1
+  description:
+
+dimensions:
+  length: 21.5
+  volume: 0.037
+
+couplings:
+  inlets:
+    - type: tri-clamp 2"
+      flange diameter: 64
+      inner diameter: 47.6
+  outlets:
+    - type: slip-on
+      outer diameter: 51.05
+      inner diameter: 47.60

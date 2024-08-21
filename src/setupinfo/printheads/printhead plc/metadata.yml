@@ -1,6 +1,7 @@
 atrr:
   class: printheads
   name: printhead plc
+  description: Printhead PLC for data acquiston and control. 
 
 io:
   - name: BOX1_AI0

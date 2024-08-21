@@ -1,6 +1,7 @@
 atrr:
   class: motion systems
   name: gantry robot
+  description: Gantry robot (XYZ) with fourth rotational axis at printhead. 
   controller: SINUMERIK
   degrees of freedom: 4
   payload: 200

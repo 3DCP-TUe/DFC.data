@@ -1,0 +1,28 @@
+atrr:
+  class: conduit
+  name: reducer-mc35m-mc25m-1
+  description:
+
+dimensions:
+  length: 99
+  volume: 0.057
+
+couplings:
+  inlets:
+    - type: system 23.5 female mortar coupling
+      size: 35
+      connection: 1" female BSP
+  outlets:
+    - type: system 22 male mortar coupling
+      size: 25
+      connection: 1" female BSP
+
+parts:
+  - type: system 23.5 female mortar coupling
+    size: 35
+    connection: 1" female BSP
+  - type: pipe nipple
+    connection: male R1" x male R1"
+  - type: system 22 male mortar coupling
+    size: 25
+    connection: 1" female BSP

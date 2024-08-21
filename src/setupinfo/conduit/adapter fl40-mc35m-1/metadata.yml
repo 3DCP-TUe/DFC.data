@@ -1,0 +1,30 @@
+atrr:
+  class: conduit
+  name: adapter fl40-mc35m-1
+  description:
+
+dimensions:
+  length: 184
+  volume: 0.177
+
+couplings:
+  inlets:
+    - type: flange
+      size: DN40
+  outlets:
+    - type: system 23.5 male mortar coupling
+      size: 35
+      connection: 1.25" female BSP
+
+parts:
+  - type: flange
+    size: DN40
+    connection: weld
+  - type: seamless pipe
+    material: steel
+    outer diameter: 41
+    inner diameter: 35
+    wall thickness: 3
+  - type: system 23.5 male mortar coupling
+    size: 35
+    connection: 1.25" female BSP

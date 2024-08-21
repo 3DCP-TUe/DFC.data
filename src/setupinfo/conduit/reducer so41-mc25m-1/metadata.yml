@@ -1,0 +1,23 @@
+atrr:
+  class: conduit
+  name: reducer so41-mc25m-1
+  description:
+
+dimensions:
+  length: 51
+  volume: 0.025
+
+couplings:
+  inlets: 
+    - type: slip-on
+      length: 16.1
+      outer diameter: 41
+      inner diameter: 35
+      secured: bolts
+  outlets:
+    - type: system 22 male mortar coupling
+      size: 25
+
+parts:
+  - type: system 22 male mortar coupling
+    size: 25

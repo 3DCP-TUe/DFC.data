@@ -2,3 +2,4 @@ atrr:
   class: material delivery systems
   subclass: dosing systems
   name: bronkhorst
+  description: Liquid dosing combination with gear pump and coriolis mass flow sensor. 

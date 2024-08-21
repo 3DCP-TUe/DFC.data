@@ -1,0 +1,16 @@
+atrr:
+  class: sensor
+  name: coriolis sensor fl40-fl40-d35-1
+  description: Coriolis mass flow sensor with in-line viscocity measurement. 
+
+dimensions:
+  length: 820
+  volume: 0.789
+
+couplings:
+  inlets:
+    - type: flange
+      size: DN40
+  outlets:
+    - type: flange
+      size: DN40
