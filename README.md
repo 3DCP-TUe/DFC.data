@@ -24,6 +24,7 @@ This repository contains the template and setup information library for the 3D S
 |   +-- utils
 |   |   ...
 |   +-- README.md
+|   +-- LICENSE
 ```
 
 ### Database structure
@@ -64,6 +65,7 @@ This repository contains the template and setup information library for the 3D S
 |   |   +-- ...
 |   +-- setupinfo
 |   +-- metadata_record.yml
+|   +-- LICENSE
 ```
 
 The analysis folders are meant to provide quick insights into the data. For example, time series plots of viscocity and pressure readings. Each software packages provides templates - example files - to generate this output. 
