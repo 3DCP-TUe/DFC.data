@@ -2,6 +2,30 @@
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
+## To do / for discussion
+
+- [ ] Metadata file of coriolis sensor: how to define the sensor settings, they can be changed. 
+- [ ] Fill metadata file of pressure sensors (add info of electronics/sensor)
+- [ ] Add temperature sensor printhead
+- [ ] Add metadata file and photos of MAI MULTIMIX + describe modifications
+- [ ] Add metadata file and photos of m-tec duomix + describe modifications
+- [ ] Add temperature and relative humidity sensor on sensing station
+- [ ] Add photo of gantry robot
+- [ ] Add photo of ABB robot 
+- [ ] Add info of tool changer on ABB robot (include in ABB robot metadata file)
+- [ ] Add pressure flanges of P20, duomix and multimix
+- [ ] Add rotor stators: do we number each rotor stator, like mai-40ll-0s-1, mai-40ll-0s-2, mai-40ll-0s-3, etc. or just one? 
+- [ ] Fill metadata file of silos: add vibration blok, aeration pads, etc. 
+- [ ] Dicuss open science statement -> also copy it to organization README and other repositories? 
+
+Can be added after first release:
+- [ ] Add liquid dosing system (Vertico)
+- [ ] Add metadata file of Bronkhorst dosing system + add photo
+- [ ] Add servo motors of printhead PLC
+- [ ] Add metadata and photo of peristaltic pump
+- [ ] Add metadata and photo of m-tec P20
+- [ ] Discuss which info can be made available of ACE, FRED and ADS with Zavhy
+
 ## Introduction 
 This repository contains the template and setup information library for the 3D Sneak Peek database. The aim of this project is to collect experimental data about 3D concrete printing in a structured way and distribute this data to the community. This repository includes the system library of the equipment at TU/e and the templates for data records and software packages.
 
