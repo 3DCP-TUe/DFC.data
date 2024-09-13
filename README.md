@@ -23,7 +23,8 @@ Can be added after first release:
 - [ ] Add metadata file of Bronkhorst dosing system + add photo
 - [ ] Add servo motors of printhead PLC
 - [ ] Add metadata and photo of peristaltic pump
-- [ ] Add metadata and photo of m-tec P20
+- [ ] Add metadata and photo of m-tec P20 + pressure flange + insertable screws, etc.
+- [ ] Add MAI Pictor + insert dynamic mixing blade + pressure flange + rotor stator, etc. 
 - [ ] Discuss which info can be made available of ACE, FRED and ADS with Zavhy
 
 ## Introduction 
