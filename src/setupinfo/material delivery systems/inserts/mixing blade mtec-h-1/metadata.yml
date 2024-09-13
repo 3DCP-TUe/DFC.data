@@ -2,7 +2,7 @@ atrr:
   class: material delivery systems
   subclass: inserts
   name: mixing blade mtec-h-1
-  description: Horizontal mixing blade from m-tec.
+  description: Commercially available horizontal mixing blade from m-tec.
 
 compatible with:
   - id: m-tec connect duomix 3dcp+
