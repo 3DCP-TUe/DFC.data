@@ -17,6 +17,7 @@
 - [ ] Add rotor stators: do we number each rotor stator, like mai-40ll-0s-1, mai-40ll-0s-2, mai-40ll-0s-3, etc. or just one? 
 - [ ] Fill metadata file of silos: add vibration blok, aeration pads, etc. 
 - [ ] Dicuss open science statement -> also copy it to organization README and other repositories? 
+- [ ] Make .zenodo.json file
 
 Can be added after first release:
 - [ ] Add liquid dosing system (Vertico)
