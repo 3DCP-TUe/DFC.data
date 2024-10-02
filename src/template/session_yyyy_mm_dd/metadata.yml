@@ -25,11 +25,11 @@ motion_systems:
 # Software
 software:
   - name: Node-RED-3DSeeP
-    version: 0.4.0
+    version: 0.7.0
   - name: Droplet Detective
     version: 0.1.0
   - name: Concrete Candy Tracker
-    version: 0.3.0
+    version: 0.4.0
 
 # System layout
 system_layout:
@@ -38,6 +38,12 @@ system_layout:
       connected_to:
         - mai multimix
     - id: mai multimix
+      connected_to:
+        - mai 40ll-0s
+    - id: mai 40ll-0s
+      connected_to:
+        - pressure flange mai pfc-mc25-m-1
+    - id: pressure flange mai pfc-mc25-m-1
       connected_to:
         - reducer mc25f-mc35m-1
     - id: reducer mc25f-mc35m-1
@@ -71,6 +77,9 @@ system_layout:
       connected_to: 
         - tube mc35f-so41-d35-l1000-1
     - id: tube mc35f-so41-d35-l1000-1
+      connected_to:
+        - temperature sensor so41-so41-d35-1
+    - id: temperature sensor so41-so41-d35-1
       connected_to:
         - nozzle round-so41-d25-1
     - id: nozzle round-so41-d25-1
