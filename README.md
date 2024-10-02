@@ -11,12 +11,6 @@
 - [ ] To discuss: Where and how to define the OPC UA tags? 
 
 - [ ] Finish this README: Write introduction, etc. 
-- [ ] Add temperature sensor printhead
-- [ ] Add pressure flanges of duomix and multimix
-    - [ ] Add and check dimensions
-    - [ ] Make new photo of MAI pressure flange
-- [ ] Add rotor stators
-    - [ ] Add and check dimensions
 - [ ] Add temperature and relative humidity sensor on sensing station
 - [ ] Add metadata file and photos of MAI MULTIMIX + describe modifications
 - [ ] Add metadata file and photos of m-tec duomix + describe modifications
@@ -26,16 +20,18 @@
 Can be added after first release (make GitHub issues of these?):
 
 - [ ] ACE, FRED and ADS: Discuss which info can be made available with Zavhy. 
-- [ ] Add metadata file of Bronkhorst dosing system + add photo
-- [ ] Add metada of servo motors of printhead PLC
+- [ ] Add metadata and photo of Bronkhorst dosing system
+- [ ] Add metadata and photo of servo motors of printhead PLC
 - [ ] Add metadata and photo of peristaltic pump
 - [ ] Add metadata and photo of m-tec P20 + pressure flange + insertable screws, etc.
-- [ ] Add liquid dosing system (Vertico)
-- [ ] Add MAI Pictor + insert dynamic mixing blade + pressure flange + rotor stator, etc. 
+- [ ] Add metadata and photo of liquid dosing system seepex
+- [ ] Add metadata and photo of MAI Pictor + insert dynamic mixing blade + pressure flange + rotor stator, etc. 
 - [ ] Add info of tool changer on ABB robot (include in ABB robot metadata file)
 - [ ] Add script/tool that gets setupinfo folders based on session metadata files
 - [ ] Add script/tool that can check based on metadata of components and assembly if the configuration is possible
 - [ ] Add script/tool that calculates system length, volume, etc. 
+
+Of most equipment of minimal metada file is added so it can be refered to in session metadata files. 
 
 ## Introduction 
 
