@@ -1,0 +1,43 @@
+atrr:
+  class: sensor
+  name: temperature sensor so41-so41-d35-1
+  description: Mortar temperature sensor. 
+  
+dimensions:
+  length: 49.5
+  volume: 0.048
+
+couplings:
+  inlets: 
+    - type: slip-on
+      length: 24.5
+      outer diameter: 41
+      inner diameter: 35
+      secured: band clamp
+  outlets:
+    - type: slip-on
+      outer diameter: 41
+      inner diameter: 35
+
+io:
+  - name: temperature sensor
+    type: Weipu SP2112/P4
+    output signal: analog output 4-20 mA active
+    signal limits: [4 20]
+    reading limits: [-50 150]
+    interpolation: linear
+    unit: Celsius degrees
+
+sensors:
+  - name: temperature sensor
+    type: temperature
+    manufacturer: ifm electronic
+    model: TA2105
+    product number: TA-025CLER14-A-ZVG/US
+    serial number: -
+    temperature range: [-50 150]
+
+housing:
+  name: custom made temperature sensor housing
+  diameter: 35
+  material: PRUSAMENT PETG
