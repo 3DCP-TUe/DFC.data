@@ -1,5 +1,5 @@
 atrr:
   class: material delivery systems
   subclass: dosing systems
-  name: ads
+  name: solid dosing van-beek-1
   description: Open-loop aggregate, powder and fiber dosing system. 
