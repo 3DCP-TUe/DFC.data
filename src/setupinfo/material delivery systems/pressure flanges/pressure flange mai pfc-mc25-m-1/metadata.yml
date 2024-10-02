@@ -1,0 +1,18 @@
+atrr:
+  class: material delivery systems
+  subclass: pressure flanges
+  name: pressure flange mai pfc-mc25-m-1
+  description: Commercially available pressure flange for MAI mixer pumps. 
+
+dimensions:
+  length: -
+  volume: -
+
+couplings:
+  inlets:
+    - type: pressure flange c-pump
+      size: 59
+  outlets:
+    - type: system 22 male mortar coupling
+      size: 25
+      connection: 1" female BSP

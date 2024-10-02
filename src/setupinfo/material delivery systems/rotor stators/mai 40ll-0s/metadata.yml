@@ -1,0 +1,11 @@
+atrr:
+  class: material delivery systems
+  subclass: rotor stators
+  name: mai 40ll-0s
+  description: MAI rotor stator 40LL-0S
+  type: C-pump
+
+dimensions:
+  length: -
+  volume: -
+  diameter: 59

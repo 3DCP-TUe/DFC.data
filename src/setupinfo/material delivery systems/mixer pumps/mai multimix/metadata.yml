@@ -3,3 +3,15 @@ atrr:
   subclass: mixer pumps
   name: mai multimix
   description: Commercially available mixer pump MAI MULTIMIX. 
+
+couplings:
+  inlets:
+    - type: flange
+      size: DN250
+    - type: Push-in fitting
+      size: 6 mm
+    - type: GEKA
+    - type: Protective screen with sack opener
+  outlets:
+    - type: pressure flange c-pump
+      size: 59

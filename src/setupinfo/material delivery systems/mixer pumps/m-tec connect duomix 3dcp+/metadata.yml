@@ -13,8 +13,8 @@ couplings:
     - type: GEKA
     - type: Protective screen with sack opener
   outlets:
-    - type: system 23.5 male mortar coupling
-      size: 35
+    - type: pressure flange d-pump
+      size: 90
 
 io:
   - name: AI1

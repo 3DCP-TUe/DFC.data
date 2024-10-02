@@ -1,0 +1,11 @@
+atrr:
+  class: material delivery systems
+  subclass: rotor stators
+  name: pft twister-d4-3
+  description: PFT Twister D4-3
+  type: D-pump
+
+dimensions:
+  length: 273
+  volume: -
+  diameter: 90

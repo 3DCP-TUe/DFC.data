@@ -1,0 +1,18 @@
+atrr:
+  class: material delivery systems
+  subclass: pressure flanges
+  name: pressure flange m-tec pfd-mc35m-1
+  description: Custom made pressure flange for m-tec mixer pumps. 
+
+dimensions:
+  length: -
+  volume: -
+
+couplings:
+  inlets:
+    - type: pressure flange d-pump
+      size: 90
+  outlets:
+    - type: system 23.5 male mortar coupling
+      size: 35
+      connection: 1.25" female BSP
