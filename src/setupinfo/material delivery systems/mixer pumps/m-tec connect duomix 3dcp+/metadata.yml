@@ -32,35 +32,35 @@ io:
   - name: AI4
     type: analog input 4-20 mA active
     function: free-to-use
-    connector: -
+    connector: Weipu SP2112/S4
   - name: AI5
     type: analog input 4-20 mA active
     function: free-to-use
-    connector: -
+    connector: Weipu SP2112/S4
   - name: AO1
     type: analog output 4-20 mA passive
     function: free-to-use
-    connector: -
+    connector: Weipu SP2112/P5
   - name: AO2
     type: analog output 4-20 mA passive
     function: free-to-use
-    connector: -
+    connector: Weipu SP2112/P5
   - name: DI1
     type: digital input
     function: free-to-use
-    connector: -
+    connector: Weipu SP2112/P3
   - name: DI2
     type: digital input
     function: free-to-use
-    connector: -
+    connector: Weipu SP2112/P3
   - name: DI3
     type: digital input
     function: free-to-use
-    connector: -
+    connector: Weipu SP2112/P3
   - name: DI4
     type: digital input
     function: free-to-use
-    connector: -
+    connector: Weipu SP2112/P3
   - name: DI5
     type: digital input
     function: free-to-use
@@ -80,11 +80,11 @@ io:
   - name: DO1
     type: digital output
     function: free-to-use
-    connector: -
+    connector: Weipu SP2112/S3
   - name: DO2
     type: digital output
     function: free-to-use
-    connector: -
+    connector: Weipu SP2112/S3
   - name: DO3
     type: digital output
     function: free-to-use

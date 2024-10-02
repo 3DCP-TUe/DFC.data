@@ -19,4 +19,29 @@ couplings:
       size: 35
       connection: 1.25" female BSP
 
-# https://productpass.wika.com/?s=1A02QL5ZWJP
+io:
+  - name: pressure sensor
+    type: Weipu SP2112/P4
+    output signal: analog output 4-20 mA active
+    signal limits: [4 20]
+    reading limits: [0 25]
+    interpolation: linear
+    unit: bar
+
+sensors:
+  - name: pressure sensor
+    type: pressure
+    manufacturer: WIKA
+    model: S-20
+    product number: 14071239
+    serial number: 1A02QL5ZWJP
+    pressure range: [0 25]
+
+housing:
+  name: pressure sensor housing
+  type: RDM series
+  manufacture: AKO
+  diameter: DN32
+  material: steel
+  sleeve: rubber
+  transmitting fluid: glycerin

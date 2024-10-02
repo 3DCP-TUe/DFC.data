@@ -38,7 +38,7 @@ io:
     connector: Weipu SP2112/S4
   - name: BOX2_AI0
     type: analog input 4-20 mA active
-    function: free-to-use
+    function: reservered for temperature sensor
     connector: Weipu SP2112/S4
   - name: BOX2_AI1
     type: analog input 4-20 mA active
