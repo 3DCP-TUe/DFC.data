@@ -5,8 +5,8 @@ atrr:
   description: Commercially available pressure flange for MAI mixer pumps. 
 
 dimensions:
-  length: -
-  volume: -
+  length: 130
+  volume: 0.072
 
 couplings:
   inlets:

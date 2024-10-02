@@ -5,8 +5,8 @@ atrr:
   description: Custom made pressure flange for m-tec mixer pumps. 
 
 dimensions:
-  length: -
-  volume: -
+  length: 340
+  volume: 0.469
 
 couplings:
   inlets:
