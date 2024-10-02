@@ -82,58 +82,54 @@ io_configuration:
   material_delivery_plc:
     AI0: pressure sensor mc35f-mc35m-d35-25bar-1
     AI1: pressure sensor mc35f-mc35m-d35-25bar-2
-    AI2: 
-    AI3: 
-    AI4: 
-    AI5: 
-    AO0: 
-    AO1: 
-    AO2: 
-    AO3: 
-    DI0: 
-    DI1: 
-    DI2: 
-    DI3: 
-    DO0: 
-    DO1: 
-    DO2: 
-    DO3: 
+    AI2: -
+    AI3: -
+    AI4: -
+    AI5: -
+    AO0: -
+    AO1: -
+    AO2: -
+    AO3: -
+    DI0: -
+    DI1: -
+    DI2: -
+    DI3: -
+    DO0: -
+    DO1: -
+    DO2: -
+    DO3: -
   printhead_plc:
     BOX1_AI0: pressure sensor mc35f-mc35m-d35-10bar-1
-    BOX1_AI2: 
-    BOX1_AI3: 
-    BOX1_AI4: 
-    BOX1_AI5: 
-    BOX1_AI6: 
-    BOX1_AI7: 
-    BOX1_AI8: 
-    BOX2_AI0: 
-    BOX2_AI2: 
-    BOX2_AI3: 
-    BOX2_AI4:
+    BOX1_AI2: -
+    BOX1_AI3: -
+    BOX1_AI4: -
+    BOX1_AI5: -
+    BOX1_AI6: -
+    BOX1_AI7: -
+    BOX1_AI8: -
+    BOX2_AI0: -
+    BOX2_AI2: -
+    BOX2_AI3: -
+    BOX2_AI4: -
   mtec_connect_duomix_3dcp+:
-    AI1:
-    AI2:
-    AI3:
-    AI4:
-    AI5:
-    AO1: 
-    AO2: 
-    DI1: 
-    DI2: 
-    DI3: 
-    DI4: 
-    DI5: 
-    DI6: 
-    DI7: 
-    DI8: 
-    DI9: 
-    DI10: 
-    DO1: 
-    DO2: 
-    DO3: 
-    DO4: 
-    DO5: 
-    DO6: 
-    DO7: 
-    DO8: 
+    AI1: -
+    AI2: -
+    AI3: -
+    AI4: -
+    AI5: -
+    AO1: - 
+    AO2: - 
+    DI1: - 
+    DI2: - 
+    DI3: - 
+    DI4: - 
+    DI5: - 
+    DI6: - 
+    DI7: - 
+    DI8: - 
+    DI9: -
+    DI10: -
+    DO1: - 
+    DO2: - 
+    DO3: - 
+    DO4: - 
