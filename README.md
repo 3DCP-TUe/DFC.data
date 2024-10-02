@@ -2,34 +2,40 @@
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-## To do / for discussion
+## Todo and for discussion
 
-- [ ] Metadata file of coriolis sensor: how to define the sensor settings, they can be changed. 
-- [ ] Fill metadata file of pressure sensors (add info of electronics/sensor)
+- [ ] To discuss: Metadata file of coriolis sensor, liquid dosing system flow sensor: how to define the sensor settings, they can be changed. 
+- [ ] To discuss: Do we number each rotor stator, like mai-40ll-0s-1, mai-40ll-0s-2, mai-40ll-0s-3, etc. or just one? 
+- [ ] To discuss: Open science statement -> also copy it to organization README and other repositories? 
+- [ ] To discuss: Calibration reports for different dosing systems and mixer pumps for different materials -> where to store? 
+- [ ] To discuss: Where and how to define the OPC UA tags? 
+
+- [ ] Finish this README: Write introduction, etc. 
 - [ ] Add temperature sensor printhead
+- [ ] Add pressure flanges of P20, duomix and multimix
+- [ ] Add rotor stators
+- [ ] Add temperature and relative humidity sensor on sensing station
 - [ ] Add metadata file and photos of MAI MULTIMIX + describe modifications
 - [ ] Add metadata file and photos of m-tec duomix + describe modifications
-- [ ] Add temperature and relative humidity sensor on sensing station
-- [ ] Add photo of gantry robot
-- [ ] Add photo of ABB robot 
 - [ ] Add info of tool changer on ABB robot (include in ABB robot metadata file)
-- [ ] Add pressure flanges of P20, duomix and multimix
-- [ ] Add rotor stators: do we number each rotor stator, like mai-40ll-0s-1, mai-40ll-0s-2, mai-40ll-0s-3, etc. or just one? 
-- [ ] Fill metadata file of silos: add vibration blok, aeration pads, etc. 
-- [ ] Dicuss open science statement -> also copy it to organization README and other repositories? 
-- [ ] Calibration reports for different dosing systems for different materials -> where to store? 
-- [ ] Make .zenodo.json file
+- [ ] Add metadata file of silos: add vibration block, aeration pads, etc. 
+- [ ] Add .zenodo.json file
 
-Can be added after first release:
-- [ ] Add liquid dosing system (Vertico)
+Can be added after first release (make GitHub issues of these?):
+
 - [ ] Add metadata file of Bronkhorst dosing system + add photo
-- [ ] Add servo motors of printhead PLC
+- [ ] Add metada of servo motors of printhead PLC
 - [ ] Add metadata and photo of peristaltic pump
 - [ ] Add metadata and photo of m-tec P20 + pressure flange + insertable screws, etc.
+- [ ] Add liquid dosing system (Vertico)
 - [ ] Add MAI Pictor + insert dynamic mixing blade + pressure flange + rotor stator, etc. 
-- [ ] Discuss which info can be made available of ACE, FRED and ADS with Zavhy
+- [ ] ACE, FRED and ADS: Discuss which info can be made available with Zavhy. 
+- [ ] Add script/tool that gets setupinfo folders based on session metadata files
+- [ ] Add script/tool that can check based on metadata of components and assembly if the configuration is possible
+- [ ] Add script/tool that calculates system length, volume, etc. 
 
 ## Introduction 
+
 This repository contains the template and setup information library for the 3D Sneak Peek database. The aim of this project is to collect experimental data about 3D concrete printing in a structured way and distribute this data to the community. This repository includes the system library of the equipment at TU/e and the templates for data records and software packages.
 
 ## Structure
