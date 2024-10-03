@@ -12,6 +12,7 @@
 
 - [ ] Finish this README: Write introduction, etc. 
 - [ ] Add temperature and relative humidity sensor on sensing station
+- [ ] Add photo and pitch info of MAI dosing screw
 - [ ] Add metadata file and photos of MAI MULTIMIX + describe modifications
 - [ ] Add metadata file and photos of m-tec duomix + describe modifications
 - [ ] Add metadata file of silos: add vibration block, aeration pads, etc. 
