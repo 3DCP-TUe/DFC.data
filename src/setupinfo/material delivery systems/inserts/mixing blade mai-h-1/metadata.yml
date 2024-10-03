@@ -1,0 +1,8 @@
+atrr:
+  class: material delivery systems
+  subclass: inserts
+  name: mixing blade mai-h-1
+  description: Commercially available horizontal mixing blade from MAI.
+
+compatible with:
+  - id: mai multimix
