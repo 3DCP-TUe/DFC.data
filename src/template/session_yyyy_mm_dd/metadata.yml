@@ -83,8 +83,8 @@ system_layout:
       connected_to:
         - nozzle round-so41-d25-1
     - id: nozzle round-so41-d25-1
-    - id: static mixer helical-d35-n8-1
-      inserted_in: tube mc35f-so41-d35-l1000-1
+    - id: mixing blade mai-h-1
+      inserted_in: mai multimix
 
 # IO configuration
 io_configuration:
@@ -142,3 +142,7 @@ io_configuration:
     DO2: - 
     DO3: - 
     DO4: - 
+    DO5: - 
+    DO6: - 
+    DO7: - 
+    DO8: - 
