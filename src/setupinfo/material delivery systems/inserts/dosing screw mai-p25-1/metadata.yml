@@ -1,0 +1,8 @@
+atrr:
+  class: material delivery systems
+  subclass: inserts
+  name: dosing screw mai-p25-1
+  description: Commercially available dosing screw from MAI international with a pitch of 25 mm. 
+
+compatible with:
+  - id: mai multimix

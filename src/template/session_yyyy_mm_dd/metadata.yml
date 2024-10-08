@@ -25,7 +25,7 @@ motion_systems:
 # Software
 software:
   - name: Node-RED-3DSeeP
-    version: 0.7.0
+    version: 0.7.1
   - name: Droplet Detective
     version: 0.1.0
   - name: Concrete Candy Tracker
@@ -84,6 +84,8 @@ system_layout:
         - nozzle round-so41-d25-1
     - id: nozzle round-so41-d25-1
     - id: mixing blade mai-h-1
+      inserted_in: mai multimix
+    - id: dosing screw mai-p25-1
       inserted_in: mai multimix
 
 # IO configuration
