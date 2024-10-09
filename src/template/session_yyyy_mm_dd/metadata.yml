@@ -118,7 +118,7 @@ io_configuration:
     BOX1_AI6: -
     BOX1_AI7: -
     BOX1_AI8: -
-    BOX2_AI0: -
+    BOX2_AI0: temperature sensor so41-so41-d35-1
     BOX2_AI2: -
     BOX2_AI3: -
     BOX2_AI4: -
@@ -128,23 +128,23 @@ io_configuration:
     AI3: -
     AI4: -
     AI5: -
-    AO1: - 
-    AO2: - 
-    DI1: - 
-    DI2: - 
-    DI3: - 
-    DI4: - 
-    DI5: - 
-    DI6: - 
-    DI7: - 
-    DI8: - 
+    AO1: -
+    AO2: -
+    DI1: -
+    DI2: -
+    DI3: -
+    DI4: -
+    DI5: -
+    DI6: -
+    DI7: -
+    DI8: -
     DI9: -
     DI10: -
-    DO1: - 
-    DO2: - 
-    DO3: - 
-    DO4: - 
-    DO5: - 
-    DO6: - 
-    DO7: - 
-    DO8: - 
+    DO1: -
+    DO2: -
+    DO3: -
+    DO4: -
+    DO5: -
+    DO6: -
+    DO7: -
+    DO8: -
