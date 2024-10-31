@@ -14,7 +14,7 @@
 - [ ] Add temperature and relative humidity sensor on sensing station
 - [ ] Add metadata file and photos of MAI MULTIMIX + describe modifications
 - [ ] Add metadata file of silos: add vibration block, aeration pads, etc. 
-- [ ] Chekc: Can node-red columns be linked to equipment in an automation fashion? 
+- [ ] Check: Can node-red columns be linked to equipment in an automation fashion? 
 - [ ] Add .zenodo.json file
 
 Can be added after first release (make GitHub issues of these?):
