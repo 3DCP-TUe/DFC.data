@@ -4,22 +4,22 @@
 
 ## Todo and for discussion
 
+- [ ] Finish this README: Write introduction, etc. 
 - [ ] To discuss: Metadata file of coriolis sensor, liquid dosing system flow sensor: how to define the sensor settings, they can be changed. 
 - [ ] To discuss: Do we number each rotor stator, like mai-40ll-0s-1, mai-40ll-0s-2, mai-40ll-0s-3, etc. or just one? 
-- [ ] To discuss: Open science statement -> also copy it to organization README and other repositories? 
+- [ ] To discuss: Open science statement? -> also copy it to organization README and other repositories? 
 - [ ] To discuss: Calibration reports for different dosing systems and mixer pumps for different materials -> where to store? 
 - [ ] To discuss: Where and how to define the OPC UA tags? 
-
-- [ ] Finish this README: Write introduction, etc. 
+- [ ] To discuss: Split printhead temperature sensor in two parts? -> Sensor and holder? 
 - [ ] Add temperature and relative humidity sensor on sensing station
 - [ ] Add metadata file and photos of MAI MULTIMIX + describe modifications
-- [ ] Add metadata file and photos of m-tec duomix + describe modifications
 - [ ] Add metadata file of silos: add vibration block, aeration pads, etc. 
-- [ ] Can node-red columns be linked to equipment in an automation fashion? 
+- [ ] Chekc: Can node-red columns be linked to equipment in an automation fashion? 
 - [ ] Add .zenodo.json file
 
 Can be added after first release (make GitHub issues of these?):
 
+- [ ] Add metadata file and photos of m-tec duomix + describe modifications
 - [ ] ACE, FRED and ADS: Discuss which info can be made available with Zavhy. 
 - [ ] Add metadata and photo of Bronkhorst dosing system
 - [ ] Add metadata and photo of servo motors of printhead PLC
@@ -32,7 +32,7 @@ Can be added after first release (make GitHub issues of these?):
 - [ ] Add script/tool that can check based on metadata of components and assembly if the configuration is possible
 - [ ] Add script/tool that calculates system length, volume, etc. 
 
-Of most equipment of minimal metada file is added so it can be refered to in session metadata files. 
+Of most equipment of minimal metadata file is added so it can be refered to in session metadata files. 
 
 ## Introduction 
 
