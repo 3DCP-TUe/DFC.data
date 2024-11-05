@@ -10,7 +10,7 @@ dimensions:
   length 1: 75.5
   length 2: 20
   nozzle diameter: 25.0
-  volume: 0.039272519
+  volume: 0.063679603
 
 couplings:
   inlets: 
