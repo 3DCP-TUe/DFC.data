@@ -2,21 +2,6 @@
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-## Todo and for discussion
-
-- [ ] Finish this README: Write introduction, etc. 
-- [ ] To discuss: Metadata file of coriolis sensor, liquid dosing system flow sensor: how to define the sensor settings, they can be changed. 
-- [ ] To discuss: Do we number each rotor stator, like mai-40ll-0s-1, mai-40ll-0s-2, mai-40ll-0s-3, etc. or just one? 
-- [ ] To discuss: Open science statement? -> also copy it to organization README and other repositories? 
-- [ ] To discuss: Calibration reports for different dosing systems and mixer pumps for different materials -> where to store? 
-- [ ] To discuss: Where and how to define the OPC UA tags? 
-- [ ] To discuss: Split printhead temperature sensor in two parts? -> Sensor and holder? 
-- [ ] Add temperature and relative humidity sensor on sensing station
-- [ ] Add metadata file and photos of MAI MULTIMIX + describe modifications
-- [ ] Add metadata file of silos: add vibration block, aeration pads, etc. 
-- [ ] Check: Can node-red columns be linked to equipment in an automation fashion? 
-- [ ] Add .zenodo.json file
-
 ## Introduction 
 
 This repository contains the template and setup information library for the 3D Sneak Peek database. The aim of this project is to collect experimental data about 3D concrete printing in a structured way and distribute this data to the community. This repository includes the system library of the equipment at TU/e and the templates for data records and software packages.
