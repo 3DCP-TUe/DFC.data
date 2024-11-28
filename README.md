@@ -108,29 +108,39 @@ Each software package includes four standard folders:
 ### Database structure
 
 ```
-+-- database
-|   +-- session_yyyy_mm_dd
-|   |   +-- node-red-3dseep
-|   |   |   +-- analysis
-|   |   |   |   +-- analysis.m
++-- datarecord
+|   +-- yyyymmdd_session
+|   |   +-- system_data
+|   |   |   +-- raw_data
+|   |   |   |   +-- yyyymmdd_name.csv
+|   |   |   |   +-- yyyymmdd_name_event_comments.csv
+|   |   |   +-- processed_data
 |   |   |   |   +-- plot1.pdf
 |   |   |   |   +-- ...
-|   |   |   +-- yyyymmdd_name.csv
-|   |   |   +-- yyyymmdd_name_event_comments.csv
-|   |   +-- concrete candy tracker
-|   |   |   +-- analysis
+|   |   |   +-- scripts
 |   |   |   |   +-- analysis.m
+|   |   |   +-- metadata_setup.yml
+|   |   +-- tracer_experiment
+|   |   |   +-- raw_data
+|   |   |   |   +-- yyyymmdd_name.csv
+|   |   |   |   +-- yyyymmdd_name_event_comments.csv
+|   |   |   +-- processed_data
+|   |   |   |   +-- yyyymmdd_name.csv
 |   |   |   |   +-- plot1.pdf
 |   |   |   |   +-- ...
-|   |   |   +-- yyyymmdd_name.csv
-|   |   |   +-- metadata.yml
-|   |   +-- droplet detective
-|   |   |   +-- analysis
-|   |   |   |   +-- analysis.m
+|   |   |   +-- scripts
+|   |   |   |   +-- concrete_candy_tracker.m
+|   |   |   +-- metadata_setup.yml
+|   |   +-- slug_test
+|   |   |   +-- raw_data
+|   |   |   |   +-- yyyymmdd_name.csv
+|   |   |   +-- processed_data
+|   |   |   |   +-- yyyymmdd_name_results.csv
 |   |   |   |   +-- plot1.pdf
 |   |   |   |   +-- ...
-|   |   |   +-- yyyymmdd_name.csv
-|   |   |   +-- metadata.yml
+|   |   |   +-- scripts
+|   |   |   |   +-- droplet_detective.m
+|   |   |   +-- metadata_setup.yml
 |   |   +-- photos
 |   |   |   +-- photo1.jpg
 |   |   |   +-- ...
@@ -138,8 +148,9 @@ Each software package includes four standard folders:
 |   |   |   +-- video1.mp4
 |   |   |   +-- ...
 |   |   +-- metadata_session.yml
-|   +-- session_yyyy_mm_dd
-|   |   +-- node-red-3dseep
+|   +-- yyyymmdd_session
+|   |   +-- system_data
+|   |   +-- metadata_session.yml
 |   |   +-- ...
 |   +-- setupinfo
 |   +-- metadata_record.yml
