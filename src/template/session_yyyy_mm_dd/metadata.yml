@@ -36,57 +36,67 @@ system_layout:
   systems:
     - id: silo 1
       connected_to:
-        - mai multimix
+        - id: mai multimix
     - id: mai multimix
       connected_to:
-        - mai 40ll-0s
-    - id: mai 40ll-0s
-      connected_to:
-        - pressure flange mai pfc-mc25-m-1
-    - id: pressure flange mai pfc-mc25-m-1
-      connected_to:
-        - reducer mc25f-mc35m-1
-    - id: reducer mc25f-mc35m-1
-      connected_to:
-        - hose mc35f-mc35f-d35-l1000-1
-    - id: hose mc35f-mc35f-d35-l1000-1
-      connected_to:
-        - pressure sensor mc35f-mc35m-d35-25bar-1
-    - id: pressure sensor mc35f-mc35m-d35-25bar-1
-      connected_to:
-        - adapter mc35f-fl40-1
-    - id: adapter mc35f-fl40-1
-      connected_to:
-        - coriolis fl40-fl40-d35-1
-    - id: coriolis fl40-fl40-d35-1
-      connected_to: 
-        - adapter fl40-mc35m-1
-    - id: adapter fl40-mc35m-1
-      connected_to: 
-        - pressure sensor mc35f-mc35m-d35-25bar-2
-    - id: pressure sensor mc35f-mc35m-d35-25bar-2
-      connected_to:
-        - hose mc35f-mc35m-d35-l13300-1
-    - id: hose mc35f-mc35m-d35-l13300-1
-      connected_to: 
-        - elbow mc35f-mc35m-a90-1
-    - id: elbow mc35f-mc35m-a90-1
-      connected_to: 
-        - pressure sensor mc35f-mc35m-d35-10bar-1
-    - id: pressure sensor mc35f-mc35m-d35-10bar-1
-      connected_to: 
-        - tube mc35f-so41-d35-l1000-1
-    - id: tube mc35f-so41-d35-l1000-1
-      connected_to:
-        - temperature sensor so41-so41-d35-1
-    - id: temperature sensor so41-so41-d35-1
-      connected_to:
-        - nozzle round-so41-d25-1
-    - id: nozzle round-so41-d25-1
+        - id: mai 40ll-0s
     - id: mixing blade mai-h-1
       inserted_in: mai multimix
     - id: dosing screw mai-p25-1
       inserted_in: mai multimix
+    - id: mai 40ll-0s
+      connected_to:
+        - id: pressure flange mai pfc-mc25-m-1
+    - id: pressure flange mai pfc-mc25-m-1
+      connected_to:
+        - id: reducer mc25f-mc35m-1
+    - id: reducer mc25f-mc35m-1
+      connected_to:
+        - id: hose mc35f-mc35f-d35-l1000-1
+    - id: hose mc35f-mc35f-d35-l1000-1
+      connected_to:
+        - id: pressure sensor mc35f-mc35m-d35-25bar-1
+    - id: pressure sensor mc35f-mc35m-d35-25bar-1
+      connected_to:
+        - id: adapter mc35f-fl40-1
+    - id: adapter mc35f-fl40-1
+      connected_to:
+        - id: coriolis fl40-fl40-d35-1
+    - id: coriolis fl40-fl40-d35-1
+      connected_to: 
+        - id: adapter fl40-mc35m-1
+    - id: adapter fl40-mc35m-1
+      connected_to: 
+        - id: pressure sensor mc35f-mc35m-d35-25bar-2
+    - id: pressure sensor mc35f-mc35m-d35-25bar-2
+      connected_to:
+        - id: hose mc35f-mc35m-d35-l13300-1
+    - id: hose mc35f-mc35m-d35-l13300-1
+      connected_to: 
+        - id: elbow mc35f-mc35m-a90-1
+    - id: elbow mc35f-mc35m-a90-1
+      connected_to: 
+        - id: pressure sensor mc35f-mc35m-d35-10bar-1
+    - id: pressure sensor mc35f-mc35m-d35-10bar-1
+      connected_to: 
+        - id: tube mc35f-so41-d35-l1000-1
+    - id: tube mc35f-so41-d35-l1000-1
+      connected_to:
+        - id: temperature sensor so41-so41-d35-1
+          time: [10:00:00, 11:00:00]
+        - id: reducer so41-mc25m-1
+          time: [11:00:00, 12:00:00]
+    - id: temperature sensor so41-so41-d35-1
+      connected_to:
+        - id: nozzle round-so41-d25-1
+    - id: nozzle round-so41-d25-1
+    - id: reducer so41-mc25m-1
+      connected_to: 
+        - id: adapter mc25f-mc25f-1
+    - id: adapter mc25f-mc25f-1
+      connected_to:
+        - id: hose mc25m-mc25m-d25-l1000-1
+    - id: hose mc25m-mc25m-d25-l1000-1
 
 # IO configuration
 io_configuration:
