@@ -19,7 +19,7 @@ io:
   - name: free programmable output 1
     type: Weipu SP2112/P4
     output signal: analog output 4-20 mA active
-    signal limits: [4 20]
+    signal limits: [4, 20]
     reading limits: -
     interpolation: -
     unit: -
@@ -27,7 +27,7 @@ io:
   - name: free programmable output 2
     type: Weipu SP2112/P4
     output signal: analog output 4-20 mA active
-    signal limits: [4 20]
+    signal limits: [4, 20]
     reading limits: -
     interpolation: -
     unit: -
@@ -35,7 +35,7 @@ io:
   - name: free programmable output 3
     type: Weipu SP2112/P4
     output signal: analog output 4-20 mA active
-    signal limits: [4 20]
+    signal limits: [4, 20]
     reading limits: -
     interpolation: -
     unit: -

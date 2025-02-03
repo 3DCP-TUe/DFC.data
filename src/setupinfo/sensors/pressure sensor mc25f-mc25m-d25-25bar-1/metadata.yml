@@ -23,8 +23,8 @@ io:
   - name: pressure sensor
     type: Weipu SP2112/P4
     output signal: analog output 4-20 mA active
-    signal limits: [4 20]
-    reading limits: [0 25]
+    signal limits: [4, 20]
+    reading limits: [0, 25]
     interpolation: linear
     unit: bar
 
@@ -35,7 +35,7 @@ sensors:
     model: S-20
     product number: 14071239
     serial number: 1A02PUTVKK5
-    pressure range: [0 25]
+    pressure range: [0, 25]
 
 housing:
   name: Pressure housing
