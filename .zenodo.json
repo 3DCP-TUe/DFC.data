@@ -1,0 +1,29 @@
+{
+	"creators": [
+		{
+			"name": "Deetman, Arjen",
+			"affiliation": "Eindhoven University of Technology",
+			"orcid": "0000-0001-6756-5151"
+		},
+        {
+			"name": "Bos, Derk",
+			"affiliation": "Eindhoven University of Technology",
+			"orcid": "0000-0002-1668-2638"
+		}
+	],
+
+	"access_right": "open",
+
+	"license": "CC-BY-SA-4.0",
+
+	"title": "3D Sneak Peek: 3DCP Database structure and system library TU/e",
+
+	"description": "This record contains the template and setup information library for the 3D Sneak Peek database. The aim of this project is to collect experimental data about 3D concrete printing in a structured way and distribute this data to the community. This record includes the system library of the equipment at TU/e and the templates for data records and software packages.",
+
+	"keywords": [
+		"3d concrete printing",
+        "data structures"
+	],
+
+	"upload_type": "dataset"
+}
