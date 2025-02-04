@@ -16,7 +16,7 @@ materials:
   - name: tap water
     system: mai multimix-1
   - name: Weber 3D 160-2
-    system: silo 1
+    system: silo-1
     production_date: 2024-06-05
   - name: Sika ViscoCrete RM-800
     system: liquid dosing bronkhorst-1
@@ -45,7 +45,7 @@ system_layout:
     - id: solid dosing van-beek-1
       connected_to:
         - id: mai multimix-1
-    - id: silo 1
+    - id: silo-1
       connected_to:
         - id: mai multimix-1
     - id: mai multimix
