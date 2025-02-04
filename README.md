@@ -12,9 +12,9 @@ In the following README, the structure and more detailed information of the vari
 
 - [Data record](docs/data_record.md)
 - Process measurements
-    - [Setupinfo](setupinfo.md)
-- [Offline measurements](offline_measurements.md)
-- [Software structure](software.md)
+    - [Setupinfo](docs/setupinfo.md)
+- [Offline measurements](docs/offline_measurements.md)
+- [Software structure](docs/software.md)
 
 ## Version numbering
 
