@@ -3,3 +3,38 @@ atrr:
   subclass: pumps
   name: verder dura 35
   description: Peristaltic pump Verder Dura 35. 
+
+io:
+  - name: AI
+    type: analog input 4-20 mA passive
+    function: remote control motor velocity
+    signal limits: [4, 20]
+    reading limits: - #TODO
+    interpolation: linear
+    unit: RPM
+    connector: Weipu SP2112/S5
+  - name: DI
+    type: digital input 24V DC
+    function: remote control on/off
+    signal limits: [0, 1]
+    reading limits: [0, 1]
+    unit: bool
+    connector: Weipu SP2112/P3
+
+opc:
+  - name: motor velocity
+    plc: material delivery plc
+    unit: RPM
+    tag: material_peristaltic_pump_velocity_rpm
+  - name: motor power
+    plc: material delivery plc
+    unit: kW
+    tag: material_peristaltic_pump_power_kw
+  - name: motor current
+    plc: material delivery plc
+    unit: A
+    tag: material_peristaltic_pump_current_a
+  - name: motor torque
+    plc: material delivery plc
+    unit: Nm
+    tag: material_peristaltic_pump_torque_nm
