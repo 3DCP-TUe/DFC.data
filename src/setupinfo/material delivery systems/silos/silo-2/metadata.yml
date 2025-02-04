@@ -1,7 +1,7 @@
 atrr:
   class: material delivery systems
   subclass: silos
-  name: silo 2
+  name: silo-2
   description: Silo for storage of dry materials. 
 
 couplings:
