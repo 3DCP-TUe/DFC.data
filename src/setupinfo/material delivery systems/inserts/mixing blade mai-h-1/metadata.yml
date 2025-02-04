@@ -5,4 +5,4 @@ atrr:
   description: Commercially available horizontal mixing blade from MAI.
 
 compatible with:
-  - id: mai multimix
+  - id: mai multimix-1

@@ -5,4 +5,4 @@ atrr:
   description: Modified vertical mixing blade from m-tec with a rigid connection. 
 
 compatible with:
-  - id: m-tec connect duomix 3dcp+
+  - id: m-tec duomix-1

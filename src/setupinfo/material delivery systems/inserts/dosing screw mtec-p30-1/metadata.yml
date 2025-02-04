@@ -5,4 +5,4 @@ atrr:
   description: Commercially available dosing screw from m-tec with a pitch of 30 mm. 
 
 compatible with:
-  - id: m-tec connect duomix 3dcp+
+  - id: m-tec connect duomix-1

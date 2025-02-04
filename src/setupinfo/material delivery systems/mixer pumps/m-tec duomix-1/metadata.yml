@@ -1,7 +1,7 @@
 atrr:
   class: material delivery systems
   subclass: mixer pumps
-  name: m-tec connect duomix 3dcp+
+  name: m-tec duomix-1
   description: Commercially available mixer pump m-tec connect duomix 3DCP+. 
   
 couplings:
@@ -21,91 +21,69 @@ io:
     type: analog input 0-10V
     function: free-to-use
     connector: -
+    tag: mtec_io_ai1_v
   - name: AI2
     type: analog input 0-10V
     function: free-to-use
     connector: -
+    tag: mtec_io_ai2_v
   - name: AI3
     type: analog input 0-10V
     function: free-to-use
     connector: -
+    tag: mtec_io_ai3_v
   - name: AI4
     type: analog input 4-20 mA active
     function: free-to-use
-    connector: Weipu SP2112/S4
+    connector: -
+    tag: mtec_io_ai4_ma
   - name: AI5
     type: analog input 4-20 mA active
     function: free-to-use
-    connector: Weipu SP2112/S4
+    connector: -
+    tag: mtec_io_ai5_ma
   - name: AO1
     type: analog output 4-20 mA passive
     function: free-to-use
-    connector: Weipu SP2112/P5
+    connector: -
+    tag: mtec_io_ao1_ma
   - name: AO2
     type: analog output 4-20 mA passive
     function: free-to-use
-    connector: Weipu SP2112/P5
+    connector: -
+    tag: mtec_io_ao2_ma
   - name: DI1
     type: digital input
     function: free-to-use
-    connector: Weipu SP2112/P3
+    connector: -
+    tag: mtec_io_di1_bool
   - name: DI2
     type: digital input
     function: free-to-use
-    connector: Weipu SP2112/P3
+    connector: -
+    tag: mtec_io_di2_bool
   - name: DI3
     type: digital input
     function: free-to-use
-    connector: Weipu SP2112/P3
+    connector: -
+    tag: mtec_io_di3_bool
   - name: DI4
     type: digital input
     function: free-to-use
-    connector: Weipu SP2112/P3
+    connector: -
+    tag: mtec_io_di4_bool
   - name: DI5
     type: digital input
     function: free-to-use
     connector: -
-  - name: DI6
-    type: digital input
-    function: free-to-use
-    connector: -
-  - name: DI7
-    type: digital input
-    function: free-to-use
-    connector: -
-  - name: DI8
-    type: digital input
-    function: free-to-use
-    connector: -
+    tag: mtec_io_di5_bool
   - name: DO1
     type: digital output
     function: free-to-use
-    connector: Weipu SP2112/S3
+    connector: -
+    tag: mtec_io_do1_bool
   - name: DO2
     type: digital output
     function: free-to-use
-    connector: Weipu SP2112/S3
-  - name: DO3
-    type: digital output
-    function: free-to-use
     connector: -
-  - name: DO4
-    type: digital output
-    function: free-to-use
-    connector: -
-  - name: DO5
-    type: digital output
-    function: free-to-use
-    connector: -
-  - name: DO6
-    type: digital output
-    function: free-to-use
-    connector: -
-  - name: DO7
-    type: digital output
-    function: free-to-use
-    connector: -
-  - name: DO8
-    type: digital output
-    function: free-to-use
-    connector: -
+    tag: mtec_io_do2_bool
