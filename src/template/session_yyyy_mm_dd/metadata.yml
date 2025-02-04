@@ -14,9 +14,14 @@ attr:
 # Materials
 materials:
   - name: tap water
+    system: mai multimix-1
   - name: Weber 3D 160-2
     system: silo 1
     production_date: 2024-06-05
+  - name: Sika ViscoCrete RM-800
+    system: liquid dosing bronkhorst-1
+  - name: Glass fibres 12 mm
+    system: solid dosing van-beek-1
 
 # Motion system
 motion_systems:
@@ -34,16 +39,22 @@ software:
 # System layout
 system_layout:
   systems:
-    - id: silo 1
+    - id: liquid dosing bronkhorst-1
       connected_to:
         - id: mai multimix
+    - id: solid dosing van-beek-1
+      connected_to:
+        - id: mai multimix-1
+    - id: silo 1
+      connected_to:
+        - id: mai multimix-1
     - id: mai multimix
       connected_to:
         - id: mai 40ll-0s
     - id: mixing blade mai-h-1
-      inserted_in: mai multimix
+      inserted_in: mai multimix-1
     - id: dosing screw mai-p25-1
-      inserted_in: mai multimix
+      inserted_in: mai multimix-1
     - id: mai 40ll-0s
       connected_to:
         - id: pressure flange mai pfc-mc25-m-1
