@@ -96,43 +96,44 @@ io:
     tag: material_io_do3_bool
 
 opc:
-  - name: free programmable parameter 0
-    function: -
-    unit: -
-    tag: material_r0
-  - name: free programmable parameter 1
-    function: -
-    unit: -
-    tag: material_r1
-  - name: free programmable parameter 2
-    function: -
-    unit: -
-    tag: material_r2
-  - name: free programmable parameter 3
-    function: -
-    unit: -
-    tag: material_r3
-  - name: free programmable parameter 4
-    function: -
-    unit: -
-    tag: material_r4
-  - name: free programmable parameter 5
-    function: -
-    unit: -
-    tag: material_r5
-  - name: free programmable parameter 6
-    function: -
-    unit: -
-    tag: material_r6
-  - name: free programmable parameter 7
-    function: -
-    unit: -
-    tag: material_r7
-  - name: free programmable parameter 8
-    function: -
-    unit: -
-    tag: material_r8
-  - name: free programmable parameter 9
-    function: -
-    unit: -
-    tag: material_r9
+  - plc: material delivery plc
+    - name: free programmable parameter 0
+      function: -
+      unit: -
+      tag: material_r0
+    - name: free programmable parameter 1
+      function: -
+      unit: -
+      tag: material_r1
+    - name: free programmable parameter 2
+      function: -
+      unit: -
+      tag: material_r2
+    - name: free programmable parameter 3
+      function: -
+      unit: -
+      tag: material_r3
+    - name: free programmable parameter 4
+      function: -
+      unit: -
+      tag: material_r4
+    - name: free programmable parameter 5
+      function: -
+      unit: -
+      tag: material_r5
+    - name: free programmable parameter 6
+      function: -
+      unit: -
+      tag: material_r6
+    - name: free programmable parameter 7
+      function: -
+      unit: -
+      tag: material_r7
+    - name: free programmable parameter 8
+      function: -
+      unit: -
+      tag: material_r8
+    - name: free programmable parameter 9
+      function: -
+      unit: -
+      tag: material_r9
