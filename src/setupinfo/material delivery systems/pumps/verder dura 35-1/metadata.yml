@@ -1,8 +1,9 @@
 atrr:
   class: material delivery systems
   subclass: pumps
-  name: verder dura 35
+  name: verder dura 35-1
   description: Peristaltic pump Verder Dura 35. 
+  note: Electronics and controls developed in house. 
 
 io:
   - name: AI
