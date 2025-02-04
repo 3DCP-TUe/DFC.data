@@ -5,43 +5,36 @@ atrr:
   description: Siemens servo motor. 
 
 opc:
-  - name: motor power
-    function: motor power
-    plc: printhead plc
-    unit: bool
-    tag: printhead_motor_1_power_on_bool
-  - name: job backward
-    function: indicates if the motor jogs backward
-    plc: printhead plc
-    unit: bool
-    tag: printhead_motor_1_move_jog_backward_bool
-  - name: jog foward
-    function: indicates if the motor jogs foward
-    plc: printhead plc
-    unit: bool
-    tag: printhead_motor_1_move_jog_forward_bool
-  - name: velocity jog
-    function: velocity setpoint
-    plc: printhead plc
-    unit: RPM
-    tag: printhead_motor_1_velocity_jog_rpm
-  - name: actual velocity
-    function: actual velocity
-    plc: printhead plc
-    unit: RPM
-    tag: printhead_motor_1_actual_velocity_rpm
-  - name: actual motor power
-    function: actual motor power
-    plc: printhead plc
-    unit: kW
-    tag: printhead_motor_1_actual_power_kw
-  - name: actual motor current
-    function: actual motor current
-    plc: printhead plc
-    unit: A
-    tag: printhead_motor_1_actual_current_a
-  - name: actual motor torque
-    function: actual motor torque
-    plc: printhead plc
-    unit: Nm
-    tag: printhead_motor_1_actual_torque_nm
+  - plc: printhead plc
+    - name: motor power
+      function: motor power
+      unit: bool
+      tag: printhead_motor_1_power_on_bool
+    - name: job backward
+      function: indicates if the motor jogs backward
+      unit: bool
+      tag: printhead_motor_1_move_jog_backward_bool
+    - name: jog foward
+      function: indicates if the motor jogs foward
+      unit: bool
+      tag: printhead_motor_1_move_jog_forward_bool
+    - name: velocity jog
+      function: velocity setpoint
+      unit: RPM
+      tag: printhead_motor_1_velocity_jog_rpm
+    - name: actual velocity
+      function: actual velocity
+      unit: RPM
+      tag: printhead_motor_1_actual_velocity_rpm
+    - name: actual motor power
+      function: actual motor power
+      unit: kW
+      tag: printhead_motor_1_actual_power_kw
+    - name: actual motor current
+      function: actual motor current
+      unit: A
+      tag: printhead_motor_1_actual_current_a
+    - name: actual motor torque
+      function: actual motor torque
+      unit: Nm
+      tag: printhead_motor_1_actual_torque_nm
