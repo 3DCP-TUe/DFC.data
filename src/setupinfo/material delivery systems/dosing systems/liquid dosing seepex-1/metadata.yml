@@ -1,5 +1,0 @@
-atrr:
-  class: material delivery systems
-  subclass: dosing systems
-  name: liquid dosing seepex-1
-  description: Custom build liquid dosing combination with dosing pump and ultrasonic flow sensor. 
