@@ -2,8 +2,32 @@ atrr:
   class: material delivery systems
   subclass: dosing systems
   name: liquid dosing vertico-1
-  description: Custom build liquid dosing combination with dosing pump and ultrasonic flow sensor. 
+  description: Custom build liquid dosing combination with dosing pump, ultrasonic flow sensor and pressure sensor. 
+  note: Frame and pump acquired via Vertico. Electronics and controls developed in house with support of Siemens Digital Industries. 
 
+couplings:
+  inlets:
+    - type: - #TODO
+      size: - #TODO
+  outlets:
+    - type: - #TODO
+      size: - #TODO
+
+sensor:
+  - name: pressure sensor
+    type: pressure
+    manufacturer: WIKA
+    model: - #TODO
+    product number: - #TODO
+    serial number: - #TODO
+    pressure range: - #TODO
+  - name: flow sensor
+    type: flow sensor
+    manufacturer: KEYENCE International
+    model: - #TODO
+    product number: - #TODO
+    serial number: - #TODO
+  
 io:
   - name: AI3
     type: analog input 4-20 mA active
