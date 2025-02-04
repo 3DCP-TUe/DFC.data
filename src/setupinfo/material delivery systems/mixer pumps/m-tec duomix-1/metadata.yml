@@ -87,3 +87,74 @@ io:
     function: free-to-use
     connector: -
     tag: mtec_io_do2_bool
+
+opc:
+  - plc: m-tec duomix-1
+    - name: source time
+      function: opc ua server time
+      unit: hh:mm:ss
+      tag: mtec_source_time
+    - name: remote start/stop
+      function: remote start/stop of pump motor
+      unit: bool
+      tag: mtec_remote_start_bool
+    - name: water control active
+      function: indicatis if the water supply system is running in closed loop
+      unit: bool
+      tag: mtec_water_control_active_bool
+    - name: start of water control
+      function: delay after which the water control system starts
+      unit: s
+      tag: mtec_water_start_control_s
+    - name: water pump enabled
+      function: indicates if the water pump is enabled
+      unit: bool
+      tag: mtec_water_pump_run_bool
+    - name: solenoid valve open
+      function: indicates if the solenoid valve for the water supply is open or closed
+      unit: bool
+      tag: mtec_water_solenoid_valve_bool
+    - name: actual position water valve 
+      function: actual position water valve 
+      unit: \%
+      tag: mtec_water_water_valve_actual_perc
+    - name: water temperature
+      function: water temperature
+      unit: C
+      tag: mtec_water_temp_c
+    - name: water flow setpoint
+      function: water flow setpoint
+      unit: l/h
+      tag: mtec_water_flow_set_l_h
+    - name: actual water flow
+      function: actual water flow
+      unit: l/h
+      tag: mtec_water_flow_actual_l_h
+    - name: mixer enabled
+      function: indicates if the mixer is enabled
+      unit: bool
+      tag: mtec_mixer_run_bool
+    - name: state of the wetprobe
+      function: state of the wetprobe
+      unit: bool
+      tag: mtec_state_wet_material_probe_bool
+    - name: state delay time wetprobe
+      function: state delay time wetprobe
+      unit: bool
+      tag: mtec_state_delay_time_wet_probe_bool
+    - name: delay time wet probe dynamic
+      function: delay time of the wetprobe if set to dynamic
+      unit: s
+      tag: mtec_delay_time_wet_probe_dynamically_s
+    - name: delay time wet probe static
+      function: delay time of the wetprobe if set to static
+      unit: s
+      tag: mtec_delay_time_wet_probe_statically_s
+    - name: pump speed setpoint
+      function: pump speed setpoint
+      unit: RPM
+      tag: mtec_pump_speed_set_rpm
+    - name: actual pump speed
+      function: actual pump speed
+      unit: RPM
+      tag: mtec_pump_speed_actual_rpm
