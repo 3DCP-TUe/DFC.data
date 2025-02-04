@@ -3,6 +3,7 @@ atrr:
   subclass: dynamic
   name: ace-1
   description: Pressurized motorized in-line mixer with injection ports. 
+  note: Details are confidential, not all information is provided. 
 
 couplings:
   inlets:

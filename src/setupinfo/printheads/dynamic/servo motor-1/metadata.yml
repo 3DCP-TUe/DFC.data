@@ -1,8 +1,9 @@
 atrr:
   class: printheads
   subclass: dynamic
-  name: servo motor 1
+  name: servo motor-1
   description: Siemens servo motor. 
+  note: Connected to the printhead PLC and are remote controlled via the OPC UA server.
 
 opc:
   - plc: printhead plc
