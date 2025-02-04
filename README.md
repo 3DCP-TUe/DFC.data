@@ -8,6 +8,60 @@ This repository contains the template and setup information library for the 3D S
 
 ## Structure
 
+### Database structure
+
+```
++-- datarecord
+|   +-- yyyymmdd_session
+|   |   +-- system_data
+|   |   |   +-- raw_data
+|   |   |   |   +-- yyyymmdd_name.csv
+|   |   |   |   +-- yyyymmdd_name_event_comments.csv
+|   |   |   +-- processed_data
+|   |   |   |   +-- plot1.pdf
+|   |   |   |   +-- ...
+|   |   |   +-- scripts
+|   |   |   |   +-- analysis.m
+|   |   |   +-- metadata_setup.yml
+|   |   +-- tracer_experiment
+|   |   |   +-- raw_data
+|   |   |   |   +-- yyyymmdd_name.csv
+|   |   |   |   +-- yyyymmdd_name_event_comments.csv
+|   |   |   +-- processed_data
+|   |   |   |   +-- yyyymmdd_name.csv
+|   |   |   |   +-- plot1.pdf
+|   |   |   |   +-- ...
+|   |   |   +-- scripts
+|   |   |   |   +-- concrete_candy_tracker.m
+|   |   |   +-- metadata_setup.yml
+|   |   +-- slug_test
+|   |   |   +-- raw_data
+|   |   |   |   +-- yyyymmdd_name.csv
+|   |   |   +-- processed_data
+|   |   |   |   +-- yyyymmdd_name_results.csv
+|   |   |   |   +-- plot1.pdf
+|   |   |   |   +-- ...
+|   |   |   +-- scripts
+|   |   |   |   +-- droplet_detective.m
+|   |   |   +-- metadata_setup.yml
+|   |   +-- photos
+|   |   |   +-- photo1.jpg
+|   |   |   +-- ...
+|   |   +-- videos
+|   |   |   +-- video1.mp4
+|   |   |   +-- ...
+|   |   +-- metadata_session.yml
+|   +-- yyyymmdd_session
+|   |   +-- system_data
+|   |   +-- metadata_session.yml
+|   |   +-- ...
+|   +-- setupinfo
+|   +-- metadata_record.yml
+|   +-- LICENSE
+```
+
+The analysis folders are meant to provide quick insights into the data. For example, time series plots of viscocity and pressure readings. Each software packages provides templates - example files - to generate this output. 
+
 ### Setup info structure
 
 #### Folder structure
@@ -78,6 +132,55 @@ pressure sensor mc35f-mc35m-d35-25bar-2
 pressure sensor mc35f-mc35m-d35-10bar-1
 ```
 
+### Off-line measurements structure
+
+| Experiment | Type        | Overview File Columns                        | Units     | Sample File Columns           | Units     |
+|------------|-------------|----------------------------------------------|-----------|-------------------------------|-----------|
+| uwtt       | continuous  | id                                           | -         | time                          | hh:mm:ss  |
+|            |             | collection_time                              | hh:mm:ss  | age                           | hh:mm:ss  |
+|            |             | testing_time                                 | hh:mm:ss  | velocity                      | m/s       |
+|            |             | file_name                                    | -         | acceleration                  | m/s²      |
+|            |             |                                              |           | temperature                   | °C        |
+|            |             |                                              |           |                               |           |
+| temperature| continuous  | id                                           | -         | time                          | hh:mm:ss  |
+|            |             | collection_time                              | hh:mm:ss  | age                           | hh:mm:ss  |
+|            |             | testing_time                                 | hh:mm:ss  | temperature                   | °C        |
+|            |             | file_name                                    | -         |                               |           |
+|            |             |                                              |           |                               |           |
+| uuct       | single-point| id                                           | -         | time                          | hh:mm:ss  |
+|            |             | collection_time                              | hh:mm:ss  | force                         | N         |
+|            |             | testing_time                                 | hh:mm:ss  | displacement                  | mm        |
+|            |             | file_name                                    | -         | width                         | mm        |
+|            |             | loading_rate                                 | mm/s      | true_stress                   | MPa       |
+|            |             | sample_radius                                | mm        | true_strain                   | -         |
+|            |             | sample_height                                | mm        |                               |           |
+|            |             | stiffness_modulus                            | MPa       |                               |           |
+|            |             | compressive_strength                         | MPa       |                               |           |
+|            |             |                                              |           |                               |           |
+| fpit       | single-point| id                                           | -         | time                          | hh:mm:ss  |
+|            |             | collection_time                              | hh:mm:ss  | load                          | N         |
+|            |             | testing_time                                 | hh:mm:ss  | depth                         | mm        |
+|            |             | file_name                                    | -         |                               |           |
+|            |             | loading_rate                                 | mm/s      |                               |           |
+|            |             | indenter_radius                              | mm        |                               |           |
+|            |             | sample_radius                                | mm        |                               |           |
+|            |             | stiffness_modulus                            | MPa       |                               |           |
+|            |             | compressive_strength                         | MPa       |                               |           |
+|            |             | cohesion                                     | MPa       |                               |           |
+|            |             | friction_angle                               | degrees   |                               |           |
+|            |             |                                              |           |                               |           |
+| vane       | single-point| id                                           | -         | n/a                           | n/a       |
+|            |             | collection_time                              | hh:mm:ss  |                               |           |
+|            |             | testing_time                                 | hh:mm:ss  |                               |           |
+|            |             | position_x                                   | mm        |                               |           |
+|            |             | position_y                                   | mm        |                               |           |
+|            |             | position_z                                   | mm        |                               |           |
+|            |             | torque                                       | …         |                               |           |
+|            |             | diameter                                     | …         |                               |           |
+|            |             | height                                       | …         |                               |           |
+|            |             | factor                                       | …         |                               |           |
+|            |             | yield_stress                                 | …         |                               |           |
+
 ### Software structure
 
 Each software package includes four standard folders:
@@ -105,60 +208,6 @@ Each software package includes four standard folders:
 |   +-- LICENSE
 ```
 
-### Database structure
-
-```
-+-- datarecord
-|   +-- yyyymmdd_session
-|   |   +-- system_data
-|   |   |   +-- raw_data
-|   |   |   |   +-- yyyymmdd_name.csv
-|   |   |   |   +-- yyyymmdd_name_event_comments.csv
-|   |   |   +-- processed_data
-|   |   |   |   +-- plot1.pdf
-|   |   |   |   +-- ...
-|   |   |   +-- scripts
-|   |   |   |   +-- analysis.m
-|   |   |   +-- metadata_setup.yml
-|   |   +-- tracer_experiment
-|   |   |   +-- raw_data
-|   |   |   |   +-- yyyymmdd_name.csv
-|   |   |   |   +-- yyyymmdd_name_event_comments.csv
-|   |   |   +-- processed_data
-|   |   |   |   +-- yyyymmdd_name.csv
-|   |   |   |   +-- plot1.pdf
-|   |   |   |   +-- ...
-|   |   |   +-- scripts
-|   |   |   |   +-- concrete_candy_tracker.m
-|   |   |   +-- metadata_setup.yml
-|   |   +-- slug_test
-|   |   |   +-- raw_data
-|   |   |   |   +-- yyyymmdd_name.csv
-|   |   |   +-- processed_data
-|   |   |   |   +-- yyyymmdd_name_results.csv
-|   |   |   |   +-- plot1.pdf
-|   |   |   |   +-- ...
-|   |   |   +-- scripts
-|   |   |   |   +-- droplet_detective.m
-|   |   |   +-- metadata_setup.yml
-|   |   +-- photos
-|   |   |   +-- photo1.jpg
-|   |   |   +-- ...
-|   |   +-- videos
-|   |   |   +-- video1.mp4
-|   |   |   +-- ...
-|   |   +-- metadata_session.yml
-|   +-- yyyymmdd_session
-|   |   +-- system_data
-|   |   +-- metadata_session.yml
-|   |   +-- ...
-|   +-- setupinfo
-|   +-- metadata_record.yml
-|   +-- LICENSE
-```
-
-The analysis folders are meant to provide quick insights into the data. For example, time series plots of viscocity and pressure readings. Each software packages provides templates - example files - to generate this output. 
-
 ## Version numbering
 
 The 3D Sneak Peak project uses the following versioning scheme: 
@@ -185,7 +234,7 @@ To support these principles, we license our software under the General Public Li
 
 ## License
 
-Copyright (c) 2024 [3D Concrete Printing Research Group at Eindhoven University of Technology](https://www.tue.nl/en/research/research-groups/structural-engineering-and-design/3d-concrete-printing)
+Copyright (c) 2024-2025 [3D Concrete Printing Research Group at Eindhoven University of Technology](https://www.tue.nl/en/research/research-groups/structural-engineering-and-design/3d-concrete-printing)
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 
