@@ -1,19 +1,19 @@
 # Software
 
-Currently, three software packages are in use and maintained:
+Currently, three software packages are in use and maintained.
 
 General tools: 
 
-- **(NodeRED-3DSeeP)[https://github.com/3DCP-TUe/Node-RED-3DSeeP]:** General dashboard and data logger.
+- **[NodeRED-3DSeeP](https://github.com/3DCP-TUe/Node-RED-3DSeeP):** General dashboard and data logger.
 
 Measurement / experiment specific tools: 
 
-- **(Concrete Candy Tracker)[https://github.com/3DCP-TUe/ConcreteCandyTracker]:** Software used to measure the color value of the mortar inline. Typically used for tracer experiments. 
-- **(Droplet Detective)[https://github.com/3DCP-TUe/DropletDetective]:** Tools and methodologies used to perform the so-called "slugs test".
+- **[Concrete Candy Tracker](https://github.com/3DCP-TUe/ConcreteCandyTracker):** Software used to measure the color value of the mortar inline. Typically used for tracer experiments. 
+- **[Droplet Detective](https://github.com/3DCP-TUe/DropletDetective):** Tools and methodologies used to perform the so-called "slugs test".
 
 Version control is applied to all software packages. More information about each individual software package can be found in their respective repositories.
 
-## Softare package structure
+## Software package structure
 
 Each software package includes four standard folders:
 
