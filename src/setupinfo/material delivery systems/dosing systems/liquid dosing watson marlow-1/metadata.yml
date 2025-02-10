@@ -4,6 +4,14 @@ atrr:
   name: liquid dosing watson marlow-1
   description: Open-loop liquid dosing system. Peristaltic pump, Watson Marlow Qdos 30.
 
+couplings:
+  inlets:
+    - type: push-in fitting
+      size: 6
+  outlets:
+    - type: push-in fitting
+      size: 6
+
 io:
   - name: AI
     type: analog input 4-20 mA passive

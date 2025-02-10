@@ -5,6 +5,11 @@ atrr:
   description: Pressurized motorized in-line mixer with injection ports. 
   note: Details are confidential, not all information is provided. 
 
+dimensions:
+  length: null
+  volume: null
+  mass: null
+
 couplings:
   inlets:
     - type: system 23.5 female mortar coupling

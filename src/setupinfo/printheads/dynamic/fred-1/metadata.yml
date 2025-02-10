@@ -4,3 +4,8 @@ atrr:
   name: fred-1
   description: Open motorized in-line mixer with separate extruder and injection ports.
   note: Details are confidential, not all information is provided.  
+
+dimensions:
+  length: null
+  volume: null
+  mass: null

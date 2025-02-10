@@ -7,11 +7,12 @@ atrr:
 
 couplings:
   inlets:
-    - type: null #TODO
-      size: null #TODO
+    - type: push-in fitting
+      size: 10
+    - type: GEKA
   outlets:
-    - type: null #TODO
-      size: null #TODO
+    - type: push-in fitting
+      size: 6
 
 sensor:
   - name: pressure sensor

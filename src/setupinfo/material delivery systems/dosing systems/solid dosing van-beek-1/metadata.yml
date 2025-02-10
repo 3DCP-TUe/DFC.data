@@ -5,6 +5,13 @@ atrr:
   description: Open-loop aggregate, powder and fiber dosing system. 
   note: Details are confidential, not all information is provided. Remote control via IO installed after market.
 
+couplings:
+  inlets:
+    - type: Protective screen
+  outlets:
+    - type: null #TODO
+      size: null #TODO
+
 io:
   - name: AI
     type: analog input 4-20 mA passive

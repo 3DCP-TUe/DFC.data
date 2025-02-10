@@ -5,6 +5,14 @@ atrr:
   description: Commercially available liquid dosing combination with gear pump and coriolis mass flow sensor. 
   note: Can be controlled via the software of Bronkhorst or via the OPC UA server of the material delivery plc. 
 
+couplings:
+  inlets:
+    - type: push-in fitting
+      size: 6
+  outlets:
+    - type: push-in fitting
+      size: 6
+      
 processed_system_data:
   - name: alarm info
     function: alarm info
