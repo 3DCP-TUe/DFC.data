@@ -5,37 +5,36 @@ atrr:
   description: Commercially available liquid dosing combination with gear pump and coriolis mass flow sensor. 
   note: Can be controlled via the software of Bronkhorst or via the OPC UA server of the material delivery plc. 
 
-opc:
-  - plc: material delivery plc
-    - name: alarm info
-      function: alarm info
-      unit: integer
-      tag: material_bronkhorst_alarm_info
-    - name: setpoint
-      function: setpoint
-      unit: gr/min
-      tag: material_bronkhorst_setpoint_gmin
-    - name: actual mass flow rate
-      function: actual mass flow rate
-      unit: gr/min
-      tag: material_bronkhorst_measure_gmin
-    - name: tempature
-      function: medium temperature
-      unit: C
-      tag: material_bronkhorst_temperature
-    - name: density
-      function: actual density
-      unit: kg/m3
-      tag: material_bronkhorst_density_kg_m3
-    - name: analog input
-      function: analog input for gear pump
-      unit: - #TODO
-      tag: material_bronkhorst_analog_input
-    - name: valve output
-      function: valve output
-      unit: - #TODO
-      tag: material_bronkhorst_valve_output
-    - name: setpoint slope
-      function: setpoint slope
-      unit: seconds
-      tag: material_bronkhorst_setpoint_slope_s
+processed_system_data:
+  - name: alarm info
+    function: alarm info
+    unit: integer
+    header: material_bronkhorst_alarm_info
+  - name: setpoint
+    function: setpoint
+    unit: gr/min
+    header: material_bronkhorst_setpoint_gmin
+  - name: actual mass flow rate
+    function: actual mass flow rate
+    unit: gr/min
+    header: material_bronkhorst_measure_gmin
+  - name: tempature
+    function: medium temperature
+    unit: C
+    header: material_bronkhorst_temperature
+  - name: density
+    function: actual density
+    unit: kg/m3
+    header: material_bronkhorst_density_kg_m3
+  - name: analog input
+    function: analog input for gear pump
+    unit: null #TODO
+    header: material_bronkhorst_analog_input
+  - name: valve output
+    function: valve output
+    unit: null #TODO
+    header: material_bronkhorst_valve_output
+  - name: setpoint slope
+    function: setpoint slope
+    unit: seconds
+    header: material_bronkhorst_setpoint_slope_s

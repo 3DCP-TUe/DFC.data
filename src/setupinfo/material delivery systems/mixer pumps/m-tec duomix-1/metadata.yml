@@ -20,141 +20,140 @@ io:
   - name: AI1
     type: analog input 0-10V
     function: free-to-use
-    connector: -
-    tag: mtec_io_ai1_v
+    connector: null
+    header: mtec_io_ai1_v
   - name: AI2
     type: analog input 0-10V
     function: free-to-use
-    connector: -
-    tag: mtec_io_ai2_v
+    connector: null
+    header: mtec_io_ai2_v
   - name: AI3
     type: analog input 0-10V
     function: free-to-use
-    connector: -
-    tag: mtec_io_ai3_v
+    connector: null
+    header: mtec_io_ai3_v
   - name: AI4
     type: analog input 4-20 mA active
     function: free-to-use
-    connector: -
-    tag: mtec_io_ai4_ma
+    connector: null
+    header: mtec_io_ai4_ma
   - name: AI5
     type: analog input 4-20 mA active
     function: free-to-use
-    connector: -
-    tag: mtec_io_ai5_ma
+    connector: null
+    header: mtec_io_ai5_ma
   - name: AO1
     type: analog output 4-20 mA passive
     function: free-to-use
-    connector: -
-    tag: mtec_io_ao1_ma
+    connector: null
+    header: mtec_io_ao1_ma
   - name: AO2
     type: analog output 4-20 mA passive
     function: free-to-use
-    connector: -
-    tag: mtec_io_ao2_ma
+    connector: null
+    header: mtec_io_ao2_ma
   - name: DI1
     type: digital input
     function: free-to-use
-    connector: -
-    tag: mtec_io_di1_bool
+    connector: null
+    header: mtec_io_di1_bool
   - name: DI2
     type: digital input
     function: free-to-use
-    connector: -
-    tag: mtec_io_di2_bool
+    connector: null
+    header: mtec_io_di2_bool
   - name: DI3
     type: digital input
     function: free-to-use
-    connector: -
-    tag: mtec_io_di3_bool
+    connector: null
+    header: mtec_io_di3_bool
   - name: DI4
     type: digital input
     function: free-to-use
-    connector: -
-    tag: mtec_io_di4_bool
+    connector: null
+    header: mtec_io_di4_bool
   - name: DI5
     type: digital input
     function: free-to-use
-    connector: -
-    tag: mtec_io_di5_bool
+    connector: null
+    header: mtec_io_di5_bool
   - name: DO1
     type: digital output
     function: free-to-use
-    connector: -
-    tag: mtec_io_do1_bool
+    connector: null
+    header: mtec_io_do1_bool
   - name: DO2
     type: digital output
     function: free-to-use
-    connector: -
-    tag: mtec_io_do2_bool
+    connector: null
+    header: mtec_io_do2_bool
 
-opc:
-  - plc: m-tec duomix-1
-    - name: source time
-      function: opc ua server time
-      unit: hh:mm:ss
-      tag: mtec_source_time
-    - name: remote start/stop
-      function: remote start/stop of pump motor
-      unit: bool
-      tag: mtec_remote_start_bool
-    - name: water control active
-      function: indicatis if the water supply system is running in closed loop
-      unit: bool
-      tag: mtec_water_control_active_bool
-    - name: start of water control
-      function: delay after which the water control system starts
-      unit: s
-      tag: mtec_water_start_control_s
-    - name: water pump enabled
-      function: indicates if the water pump is enabled
-      unit: bool
-      tag: mtec_water_pump_run_bool
-    - name: solenoid valve open
-      function: indicates if the solenoid valve for the water supply is open or closed
-      unit: bool
-      tag: mtec_water_solenoid_valve_bool
-    - name: actual position water valve 
-      function: actual position water valve 
-      unit: \%
-      tag: mtec_water_water_valve_actual_perc
-    - name: water temperature
-      function: water temperature
-      unit: C
-      tag: mtec_water_temp_c
-    - name: water flow setpoint
-      function: water flow setpoint
-      unit: l/h
-      tag: mtec_water_flow_set_l_h
-    - name: actual water flow
-      function: actual water flow
-      unit: l/h
-      tag: mtec_water_flow_actual_l_h
-    - name: mixer enabled
-      function: indicates if the mixer is enabled
-      unit: bool
-      tag: mtec_mixer_run_bool
-    - name: state of the wetprobe
-      function: state of the wetprobe
-      unit: bool
-      tag: mtec_state_wet_material_probe_bool
-    - name: state delay time wetprobe
-      function: state delay time wetprobe
-      unit: bool
-      tag: mtec_state_delay_time_wet_probe_bool
-    - name: delay time wet probe dynamic
-      function: delay time of the wetprobe if set to dynamic
-      unit: s
-      tag: mtec_delay_time_wet_probe_dynamically_s
-    - name: delay time wet probe static
-      function: delay time of the wetprobe if set to static
-      unit: s
-      tag: mtec_delay_time_wet_probe_statically_s
-    - name: pump speed setpoint
-      function: pump speed setpoint
-      unit: RPM
-      tag: mtec_pump_speed_set_rpm
-    - name: actual pump speed
-      function: actual pump speed
-      unit: RPM
-      tag: mtec_pump_speed_actual_rpm
+processed_system_data:
+  - name: source time
+    function: opc ua server time
+    unit: hh:mm:ss
+    header: mtec_source_time
+  - name: remote start/stop
+    function: remote start/stop of pump motor
+    unit: bool
+    header: mtec_remote_start_bool
+  - name: water control active
+    function: indicatis if the water supply system is running in closed loop
+    unit: bool
+    header: mtec_water_control_active_bool
+  - name: start of water control
+    function: delay after which the water control system starts
+    unit: s
+    header: mtec_water_start_control_s
+  - name: water pump enabled
+    function: indicates if the water pump is enabled
+    unit: bool
+    header: mtec_water_pump_run_bool
+  - name: solenoid valve open
+    function: indicates if the solenoid valve for the water supply is open or closed
+    unit: bool
+    header: mtec_water_solenoid_valve_bool
+  - name: actual position water valve 
+    function: actual position water valve 
+    unit: \%
+    header: mtec_water_water_valve_actual_perc
+  - name: water temperature
+    function: water temperature
+    unit: C
+    header: mtec_water_temp_c
+  - name: water flow setpoint
+    function: water flow setpoint
+    unit: l/h
+    header: mtec_water_flow_set_l_h
+  - name: actual water flow
+    function: actual water flow
+    unit: l/h
+    header: mtec_water_flow_actual_l_h
+  - name: mixer enabled
+    function: indicates if the mixer is enabled
+    unit: bool
+    header: mtec_mixer_run_bool
+  - name: state of the wetprobe
+    function: state of the wetprobe
+    unit: bool
+    header: mtec_state_wet_material_probe_bool
+  - name: state delay time wetprobe
+    function: state delay time wetprobe
+    unit: bool
+    header: mtec_state_delay_time_wet_probe_bool
+  - name: delay time wet probe dynamic
+    function: delay time of the wetprobe if set to dynamic
+    unit: s
+    header: mtec_delay_time_wet_probe_dynamically_s
+  - name: delay time wet probe static
+    function: delay time of the wetprobe if set to static
+    unit: s
+    header: mtec_delay_time_wet_probe_statically_s
+  - name: pump speed setpoint
+    function: pump speed setpoint
+    unit: RPM
+    header: mtec_pump_speed_set_rpm
+  - name: actual pump speed
+    function: actual pump speed
+    unit: RPM
+    header: mtec_pump_speed_actual_rpm

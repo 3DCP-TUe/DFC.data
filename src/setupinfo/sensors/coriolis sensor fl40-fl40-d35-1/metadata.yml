@@ -34,93 +34,92 @@ sensors:
       - zero point: 275
 
 io:
-  - name: free programmable output 1
+  - name: configurable output 1
     type: Weipu SP2112/P4
     output signal: analog output 4-20 mA active
     signal limits: [4, 20]
     assigned value: mass flow
-    reading limits: [0, 32]
+    reading limits: [0, 16]
     interpolation: linear
     unit: kg/min
     damping: 90
-  - name: free programmable output 2
+  - name: configurable output 2
     type: Weipu SP2112/P4
     output signal: analog output 4-20 mA active
     signal limits: [4, 20]
     assigned value: density
-    reading limits: [0, 3200]
+    reading limits: [2000, 2400]
     interpolation: linear
     unit: kg/m3
     damping: 90
-  - name: free programmable output 3
+  - name: configurable output 3
     type: Weipu SP2112/P4
     output signal: analog output 4-20 mA active
     signal limits: [4, 20]
-    assigned value: dynamic viscocity
-    reading limits: [0, 800]
-    interpolation: linear
-    unit: cP
-    damping: 90
+    assigned value: null
+    reading limits: null
+    interpolation: null
+    unit: null
+    damping: null
 
-opc:
-  - plc: material delivery plc
-    - name: mass flow rate
-      function: mass flow rate measurement
-      unit: kg/min
-      damping: 0
-      tag: material_coriolis_mass_flow_kg_min
-    - name: volume flow rate
-      function: volume flow rate measurement
-      unit: l/min
-      damping: 0
-      tag: material_coriolis_volume_flow_l_min
-    - name: density
-      function: density measurement
-      unit: kg/m3
-      damping: 0
-      tag: material_coriolis_density_kg_m3
-    - name: dynamic viscocity
-      function: viscocity measurement
-      unit: cP
-      tag: material_coriolis_dynamic_viscocity_cp
-    - name: temperature
-      function: temperature measurement
-      damping: 0
-      unit: C
-      tag: material_coriolis_temperature_c
-    - name: exciter current 0
-      function: exciter current of lateral movement
-      unit: - #TODO
-      tag: material_coriolis_exciter_current_0_ma
-    - name: oscillation frequency 0
-      function: oscillation frequency  of lateral movement
-      unit: Hz
-      tag: material_coriolis_oscillation_frequency_0_hz
-    - name: oscillation amplitude 0
-      function: osccilation amplitude of lateral movement
-      unit: \%
-      tag: material_coriolis_oscillation_amplitude_0_perc
-    - name: oscillation damping 0
-      function: osccilation damping of lateral movement
-      unit: - #TODO
-      tag: material_coriolis_oscillation_damping_0_m_a
-    - name: signal asymmetry
-      function: signal asymmetry of lateral movement
-      unit: \%
-      tag: material_coriolis_signal_asymmetry_perc
-    - name: exciter current 1
-      function: exciter current of torsional movement
-      unit: - #TODO
-      tag: material_coriolis_exciter_current_1_ma
-    - name: oscillation frequency 1
-      function: oscillation frequency of torsional movement
-      unit: Hz
-      tag: material_coriolis_oscillation_frequency_1_hz
-    - name: oscillation amplitude 1
-      function: oscillation amplitude of torsional movement
-      unit: \% 
-      tag: material_coriolis_oscillation_amplitude_1_perc
-    - name: oscillation damping 1
-      function: oscillation damping of torsional movement
-      unit: - #TODO
-      tag: material_coriolis_oscillation_damping_1_m_a
+processed_system_data:
+  - name: mass flow rate
+    function: mass flow rate measurement
+    unit: kg/min
+    damping: 0
+    header: material_coriolis_mass_flow_kg_min
+  - name: volume flow rate
+    function: volume flow rate measurement
+    unit: l/min
+    damping: 0
+    header: material_coriolis_volume_flow_l_min
+  - name: density
+    function: density measurement
+    unit: kg/m3
+    damping: 0
+    header: material_coriolis_density_kg_m3
+  - name: dynamic viscocity
+    function: viscocity measurement
+    unit: cP
+    header: material_coriolis_dynamic_viscocity_cp
+  - name: temperature
+    function: temperature measurement
+    damping: 0
+    unit: C
+    header: material_coriolis_temperature_c
+  - name: exciter current 0
+    function: exciter current of lateral movement
+    unit: null #TODO
+    header: material_coriolis_exciter_current_0_ma
+  - name: oscillation frequency 0
+    function: oscillation frequency  of lateral movement
+    unit: Hz
+    header: material_coriolis_oscillation_frequency_0_hz
+  - name: oscillation amplitude 0
+    function: osccilation amplitude of lateral movement
+    unit: \%
+    header: material_coriolis_oscillation_amplitude_0_perc
+  - name: oscillation damping 0
+    function: osccilation damping of lateral movement
+    unit: null #TODO
+    header: material_coriolis_oscillation_damping_0_m_a
+  - name: signal asymmetry
+    function: signal asymmetry of lateral movement
+    unit: \%
+    header: material_coriolis_signal_asymmetry_perc
+  - name: exciter current 1
+    function: exciter current of torsional movement
+    unit: null #TODO
+    header: material_coriolis_exciter_current_1_ma
+  - name: oscillation frequency 1
+    function: oscillation frequency of torsional movement
+    unit: Hz
+    header: material_coriolis_oscillation_frequency_1_hz
+  - name: oscillation amplitude 1
+    function: oscillation amplitude of torsional movement
+    unit: \% 
+    header: material_coriolis_oscillation_amplitude_1_perc
+  - name: oscillation damping 1
+    function: oscillation damping of torsional movement
+    unit: null #TODO
+    header: material_coriolis_oscillation_damping_1_m_a

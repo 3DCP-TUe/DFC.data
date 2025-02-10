@@ -34,7 +34,7 @@ sensors:
     manufacturer: ifm electronic
     model: TA2105
     product number: TA-025CLER14-A-ZVG/US
-    serial number: -
+    serial number: null
     temperature range: [-50, 150]
 
 housing:

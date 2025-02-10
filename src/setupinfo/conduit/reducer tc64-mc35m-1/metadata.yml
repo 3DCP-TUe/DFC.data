@@ -4,7 +4,7 @@ atrr:
   description: Cross section reducer from 64 to 35 mm.
 
 dimensions:
-  length: -
+  length: null
   volume: 0.052
 
 couplings:

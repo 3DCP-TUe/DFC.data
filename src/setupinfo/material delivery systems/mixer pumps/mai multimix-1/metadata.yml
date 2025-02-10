@@ -24,96 +24,95 @@ sensors:
     manufacturer: ifm electronic
     model: TA2105
     product number: TA-025CLER14-A-ZVG/US
-    serial number: -
+    serial number: null
     temperature range: [-50, 150]
   - name: water temperature sensor
     function: additional (second) temperature sensor to measure the water temperature after the water pump just before the water inlet in the mixer
     type: temperature
-    manufacturer: -
+    manufacturer: null
     model: PT100
-    product number: -
-    serial number: -
-    temperature range: - #TODO
+    product number: null
+    serial number: null
+    temperature range: null #TODO
 
-opc:
-  - plc: mai multimix-1
-    - name: source time
-      function: opc ua server time
-      unit: hh:mm:ss
-      tag: mai_source_time
-    - name: water pump enabled
-      function: indicates if the water pump is enabled
-      unit: bool
-      tag: mai_water_run_bool
-    - name: water temperature
-      function: measures the water temperature just after the water tank (orignal)
-      unit: C
-      tag: mai_water_temp_c
-    - name: water temperature
-      function: measures the water temperature just before the water inlet at the mixer (custom/after market installed)
-      unit: C
-      tag: mai_water_temp_mixer_inlet_c
-    - name: water flow setpoint
-      function: water flow setpoint
-      unit: l/h
-      tag: mai_water_flow_set_lh
-    - name: actual water flow
-      function: actual water flow
-      unit: l/h
-      tag: mai_water_flow_actual_lh
-    - name: water pump frequency
-      function: water pump reference frequency
-      unit: cHz
-      tag: mai_waterpump_ref_freq_chz
-    - name: actual water pump frequency
-      function: actual water pump frequency
-      unit: cHz
-      tag: mai_waterpump_output_freq_chz
-    - name: mixer enabled
-      function: indicates if the mixer is enabled
-      unit: bool
-      tag: mai_mixer_run_bool
-    - name: pump enable
-      function: indicates if the pump is enabled
-      unit: bool
-      tag: mai_pump_run_bool
-    - name: pump speed
-      function: pump speed
-      unit: cHz
-      tag: mai_pump_speed_chz
-    - name: pump output current
-      function: pump output current
-      unit: da
-      tag: mai_pump_output_current_da
-    - name: pump output power
-      function: pump output power
-      unit: W
-      tag: mai_pump_output_power_w
-    - name: pump vibration mode
-      function: mode of the vibration block on the agitating chamber (0=off, 1=on, 2=interval)
-      unit: integer
-      tag: mai_pump_vibration_mode_i
-    - name: dry mortar temperature
-      function: dry mortar temperature at silo output (if used)
-      unit: C
-      tag: mai_silo_dry_mortar_temperature_c
-    - name: mortar temperature
-      function: mortar temperature at agitating chamber (custom/after market installed)
-      unit: C
-      tag: mai_pumping_chamber_mortar_temperature_c
-    - name: water pre-run
-      function: water pump pre runtime
-      unit: s
-      tag: mai_setting_water_pre_run_s
-    - name: mixer post run
-      function: mixer post runtime
-      unit: s
-      tag: mai_setting_mixer_post_run_s
-    - name: delay when wetprobe is covered
-      function: delay when wetprobe is covered
-      unit: s
-      tag: mai_setting_wetprobe_covered_delay_s
-    - name: delay when wetprobe is uncovered
-      function: delay when wetprobe is uncovered
-      unit: s
-      tag: mai_setting_wetprobe_uncovered_delay_s
+processed_system_data:
+  - name: source time
+    function: opc ua server time
+    unit: hh:mm:ss
+    header: mai_source_time
+  - name: water pump enabled
+    function: indicates if the water pump is enabled
+    unit: bool
+    header: mai_water_run_bool
+  - name: water temperature
+    function: measures the water temperature just after the water tank (orignal)
+    unit: C
+    header: mai_water_temp_c
+  - name: water temperature
+    function: measures the water temperature just before the water inlet at the mixer (custom/after market installed)
+    unit: C
+    header: mai_water_temp_mixer_inlet_c
+  - name: water flow setpoint
+    function: water flow setpoint
+    unit: l/h
+    header: mai_water_flow_set_lh
+  - name: actual water flow
+    function: actual water flow
+    unit: l/h
+    header: mai_water_flow_actual_lh
+  - name: water pump frequency
+    function: water pump reference frequency
+    unit: cHz
+    header: mai_waterpump_ref_freq_chz
+  - name: actual water pump frequency
+    function: actual water pump frequency
+    unit: cHz
+    header: mai_waterpump_output_freq_chz
+  - name: mixer enabled
+    function: indicates if the mixer is enabled
+    unit: bool
+    header: mai_mixer_run_bool
+  - name: pump enable
+    function: indicates if the pump is enabled
+    unit: bool
+    header: mai_pump_run_bool
+  - name: pump speed
+    function: pump speed
+    unit: cHz
+    header: mai_pump_speed_chz
+  - name: pump output current
+    function: pump output current
+    unit: da
+    header: mai_pump_output_current_da
+  - name: pump output power
+    function: pump output power
+    unit: W
+    header: mai_pump_output_power_w
+  - name: pump vibration mode
+    function: mode of the vibration block on the agitating chamber (0=off, 1=on, 2=interval)
+    unit: integer
+    header: mai_pump_vibration_mode_i
+  - name: dry mortar temperature
+    function: dry mortar temperature at silo output (if used)
+    unit: C
+    header: mai_silo_dry_mortar_temperature_c
+  - name: mortar temperature
+    function: mortar temperature at agitating chamber (custom/after market installed)
+    unit: C
+    header: mai_pumping_chamber_mortar_temperature_c
+  - name: water pre-run
+    function: water pump pre runtime
+    unit: s
+    header: mai_setting_water_pre_run_s
+  - name: mixer post run
+    function: mixer post runtime
+    unit: s
+    header: mai_setting_mixer_post_run_s
+  - name: delay when wetprobe is covered
+    function: delay when wetprobe is covered
+    unit: s
+    header: mai_setting_wetprobe_covered_delay_s
+  - name: delay when wetprobe is uncovered
+    function: delay when wetprobe is uncovered
+    unit: s
+    header: mai_setting_wetprobe_uncovered_delay_s

@@ -7,103 +7,102 @@ atrr:
 
 couplings:
   inlets:
-    - type: - #TODO
-      size: - #TODO
+    - type: null #TODO
+      size: null #TODO
   outlets:
-    - type: - #TODO
-      size: - #TODO
+    - type: null #TODO
+      size: null #TODO
 
 sensor:
   - name: pressure sensor
     type: pressure
     manufacturer: WIKA
-    model: - #TODO
-    product number: - #TODO
-    serial number: - #TODO
-    pressure range: - #TODO
+    model: null #TODO
+    product number: null #TODO
+    serial number: null #TODO
+    pressure range: null #TODO
   - name: flow sensor
     type: flow sensor
     manufacturer: KEYENCE International
-    model: - #TODO
-    product number: - #TODO
-    serial number: - #TODO
+    model: null #TODO
+    product number: null #TODO
+    serial number: null #TODO
   
 io:
   - name: AI3
     type: analog input 4-20 mA active
     function: free-to-use
     connector: Weipu SP2112/S4
-    tag: material_io_ai3_ma
+    header: material_io_ai3_ma
   - name: AO0
     type: analog output 4-20 mA passive
     function: free-to-use
     connector: Weipu SP2112/P5
-    tag: material_io_ao0_ma
+    header: material_io_ao0_ma
   - name: DO3
     type: digital output 24V DC
     function: free-to-use
     connector: Weipu SP2112/S3
-    tag: material_io_do3_bool
+    header: material_io_do3_bool
 
-opc:
-  - plc: liquid dosing vertico-1
-    - name: source time
-      function: opc ua server time
-      unit: hh:mm:ss
-      tag: vertico_source_time
-    - name: is remote
-      function: indicates if the system is remote controlled
-      unit: bool
-      tag: vertico_is_remote_bool
-    - name: is open loop
-      function: indicates if the system is running in open loop
-      unit: bool
-      tag: vertico_is_open_loop_bool
-    - name: motor velocity
-      function: motor velocity
-      unit: RPM
-      tag: vertico_actual_motor_velocity_rpm
-    - name: actual volume flow rate
-      function: actual volume flow rate
-      unit: ml/min
-      tag: vertico_actual_flow_ml_min
-    - name: raw signal volume flow rate 
-      function: signal value of the actual volume flow rate
-      unit: mA
-      tag: vertico_actual_flow_ma
-    - name: actual pressure
-      function: actual pressure
-      unit: bar
-      tag: vertico_actual_pressure_bar
-    - name: local setpoint open loop
-      function: local setpoint open loop from adjustment dial
-      unit: RPM
-      tag: vertico_local_setpoint_open_loop_rpm
-    - name: local setpoint close loop
-      function: local setpoint closed loop from adjustment dial
-      unit: ml/min
-      tag: vertico_local_setpoint_closed_loop_mlmin
-    - name: remote control start/stop via OPC-UA
-      function: remote control start/stop
-      unit: bool
-      tag: vertico_remote_start_stop_bool
-    - name: remote setpoint open loop
-      function: remote setpoint open loop via OPC-UA
-      unit: RPM
-      tag: vertico_remote_setpoint_open_loop_rpm
-    - name: remote setpoint closed loop
-      function: remote setpoint closed loop via OPC-UA
-      unit: ml/min
-      tag: vertico_remote_setpoint_closed_loop_mlmin
-    - name: closed loop PID parameter P
-      function: closed loop PID parameter P
-      unit: real number
-      tag: vertico_pid_p
-    - name: closed loop PID parameter I
-      function: closed loop PID parameter I
-      unit: real number
-      tag: vertico_pid_i
-    - name: closed loop PID parameter D
-      function: closed loop PID parameter D
-      unit: real number
-      tag: vertico_pid_d
+processed_system_data:
+  - name: source time
+    function: opc ua server time
+    unit: hh:mm:ss
+    header: vertico_source_time
+  - name: is remote
+    function: indicates if the system is remote controlled
+    unit: bool
+    header: vertico_is_remote_bool
+  - name: is open loop
+    function: indicates if the system is running in open loop
+    unit: bool
+    header: vertico_is_open_loop_bool
+  - name: motor velocity
+    function: motor velocity
+    unit: RPM
+    header: vertico_actual_motor_velocity_rpm
+  - name: actual volume flow rate
+    function: actual volume flow rate
+    unit: ml/min
+    header: vertico_actual_flow_ml_min
+  - name: raw signal volume flow rate 
+    function: signal value of the actual volume flow rate
+    unit: mA
+    header: vertico_actual_flow_ma
+  - name: actual pressure
+    function: actual pressure
+    unit: bar
+    header: vertico_actual_pressure_bar
+  - name: local setpoint open loop
+    function: local setpoint open loop from adjustment dial
+    unit: RPM
+    header: vertico_local_setpoint_open_loop_rpm
+  - name: local setpoint close loop
+    function: local setpoint closed loop from adjustment dial
+    unit: ml/min
+    header: vertico_local_setpoint_closed_loop_mlmin
+  - name: remote control start/stop via OPC-UA
+    function: remote control start/stop
+    unit: bool
+    header: vertico_remote_start_stop_bool
+  - name: remote setpoint open loop
+    function: remote setpoint open loop via OPC-UA
+    unit: RPM
+    header: vertico_remote_setpoint_open_loop_rpm
+  - name: remote setpoint closed loop
+    function: remote setpoint closed loop via OPC-UA
+    unit: ml/min
+    header: vertico_remote_setpoint_closed_loop_mlmin
+  - name: closed loop PID parameter P
+    function: closed loop PID parameter P
+    unit: real number
+    header: vertico_pid_p
+  - name: closed loop PID parameter I
+    function: closed loop PID parameter I
+    unit: real number
+    header: vertico_pid_i
+  - name: closed loop PID parameter D
+    function: closed loop PID parameter D
+    unit: real number
+    header: vertico_pid_d

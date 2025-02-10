@@ -10,7 +10,7 @@ io:
     type: analog input 4-20 mA passive
     function: remote control motor velocity
     signal limits: [4, 20]
-    reading limits: - #TODO
+    reading limits: null #TODO
     interpolation: linear
     unit: RPM
     connector: Weipu SP2112/S5
