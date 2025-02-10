@@ -163,3 +163,9 @@ cython_debug/
 
 # Rhino files
 *.3dmbak
+
+# Visual studio
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/3DSneakPeek/FileContentIndex/e391d855-bcf3-45f7-82a1-af86d96a154a.vsidx
+.vs/3DSneakPeek/v17/DocumentLayout.json
