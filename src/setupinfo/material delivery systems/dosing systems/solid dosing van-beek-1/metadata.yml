@@ -9,17 +9,18 @@ couplings:
   inlets:
     - type: Protective screen
   outlets:
-    - type: null #TODO
+    - type: tri-clamp
       size: null #TODO
+      inner diameter: null #TODO
 
 io:
   - name: AI
     type: analog input 4-20 mA passive
     function: remote control dosing screw velocity
     signal limits: [4, 20]
-    reading limits: null # For example [10, 30]
+    reading limits: null # For example [10, 30] -> 4 mA correspond to 10 kg/min and 20 mA to 30 kg/min, linear interpolation between values
     interpolation: linear
-    unit: null # For example kg/min -> 4 mA correspond to 10 kg/min and 20 mA to 30 kg/min, linear interpolation between values
+    unit: null # For example kg/min
     connector: Weipu SP2112/S5
   - name: DI
     type: digital input 24V DC
