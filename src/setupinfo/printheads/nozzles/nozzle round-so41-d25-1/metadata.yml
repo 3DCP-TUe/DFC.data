@@ -9,7 +9,7 @@ dimensions:
   length: 95.5
   length 1: 75.5
   length 2: 20
-  nozzle diameter: 25.0
+  diameter: 25.0
   volume: 0.063679603
 
 couplings:

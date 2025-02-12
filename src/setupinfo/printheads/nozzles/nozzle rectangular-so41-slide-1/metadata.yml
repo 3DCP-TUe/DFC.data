@@ -1,0 +1,20 @@
+atrr:
+  class: printheads
+  subclass: nozzles
+  name: nozzle rectangular-so41-slide-1
+  description: 3D printed rectangular nozzle with slide. Typically used for tracer experiments. 
+  material: Prusament PETG
+
+dimensions:
+  length: 147.812
+  width: 50.0
+  height: 12.3
+  volume: 0.10656805
+
+couplings:
+  inlets: 
+    - type: slip-on
+      length: 24.5
+      outer diameter: 41
+      inner diameter: 35
+      secured: clamp
