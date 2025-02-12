@@ -1,0 +1,8 @@
+atrr:
+  class: material delivery systems
+  subclass: inserts
+  name: mixing blade mtec-v-3
+  description: Modified vertical mixing blade from m-tec. Two paddles are added. 
+
+compatible with:
+  - id: m-tec duomix-1
