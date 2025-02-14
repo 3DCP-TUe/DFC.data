@@ -9,9 +9,9 @@ couplings:
   inlets:
     - type: Protective screen
   outlets:
-    - type: tri-clamp
-      size: null #TODO
-      inner diameter: null #TODO
+    - type: tri-clamp 3 1/2"
+      size: 119
+      inner diameter: 97.38
 
 io:
   - name: AI
