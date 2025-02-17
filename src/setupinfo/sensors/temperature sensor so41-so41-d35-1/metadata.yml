@@ -21,8 +21,8 @@ couplings:
 
 io:
   - name: temperature sensor
-    type: Weipu SP2112/P4
-    output signal: analog output 4-20 mA active
+    connector: Weipu SP2112/P4
+    type: analog output 4-20 mA active
     signal limits: [4, 20]
     reading limits: [-50, 150]
     interpolation: linear

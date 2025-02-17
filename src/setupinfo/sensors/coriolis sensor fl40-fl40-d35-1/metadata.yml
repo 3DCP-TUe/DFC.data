@@ -35,8 +35,8 @@ sensors:
 
 io:
   - name: configurable output 1
-    type: Weipu SP2112/P4
-    output signal: analog output 4-20 mA active
+    connector: Weipu SP2112/P4
+    type: analog output 4-20 mA active
     signal limits: [4, 20]
     assigned value: mass flow
     reading limits: [0, 16]
@@ -44,8 +44,8 @@ io:
     unit: kg/min
     damping: 90
   - name: configurable output 2
-    type: Weipu SP2112/P4
-    output signal: analog output 4-20 mA active
+    connector: Weipu SP2112/P4
+    type: analog output 4-20 mA active
     signal limits: [4, 20]
     assigned value: density
     reading limits: [2000, 2400]
@@ -54,7 +54,7 @@ io:
     damping: 90
   - name: configurable output 3
     type: Weipu SP2112/P4
-    output signal: analog output 4-20 mA active
+    type: analog output 4-20 mA active
     signal limits: [4, 20]
     assigned value: null
     reading limits: null

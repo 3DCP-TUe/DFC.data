@@ -20,11 +20,11 @@ couplings:
       connection: 1.25" female BSP
 
 io:
-  - name: Pressure sensor
-    type: Weipu SP2112/P4
-    output signal: analog output 4-20 mA active
-    signal limits: [4 20]
-    reading limits: [0 10]
+  - name: pressure sensor
+    connector: Weipu SP2112/P4
+    type: analog output 4-20 mA active
+    signal limits: [4, 20]
+    reading limits: [0, 10]
     interpolation: linear
     unit: bar
 
@@ -35,7 +35,7 @@ sensors:
     model: S-20
     product number: 14076933
     serial number: 1A02FA17Q20
-    pressure range: [0 10]
+    pressure range: [0, 10]
 
 housing:
   name: pressure sensor housing
