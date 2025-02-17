@@ -165,6 +165,7 @@ cython_debug/
 *.3dmbak
 
 # Visual studio
+FileContentIndex
 .vs/slnx.sqlite
 .vs/VSWorkspaceState.json
 .vs/3DSneakPeek/FileContentIndex/e391d855-bcf3-45f7-82a1-af86d96a154a.vsidx
