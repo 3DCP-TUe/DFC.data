@@ -1,4 +1,4 @@
-atrr:
+attr:
   class: sensor
   name: coriolis sensor fl40-fl40-d35-1
   description: Coriolis mass flow sensor with in-line viscocity measurement. 

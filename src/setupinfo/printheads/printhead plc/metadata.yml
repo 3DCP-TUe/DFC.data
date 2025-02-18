@@ -1,4 +1,4 @@
-atrr:
+attr:
   class: printheads
   name: printhead plc
   description: Printhead PLC for data acquiston and control. 

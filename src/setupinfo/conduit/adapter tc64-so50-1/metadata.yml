@@ -1,4 +1,4 @@
-atrr:
+attr:
   class: conduit
   name: adapter tc64-so50-1
   description: Adapter from tri-clamp coupling to slip-on connection.

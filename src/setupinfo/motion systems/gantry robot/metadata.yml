@@ -1,4 +1,4 @@
-atrr:
+attr:
   class: motion systems
   name: gantry robot
   description: Gantry robot (XYZ) with fourth rotational axis at printhead. 

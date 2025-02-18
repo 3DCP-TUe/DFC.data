@@ -1,4 +1,4 @@
-atrr:
+attr:
   class: sensor
   name: pressure sensor mc25f-mc25m-d25-10bar-1
   description: Mortar pressure sensor. 

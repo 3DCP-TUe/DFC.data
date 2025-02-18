@@ -1,4 +1,4 @@
-atrr:
+attr:
   class: sensor
   name: temperature sensor so41-so41-d35-1
   description: Mortar temperature sensor. 
