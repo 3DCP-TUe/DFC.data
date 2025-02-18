@@ -40,6 +40,7 @@ software:
 system_layout:
   - id: material delivery plc
   - id: printhead plc
+  - id: environment temperature-humidity sensor-1
   - id: liquid dosing bronkhorst-1
     connected_to:
       - id: mai multimix

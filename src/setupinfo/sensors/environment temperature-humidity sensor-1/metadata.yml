@@ -1,0 +1,25 @@
+attr:
+  class: sensor
+  name: environment temperature-humidity sensor-1
+  description: Outdoor combination sensor for relative humidity and temperature.
+  note: Hardwired to material delivery PLC.
+
+sensors:
+  - name: outdoor relative humidity and temperature sensor
+    type: temperature and humidity
+    manufacturer: TiTEC
+    model: ARFT/M-I/S-D
+    product number: ARFT/M-I/S-D
+    serial number: ""
+    temperature range: [0, 50]
+    humidity range: [0, 100]
+
+processed_system_data:
+  - name: relative humidity
+    function: relative humidity of environment
+    unit: "%"
+    header: material_io_ai6_relative_humidity_perc
+  - name: ambient temperature
+    function: ambient temperature
+    unit: C
+    header: material_io_ai7_ambient_temperature_c
