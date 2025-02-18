@@ -2,8 +2,8 @@ attr:
   class: material delivery systems
   subclass: storage
   name: silo-1
-  description: Silo for storage of dry materials. 
-  note: Standard mortar silo (Piccolo) with vibration block. Four aeration pads (type VBS1N-01 vibrofluidficatore ½ GAS aluminum, silicone membrane white) were installed after market.
+  description: Standard mortar silo (Piccolo) with vibration block. Used for storage of dry materials.
+  note: Four aeration pads (type VBS1N-01 vibrofluidficatore ½ GAS aluminum, silicone membrane white) were installed after market.
   
 dimensions:
   volume: 1200
