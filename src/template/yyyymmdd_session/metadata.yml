@@ -113,7 +113,7 @@ system_layout:
 
 # IO configuration
 io_configuration:
-  material_delivery_plc:
+  material delivery plc:
     AI0: pressure sensor mc35f-mc35m-d35-25bar-1
     AI1: pressure sensor mc35f-mc35m-d35-25bar-2
     AI2: null
@@ -136,7 +136,7 @@ io_configuration:
     DO1: null
     DO2: null
     DO3: null
-  printhead_plc:
+  printhead plc:
     BOX1_AI0: pressure sensor mc35f-mc35m-d35-10bar-1
     BOX1_AI2: null
     BOX1_AI3: null
@@ -149,7 +149,7 @@ io_configuration:
     BOX2_AI2: null
     BOX2_AI3: null
     BOX2_AI4: null
-  mtec_connect_duomix_3dcp+:
+  mtec duomix-1:
     AI1: null
     AI2: null
     AI3: null
@@ -164,3 +164,7 @@ io_configuration:
     DI5: null
     DO1: null
     DO2: null
+  liquid dosing vertico-1:
+    AI3: null
+    AO0: null
+    DO3: null
