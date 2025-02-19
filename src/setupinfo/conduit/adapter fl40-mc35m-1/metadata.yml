@@ -17,14 +17,16 @@ couplings:
       connection: 1.25" female BSP
 
 parts:
-  - type: flange
+  - name: flange outlet
+    type: flange
     size: DN40
     connection: weld
-  - type: seamless pipe
+  - name: seamless pipe
     material: steel
     outer diameter: 41
     inner diameter: 35
     wall thickness: 3
-  - type: system 23.5 male mortar coupling
+  - name: mortar coupling outlet
+    type: system 23.5 male mortar coupling
     size: 35
     connection: 1.25" female BSP

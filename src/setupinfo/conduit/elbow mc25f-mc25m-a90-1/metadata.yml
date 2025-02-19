@@ -18,11 +18,14 @@ couplings:
       connection: 1" female BSP
 
 parts:
-  - type: system 22 female mortar coupling
+  - name: mortar coupling inlet 
+    type: system 22 female mortar coupling
     size: 25
     connection: 1" female BSP
-  - type: steel pipe Fitting, 90 degrees elbow
+  - name: elbow
+    type: steel pipe Fitting, 90 degrees elbow
     connection: 1" male BSP x 1" male BSP
-  - type: system 22 male mortar coupling
+  - name: mortar coupling outlet
+    type: system 22 male mortar coupling
     size: 25
     connection: 1" female BSP

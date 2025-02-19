@@ -18,7 +18,8 @@ couplings:
       connection: 1.25" female BSP
 
 parts:
-  - type: tri-clamp - BSP threaded male adaptor 
+  - name: tri-clamp adapter
+    type: tri-clamp - BSP threaded male adaptor 
     connection: tri-clamp 2" x 1.25" male BSP
     material: stainless steel 316L
   - type: system 23.5 male mortar coupling

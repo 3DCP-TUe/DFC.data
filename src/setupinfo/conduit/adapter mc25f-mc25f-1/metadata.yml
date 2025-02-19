@@ -18,12 +18,15 @@ couplings:
       connection: 1" female BSP
 
 parts:
-  - type: system 22 female mortar coupling
+  - name: mortar coupling inlet
+    type: system 22 female mortar coupling
     size: 25
     connection: 1" female BSP
-  - type: hexagon nipple
+  - name: adapter
+    type: hexagon nipple
     size: 25
     connection: male R1" x male R1"
-  - type: system 22 male mortar coupling
+  - name: mortar coupling outlet
+    type: system 22 male mortar coupling
     size: 25
     connection: 1" female BSP

@@ -18,12 +18,15 @@ couplings:
       connection: 1.25" female BSP
 
 parts:
-  - type: system 23.5 male mortar coupling
+  - name: mortar coupling inlet
+    type: system 23.5 male mortar coupling
     size: 35
     connection: 1.25" female BSP
-  - type: hexagon nipple
+  - name: adapter
+    type: hexagon nipple
     size: 35
     connection: male R1.25" x male R1.25"
-  - type: system 23.5 male mortar coupling
+  - name: mortar coupling oulet
+    type: system 23.5 male mortar coupling
     size: 35
     connection: 1.25" female BSP

@@ -13,7 +13,7 @@ couplings:
       size: 91
       flange diameter: 91
       inner diameter: 73
-    outlets:
+  outlets:
     - type: tri-clamp
       size: 64
       inner diameter: 47.6

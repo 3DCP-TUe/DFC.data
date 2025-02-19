@@ -18,15 +18,18 @@ couplings:
       connection: 1" female BSP
 
 parts:
-  - type: system 22 female mortar coupling
+  - name: mortar coupling inlet  
+    type: system 22 female mortar coupling
     size: 25
     connection: 1" female BSP
-  - type: mortar hose 25 with 2x nozzle 1" AG
+  - name: hose
+    type: mortar hose 25 with 2x nozzle 1" AG
     manufacturer: PET Austria GmbH
     size: 25
     external diameter: 39 
     internal diameter: 25
     wall thickness: 7
-  - type: system 22 male mortar coupling
+  - name: mortar coupling outlet
+    type: system 22 male mortar coupling
     size: 25
     connection: 1" female BSP
