@@ -119,7 +119,7 @@ processed_system_data:
     header: mtec_water_water_valve_actual_perc
   - name: water temperature
     function: water temperature
-    unit: C
+    unit: degree Celsius
     header: mtec_water_temp_c
   - name: water flow setpoint
     function: water flow setpoint

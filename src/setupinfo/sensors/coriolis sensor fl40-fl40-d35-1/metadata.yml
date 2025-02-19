@@ -85,7 +85,7 @@ processed_system_data:
   - name: temperature
     function: temperature measurement
     damping: 0
-    unit: C
+    unit: degree Celsius
     header: material_coriolis_temperature_c
   - name: exciter current 0
     function: exciter current of lateral movement

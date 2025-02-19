@@ -21,5 +21,5 @@ processed_system_data:
     header: material_io_ai6_relative_humidity_perc
   - name: ambient temperature
     function: ambient temperature
-    unit: C
+    unit: degree Celsius
     header: material_io_ai7_ambient_temperature_c

@@ -46,11 +46,11 @@ processed_system_data:
     header: mai_water_run_bool
   - name: water temperature
     function: measures the water temperature just after the water tank (orignal)
-    unit: C
+    unit: degree Celsius
     header: mai_water_temp_c
   - name: water temperature
     function: measures the water temperature just before the water inlet at the mixer (custom/after market installed)
-    unit: C
+    unit: degree Celsius
     header: mai_water_temp_mixer_inlet_c
   - name: water flow setpoint
     function: water flow setpoint
@@ -94,11 +94,11 @@ processed_system_data:
     header: mai_pump_vibration_mode_i
   - name: dry mortar temperature
     function: dry mortar temperature at silo output (if used)
-    unit: C
+    unit: degree Celsius
     header: mai_silo_dry_mortar_temperature_c
   - name: mortar temperature
     function: mortar temperature at agitating chamber (custom/after market installed)
-    unit: C
+    unit: degree Celsius
     header: mai_pumping_chamber_mortar_temperature_c
   - name: water pre-run
     function: water pump pre runtime

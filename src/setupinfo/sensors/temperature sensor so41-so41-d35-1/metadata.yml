@@ -26,7 +26,7 @@ io:
     signal limits: [4, 20]
     reading limits: [-50, 150]
     interpolation: linear
-    unit: Celsius degrees
+    unit: degree Celsius
 
 sensors:
   - name: temperature sensor

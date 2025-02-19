@@ -28,7 +28,7 @@ processed_system_data:
     header: material_bronkhorst_measure_gmin
   - name: tempature
     function: medium temperature
-    unit: C
+    unit: degree Celsius
     header: material_bronkhorst_temperature
   - name: density
     function: actual density
