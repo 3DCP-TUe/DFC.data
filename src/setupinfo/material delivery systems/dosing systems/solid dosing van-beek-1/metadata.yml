@@ -2,7 +2,7 @@ attr:
   class: material delivery systems
   subclass: dosing systems
   name: solid dosing van-beek-1
-  description: Open-loop aggregate, powder and fiber dosing system. 
+  description: Open-loop aggregate, powder and fiber dosing system acquired via Zavhy. 
   note: Details are confidential, not all information is provided. Remote control via IO installed after market.
 
 couplings:
@@ -14,7 +14,7 @@ couplings:
       inner diameter: 97.38
 
 io:
-  - name: AI
+  - name: speed
     type: analog input 4-20 mA passive
     function: remote control dosing screw velocity
     signal limits: [4, 20]
@@ -22,7 +22,7 @@ io:
     interpolation: linear
     unit: null # For example kg/min
     connector: Weipu SP2112/S5
-  - name: DI
+  - name: start/stop
     type: digital input 24V DC
     function: remote control on/off dosing screw
     signal limits: [0, 1]
