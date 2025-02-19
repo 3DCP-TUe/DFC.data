@@ -12,7 +12,25 @@ couplings:
   outlets:
     - type: push-in fitting
       size: 6
-      
+
+sensors:
+  - name: coriolis sensor
+    type: coriolis
+    manufacturer: Bronkhorst
+    model: MI140-VAD-22-0-S-DA-000 
+    product series: Industrial mini CORI-FLOW 
+    material: SS 316L
+    flow range: [4, 200] # g/min
+    medium: liquid
+
+parts:
+  - name: pump
+    type: gear pump
+    model: Tuthill DGS.38EEET2NN00000
+    material: 316 Stainless Steel
+    bearing: PEEK
+    seals: teflon
+    
 processed_system_data:
   - name: alarm info
     function: alarm info
