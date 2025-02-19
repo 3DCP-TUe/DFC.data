@@ -37,7 +37,8 @@ sensors:
     serial number: null
     temperature range: [-50, 150]
 
-housing:
-  name: custom made temperature sensor housing
-  diameter: 35
-  material: PRUSAMENT PETG
+parts:
+  - name: temperature sensor housing
+    type: custom made - 3D printed
+    diameter: 35
+    material: PRUSAMENT PETG

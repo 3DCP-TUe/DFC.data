@@ -19,10 +19,12 @@ couplings:
       inner diameter: 27
 
 parts:
-  - type: system 22 female mortar coupling
+  - name: mortar coupling inlet
+    type: system 22 female mortar coupling
     size: 25
     connection: 1" female BSP
-  - type: seamless pipe
+  - name: pipe
+    type: seamless pipe
     material: steel
     outer diameter: 38
     inner diameter: 27

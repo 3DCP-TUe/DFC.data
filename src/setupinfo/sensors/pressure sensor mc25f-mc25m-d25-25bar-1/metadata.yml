@@ -37,11 +37,11 @@ sensors:
     serial number: 1A02PUTVKK5
     pressure range: [0, 25]
 
-housing:
-  name: Pressure housing
-  type: RDM series
-  manufacture: AKO
-  diameter: DN25
-  material: steel
-  sleeve: rubber
-  transmitting fluid: glycerin
+parts:
+  - name: Pressure housing
+    type: RDM series
+    manufacture: AKO
+    diameter: DN25
+    material: steel
+    sleeve: rubber
+    transmitting fluid: glycerin

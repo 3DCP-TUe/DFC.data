@@ -19,10 +19,12 @@ couplings:
       inner diameter: 35
 
 parts:
-  - type: system 23.5 female mortar coupling
+  - name: mortar coupling inlet
+    type: system 23.5 female mortar coupling
     size: 35
     connection: 1.25" female BSP
-  - type: seamless pipe
+  - name: pipe
+    type: seamless pipe
     material: steel
     outer diameter: 41
     inner diameter: 35

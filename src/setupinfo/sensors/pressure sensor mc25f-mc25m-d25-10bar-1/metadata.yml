@@ -37,11 +37,11 @@ sensors:
     serial number: 1A02FA19A1M
     pressure range: [0, 10]
 
-housing:
-  name: pressure sensor housing
-  type: RDM series
-  manufacture: AKO
-  diameter: DN25
-  material: steel
-  sleeve: rubber
-  transmitting fluid: glycerin
+parts:
+  - name: pressure sensor housing
+    type: RDM series
+    manufacture: AKO
+    diameter: DN25
+    material: steel
+    sleeve: rubber
+    transmitting fluid: glycerin

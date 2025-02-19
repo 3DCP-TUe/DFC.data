@@ -24,7 +24,7 @@ sensors:
     firmware version: 01.01.00
     medium: liquid
     settings:
-      - mass flow offset: 0.0300
+      - mass flow offset: 0.03
       - mass flow factor: 1.0
       - volume flow offset: 0.0
       - volume flow factor: 1.0

@@ -10,7 +10,8 @@ dimensions:
   mass: 0.057
 
 parts:
-  - type: helical static mixing chain
+  - name: satic mixer
+    type: helical static mixing chain
     manufacturer: PRIMIX
     name: PMS25-2-316L-CHAIN
     number of elements: 2

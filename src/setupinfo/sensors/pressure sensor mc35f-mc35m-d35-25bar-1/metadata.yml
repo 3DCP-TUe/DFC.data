@@ -37,11 +37,11 @@ sensors:
     serial number: 1A02QL5WW3L
     pressure range: [0, 25]
 
-housing:
-  name: pressure sensor housing
-  type: RDM series
-  manufacture: AKO
-  diameter: DN32
-  material: steel
-  sleeve: rubber
-  transmitting fluid: glycerin
+parts:
+  - name: pressure sensor housing
+    type: RDM series
+    manufacture: AKO
+    diameter: DN32
+    material: steel
+    sleeve: rubber
+    transmitting fluid: glycerin
