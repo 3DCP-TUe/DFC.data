@@ -157,3 +157,8 @@ processed_system_data:
     function: actual pump speed
     unit: RPM
     header: mtec_pump_speed_actual_rpm
+  - name: level sensor position
+    function: position of the infrared level sensor in the pumping chamber
+    unit: cm
+    header: mtec_level_sensor_position_cm
+  
