@@ -3,7 +3,7 @@ attr:
   subclass: storage
   name: silo-2
   description: Standard mortar silo (Piccolo) with vibration block. Used for storage of dry materials.
-  note: Four aeration pads (type VBS1N-01 vibrofluidficatore ½ GAS aluminum, silicone membrane white) were installed after market.
+  note: Four aeration pads and a temperature sensor were installed after market.
   
 dimensions:
   volume: 1200
@@ -14,3 +14,29 @@ couplings:
   outlets:
     - type: flange
       size: DN250
+
+io:
+  - name: aeration pads
+    type: digital input 24V DC
+    function: enables the aeration pads
+    connector: Weipu SP2112/P3
+  - name: temperature sensor
+    connector: Weipu SP2112/P4
+    type: analog output 4-20 mA active
+    signal limits: [4, 20]
+    reading limits: [0, 100]              #TODO: Check!
+    interpolation: linear
+    unit: degree Celsius
+
+sensors:
+  - name: temperature sensor
+    type: temperature
+    manufacturer: Siemens
+    model: null                            #TODO!
+    product number: null                   #TODO!
+    serial number: null                    #TODO!
+    temperature range: [0, 100]            #TODO: Check!
+
+parts:
+  - name: aeration pads
+    type: VBS1N-01 vibrofluidficatore 1/2-inch GAS aluminum, silicone membrane white
