@@ -40,3 +40,4 @@ sensors:
 parts:
   - name: aeration pads
     type: VBS1N-01 vibrofluidficatore 1/2-inch GAS aluminum, silicone membrane white
+    amount: 4
