@@ -1,0 +1,37 @@
+software_settings:
+  roi:
+    width: 848
+    height: 300
+  white_balance_ratio:
+    red: 1.000
+    green: 0.550
+    blue: 1.285
+  whitepoint:
+    x: 0.9225
+    y: 0.9583
+    z: 1.0468
+  gain: 2.7
+  exposure_time: 16000
+
+hardware:
+  camera: 
+    name: Basler a2A1920-51gcPRO
+    shutter: global shutter
+    resolution:
+      width: 1920
+      height: 1200
+  lens:
+    name: Edmund Optics 16MM Compact Fixed Focal Length
+    focal_length: 0.1
+    aperture: f/8
+    filters:
+      - name: Midwest Optical AC400
+        purpose: UV protection
+        type: bandpass
+        position: rear
+      - name: Midwest Optical PR032-25.5
+        purpose: polarization
+        type: polarizer
+        position: front
+  light_source: 
+    name: Polarized brick light PL-ELSB-105SW
