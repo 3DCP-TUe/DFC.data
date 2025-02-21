@@ -1,7 +1,7 @@
 attr:
   class: printheads
   subclass: static
-  name: tube mc35f-so42-d35-l600-1
+  name: tube mc35f-so41-d35-l600-1
   description: Sraight steel pipe with female mortar coupling.
 
 dimensions:
