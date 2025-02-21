@@ -1,0 +1,3 @@
+time,age,velocity,acceleration,temperature
+00:30:04,00:30:00,1,1,20.0
+00:31:04,00:31:00,1.2,1.1,20.1
