@@ -7,10 +7,12 @@ attr:
 
 couplings:
   inlets:
-    - type: flange
+    - name: concrete inlet
+      type: flange
       size: DN32
   outlets:
-    - type: flange
+    - name: concrete outlet
+      type: flange
       size: DN32
 
 parts:

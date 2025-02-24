@@ -10,9 +10,11 @@ dimensions:
 
 couplings:
   inlets:
-    - type: manhole
+    - name: opening to feed material
+      type: manhole
   outlets:
-    - type: flange
+    - name: outlet
+      type: flange
       size: DN250
 
 io:

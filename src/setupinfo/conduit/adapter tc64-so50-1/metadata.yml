@@ -9,10 +9,12 @@ dimensions:
 
 couplings:
   inlets:
-    - type: tri-clamp 2"
-      flange diameter: 64
+    - name: concrete inlet
+      type: tri-clamp 2"
+      size: 64
       inner_diameter: 47.6
   outlets:
-    - type: slip-on
+    - name: concrete outlet
+      type: slip-on
       outer_diameter: 51.05
       inner_diameter: 47.60

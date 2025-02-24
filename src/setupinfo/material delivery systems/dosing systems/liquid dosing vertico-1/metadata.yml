@@ -7,11 +7,17 @@ attr:
 
 couplings:
   inlets:
-    - type: push-in fitting
+    - name: main inlet
+      type: push-in fitting
       size: 10
-    - type: GEKA
+    - name: inlet for cleaning
+      type: GEKA
   outlets:
-    - type: push-in fitting
+    - name: main outlet
+      type: push-in fitting
+      size: 6
+    - name: by-pass before flow sensor that can be manually opened and closed
+      type: push-in fitting
       size: 6
 
 sensor:

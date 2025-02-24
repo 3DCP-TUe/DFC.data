@@ -9,11 +9,13 @@ dimensions:
 
 couplings:
   inlets:
-    - type: system 23.5 female mortar coupling
+    - name: concrete inlet
+      type: system 23.5 female mortar coupling
       size: 35
       connection: hosetail
   outlets:
-    - type: system 23.5 male mortar coupling
+    - name: concrete outlet
+      type: system 23.5 male mortar coupling
       size: 35
       connection: 1.25" female BSP
 

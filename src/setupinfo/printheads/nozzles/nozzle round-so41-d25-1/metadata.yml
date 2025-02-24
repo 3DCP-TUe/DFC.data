@@ -14,7 +14,8 @@ dimensions:
 
 couplings:
   inlets: 
-    - type: slip-on
+    - name: concrete inlet
+      type: slip-on
       length: 24.5
       outer_diameter: 41
       inner_diameter: 35

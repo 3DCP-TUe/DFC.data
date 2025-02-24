@@ -3,13 +3,15 @@ attr:
   subclass: dosing systems
   name: solid dosing van-beek-1
   description: Open-loop aggregate, powder and fiber dosing system acquired via Zavhy. 
-  note: Details are confidential, not all information is provided. Remote control via IO installed after market.
+  note: Details are confidential, not all information is provided. Remote control via i/o installed after market.
 
 couplings:
   inlets:
-    - type: Protective screen
+    - name: main inlet
+      type: protective screen
   outlets:
-    - type: tri-clamp 3 1/2"
+    - name: main outlet
+      type: tri-clamp 3 1/2"
       size: 119
       inner_diameter: 97.38
 

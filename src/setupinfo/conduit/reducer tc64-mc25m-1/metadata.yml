@@ -9,11 +9,13 @@ dimensions:
 
 couplings:
   inlets:
-    - type: tri-clamp
+    - name: concrete inlet
+      type: tri-clamp
       size: 64
       inner_diameter: 47.6
   outlets:
-    - type: system 22 male mortar coupling
+    - name: concrete outlet
+      type: system 22 male mortar coupling
       size: 25
       connection: 1" female BSP
 

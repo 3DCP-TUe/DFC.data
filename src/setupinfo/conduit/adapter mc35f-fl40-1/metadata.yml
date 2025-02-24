@@ -9,11 +9,13 @@ dimensions:
 
 couplings:
   inlets:
-    - type: system 23.5 female mortar coupling
+    - name: concrete inlet
+      type: system 23.5 female mortar coupling
       size: 35
       connection: 1.25" female BSP
   outlets:
-    - type: flange
+    - name: concrete outlet
+      type: flange
       size: DN40
 
 parts:

@@ -9,10 +9,12 @@ dimensions:
 
 couplings:
   inlets:
-    - type: tri-clamp
+    - name: concrete inlet
+      type: tri-clamp
       size: 91
       inner_diameter: 73
   outlets:
-    - type: tri-clamp
+    - name: concrete outlet
+      type: tri-clamp
       size: 64
       inner_diameter: 47.6

@@ -7,10 +7,12 @@ attr:
 
 couplings:
   inlets:
-    - type: push-in fitting
+    - name: fluid inlet
+      type: push-in fitting
       size: 6
   outlets:
-    - type: push-in fitting
+    - name: fluid outlet
+      type: push-in fitting
       size: 6
 
 sensors:

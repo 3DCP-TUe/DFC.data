@@ -10,9 +10,11 @@ dimensions:
 
 couplings:
   inlets:
-    - type: pressure flange c-pump
+    - name: concrete inlet
+      type: pressure flange c-pump
       size: 59
   outlets:
-    - type: system 22 male mortar coupling
+    - name: concrete outlet
+      type: system 22 male mortar coupling
       size: 25
       connection: 1" female BSP

@@ -11,11 +11,13 @@ dimensions:
 
 couplings:
   inlets:
-    - type: system 22 female mortar coupling
+    - name: concrete inlet
+      type: system 22 female mortar coupling
       size: 25
       connection: 1" female BSP
   outlets:
-    - type: system 22 male mortar coupling
+    - name: concrete outlet
+      type: system 22 male mortar coupling
       size: 25
       connection: 1" female BSP
 

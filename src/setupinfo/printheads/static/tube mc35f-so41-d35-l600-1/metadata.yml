@@ -10,11 +10,13 @@ dimensions:
 
 couplings:
   inlets:
-    - type: system 23.5 female mortar coupling
+    - name: concrete inlet
+      type: system 23.5 female mortar coupling
       size: 35
       connection: 1.25" female BSP
   outlets:
-    - type: slip-on
+    - name: concrete outlet
+      type: slip-on
       outer_diameter: 41
       inner_diameter: 35
 

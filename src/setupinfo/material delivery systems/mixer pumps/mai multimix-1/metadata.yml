@@ -7,14 +7,19 @@ attr:
 
 couplings:
   inlets:
-    - type: flange
+    - name: connector for silo
+      type: flange
       size: DN250
-    - type: Push-in fitting
+    - name: injection port at start of horizontal mixer
+      type: Push-in fitting
       size: 6 mm
-    - type: GEKA
-    - type: Protective screen with sack opener
+    - name: water inlet
+      type: GEKA
+    - name: opening for bags/manually feeding
+      type: protective screen with sack opener
   outlets:
-    - type: pressure flange c-pump
+    - name: concrete outlet
+      type: pressure flange c-pump
       size: 59
       
 sensors:

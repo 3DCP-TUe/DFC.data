@@ -9,3 +9,11 @@ dimensions:
   length: null
   volume: null
   mass: null
+
+couplings:
+  inlets:
+    - name: concrete inlet
+    - name: injection port
+    - name: powder/fiber inlet
+  outlets:
+    - name: concrete outlet
