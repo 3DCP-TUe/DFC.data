@@ -35,7 +35,7 @@ sensors:
     model: S-20
     product_number: 14071239
     serial_number: 1A02QL5ZWJP
-    pressure range: [0, 25]
+    pressure_range: [0, 25]
 
 parts:
   - name: pressure sensor housing

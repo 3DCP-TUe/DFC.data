@@ -5,12 +5,20 @@ attr:
   description: Peristaltic pump Verder Dura 35 with active cooling and non-standard gearbox factor. 
   note: Electronics and controls developed in house. 
 
+couplings:
+  inlets:
+    - type: flange
+      size: DN32
+  outlets:
+    - type: flange
+      size: DN32
+
 parts:
   - name: pump
     type: peristaltic pump
     manufacturer: Verder Liquids
     model: Dura 35
-    velocity_range: [145, 1445]
+    max_velocity: 1445 # RPM (without gearbox)
     reduction_factor: 50:1
   - name: frequency converter
     type: frequency converter

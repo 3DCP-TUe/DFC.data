@@ -18,15 +18,13 @@ couplings:
       size: 59
       
 sensors:
-  - name: mortar temperature sensor
-    function: measurement of mortar temperature at agitating chamber
+  - name: mortar temperature senso at agitating chamber
     type: temperature
     manufacturer: ifm electronic
     model: TA2105
     product_number: TA-025CLER14-A-ZVG/US
     temperature range: [-50, 150]
-  - name: water temperature sensor
-    function: additional (second) temperature sensor to measure the water temperature after the water pump just before the water inlet in the mixer
+  - name: additional water temperature sensor installed after water pump
     type: temperature
     manufacturer: null
     model: PT100

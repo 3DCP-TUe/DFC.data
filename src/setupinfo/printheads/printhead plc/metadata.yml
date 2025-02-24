@@ -1,7 +1,100 @@
 attr:
   class: printheads
   name: printhead plc
-  description: Printhead PLC for data acquiston and control. 
+  description: Printhead PLC for data acquiston and control of the servo motors. 
+
+parts:
+  - main_plc:
+      name: main plc
+      items:
+        - name: plc
+          type: plc
+          manufacturer: Siemens
+          model: SIMATIC DP, CPU 1512SP F-1 PN for ET 200SP
+          product_number: 6ES7512-1SK01-0AB0
+        - name: digital input modules
+          type: digital input modules 24V DC
+          manufacturer: Siemens
+          model: SIMATIC ET 200SP, Digital input module, DI 8x 24V DC High Feature
+          product_number: 6ES7131-6BF00-0CA0
+          amount: 1
+        - name: digital output modules
+          type: digital output modules 24V DC
+          manufacturer: Siemens
+          model: SIMATIC ET 200SP, digital output module, DQ 4x 24VDC/2A High Feature
+          product_number: 6ES7132-6BF00-0CA0
+          amount: 1
+        - name: servo drive
+          type: servo drive
+          manufacturer: Siemens
+          model: SINAMICS S210 5 kW
+          product_number: 6SL3210-5HE15-0UF0
+          amount: 2
+  - wall_box_1: 
+      name: box 1 (top)
+      items:
+        - name: remote i/o station
+          type: remote i/o station
+          manufacturer: Siemens
+          model: SIMATIC ET 200SP, PROFINET, 2-port interface module IM 155-6PN/2 High Feature
+          product_number: 6ES7155-6AU01-0CN0
+        - name: analog input modules
+          type: analog input modules HART
+          manufacturer: Siemens
+          model: SIMATIC ET 200SP, Analog HART input module, AI 4XI 2-wire HART High Feature
+          product_number: 6ES7134-6TD00-0CA1
+          amount: 2
+        - name: digital input modules
+          type: digital input modules 24V DC
+          manufacturer: Siemens
+          model: SIMATIC ET 200SP, Digital input module, DI 8x 24V DC Standard
+          product_number: 6ES7131-6BF00-0BA0
+          amount: 1
+          type: digital output modules 24V DC
+          manufacturer: Siemens
+          model: SIMATIC ET 200SP, digital output module, DQ 4x 24VDC/2A Standard
+          product_number: 6ES7132-6BF00-0BA0
+          amount: 1
+        - name: switch
+          type: switch non-PoE
+  - wall_box_2:
+      name: box 2 (bottom)
+      items:
+        - name: remote i/o station
+          type: remote i/o station
+          manufacturer: Siemens
+          model: SIMATIC ET 200SP, PROFINET, 2-port interface module IM 155-6PN/2 High Feature
+          product_number: 6ES7155-6AU00-0CN0
+        - name: analog input modules
+          type: analog input modules HART
+          manufacturer: Siemens
+          model: SIMATIC ET 200SP, Analog HART input module, AI 4XI 2-wire HART High Feature
+          product_number: 6ES7134-6TD00-0CA1
+          amount: 1
+        - name: digital input modules
+          type: digital input modules 24V DC
+          manufacturer: Siemens
+          model: SIMATIC ET 200SP, Digital input module, DI 8x 24V DC Standard
+          product_number: 6ES7131-6BF00-0CA0
+          amount: 1
+        - name: digital output modules
+          type: digital output modules 24V DC
+          manufacturer: Siemens
+          model: SIMATIC ET 200SP, digital output module, DQ 4x 24VDC/2A Standard
+          product_number: 6ES7132-6BF00-0CA0
+          amount: 1
+        - name: power supply
+          type: power supply 48V DC
+          manufacturer: Mean Well
+          model: DDR-120B-48
+        - name: power supply 
+          type: power supply 5V DC
+          manufacturer: Phoenix Contact
+          model: MINI-PS-12-24DC/5-15DC/2
+        - name: switch
+          type: switch PoE
+          manufacturer: Scodena
+          model: 65-1GX8GP
 
 io:
   - name: BOX1_AI0

@@ -15,7 +15,7 @@ parts:
     manufacturer: Siemens
     product_number: 6ES7193-6AR00-0AA0
   - name: power suppply
-    type: 24V DC power supply 24V DC
+    type: power supply 24V DC
     manufacturer: Siemens
     model: SIMATIC ET 200SP PS 24V/10A Stabilized power supply
     product_number: 6EP7133-6AE00-0BN0
@@ -43,6 +43,9 @@ parts:
     model: SIMATIC ET 200SP, digital output module, DQ 4x 24VDC/2A Standard
     product_number: 6ES7132-6BD20-0BA0
     amount: 1
+  - name: switch
+    type: switch non-PoE
+    manufacturer: Siemens
 
 io:
   - name: AI0

@@ -5,6 +5,22 @@ attr:
   description: Siemens servo motor. 
   note: Connected to the printhead PLC and are remote controlled via the OPC UA server.
 
+parts:
+  - name: motor
+    type: servo motor
+    manufacturer: Siemens
+    model: SIMOTICS S-1FK2 HD
+    product_number: 1FK2104-4AF00-2SA0
+    max_velocity: 6000 # RPM
+  - name: gearbox
+    type: gearbox
+    manufacturer: APEX dynamics
+    reduction_factor: 5:1
+
+compatible_with:
+  - component: ace-1
+  - component: fred-1
+  
 processed_system_data:
   - name: motor power
     function: motor power
