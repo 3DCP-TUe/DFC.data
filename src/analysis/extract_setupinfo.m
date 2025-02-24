@@ -7,7 +7,7 @@ Foundation. For more information and the LICENSE file, see
 
 %% Clear and close
 close all; 
-clear; 
+clear;
 clc;
 
 %% Get file path
@@ -15,7 +15,7 @@ path = mfilename('fullpath');
 [filepath, name, ext] = fileparts(path);
 cd(filepath);
 
-%% Find components and copy pasta to data record (destination)
+%% Find components and copy paste to data record (destination)
 
 % Folder path to setupinfo library
 cd(filepath);
