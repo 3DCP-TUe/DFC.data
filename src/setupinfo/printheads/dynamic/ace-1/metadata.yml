@@ -17,11 +17,11 @@ couplings:
       connection: 1.25" female BSP
     - type: tri-clamp
       size: 25.4
-      inner diameter: 10
+      inner_diameter: 10
     - type: tri-clamp
       size: 25.4
-      inner diameter: 10
+      inner_diameter: 10
   outlets:
     - type: tri-clamp
       size: 91
-      inner diameter: 73
+      inner_diameter: 73

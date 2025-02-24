@@ -6,8 +6,8 @@ attr:
 dimensions:
   length: 237
   volume: 0.122
-  length before: 102
-  length after: 135
+  length_before: 102
+  length_after: 135
 
 couplings:
   inlets:
@@ -23,8 +23,8 @@ io:
   - name: pressure sensor
     connector: Weipu SP2112/P4
     type: analog output 4-20 mA active
-    signal limits: [4, 20]
-    reading limits: [0, 25]
+    signal_limits: [4, 20]
+    reading_limits: [0, 25]
     interpolation: linear
     unit: bar
 
@@ -33,15 +33,15 @@ sensors:
     type: pressure
     manufacturer: WIKA
     model: S-20
-    product number: 14071239
-    serial number: 1A02PUTVKK5
+    product_number: 14071239
+    serial_number: 1A02PUTVKK5
     pressure range: [0, 25]
 
 parts:
   - name: Pressure housing
     type: RDM series
-    manufacture: AKO
+    manufacturer: AKO
     diameter: DN25
     material: steel
     sleeve: rubber
-    transmitting fluid: glycerin
+    transmitting_fluid: glycerin

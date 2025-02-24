@@ -9,10 +9,9 @@ sensors:
     type: temperature and humidity
     manufacturer: TiTEC
     model: ARFT/M-I/S-D
-    product number: ARFT/M-I/S-D
-    serial number: ""
-    temperature range: [0, 50]
-    humidity range: [0, 100]
+    product_number: ARFT/M-I/S-D
+    temperature_range: [0, 50]
+    humidity_range: [0, 100]
 
 processed_system_data:
   - name: relative humidity

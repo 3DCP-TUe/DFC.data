@@ -5,4 +5,4 @@ attr:
   description: Modified vertical mixing blade from m-tec. Two paddles are added. 
 
 compatible with:
-  - id: m-tec duomix-1
+  - component: m-tec duomix-1

@@ -15,8 +15,8 @@ couplings:
       connection: 1.25" female BSP
   outlets:
     - type: slip-on
-      outer diameter: 41
-      inner diameter: 35
+      outer_diameter: 41
+      inner_diameter: 35
 
 parts:
   - name: mortar coupling inlet
@@ -26,6 +26,6 @@ parts:
   - name: pipe
     type: seamless pipe
     material: steel
-    outer diameter: 41
-    inner diameter: 35
+    outer_diameter: 41
+    inner_diameter: 35
     wall thickness: 3

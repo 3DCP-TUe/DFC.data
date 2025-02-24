@@ -11,8 +11,8 @@ couplings:
   inlets: 
     - type: slip-on
       length: 16.1
-      outer diameter: 41
-      inner diameter: 35
+      outer_diameter: 41
+      inner_diameter: 35
       secured: bolts
   outlets:
     - type: system 22 male mortar coupling

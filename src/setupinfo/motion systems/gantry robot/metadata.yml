@@ -8,16 +8,16 @@ attr:
 
 joints:
   - joint 1:
-    axis limits: [0, 9350]
+    axis_limits: [0, 9350]
     type: prismatic
   - joint 2:
-    axis limits: [0, 4480]
+    axis_limits: [0, 4480]
     type: prismatic
   - joint 3:
-    axis limits: [0, 2150]
+    axis_limits: [0, 2150]
     type: prismatic
   - joint 4:
-    axis limits: [-inf, inf]
+    axis_limits: [-inf, inf]
     type: revolute
 
 processed_system_data:
@@ -55,7 +55,7 @@ processed_system_data:
     header: gantry_vel_z_mm_min
   - name: velocity of c-axis
     function: velocity of c-axis
-    unit: null #TODO
+    unit: null                          #TODO
     header: gantry_vel_c
   - name: feedrate of x-axis
     function: feedrate of x-axis
@@ -71,7 +71,7 @@ processed_system_data:
     header: gantry_feedrate_z_mm_min
   - name: feedrate of c-axis
     function: feedrate of c-axis
-    unit: null #TODO
+    unit: null                        #TODO
     header: gantry_feedrate_c
   - name: feedrate override
     function: feedrate override

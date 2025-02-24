@@ -18,4 +18,4 @@ parts:
     material: stainless steel 316L
 
 compatible with:
-  - id: tube mc25f-so38-d27-l1000-1 
+  - component: tube mc25f-so38-d27-l1000-1 

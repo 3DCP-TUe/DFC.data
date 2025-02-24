@@ -24,8 +24,8 @@ parts:
   - name: adapter
     type: seamless pipe
     material: steel
-    outer diameter: 41
-    inner diameter: 35
+    outer_diameter: 41
+    inner_diameter: 35
     wall thickness: 3
   - name: flange outlet
     type: flange

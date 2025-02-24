@@ -5,4 +5,4 @@ attr:
   description: Commercially available vertical mixing blade from m-tec.
   
 compatible with:
-  - id: m-tec duomix-1
+  - component: m-tec duomix-1

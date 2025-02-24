@@ -20,44 +20,44 @@ sensors:
     type: coriolis
     manufacturer: Endress+Hauser
     model: Promass 500
-    serial number: V718B502000
+    serial_number: V718B502000
     firmware version: 01.01.00
     medium: liquid
     settings:
-      - mass flow offset: 0.03
-      - mass flow factor: 1.0
-      - volume flow offset: 0.0
-      - volume flow factor: 1.0
-      - density offset: 0.0
-      - density factor: 1.0
-      - temperature offset: 0.0
-      - zero point: 275
+      - mass_flow_offset: 0.03
+      - mass_flow_factor: 1.0
+      - volume_flow_offset: 0.0
+      - volume_flow_factor: 1.0
+      - density_offset: 0.0
+      - density_factor: 1.0
+      - temperature_offset: 0.0
+      - zero_point: 275
 
 io:
   - name: configurable output 1
     connector: Weipu SP2112/P4
     type: analog output 4-20 mA active
-    signal limits: [4, 20]
-    assigned value: mass flow
-    reading limits: [0, 16]
+    signal_limits: [4, 20]
+    assigned_value: mass flow
+    reading_limits: [0, 16]
     interpolation: linear
     unit: kg/min
     damping: 90
   - name: configurable output 2
     connector: Weipu SP2112/P4
     type: analog output 4-20 mA active
-    signal limits: [4, 20]
-    assigned value: density
-    reading limits: [2000, 2400]
+    signal_limits: [4, 20]
+    assigned_value: density
+    reading_limits: [2000, 2400]
     interpolation: linear
     unit: kg/m3
     damping: 90
   - name: configurable output 3
     type: Weipu SP2112/P4
     type: analog output 4-20 mA active
-    signal limits: [4, 20]
-    assigned value: null
-    reading limits: null
+    signal_limits: [4, 20]
+    assigned_value: null
+    reading_limits: null
     interpolation: null
     unit: null
     damping: null

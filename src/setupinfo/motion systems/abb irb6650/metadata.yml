@@ -8,20 +8,20 @@ attr:
 
 joints:
   - joint 1:
-    axis limits: [-180, 180]
+    axis_limits: [-180, 180]
     type: revolute
   - joint 2:
-    axis limits: [-65, 85]
+    axis_limits: [-65, 85]
     type: revolute
   - joint 3:
-    axis limits: [-180, 70]
+    axis_limits: [-180, 70]
     type: revolute
   - joint 4:
-    axis limits: [-300, 300]
+    axis_limits: [-300, 300]
     type: revolute
   - joint 5:
-    axis limits: [-120, 120]
+    axis_limits: [-120, 120]
     type: revolute
   - joint 6:
-    axis limits: [-360, 360]
+    axis_limits: [-360, 360]
     type: revolute

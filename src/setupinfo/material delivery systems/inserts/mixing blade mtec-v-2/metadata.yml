@@ -5,4 +5,4 @@ attr:
   description: Modified vertical mixing blade from m-tec with a rigid connection. 
 
 compatible with:
-  - id: m-tec duomix-1
+  - component: m-tec duomix-1

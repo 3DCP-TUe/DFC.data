@@ -11,8 +11,8 @@ couplings:
   inlets:
     - type: tri-clamp 2"
       flange diameter: 64
-      inner diameter: 47.6
+      inner_diameter: 47.6
   outlets:
     - type: slip-on
-      outer diameter: 51.05
-      inner diameter: 47.60
+      outer_diameter: 51.05
+      inner_diameter: 47.60

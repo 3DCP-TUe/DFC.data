@@ -23,8 +23,8 @@ parts:
     connection: weld
   - name: seamless pipe
     material: steel
-    outer diameter: 41
-    inner diameter: 35
+    outer_diameter: 41
+    inner_diameter: 35
     wall thickness: 3
   - name: mortar coupling outlet
     type: system 23.5 male mortar coupling

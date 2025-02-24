@@ -3,6 +3,47 @@ attr:
   name: material delivery plc
   description: PLC for data acquiston and control. 
 
+parts:
+  - name: plc
+    type: plc
+    manufacturer: Siemens
+    model: SIMATIC DP, CPU 1510SP F-1 PN for ET 200SP
+    product_number: 6ES7510-1SK03-0AB0
+  - name: bus adapter
+    type: bus adapter RJ45
+    model: SIMATIC ET 200SP, BusAdapter BA 2xRJ45, 2 RJ45 sockets
+    manufacturer: Siemens
+    product_number: 6ES7193-6AR00-0AA0
+  - name: power suppply
+    type: 24V DC power supply 24V DC
+    manufacturer: Siemens
+    model: SIMATIC ET 200SP PS 24V/10A Stabilized power supply
+    product_number: 6EP7133-6AE00-0BN0
+  - name: analog input modules
+    type: analog input modules U/I
+    manufacturer: Siemens
+    model: SIMATIC ET 200SP, Analog input module, AI 4x U/I 2-wire Standard
+    product_number: 6ES7134-6HD01-0BA1
+    amount: 2
+  - name: analog output modules
+    type: analog output modules U/I
+    manufacturer: Siemens
+    model: SIMATIC ET 200SP, Analog output module, 4XU/I Standard
+    product_number: 6ES7135-6HD00-0BA1
+    amount: 1
+  - name: digital input modules
+    type: digital input modules 24V DC
+    manufacturer: Siemens
+    model: SIMATIC ET 200SP, Digital input module, DI 8x 24V DC Standard
+    product_number: 6ES7131-6BF01-0BA0
+    amount: 1
+  - name: digital output modules 
+    type: digital output modules 24V DC
+    manufacturer: Siemens
+    model: SIMATIC ET 200SP, digital output module, DQ 4x 24VDC/2A Standard
+    product_number: 6ES7132-6BD20-0BA0
+    amount: 1
+
 io:
   - name: AI0
     type: analog input 4-20 mA active

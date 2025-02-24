@@ -2,23 +2,36 @@ attr:
   class: material delivery systems
   subclass: pumps
   name: verder dura 35-1
-  description: Peristaltic pump Verder Dura 35. 
+  description: Peristaltic pump Verder Dura 35 with active cooling and non-standard gearbox factor. 
   note: Electronics and controls developed in house. 
+
+parts:
+  - name: pump
+    type: peristaltic pump
+    manufacturer: Verder Liquids
+    model: Dura 35
+    velocity_range: [145, 1445]
+    reduction_factor: 50:1
+  - name: frequency converter
+    type: frequency converter
+    manufacturer: Siemens
+    model: SINAMICS G120C 1.5 kW
+    product_number: 6SL3210-1KE14-3AF2
 
 io:
   - name: AI
     type: analog input 4-20 mA passive
     function: remote control motor velocity
-    signal limits: [4, 20]
-    reading limits: null #TODO
+    signal_limits: [4, 20]
+    reading_limits: [145, 1445]
     interpolation: linear
     unit: RPM
     connector: Weipu SP2112/S5
   - name: DI
     type: digital input 24V DC
     function: remote control on/off
-    signal limits: [0, 1]
-    reading limits: [0, 1]
+    signal_limits: [0, 1]
+    reading_limits: [0, 1]
     unit: bool
     connector: Weipu SP2112/P3
 

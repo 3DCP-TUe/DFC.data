@@ -5,4 +5,4 @@ attr:
   description: Commercially available horizontal mixing blade from MAI.
 
 compatible with:
-  - id: mai multimix-1
+  - component: mai multimix-1

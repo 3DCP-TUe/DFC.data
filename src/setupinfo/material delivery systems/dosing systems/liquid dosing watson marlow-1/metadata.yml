@@ -16,15 +16,15 @@ io:
   - name: speed
     type: analog input 4-20 mA passive
     function: remote control dosing screw velocity
-    signal limits: [4, 20]
-    reading limits: null # For example [10, 30] -> 4 mA correspond to 10 kg/min and 20 mA to 30 kg/min, linear interpolation between values
+    signal_limits: [4, 20]
+    reading_limits: null # For example [10, 30] -> 4 mA correspond to 10 kg/min and 20 mA to 30 kg/min, linear interpolation between values
     interpolation: linear
     unit: null # For example kg/min
     connector: Weipu SP2112/S5
   - name: start/stop
     type: digital input 24V DC
     function: remote control on/off dosing screw
-    signal limits: [0, 1]
-    reading limits: [1, 0] # reverse: 0=off, 1=on
+    signal_limits: [0, 1]
+    reading_limits: [1, 0] # reverse: 0=off, 1=on
     unit: bool
     connector: Weipu SP2112/P3

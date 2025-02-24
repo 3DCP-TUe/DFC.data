@@ -11,7 +11,7 @@ couplings:
   inlets:
     - type: tri-clamp
       size: 64
-      inner diameter: 47.6
+      inner_diameter: 47.6
   outlets:
     - type: system 23.5 male mortar coupling
       size: 35

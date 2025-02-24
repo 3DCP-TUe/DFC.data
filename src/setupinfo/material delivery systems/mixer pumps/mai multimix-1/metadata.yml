@@ -23,16 +23,14 @@ sensors:
     type: temperature
     manufacturer: ifm electronic
     model: TA2105
-    product number: TA-025CLER14-A-ZVG/US
-    serial number: null
+    product_number: TA-025CLER14-A-ZVG/US
     temperature range: [-50, 150]
   - name: water temperature sensor
     function: additional (second) temperature sensor to measure the water temperature after the water pump just before the water inlet in the mixer
     type: temperature
     manufacturer: null
     model: PT100
-    product number: null
-    serial number: null
+    product_number: null
     temperature range: null
     
 processed_system_data:
