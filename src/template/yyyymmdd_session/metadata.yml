@@ -25,7 +25,7 @@ materials:
 
 # Motion system
 motion_systems:
-  - id: gantry robot
+  - name: gantry robot
 
 # Software
 software:
@@ -44,12 +44,15 @@ system_layout:
   - component: liquid dosing bronkhorst-1
     connected_to:
       - component: mai multimix-1
+        inlet: injection port at start of horizontal mixer
   - component: solid dosing van-beek-1
     connected_to:
       - component: mai multimix-1
+        inlet: agitating chamber open top access
   - component: silo-1
     connected_to:
       - component: mai multimix-1
+        inlet: connector for silo
   - component: mai multimix-1
     connected_to:
       - component: mai 40ll-0s
