@@ -45,7 +45,7 @@ io:
     unit: bool
     connector: Weipu SP2112/P3
 
-opc:
+processed_system_data:
   - name: motor velocity
     plc: material delivery plc
     unit: RPM
