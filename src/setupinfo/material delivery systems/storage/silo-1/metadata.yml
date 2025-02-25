@@ -20,13 +20,13 @@ couplings:
 io:
   - name: aeration pads
     type: digital input 24V DC
-    function: enables the aeration pads
+    function: activates the aeration pads
     connector: Weipu SP2112/P3
   - name: temperature sensor
     connector: Weipu SP2112/P4
     type: analog output 4-20 mA active
     signal_limits: [4, 20]
-    reading limits: [0, 100]              #TODO: Check!
+    reading_limits: [0, 100] #TODO: Check!
     interpolation: linear
     unit: degree Celsius
 

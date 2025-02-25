@@ -16,6 +16,8 @@ couplings:
       type: GEKA
     - name: opening for bags/manually feeding
       type: protective screen with sack opener
+    - name: pumping chamber open top access
+      type: opening
   outlets:
     - name: concrete outlet
       type: pressure flange d-pump

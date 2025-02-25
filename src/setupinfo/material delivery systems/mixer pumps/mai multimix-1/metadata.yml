@@ -17,13 +17,15 @@ couplings:
       type: GEKA
     - name: opening for bags/manually feeding
       type: protective screen with sack opener
+    - name: agitating chamber open top access
+      type: opening
   outlets:
     - name: concrete outlet
       type: pressure flange c-pump
       size: 59
       
 sensors:
-  - name: mortar temperature senso at agitating chamber
+  - name: mortar temperature sensor at agitating chamber
     type: temperature
     manufacturer: ifm electronic
     model: TA2105
@@ -35,6 +37,12 @@ sensors:
     model: PT100
     product_number: null
     temperature range: null
+  - name: dry mortar temperature sensor connected to silo outlet
+    type: temperature
+    manufacturer: Siemens
+    model: null #TODO!
+    product_number: null #TODO!
+    temperature range: [0, 100] #TODO: Check!
     
 processed_system_data:
   - name: source time

@@ -46,6 +46,7 @@ parts:
   - name: switch
     type: switch non-PoE
     manufacturer: Siemens
+    model: null #TODO
 
 io:
   - name: AI0
