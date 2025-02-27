@@ -1,4 +1,4 @@
-# 3D Sneak Peek: 3DCP Database TU/e
+# 3D Sneak Peek: 3DCP Database Framework TU/e
 
 ## Introduction 
 
