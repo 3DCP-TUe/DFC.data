@@ -45,21 +45,28 @@ classdef sneakpeek
                 swipe_destination)
             
             % Get names and folders from root
-            [names, folders] = sneakpeek.get_setupinfo_components(root);
+            [lib_names, lib_folders] = sneakpeek.get_setupinfo_components(root);
 
             % Check if members exists
-            [found, ~] = ismember(components, names);
-            
+            indices = zeros(size(components));
+
+            for i = 1:length(components)
+                idx = find(strcmp(lib_names, components{i}));
+                if ~isempty(idx)
+                    indices(i) = idx;
+                end
+            end
+
             % Check for missing members
-            if any(~found)
-                missing = components(~found);
+            if any(indices == 0)
+                missing = components(indices == 0);
                 error('The following components were not found: %s', ...
                     strjoin(missing, ', '));
             end
             
             % List the paths of hte component folders used
-            folders_used = folders(found);
-            
+            folders_used = lib_folders(indices);
+
             % Swipe directory
             if swipe_destination == true
                 if isfolder(destination)
@@ -91,6 +98,15 @@ classdef sneakpeek
         end
         
         % -----------------------------------------------------------------
+            
+        function result = read_component_metadata(setupinfo_folder, component)
+            cd(setupinfo_folder);
+            cd(component);
+            result = readyaml(setupinfo_folder + "\" + component + "\metadata.yml");
+        end
+
+        % -----------------------------------------------------------------
+
         
     end
 end
