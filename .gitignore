@@ -163,6 +163,7 @@ cython_debug/
 
 # Rhino files
 *.3dmbak
+*.rhl
 
 # Visual studio
 FileContentIndex
