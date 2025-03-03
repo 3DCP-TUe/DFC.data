@@ -121,7 +121,7 @@ io_configuration:
       - name: AI0
         component: pressure sensor mc35f-mc35m-d35-25bar-1
         channel: pressure sensor
-      - name: AI1: 
+      - name: AI1 
         component: pressure sensor mc35f-mc35m-d35-25bar-2
         channel: pressure sensor
       - name: AI2 # Remove if not used

@@ -121,147 +121,21 @@ io_configuration:
       - name: AI0
         component: pressure sensor mc35f-mc35m-d35-25bar-1
         channel: pressure sensor
-      - name: AI1: 
+      - name: AI1
         component: pressure sensor mc35f-mc35m-d35-25bar-2
         channel: pressure sensor
-      - name: AI2 # Remove if not used
-        component: null
-        channel: null
-      - name: AI3 # Remove if not used
-        component: null
-        channel: null
       - name: AI4
         component: coriolis sensor fl40-fl40-d35-1
         channel: configurable output 1
       - name: AI5
         component: coriolis sensor fl40-fl40-d35-1
         channel: configurable output 2
-      - name: AO0 # Remove if not used
-        component: null
-        channel: null
-      - name: AO1 # Remove if not used
-        component: null
-        channel: null
-      - name: AO2 # Remove if not used
-        component: null
-        channel: null
-      - name: AO3 # Remove if not used
-        component: null
-        channel: null
-      - name: DI0 # Remove if not used
-        component: null
-        channel: null
-      - name: DI1 # Remove if not used
-        component: null
-        channel: null
-      - name: DI2 # Remove if not used
-        component: null
-        channel: null
-      - name: DI3 # Remove if not used
-        component: null
-        channel: null
-      - name: DO0 # Remove if not used
-        component: null
-        channel: null
-      - name: DO1 # Remove if not used
-        component: null
-        channel: null
-      - name: DO2 # Remove if not used
-        component: null
-        channel: null
-      - name: DO3 # Remove if not used
-        component: null
-        channel: null
+
   - component: printhead plc
     channels:
       - name: BOX1_AI0 
         component: pressure sensor mc35f-mc35m-d35-10bar-1
         channel: pressure sensor
-      - name: BOX1_AI2 # Remove if not used
-        component: null
-        channel: null
-      - name: BOX1_AI3 # Remove if not used
-        component: null
-        channel: null
-      - name: BOX1_AI4 # Remove if not used
-        component: null
-        channel: null
-      - name: BOX1_AI5 # Remove if not used
-        component: null
-        channel: null
-      - name: BOX1_AI6 # Remove if not used
-        component: null
-        channel: null
-      - name: BOX1_AI7 # Remove if not used
-        component: null
-        channel: null
-      - name: BOX1_AI8 # Remove if not used
-        component: null
-        channel: null
       - name: BOX2_AI0
         component: temperature sensor so41-so41-d35-1
         channel: temperature sensor
-      - name: BOX2_AI2 # Remove if not used
-        component: null
-        channel: null
-      - name: BOX2_AI3 # Remove if not used
-        component: null
-        channel: null
-      - name: BOX2_AI4 # Remove if not used
-        component: null
-        channel: null
-  - component: mtec duomix-1
-    channels:
-      - name: AI1 # Remove if not used
-        component: null
-        channel: null
-      - name: AI2 # Remove if not used
-        component: null
-        channel: null
-      - name: AI3 # Remove if not used
-        component: null
-        channel: null
-      - name: AI4 # Remove if not used
-        component: null
-        channel: null
-      - name: AI5 # Remove if not used
-        component: null
-        channel: null
-      - name: AO1 # Remove if not used
-        component: null
-        channel: null
-      - name: AO2 # Remove if not used
-        component: null
-        channel: null
-      - name: DI1 # Remove if not used
-        component: null
-        channel: null
-      - name: DI2 # Remove if not used
-        component: null
-        channel: null
-      - name: DI3 # Remove if not used
-        component: null
-        channel: null
-      - name: DI4 # Remove if not used
-        component: null
-        channel: null
-      - name: DI5 # Remove if not used
-        component: null
-        channel: null
-      - name: DO1 # Remove if not used
-        component: null
-        channel: null
-      - name: DO2 # Remove if not used
-        component: null
-        channel: null
-  - component: liquid dosing vertico-1
-    channels:
-      - name: AI3 # Remove if not used
-        component: null
-        channel: null
-      - name: AO0 # Remove if not used
-        component: null
-        channel: null
-      - name: DO3 # Remove if not used
-        component: null
-        channel: null
