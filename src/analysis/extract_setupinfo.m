@@ -28,12 +28,24 @@ cd('test/setupinfo')
 destination = pwd;
 
 % Read session metadata file
+% Session 1
 cd(filepath);
-cd('../template/yyyymmdd_session/')
-session = readyaml(pwd + "\metadata.yml");
+cd('../template/yyyymmdd_session_1/')
+session1 = readyaml(pwd + "\metadata_session.yml");
+% Session 2
+cd(filepath);
+cd('../template/yyyymmdd_session_2/')
+session2 = readyaml(pwd + "\metadata_session.yml");
+% Session 3
+cd(filepath);
+cd('../template/yyyymmdd_session_3/')
+session3 = readyaml(pwd + "\metadata_session.yml");
 
 % Get all components used in this session
-components = sneakpeek.get_session_components(session);
+components1 = sneakpeek.get_session_components(session1);
+components2 = sneakpeek.get_session_components(session1);
+components3 = sneakpeek.get_session_components(session1);
+components = unique([components1; components2; components3]);
 
 % Copy used components to destination folder
 sneakpeek.copy_setupinfo(library, destination, components, true);
