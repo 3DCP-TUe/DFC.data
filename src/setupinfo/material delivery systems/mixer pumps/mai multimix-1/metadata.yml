@@ -12,7 +12,7 @@ couplings:
       size: DN250
     - name: injection port at start of horizontal mixer
       type: Push-in fitting
-      size: 6 mm
+      size: 6
     - name: water inlet
       type: GEKA
     - name: opening for bags/manually feeding

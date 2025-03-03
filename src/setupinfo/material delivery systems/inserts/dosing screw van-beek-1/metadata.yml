@@ -1,0 +1,9 @@
+attr:
+  class: material delivery systems
+  subclass: inserts
+  name: dosing screw van-beek-1
+  description: Standard screw conveyor.
+  note: Details are confidential, not all information is provided.
+
+compatible with:
+  - component: solid dosing van-beek-1
