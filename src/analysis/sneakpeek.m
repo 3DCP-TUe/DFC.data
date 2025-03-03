@@ -12,7 +12,8 @@ classdef sneakpeek
         
         % Gets all the components from a setupinfo folder (from a library 
         % or data record)
-        function [names, folders] = get_setupinfo_components(root_folder)
+        function [names, folders] = ...
+            get_components_from_setupinfo(root_folder)
             files = dir(fullfile(root_folder, '**', '*.yml'));
             n = length(files);
             names = cell(n, 1);
@@ -28,13 +29,67 @@ classdef sneakpeek
         % -----------------------------------------------------------------
 
         % Gets the components used in a session
-        function components = get_session_components(session)
+        function components = get_components_from_session(session)
+            
+            % Get components from layout
             n = length(session.system_layout);
             components = cell(n, 1);
             
             for i = 1:n
                 components{i} = session.system_layout{i}.component;
             end
+
+            % Add used motion system
+            n = length(session.motion_systems);
+            motion_systems = cell(n, 1);
+
+            for i = 1:n
+                motion_systems{i} = session.motion_systems{i}.name;
+            end
+
+            % Return unique components
+            components = unique([components; motion_systems]);
+        end
+
+        % -----------------------------------------------------------------
+
+        function components = get_components_from_data_record(root_folder)
+    
+            % Get a list of all subfolders in the root directory
+            subfolders = dir(root_folder);
+            components = {};
+            
+            for i = 1:length(subfolders)
+                
+                % Check if the folder name contains 'session'
+                if subfolders(i).isdir && contains(subfolders(i).name, ...
+                        'session')
+                   
+                    % Construct the full path to the metadata file
+                    metadata_file = fullfile(root_folder, ...
+                        subfolders(i).name, 'metadata_session.yml');
+                    
+                    % Check if the metadata file exists
+                    if isfile(metadata_file)
+                        
+                        % Read the YAML file
+                        session = readyaml(metadata_file);
+                        
+                        % Extract components from the session metadata
+                        session_components = ...
+                            sneakpeek.get_components_from_session(session);
+                        
+                        % Append to the list
+                        components = [components; session_components];
+                    else
+                        error(['Session %s does not contain a ' ...
+                            'metadata file.'], subfolders(i).name);
+                    end
+                end
+            end
+    
+            % Return unique components
+            components = unique(components);
         end
                
         % -----------------------------------------------------------------
@@ -45,7 +100,8 @@ classdef sneakpeek
                 swipe_destination)
             
             % Get names and folders from root
-            [lib_names, lib_folders] = sneakpeek.get_setupinfo_components(root);
+            [lib_names, lib_folders] = ...
+                sneakpeek.get_components_from_setupinfo(root);
 
             % Check if members exists
             indices = zeros(size(components));
@@ -99,10 +155,12 @@ classdef sneakpeek
         
         % -----------------------------------------------------------------
             
-        function result = read_component_metadata(setupinfo_folder, component)
+        function result = read_component_metadata( ...
+                setupinfo_folder, component)
             cd(setupinfo_folder);
             cd(component);
-            result = readyaml(setupinfo_folder + "\" + component + "\metadata.yml");
+            result = readyaml(setupinfo_folder + "\" + component + ...
+                "\metadata.yml");
         end
 
         % -----------------------------------------------------------------
