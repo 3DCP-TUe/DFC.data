@@ -116,58 +116,70 @@ system_layout:
 
 # IO configuration
 io_configuration:
-  material delivery plc:
-    AI0: pressure sensor mc35f-mc35m-d35-25bar-1
-    AI1: pressure sensor mc35f-mc35m-d35-25bar-2
-    AI2: null
-    AI3: null
-    AI4:
-      - component: coriolis sensor fl40-fl40-d35-1
-        name: configurable output 1
-    AI5:
-      - component: coriolis sensor fl40-fl40-d35-1
-        name: configurable output 2
-    AO0: null
-    AO1: null
-    AO2: null
-    AO3: null
-    DI0: null
-    DI1: null
-    DI2: null
-    DI3: null
-    DO0: null
-    DO1: null
-    DO2: null
-    DO3: null
-  printhead plc:
-    BOX1_AI0: pressure sensor mc35f-mc35m-d35-10bar-1
-    BOX1_AI2: null
-    BOX1_AI3: null
-    BOX1_AI4: null
-    BOX1_AI5: null
-    BOX1_AI6: null
-    BOX1_AI7: null
-    BOX1_AI8: null
-    BOX2_AI0: temperature sensor so41-so41-d35-1
-    BOX2_AI2: null
-    BOX2_AI3: null
-    BOX2_AI4: null
-  mtec duomix-1:
-    AI1: null
-    AI2: null
-    AI3: null
-    AI4: null
-    AI5: null
-    AO1: null
-    AO2: null
-    DI1: null
-    DI2: null
-    DI3: null
-    DI4: null
-    DI5: null
-    DO1: null
-    DO2: null
-  liquid dosing vertico-1:
-    AI3: null
-    AO0: null
-    DO3: null
+  - component: material delivery plc
+    channels:
+      AI0: 
+        component: pressure sensor mc35f-mc35m-d35-25bar-1
+        channel: pressure sensor
+      AI1: 
+        component: pressure sensor mc35f-mc35m-d35-25bar-2
+        channel: pressure sensor
+      AI2: null # Remove if not used
+      AI3: null # Remove if not used
+      AI4:
+        component: coriolis sensor fl40-fl40-d35-1
+        channel: configurable output 1
+      AI5:
+        component: coriolis sensor fl40-fl40-d35-1
+        channel: configurable output 2
+      AO0: null # Remove if not used
+      AO1: null # Remove if not used
+      AO2: null # Remove if not used
+      AO3: null # Remove if not used
+      DI0: null # Remove if not used
+      DI1: null # Remove if not used
+      DI2: null # Remove if not used
+      DI3: null # Remove if not used
+      DO0: null # Remove if not used
+      DO1: null # Remove if not used
+      DO2: null # Remove if not used
+      DO3: null # Remove if not used
+  - component: printhead plc
+    channels:
+      BOX1_AI0: 
+        component: pressure sensor mc35f-mc35m-d35-10bar-1
+        channel: pressure sensor
+      BOX1_AI2: null # Remove if not used
+      BOX1_AI3: null # Remove if not used
+      BOX1_AI4: null # Remove if not used
+      BOX1_AI5: null # Remove if not used
+      BOX1_AI6: null # Remove if not used
+      BOX1_AI7: null # Remove if not used
+      BOX1_AI8: null # Remove if not used
+      BOX2_AI0: 
+        component: temperature sensor so41-so41-d35-1
+        channel: temperature sensor
+      BOX2_AI2: null # Remove if not used
+      BOX2_AI3: null # Remove if not used
+      BOX2_AI4: null # Remove if not used
+  - component: mtec duomix-1
+    channels:
+      AI1: null # Remove if not used
+      AI2: null # Remove if not used
+      AI3: null # Remove if not used
+      AI4: null # Remove if not used
+      AI5: null # Remove if not used
+      AO1: null # Remove if not used
+      AO2: null # Remove if not used
+      DI1: null # Remove if not used
+      DI2: null # Remove if not used
+      DI3: null # Remove if not used
+      DI4: null # Remove if not used
+      DI5: null # Remove if not used
+      DO1: null # Remove if not used
+      DO2: null # Remove if not used
+  - component: liquid dosing vertico-1
+    channels:
+      AI3: null # Remove if not used
+      AO0: null # Remove if not used
+      DO3: null # Remove if not used

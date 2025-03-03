@@ -1,2 +1,2 @@
-deposition_time_start,deposition_time_end,testing_time,file_name
-00:00:02,00:00:04,00:30:04,sample_1.csv
+deposition_time_start,deposition_time_end,testing_time,file_name,distance
+00:00:02,00:00:04,00:30:04,sample_1.csv,40
