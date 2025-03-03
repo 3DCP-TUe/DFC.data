@@ -43,8 +43,8 @@ session3 = readyaml(pwd + "\metadata_session.yml");
 
 % Get all components used in this session
 components1 = sneakpeek.get_session_components(session1);
-components2 = sneakpeek.get_session_components(session1);
-components3 = sneakpeek.get_session_components(session1);
+components2 = sneakpeek.get_session_components(session2);
+components3 = sneakpeek.get_session_components(session3);
 components = unique([components1; components2; components3]);
 
 % Copy used components to destination folder
