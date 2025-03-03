@@ -1,0 +1,40 @@
+attr:
+  class: printheads
+  subclass: nozzles
+  name: nozzle round-so41-d25-temperature-1
+  description: 3D printed round nozzle with temperature sensor. 
+  material: Prusament PETG
+
+dimensions:
+  length: 95.5
+  length 1: 49.5
+  length 2: 75.5
+  length 3: 20
+  diameter: 25.0
+  volume: 0.111679603
+
+couplings:
+  inlets: 
+    - name: concrete inlet
+      type: slip-on
+      length: 24.5
+      outer_diameter: 41
+      inner_diameter: 35
+      secured: band clamp
+
+io:
+  - name: temperature sensor
+    connector: Weipu SP2112/P4
+    type: analog output 4-20 mA active
+    signal_limits: [4, 20]
+    reading_limits: [-50, 150]
+    interpolation: linear
+    unit: degree Celsius
+
+sensors:
+  - name: temperature sensor
+    type: temperature
+    manufacturer: ifm electronic
+    model: TA2105
+    product_number: TA-025CLER14-A-ZVG/US
+    temperature range: [-50, 150]
