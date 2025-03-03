@@ -121,7 +121,7 @@ io_configuration:
       - name: AI0
         component: pressure sensor mc35f-mc35m-d35-25bar-1
         channel: pressure sensor
-      - name: AI1
+      - name: AI1: 
         component: pressure sensor mc35f-mc35m-d35-25bar-2
         channel: pressure sensor
       - name: AI2 # Remove if not used
@@ -174,13 +174,13 @@ io_configuration:
         channel: null
   - component: printhead plc
     channels:
-      - name: BOX1_AI0: 
+      - name: BOX1_AI0 
         component: pressure sensor mc35f-mc35m-d35-10bar-1
         channel: pressure sensor
       - name: BOX1_AI2 # Remove if not used
         component: null
         channel: null
-      - name: BOX1_AI3 # Remove if not used 
+      - name: BOX1_AI3 # Remove if not used
         component: null
         channel: null
       - name: BOX1_AI4 # Remove if not used
@@ -198,7 +198,7 @@ io_configuration:
       - name: BOX1_AI8 # Remove if not used
         component: null
         channel: null
-      - name: BOX2_AI0: 
+      - name: BOX2_AI0
         component: temperature sensor so41-so41-d35-1
         channel: temperature sensor
       - name: BOX2_AI2 # Remove if not used
