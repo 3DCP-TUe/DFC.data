@@ -8,7 +8,7 @@ attr:
     - name: Rob Wolfs
       institution: Eindhoven University of Technology (TU/e)
   description: Experiments to study the correlation between pressure and temperature
-  keywords: 3dcp; pressure; temperature
+  keywords: [3dcp, pressure, temperature]
   projects: 
     - funder: NWO (Dutch Research Council)
       title: Additive manufacturing of functional construction materials on-demand
