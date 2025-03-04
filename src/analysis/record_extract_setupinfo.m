@@ -25,12 +25,13 @@ library = pwd;
 % Folder path to setupinfo of data record (destination)
 cd(filepath);
 cd('test/setupinfo')
-destination = pwd;
+destination = pwd;";
 
 % Get components from record
 cd(filepath);
 cd('../template/')
-components = sneakpeek.get_components_from_data_record(pwd);
+record = pwd;
+components = sneakpeek.get_components_from_data_record(record);
 
 % Copy used components to destination folder
 sneakpeek.copy_setupinfo(library, destination, components, true);

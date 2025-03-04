@@ -25,8 +25,9 @@ setupinfo = pwd;
 % Read session metadata file
 cd(filepath);
 cd('../template/yyyymmdd_session_3/')
-session = readyaml(pwd + "\metadata_session.yml");
-
+%folder = pwd;
+folder = "D:\OneDrive - TU Eindhoven\Project Frankenstein\Data records\data_record_4_frankenstein\20250213_session_1";
+session = readyaml(folder + "\metadata_session.yml");
 
 %% Get session data
 
@@ -39,6 +40,15 @@ component_map = containers.Map(); % Map components to indices
 % Collect all components
 for i = 1:length(session.system_layout)
     component_name = session.system_layout{i}.component;
+    if ~isKey(component_map, component_name)
+        component_map(component_name) = length(nodes) + 1;
+        nodes{end+1} = component_name;
+    end
+end
+
+% Add materials as nodes
+for i = 1:length(session.materials)
+    component_name = session.materials{i}.name;
     if ~isKey(component_map, component_name)
         component_map(component_name) = length(nodes) + 1;
         nodes{end+1} = component_name;
@@ -100,6 +110,32 @@ for i = 1:length(session.io_configuration)
     end
 end
 
+% Process materials and add connections
+for i = 1:length(session.materials)
+
+    source_idx = component_map(session.materials{i}.name);
+    target_component = session.materials{i}.supplied_to;
+    
+    % Ensure the target component is already in the map
+    if isKey(component_map, target_component)
+        target_idx = component_map(target_component);
+        edges = [edges; source_idx, target_idx];
+        weights = [weights; 3];
+    end
+end
+
+% Add io connection material delivery plc and environment
+% temperature-humidity sensor-1 if used (hard-wired)
+%{
+source_idx = find(strcmp(nodes, 'material delivery plc'));
+target_idx = find(strcmp(nodes, 'environment temperature-humidity sensor-1'));
+
+if ~isempty(source_idx) &  ~isempty(target_idx)
+    edges = [edges; target_idx, source_idx];
+    weights = [weights; 2];
+end
+%}
+
 % Create and plot the graph
 graph = digraph(edges(:,1), edges(:,2), weights, nodes);
 
@@ -114,6 +150,9 @@ for i = 1:length(graph.Edges.Weight)
         width = 3;
     elseif graph.Edges.Weight(i) == 1 % Insert
         color = [0, 0, 1];
+        width = 2;
+    elseif graph.Edges.Weight(i) == 3 % Material
+        color = [0, 1, 0];
         width = 2;
     else % IO
         color = [1, 0, 0];
@@ -136,6 +175,11 @@ idx = graph.Edges.Weight == 2;
 nodes = graph.Edges.EndNodes(idx, :);
 idx = find(ismember(graph.Nodes.Name, unique(nodes(:))));
 node_colors(idx,:) = repmat([1, 0, 0], length(idx), 1);
+% Material
+idx = graph.Edges.Weight == 3;
+nodes = graph.Edges.EndNodes(idx, :);
+idx = find(ismember(graph.Nodes.Name, unique(nodes(:))));
+node_colors(idx,:) = repmat([0, 1, 0], length(idx), 1);
 % Concrete flow
 idx = graph.Edges.Weight == 0;
 nodes = graph.Edges.EndNodes(idx, :);
@@ -145,7 +189,7 @@ node_colors(idx,:) = repmat([0, 0, 0], length(idx), 1);
 % Plot the ontology graph
 figure;
 box off
-plot(graph, 'Layout', 'force', 'NodeColor', node_colors, 'MarkerSize', 6, 'EdgeColor', edge_colors, 'LineWidth', line_width, 'ArrowSize', 0);
+plot(graph, 'Layout', 'force', 'NodeColor', node_colors, 'MarkerSize', 6, 'EdgeColor', edge_colors, 'LineWidth', line_width);
 
 
 %% End
