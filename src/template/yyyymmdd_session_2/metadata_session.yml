@@ -210,7 +210,7 @@ io_configuration:
       - name: BOX2_AI4 # Remove if not used
         component: null
         channel: null
-  - component: mtec duomix-1
+  - component: mtec duomix-1 # Remove if not used
     channels:
       - name: AI1 # Remove if not used
         component: null
@@ -254,7 +254,7 @@ io_configuration:
       - name: DO2 # Remove if not used
         component: null
         channel: null
-  - component: liquid dosing vertico-1
+  - component: liquid dosing vertico-1 # Remove if not used
     channels:
       - name: AI3 # Remove if not used
         component: null
