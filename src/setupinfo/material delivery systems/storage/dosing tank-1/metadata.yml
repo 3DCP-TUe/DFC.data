@@ -1,0 +1,15 @@
+attr:
+  class: material delivery systems
+  subclass: storage
+  name: dosing tank-1
+  description: Generic dosing tank.
+  note: This tank can be used for various applications, made from different materials, and comes in various shapes and sizes. It has customizable inlets and outlets, with unspecified volume for flexibility.
+  
+dimensions:
+  volume: null
+
+couplings:
+  inlets:
+    - name: opening
+  outlets:
+    - name: opening
