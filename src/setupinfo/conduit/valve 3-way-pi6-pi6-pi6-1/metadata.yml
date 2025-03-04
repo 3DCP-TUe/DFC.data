@@ -1,0 +1,45 @@
+attr:
+  class: conduit
+  name: valve 3-way-pi6-pi6-pi6-1
+  description: Staimless steel 3-way magnetic valve. 
+
+dimensions:
+  length: null
+  volume: null
+
+couplings:
+  inlets:
+    - name: fluid inlet
+      type: push-in fitting
+      size: 6
+  outlets:
+    - name: fluid outlet 1 (signal low)
+      type: push-in fitting
+      size: 6
+    - name: fluid outlet 2 (signal high)
+      type: push-in fitting
+      size: 6
+
+io:
+  - name: switch valve position
+    type: digital input 24V DC
+    function: switches the position of hte magnetic valve
+    signal_limits: [0, 1]
+    reading_limits: [0, 1]
+    unit: bool
+    connector: Weipu SP2112/P3
+
+parts:
+  - name: 3-way solenoid valve
+    type: 3-way solenoid valve
+    manufacturer: JP Fluid Control
+    model: TP-DA014S040F-024DC
+    connection_size: 1/4-inch
+    connection_type: cylindrical internal thread BSPP-G
+    function: normally closed
+    material: stainless steel
+    sealing_material: FKM (FPM)
+    coil_type: CS1
+    valve_passage: 4
+    maximum_pressure: 2
+
