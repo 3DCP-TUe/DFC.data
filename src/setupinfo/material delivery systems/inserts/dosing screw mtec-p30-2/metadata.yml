@@ -1,0 +1,8 @@
+attr:
+  class: material delivery systems
+  subclass: inserts
+  name: dosing screw mtec-p30-2
+  description: Modified commercially available dosing screw from m-tec with a pitch of 30 mm. 
+
+compatible with:
+  - component: m-tec connect duomix-1
