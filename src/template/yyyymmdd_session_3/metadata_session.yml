@@ -130,7 +130,6 @@ io_configuration:
       - name: AI5
         component: coriolis sensor fl40-fl40-d35-1
         channel: configurable output 2
-
   - component: printhead plc
     channels:
       - name: BOX1_AI0 
