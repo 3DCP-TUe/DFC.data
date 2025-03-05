@@ -46,7 +46,8 @@ parts:
   - name: switch
     type: switch non-PoE
     manufacturer: Siemens
-    model: null #TODO
+    model: SCALANCE XB005 unmanaged Industrial Ethernet Switch for 10/100 Mbit/s
+    product_number: 6GK5005-0BA00-1AB2
 
 io:
   - name: AI0

@@ -26,14 +26,14 @@ sensors:
     firmware version: 01.01.00
     medium: liquid
     settings:
-      - mass_flow_offset: 0.03
-      - mass_flow_factor: 1.0
-      - volume_flow_offset: 0.0
-      - volume_flow_factor: 1.0
-      - density_offset: 0.0
-      - density_factor: 1.0
-      - temperature_offset: 0.0
-      - zero_point: 275
+      mass_flow_offset: 0.03
+      mass_flow_factor: 1.0
+      volume_flow_offset: 0.0
+      volume_flow_factor: 1.0
+      density_offset: 0.0
+      density_factor: 1.0
+      temperature_offset: 0.0
+      zero_point: 275
 
 io:
   - name: configurable output 1
@@ -91,7 +91,7 @@ processed_system_data:
     header: material_coriolis_temperature_c
   - name: exciter current 0
     function: exciter current of lateral movement
-    unit: null #TODO
+    unit: mA
     header: material_coriolis_exciter_current_0_ma
   - name: oscillation frequency 0
     function: oscillation frequency  of lateral movement
@@ -103,7 +103,7 @@ processed_system_data:
     header: material_coriolis_oscillation_amplitude_0_perc
   - name: oscillation damping 0
     function: osccilation damping of lateral movement
-    unit: null #TODO
+    unit: A/m
     header: material_coriolis_oscillation_damping_0_m_a
   - name: signal asymmetry
     function: signal asymmetry of lateral movement
@@ -111,7 +111,7 @@ processed_system_data:
     header: material_coriolis_signal_asymmetry_perc
   - name: exciter current 1
     function: exciter current of torsional movement
-    unit: null #TODO
+    unit: mA
     header: material_coriolis_exciter_current_1_ma
   - name: oscillation frequency 1
     function: oscillation frequency of torsional movement
@@ -123,5 +123,5 @@ processed_system_data:
     header: material_coriolis_oscillation_amplitude_1_perc
   - name: oscillation damping 1
     function: oscillation damping of torsional movement
-    unit: null #TODO
+    unit: A/m
     header: material_coriolis_oscillation_damping_1_m_a

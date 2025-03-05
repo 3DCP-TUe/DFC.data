@@ -30,19 +30,19 @@ sensors:
     manufacturer: ifm electronic
     model: TA2105
     product_number: TA-025CLER14-A-ZVG/US
-    temperature range: [-50, 150]
+    temperature_range: [-50, 150]
   - name: additional water temperature sensor installed after water pump
     type: temperature
     manufacturer: null
     model: PT100
     product_number: null
-    temperature range: null
+    temperature_range: null
   - name: dry mortar temperature sensor connected to silo outlet
     type: temperature
     manufacturer: Siemens
-    model: null #TODO!
-    product_number: null #TODO!
-    temperature range: [0, 100] #TODO: Check!
+    model: SITRANS TS500 Temperature sensor in modular design
+    product_number: 7MC7511-1CA01-0CA1-Z E00+T30+Y01
+    temperature_range: [0, 100]
     
 processed_system_data:
   - name: source time

@@ -32,29 +32,31 @@ sensor:
     manufacturer: KEYENCE International
     sensor_model: FD-XS8
     controller_model: FD-XA1
-    settings:                       # TODO: Check these settings!
-      - basic_settings:
-          - pipe_material: plastic
-          - pipe_size: 6
-          - output1_mode: standard
-          - output1_logic: N.O.
-          - output2_mode: standard
-          - output2_logic: N.O.
-          - analog_output_current: [4, 20] # mA
-          - analog_output_scaling: [0, 100] # ml/min
-          - input1_function: off
-          - input2_function: off
-          - response_time: 500 # ms
-          - integrated_flow)unit: 1 # ml
-      - advanced_settings:
-          - flow_resolution: 1 # ml/min
-          - shot_resolution: 0.01 # ml
-          - disp_average: 1 # seconds
-          - hys_value: 20 # ml/min
-          - zero_cut_flow: 40 # ml/min
-          - pipe_size: 6
-          - flow_tuning:
-              - adjust_span: 1.000
+    clamp_set: 
+      model: FD-XC8R1
+      pipe_material: plastic
+      pipe_size: 6
+    settings:
+      basic:
+        output1_mode: standard
+        output1_logic: N.O.
+        output2_mode: standard
+        output2_logic: N.O.
+        analog_output_current: [4, 20] # mA
+        analog_output_scaling: [0, 100] # ml/min
+        input1_function: off
+        input2_function: off
+        response_time: 1 # s
+        integrated_flow)unit: 1 # ml
+      advanced:
+        flow_resolution: 1 # ml/min
+        shot_resolution: 0.01 # ml
+        disp_average: 1 # seconds
+        hys_value: 20 # ml/min
+        zero_cut_flow: 5 # ml/min
+        pipe_size: 6
+        flow_tuning:
+          adjust_span: 0.92
 
 parts:
   - name: pump motor

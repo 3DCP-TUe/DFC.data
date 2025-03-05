@@ -14,10 +14,10 @@ parts:
     max_velocity: 6000 # RPM
   - name: gearbox
     type: gearbox
-    manufacturer: APEX dynamics
-    model: null #TODO
-    product_number: null #TODO
-    reduction_factor: 5:1
+    manufacturer: Apex Dynamics
+    model: Apex PA II 090-S2 007:1
+    product_number: PAII090S20071
+    reduction_factor: 7:1
 
 compatible_with:
   - component: ace-1

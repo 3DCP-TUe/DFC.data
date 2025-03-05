@@ -57,6 +57,9 @@ parts:
           amount: 1
         - name: switch
           type: switch non-PoE
+          manufacturer: Phoenix Contact
+          model: FL SWITCH 1008N
+          product_number: 1085256
   - wall_box_2:
       name: box 2 (bottom)
       items:

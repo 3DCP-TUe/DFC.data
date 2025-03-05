@@ -13,7 +13,16 @@ dimensions:
 couplings:
   inlets:
     - name: concrete inlet
+      type: system 22 female mortar coupling
+      size: 25
+      connection: 1" female BSP
     - name: injection port
+      type: push-in fitting
+      size: 8
     - name: powder/fiber inlet
+      type: slip-on
+      inner_diameter: 42
+      outer_diamter: 50
   outlets:
     - name: concrete outlet
+      type: camlock DN 50 mm female

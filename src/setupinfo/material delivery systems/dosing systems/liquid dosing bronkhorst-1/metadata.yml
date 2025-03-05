@@ -57,11 +57,11 @@ processed_system_data:
     header: material_bronkhorst_density_kg_m3
   - name: analog input
     function: analog input for gear pump
-    unit: null #TODO
+    unit: \-
     header: material_bronkhorst_analog_input
   - name: valve output
     function: valve output
-    unit: null #TODO
+    unit: \-
     header: material_bronkhorst_valve_output
   - name: setpoint slope
     function: setpoint slope

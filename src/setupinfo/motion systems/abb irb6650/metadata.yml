@@ -7,21 +7,27 @@ attr:
   payload: 125
 
 joints:
-  - joint 1:
+  joint1:
+    name: 1
     axis_limits: [-180, 180]
     type: revolute
-  - joint 2:
+  joint2:
+    name: 2
     axis_limits: [-65, 85]
     type: revolute
-  - joint 3:
+  joint3:
+    name: 3
     axis_limits: [-180, 70]
     type: revolute
-  - joint 4:
+  joint4:
+    name: 4
     axis_limits: [-300, 300]
     type: revolute
-  - joint 5:
+  joint5:
+    name: 5
     axis_limits: [-120, 120]
     type: revolute
-  - joint 6:
+  joint6:
+    name: 6
     axis_limits: [-360, 360]
     type: revolute

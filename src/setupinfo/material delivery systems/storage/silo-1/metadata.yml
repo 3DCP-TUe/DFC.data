@@ -20,13 +20,16 @@ couplings:
 io:
   - name: aeration pads
     type: digital input 24V DC
+    signal_limits: [0, 1]
+    reading_limits: [0, 1]
+    unit: bool
     function: activates the aeration pads
     connector: Weipu SP2112/P3
   - name: temperature sensor
     connector: Weipu SP2112/P4
     type: analog output 4-20 mA active
     signal_limits: [4, 20]
-    reading_limits: [0, 100] #TODO: Check!
+    reading_limits: [0, 100]
     interpolation: linear
     unit: degree Celsius
 
@@ -34,10 +37,9 @@ sensors:
   - name: temperature sensor
     type: temperature
     manufacturer: Siemens
-    model: null                            #TODO!
-    product number: null                   #TODO!
-    serial number: null                    #TODO!
-    temperature range: [0, 100]            #TODO: Check!
+    model: SITRANS TS500 Temperature sensor in modular design
+    product_number: 7MC7511-1CA01-0CA1-Z E00+T30+Y01
+    temperature_range: [0, 100]
 
 parts:
   - name: aeration pads
