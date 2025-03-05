@@ -1,0 +1,32 @@
+attr:
+  class: conduit
+  name: tube 6-l1000-2
+  description: Chemical resistant tube for dosing additives. 
+  note: Length and volume values are approximate, rounded to whole meters, as precise measurements are not critical for detailed analysis.
+
+dimensions:
+  length: 1000
+  volume: 0.013
+
+couplings:
+  inlets:
+    - name: chemical inlet
+      type: slip-on
+      size: 6
+      outer_diameter: 6
+      inner_diameter: 4
+  outlets:
+    - name: chemical outlet
+      type: slip-on
+      size: 6
+      outer_diameter: 6
+      inner_diameter: 4
+
+parts:
+  - name: chemical resistance hose
+    type: RS PRO PTFE, Flexible Tube, 4mm ID, 6mm OD, Clear
+    manufacturer: RS PRO
+    material: PTFE
+    external_diameter: 6
+    internal_diameter: 4
+    wall_thickness: 1

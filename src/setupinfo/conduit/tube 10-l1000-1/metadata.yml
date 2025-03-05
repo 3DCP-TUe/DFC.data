@@ -1,0 +1,32 @@
+attr:
+  class: conduit
+  name: tube 10-l1000-1
+  description: Chemical resistant tube for dosing additives. 
+  note: Length and volume values are approximate, rounded to whole meters, as precise measurements are not critical for detailed analysis.
+
+dimensions:
+  length: 1000
+  volume: 0.05
+
+couplings:
+  inlets:
+    - name: chemical inlet
+      type: slip-on
+      size: 10
+      outer_diameter: 10
+      inner_diameter: 8
+  outlets:
+    - name: chemical outlet
+      type: slip-on
+      size: 10
+      outer_diameter: 10
+      inner_diameter: 8
+
+parts:
+  - name: chemical resistance hose
+    type: PTFE Chemical Resistant Hose 8x10 mm Colorless
+    manufacturer: Tameson
+    material: PTFE
+    external_diameter: 10
+    internal_diameter: 8
+    wall_thickness: 1
