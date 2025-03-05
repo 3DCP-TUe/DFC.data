@@ -28,9 +28,9 @@ parts:
     type: mortar hose 25 with 2x nozzle 1" AG
     manufacturer: PET Austria GmbH
     size: 25
-    external diameter: 39 
-    internal diameter: 25
-    wall thickness: 7
+    external_diameter: 39 
+    internal_diameter: 25
+    wall_thickness: 7
   - name: mortar coupling outlet
     type: system 22 male mortar coupling
     size: 25

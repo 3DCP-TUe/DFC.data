@@ -30,4 +30,4 @@ parts:
     material: steel
     outer_diameter: 38
     inner_diameter: 27
-    wall thickness: 5.5
+    wall_thickness: 5.5

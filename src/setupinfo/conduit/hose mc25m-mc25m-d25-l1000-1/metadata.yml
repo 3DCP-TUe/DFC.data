@@ -28,9 +28,9 @@ parts:
     type: mortar hose 25
     manufacturer: SEMPERIT
     size: 25
-    external diameter: 37 
-    internal diameter: 25
-    wall thickness: 6
+    external_diameter: 37 
+    internal_diameter: 25
+    wall_thickness: 6
   - name: mortar coupling outlet
     type: system 22 male mortar coupling
     size: 25

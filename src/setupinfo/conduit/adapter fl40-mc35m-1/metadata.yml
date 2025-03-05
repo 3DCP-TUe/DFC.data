@@ -27,7 +27,7 @@ parts:
     material: steel
     outer_diameter: 41
     inner_diameter: 35
-    wall thickness: 3
+    wall_thickness: 3
   - name: mortar coupling outlet
     type: system 23.5 male mortar coupling
     size: 35

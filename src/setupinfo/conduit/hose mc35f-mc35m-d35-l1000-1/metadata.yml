@@ -28,9 +28,9 @@ parts:
     type: mortar hose 35
     manufacturer: PET Austria GmbH
     size: 35
-    external diameter: 49 
-    internal diameter: 35
-    wall thickness: 7
+    external_diameter: 49 
+    internal_diameter: 35
+    wall_thickness: 7
   - name: mortar coupling outlet
     type: system 23.5 male mortar coupling
     size: 35
