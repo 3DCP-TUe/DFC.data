@@ -5,5 +5,5 @@ attr:
   description: Ribbon flight screw conveyor.
   note: Details are confidential, not all information is provided.
 
-compatible with:
+compatible_with:
   - component: solid dosing van-beek-1

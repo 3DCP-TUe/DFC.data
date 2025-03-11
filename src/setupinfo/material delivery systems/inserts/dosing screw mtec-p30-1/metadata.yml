@@ -4,5 +4,5 @@ attr:
   name: dosing screw mtec-p30-1
   description: Commercially available dosing screw from m-tec with a pitch of 30 mm. 
 
-compatible with:
+compatible_with:
   - component: m-tec connect duomix-1

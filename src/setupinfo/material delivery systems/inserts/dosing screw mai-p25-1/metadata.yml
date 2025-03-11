@@ -4,5 +4,5 @@ attr:
   name: dosing screw mai-p25-1
   description: Commercially available dosing screw from MAI international with a pitch of 25 mm. 
 
-compatible with:
+compatible_with:
   - component: mai multimix-1

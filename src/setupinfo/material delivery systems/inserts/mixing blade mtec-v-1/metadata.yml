@@ -4,5 +4,5 @@ attr:
   name: mixing blade mtec-v-1
   description: Commercially available vertical mixing blade from m-tec.
   
-compatible with:
+compatible_with:
   - component: m-tec duomix-1

@@ -17,6 +17,6 @@ parts:
     number of elements: 8
     material: stainless steel 316L
 
-compatible with:
+compatible_with:
   - component: tube mc35f-so41-d35-l600-1 
   - component: tube mc35f-so41-d35-l1000-1 
