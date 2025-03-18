@@ -15,26 +15,20 @@ path = mfilename('fullpath');
 [filepath, name, ext] = fileparts(path);
 cd(filepath);
 
-%% Find components and copy paste to data record (destination)
+%% Find componts in sessions and fill system_data\setupinfo
 
 % Folder path to setupinfo library
 cd(filepath);
 cd('../setupinfo/')
 library = pwd;
 
-% Folder path to setupinfo of data record (destination)
+% Folder path to record
 cd(filepath);
-cd('test/setupinfo')
-destination = pwd;";
-
-% Get components from record
-cd(filepath);
-cd('../template/')
+cd('..\template')
 record = pwd;
-components = sneakpeek.get_components_from_data_record(record);
 
-% Copy used components to destination folder
-sneakpeek.copy_setupinfo(library, destination, components, true);
+% Fil the setupinfo of the session system_data folders
+sneakpeek.fill_record_setupinfo(library, record, true);
 
 %% End
 disp('End')

@@ -52,50 +52,91 @@ classdef sneakpeek
         end
 
         % -----------------------------------------------------------------
+        
+        % % Fills the session system_data setupinfo folder of all sessions
+        function fill_record_setupinfo(library, folder, swipe_destination)
+            
+            % Check if folder is a struct (from dir) or a string/char
+            if isstruct(folder)
+                % Extract folder path from the struct
+                path = folder(1).folder;  % Assuming the first entry is relevant
+            elseif ischar(folder) || isstring(folder)
+                % If it's already a string or character array, use it directly
+                path = folder;
+            else
+                error('Invalid input: folder must be a string, char array, or a dir struct.');
+            end
 
-        function components = get_components_from_data_record(root_folder)
-    
+            % Check if folder exists
+            if ~isfolder(path)
+                error('Data record folder does not exists.');
+            end
+
             % Get a list of all subfolders in the root directory
-            subfolders = dir(root_folder);
-            components = {};
+            subfolders = dir(path);
             
             for i = 1:length(subfolders)
                 
                 % Check if the folder name contains 'session'
                 if subfolders(i).isdir && contains(subfolders(i).name, ...
                         'session')
-                   
-                    % Construct the full path to the metadata file
-                    metadata_file = fullfile(root_folder, ...
-                        subfolders(i).name, 'metadata_session.yml');
-                    
-                    % Check if the metadata file exists
-                    if isfile(metadata_file)
-                        
-                        % Read the YAML file
-                        session = readyaml(metadata_file);
-                        
-                        % Extract components from the session metadata
-                        session_components = ...
-                            sneakpeek.get_components_from_session(session);
-                        
-                        % Append to the list
-                        components = [components; session_components];
-                    else
-                        error(['Session %s does not contain a ' ...
-                            'metadata file.'], subfolders(i).name);
-                    end
+
+                    % Fill session setupinfo folder
+                    sneakpeek.fill_session_setupinfo(library, ...
+                        subfolders(i), swipe_destination)
                 end
             end
-    
-            % Return unique components
-            components = unique(components);
         end
-               
+        
         % -----------------------------------------------------------------
 
-        % Copies setupinfo from a library (root) to a record (destination 
-        % folder) for a given list of components
+        % Fills the session system_data setupinfo folder
+        function fill_session_setupinfo(library, folder, swipe_destination)
+            
+            % Check if folder is a struct (from dir) or a string/char
+            if isstruct(folder)
+                % Extract folder path from the struct
+                path = fullfile(folder.folder, folder.name);
+            elseif ischar(folder) || isstring(folder)
+                % If it's already a string or character array, use it directly
+                path = folder;
+            else
+                error('Invalid input: folder must be a string, char array, or a dir struct.');
+            end
+
+            % Construct the full path to the metadata file
+            metadata_file = fullfile(path, 'metadata_session.yml');
+    
+            % Check if the metadata file exists
+            if isfile(metadata_file)
+                
+                % Read the YAML file
+                session = readyaml(metadata_file);
+                
+                % Extract components from the session metadata
+                components = sneakpeek.get_components_from_session(session);
+                
+                % Set destination
+                destination = path + "\system_data\setupinfo\";
+            
+                % Copy used components to destination folder
+                sneakpeek.copy_setupinfo(library, destination, ...
+                    components, swipe_destination);
+
+            else
+                file_info = dir(metadata_file);
+                if isempty(file_info)
+                    error('Session does not contain a metadata file.');
+                else
+                    error('Session %s does not contain a metadata file.', file_info.folder);
+                end
+            end
+        end
+
+        % -----------------------------------------------------------------
+        
+        % Copies setupinfo from a library (root) to a setupinfo 
+        % (destination folder) for a given list of components
         function copy_setupinfo(root, destination, components, ...
                 swipe_destination)
             
@@ -151,6 +192,189 @@ classdef sneakpeek
                         srcFolder, destFolder, msg);
                 end
             end
+        end
+
+        % -----------------------------------------------------------------
+
+        function [graph, fig] = get_system_ontology(session)
+
+            % Initialize
+            nodes = {}; % List of component names
+            edges = []; % Stores connections
+            weights = []; % Used to categorize nodes and edges
+            component_map = containers.Map(); % Map components to indices
+            
+            % Collect all components
+            for i = 1:length(session.system_layout)
+                component_name = session.system_layout{i}.component;
+                if ~isKey(component_map, component_name)
+                    component_map(component_name) = length(nodes) + 1;
+                    nodes{end+1} = component_name;
+                end
+            end
+            
+            % Add materials as nodes
+            for i = 1:length(session.materials)
+                component_name = session.materials{i}.name;
+                if ~isKey(component_map, component_name)
+                    component_map(component_name) = length(nodes) + 1;
+                    nodes{end+1} = component_name;
+                end
+            end
+            
+            % Collect edges
+            for i = 1:length(session.system_layout)
+                if isfield(session.system_layout{i}, 'connected_to')
+                    
+                    source_idx = component_map(session.system_layout{i}.component);
+                    
+                    for j = 1:length(session.system_layout{i}.connected_to)
+                        target_component = session.system_layout{i}.connected_to{j}.component;
+                        
+                        % Ensure target component is in the map
+                        if ~isKey(component_map, target_component)
+                            component_map(target_component) = length(nodes) + 1;
+                            nodes{end+1} = target_component;
+                        end
+                        
+                        target_idx = component_map(target_component);
+                        edges = [edges; source_idx, target_idx];
+                        weights = [weights; 0];
+                    end
+            
+                elseif isfield(session.system_layout{i}, 'inserted_in')
+                    
+                    source_idx = component_map(session.system_layout{i}.component);
+                    target_component = session.system_layout{i}.inserted_in;
+                    
+                    % Ensure target component is in the map
+                    if ~isKey(component_map, target_component)
+                        component_map(target_component) = length(nodes) + 1;
+                        nodes{end+1} = target_component;
+                    end
+                    
+                    target_idx = component_map(target_component);
+                    edges = [edges; source_idx, target_idx];
+                    weights = [weights; 1];
+                end
+            end
+            
+            % Process io configuration and add connections
+            for i = 1:length(session.io_configuration)
+            
+                source_idx = component_map(session.io_configuration{i}.component);
+            
+                for j = 1:length(session.io_configuration{i}.channels)
+                    
+                    target_component = session.io_configuration{i}.channels{j}.component;
+                    
+                    % Ensure the target component is already in the map
+                    if isKey(component_map, target_component)
+                        target_idx = component_map(target_component);
+                        edges = [edges; target_idx, source_idx];
+                        weights = [weights; 2];
+                    end
+                end
+            end
+            
+            % Process materials and add connections
+            for i = 1:length(session.materials)
+            
+                source_idx = component_map(session.materials{i}.name);
+                target_component = session.materials{i}.supplied_to;
+                
+                % Ensure the target component is already in the map
+                if isKey(component_map, target_component)
+                    target_idx = component_map(target_component);
+                    edges = [edges; source_idx, target_idx];
+                    weights = [weights; 3];
+                end
+            end
+            
+            % Add io connection material delivery plc and environment
+            % temperature-humidity sensor-1 if used (hard-wired)
+            %{
+            source_idx = find(strcmp(nodes, 'material delivery plc'));
+            target_idx = find(strcmp(nodes, 'environment temperature-humidity sensor-1'));
+            
+            if ~isempty(source_idx) &  ~isempty(target_idx)
+                edges = [edges; target_idx, source_idx];
+                weights = [weights; 2];
+            end
+            %}
+            
+            % Create and plot the graph
+            graph = digraph(edges(:,1), edges(:,2), weights, nodes);
+            
+            % Set edge colors based on weights
+            edge_colors= [];
+            line_width = [];
+            
+            for i = 1:length(graph.Edges.Weight)
+                
+                if graph.Edges.Weight(i) == 0 % Concrete flow
+                    color = [0, 0, 0];
+                    width = 3;
+                elseif graph.Edges.Weight(i) == 1 % Insert
+                    color = [0, 0, 1];
+                    width = 2;
+                elseif graph.Edges.Weight(i) == 3 % Material
+                    color = [0, 1, 0];
+                    width = 2;
+                else % IO
+                    color = [1, 0, 0];
+                    width = 2;
+                end
+            
+                edge_colors= [edge_colors; color];
+                line_width = [line_width; width];
+            end
+            
+            % Node colors
+            node_colors = zeros(numnodes(graph), 3);
+            % Inserts
+            idx = graph.Edges.Weight == 1;
+            nodes = graph.Edges.EndNodes(idx, :);
+            idx = find(ismember(graph.Nodes.Name, unique(nodes(:))));
+            node_colors(idx,:) = repmat([0, 0, 1], length(idx), 1);
+            % IO
+            idx = graph.Edges.Weight == 2;
+            nodes = graph.Edges.EndNodes(idx, :);
+            idx = find(ismember(graph.Nodes.Name, unique(nodes(:))));
+            node_colors(idx,:) = repmat([1, 0, 0], length(idx), 1);
+            % Material
+            idx = graph.Edges.Weight == 3;
+            nodes = graph.Edges.EndNodes(idx, :);
+            idx = find(ismember(graph.Nodes.Name, unique(nodes(:))));
+            node_colors(idx,:) = repmat([0, 1, 0], length(idx), 1);
+            % Concrete flow
+            idx = graph.Edges.Weight == 0;
+            nodes = graph.Edges.EndNodes(idx, :);
+            idx = find(ismember(graph.Nodes.Name, unique(nodes(:))));
+            node_colors(idx,:) = repmat([0, 0, 0], length(idx), 1);
+            
+            % Plot the ontology graph
+            fig = figure;
+            box on
+            hold on
+            set(gca, 'FontSize', 24);
+            set(gca,'YColor',[0,0,0])
+            set(gca,'XColor',[0,0,0])
+            set(gcf, 'PaperUnits', 'inches');
+            set(gcf, 'Units', 'inches');
+            fig_width = 4^(3/2);
+            fig_height = 3^(3/2); 
+            set(gcf, 'PaperPosition', [0 0 fig_width fig_height]); 
+            set(gcf, 'PaperSize', [fig_width fig_height]); 
+            set(gcf, 'Position', [1 1 fig_width, fig_height]);
+            xticks([-9999 9999])
+            yticks([-9999 9999])
+            plot(graph, 'Layout', 'force', ...
+                'NodeColor', node_colors, ...
+                'MarkerSize', 6, ...
+                'EdgeColor', edge_colors, ...
+                'LineWidth', line_width);
+
         end
         
         % -----------------------------------------------------------------
