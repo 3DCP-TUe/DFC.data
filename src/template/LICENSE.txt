@@ -1,0 +1,29 @@
+All data and documentation found in this data record are licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
+
+Copyright (c) 2024-2025 3D Concrete Printing Research Group at Eindhoven University of Technology
+
+This documentation is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <http://creativecommons.org/licenses/by-sa/4.0/>.
+
+You are free to:
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+
+Under the following terms:
+- Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+=================================================================================================================
+
+All software components in this data record are licensed under the GNU General Public License version 3.0.
+
+Copyright (c) 2024-2025 3D Concrete Printing Research Group at Eindhoven University of Technology
+
+The software components are free software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 3.0 as published by the Free Software Foundation. 
+
+The code is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with 3D Sneak Peek; If not, see <http://www.gnu.org/licenses/>.
+
+@license GPL-3.0 <https://www.gnu.org/licenses/gpl-3.0.html>
