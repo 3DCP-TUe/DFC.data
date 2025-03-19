@@ -381,14 +381,97 @@ classdef sneakpeek
             
         function result = read_component_metadata( ...
                 setupinfo_folder, component)
-            cd(setupinfo_folder);
-            cd(component);
+
             result = readyaml(setupinfo_folder + "\" + component + ...
                 "\metadata.yml");
         end
 
         % -----------------------------------------------------------------
-
         
+        function rename_files(folder, suffix)
+        
+            % Get a list of all files and directories in the folder
+            files = dir(fullfile(folder, '*.*')); 
+
+            % Remove directories from the list
+            files = files(~[files.isdir]);
+            
+            % Sort files alphabetically
+            [~, idx] = sort({files.name});
+            files = files(idx);
+        
+            % Rename files sequentially
+            for i = 1:numel(files)
+                old_name = fullfile(folder, files(i).name);
+                
+                % Keep the original file extension
+                [~, ~, ext] = fileparts(files(i).name);
+                new_name = fullfile(folder, sprintf('%s_%d%s', ...
+                    suffix, i, ext));
+                
+                % Rename only if the names are different
+                if ~strcmp(old_name, new_name)
+                    movefile(old_name, new_name);
+                end
+            end
+        end
+
+        % -----------------------------------------------------------------
+
+        function remove_files_by_extension(folder, extension)
+            
+            % Ensure the extension starts with a dot
+            if extension(1) ~= '.'
+                extension = ['.', extension];
+            end
+        
+            % Get a list of all files and subfolders in the folder
+            items = dir(folder);
+            files_to_delete = {}; % Store files to be deleted
+            
+            % Loop through each item
+            for i = 1:numel(items)
+                % Get full path of the item
+                item_path = fullfile(folder, items(i).name);
+                
+                % Skip '.' and '..' directories
+                if strcmp(items(i).name, '.') || strcmp(items(i).name, '..')
+                    continue;
+                end
+                
+                % If it's a folder, recursively call the function
+                if items(i).isdir
+                    sneakpeek.remove_files_by_extension(item_path, extension);
+                else
+                    % Check if the file has the specified extension
+                    [~, ~, ext] = fileparts(items(i).name);
+                    if strcmp(ext, extension)
+                        files_to_delete{end+1} = item_path; %#ok<AGROW>
+                    end
+                end
+            end
+            
+            % If files to delete exist, ask for confirmation
+            if ~isempty(files_to_delete)
+                message = sprintf('Folder: %s\nAre you sure you want to delete %d files with extension "%s"?', ...
+                          folder, numel(files_to_delete), extension);
+                choice = questdlg(message, 'Confirm Deletion', 'Yes', 'No', 'No');
+                
+                if strcmp(choice, 'Yes')
+                    for i = 1:numel(files_to_delete)
+                        delete(files_to_delete{i});
+                        fprintf('Deleted: %s\n', files_to_delete{i});
+                    end
+                    disp('Deletion completed.');
+                else
+                    disp('Deletion canceled.');
+                end
+            else
+                disp('No files found to delete.');
+            end
+        end
+        
+        % -----------------------------------------------------------------
+
     end
 end
