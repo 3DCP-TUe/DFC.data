@@ -1,15 +1,43 @@
 attr:
-  authors: 
-    - name: Arjen Deetman
-      institution: Eindhoven University of Technology (TU/e)
-    - name: Derk Bos
-      institution: Eindhoven University of Technology (TU/e)
-  contributors: 
-    - name: Rob Wolfs
-      institution: Eindhoven University of Technology (TU/e)
-  description: Experiments to study the correlation between pressure and temperature
-  keywords: [3dcp, pressure, temperature]
-  projects: 
-    - funder: NWO (Dutch Research Council)
-      title: Additive manufacturing of functional construction materials on-demand
-      grant_number: 17895
+  basic_information:
+    doi: ....
+    resource_type: Dataset
+    title: 3D Sneak Peek: Characterizing the early age properties of 3D printed concrete with flat punch indentation tests.
+    publication_date: 2025-03-05
+    description: ...
+    licenses:
+      - title: GNU General Public License v3.0 or later
+        link: https://www.gnu.org/licenses/gpl-3.0.html
+      - title: Creative Commons Attribution-ShareAlike 4.0 International
+        link: https://creativecommons.org/licenses/by-sa/4.0/deed.en
+    creators: 
+      - name: Arjen Deetman
+        institution: Eindhoven University of Technology
+        orcid: 0000-0001-6756-5151
+      - name: Derk Bos
+        institution: Eindhoven University of Technology
+        orcid: 0000-0002-1668-2638
+  recommended_information:
+    contributors: 
+      - name: Rob Wolfs
+        institution: Eindhoven University of Technology
+        orcid: 0000-0001-7897-433X
+        role: Other
+    keywords: [3dcp, pressure, temperature]
+    languages: [English]
+    version: 1.0.0
+    publisher: Zenodo
+  funding:
+    grants: 
+      - funder: Dutch Research Council, The Netherlands
+        number: 17895
+        title: Additive manufacturing of functional construction materials on-demand
+  related_works:
+    - relation: Is supplement to
+      indentifier: 
+      scheme: DOI
+      resource_type: Publication / Journal
+  references:
+    - reference_string: ....
+    - reference_string: ....
+    - reference_string: ....
