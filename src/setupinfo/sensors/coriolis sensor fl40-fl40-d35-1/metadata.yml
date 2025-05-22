@@ -23,7 +23,7 @@ sensors:
     manufacturer: Endress+Hauser
     model: Promass 500
     serial_number: V718B502000
-    firmware version: 01.01.00
+    firmware_version: 01.01.00
     medium: liquid
     settings:
       mass_flow_offset: 0.03

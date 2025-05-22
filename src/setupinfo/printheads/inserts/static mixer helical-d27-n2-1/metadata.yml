@@ -14,7 +14,7 @@ parts:
     type: helical static mixing chain
     manufacturer: PRIMIX
     name: PMS25-2-316L-CHAIN
-    number of elements: 2
+    number_of_elements: 2
     material: stainless steel 316L
 
 compatible_with:
