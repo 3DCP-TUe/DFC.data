@@ -9,9 +9,9 @@ This repository contains the template and setup information library for the 3D S
 In the following README, the structure and more detailed information of the various parts of this project are provided. 
 
 - [Data record](docs/data_record.md)
-- Process measurements
-    - [Setupinfo](docs/setupinfo.md)
-- [Offline measurements](docs/offline_measurements.md)
+- [System data](docs/system_data.md)
+- [In-line and on-line measurements](docs/inline_online_measurements.md)
+- [In-situ and off-line measurements](docs/insitu_offline_measurements.md)
 - [Software structure](docs/software.md)
 
 ## Version numbering
