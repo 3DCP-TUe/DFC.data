@@ -1,6 +1,8 @@
-# Off-line measurements
+# In-situ and off-line measurements
 
 ## Data per experiment
+
+Note: add `deposition_date` and `testing_date`
 
 | Experiment | Type        | Overview File Columns                        | Units     | Sample File Columns           | Units     |
 |------------|-------------|----------------------------------------------|-----------|-------------------------------|-----------|
@@ -53,8 +55,9 @@
 |            |             | height                                       | …         |                               |           |
 |            |             | factor                                       | …         |                               |           |
 |            |             | yield_stress                                 | …         |                               |           |
+|            |             |                                              |           |                               |           |
 | compressive_test |single-point | id                                     | …         |                               |           |
-|            |             | deposition_time_start                        | yyyy:MM:dd hh:mm:ss |                               |           |
+|            |             | deposition_time_start                        | hh:mm:ss  |                               |           |
 |            |             | deposition_time_end                          | …         |                               |           |
 |            |             | testing_day                                  | …         |                               |           |
 |            |             | testing_time                                 | …         |                               |           |
