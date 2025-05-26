@@ -48,7 +48,7 @@ The data record is organized in a folder structure. First, each record contains 
 |   |   |   +-- video1.mp4
 |   |   |   +-- ...    
 |   |   +-- metadata_session.yml
-|   +-- yyyymmdd_session_j
+|   +-- yyyymmdd_session_i+1
 |   |   +-- system_data
 |   |   +-- metadata_session.yml
 |   |   +-- ...
