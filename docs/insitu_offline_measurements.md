@@ -134,6 +134,26 @@ The `processed_data` folder contains at least the following files:
 | deposition_time_end           | hh:mm:ss   |
 | testing_date                  | yyyy-MM-dd |
 | testing_time_start            | hh:mm:ss   |
+| vane_diameter                 | mm         |
+| vane_height                   | mm         |
+| vane_material                 | mm         |
+| shear_strength                | kPa        |
+
+## Compression test
+
+The `processed_data` folder contains at least the following files:
+
+---
+
+**`overview.csv`**
+
+|Columns                        | Units      |
+|-------------------------------|------------|
+| deposition_date               | yyyy-MM-dd |
+| deposition_time_start         | hh:mm:ss   |
+| deposition_time_end           | hh:mm:ss   |
+| testing_date                  | yyyy-MM-dd |
+| testing_time_start            | hh:mm:ss   |
 | sample_diameter               | mm         |
 | sample_height                 | mm         |
 | sample_mass                   | g          |
