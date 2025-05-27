@@ -1,70 +1,163 @@
 # In-situ and off-line measurements
 
-## Data per experiment
+## Ultrasound wave transmission test (UWTT)
 
-Note: add `deposition_date` and `testing_date`
+The `processed_data` folder contains at least the following files:
 
-| Experiment | Type        | Overview File Columns                        | Units     | Sample File Columns           | Units     |
-|------------|-------------|----------------------------------------------|-----------|-------------------------------|-----------|
-| uwtt       | continuous  | id                                           | -         | time                          | hh:mm:ss  |
-|            |             | deposition_time                              | hh:mm:ss  | age                           | hh:mm:ss  |
-|            |             | deposition_end                               | hh:mm:ss  | age                           | hh:mm:ss  |
-|            |             | testing_time                                 | hh:mm:ss  | velocity                      | m/s       |
-|            |             | file_name                                    | -         | acceleration                  | m/s²      |
-|            |             |                                              |           | temperature                   | °C        |
-|            |             |                                              |           |                               |           |
-| temperature| continuous  | id                                           | -         | time                          | hh:mm:ss  |
-|            |             | deposition_time                              | hh:mm:ss  | age                           | hh:mm:ss  |
-|            |             | deposition_end                               | hh:mm:ss  | age                           | hh:mm:ss  |
-|            |             | testing_time                                 | hh:mm:ss  | temperature                   | °C        |
-|            |             | file_name                                    | -         |                               |           |
-|            |             |                                              |           |                               |           |
-| uuct       | single-point| id                                           | -         | time                          | hh:mm:ss  |
-|            |             | deposition_time                              | hh:mm:ss  | force                         | N         |
-|            |             | deposition_end                               | hh:mm:ss  | age                           | hh:mm:ss  |
-|            |             | testing_time                                 | hh:mm:ss  | displacement                  | mm        |
-|            |             | file_name                                    | -         | width                         | mm        |
-|            |             | loading_rate                                 | mm/s      | true_stress                   | MPa       |
-|            |             | sample_radius                                | mm        | true_strain                   | -         |
-|            |             | sample_height                                | mm        |                               |           |
-|            |             | stiffness_modulus                            | MPa       |                               |           |
-|            |             | compressive_strength                         | MPa       |                               |           |
-|            |             |                                              |           |                               |           |
-| fpit       | single-point| id                                           | -         | time                          | hh:mm:ss  |
-|            |             | deposition_time                              | hh:mm:ss  | load                          | N         |
-|            |             | deposition_end                               | hh:mm:ss  | age                           | hh:mm:ss  |
-|            |             | testing_time                                 | hh:mm:ss  | depth                         | mm        |
-|            |             | file_name                                    | -         |                               |           |
-|            |             | loading_rate                                 | mm/s      |                               |           |
-|            |             | indenter_radius                              | mm        |                               |           |
-|            |             | sample_radius                                | mm        |                               |           |
-|            |             | stiffness_modulus                            | MPa       |                               |           |
-|            |             | compressive_strength                         | MPa       |                               |           |
-|            |             | cohesion                                     | MPa       |                               |           |
-|            |             | friction_angle                               | degrees   |                               |           |
-|            |             |                                              |           |                               |           |
-| vane       | single-point| id                                           | -         | n/a                           | n/a       |
-|            |             | deposition_time_start                        | hh:mm:ss  |                               |           |
-|            |             | deposition_end                               | hh:mm:ss  | age                           | hh:mm:ss  |
-|            |             | testing_time                                 | hh:mm:ss  |                               |           |
-|            |             | position_x                                   | mm        |                               |           |
-|            |             | position_y                                   | mm        |                               |           |
-|            |             | position_z                                   | mm        |                               |           |
-|            |             | torque                                       | …         |                               |           |
-|            |             | diameter                                     | …         |                               |           |
-|            |             | height                                       | …         |                               |           |
-|            |             | factor                                       | …         |                               |           |
-|            |             | yield_stress                                 | …         |                               |           |
-|            |             |                                              |           |                               |           |
-| compressive_test |single-point | id                                     | …         |                               |           |
-|            |             | deposition_time_start                        | hh:mm:ss  |                               |           |
-|            |             | deposition_time_end                          | …         |                               |           |
-|            |             | testing_day                                  | …         |                               |           |
-|            |             | testing_time                                 | …         |                               |           |
-|            |             | sample_diameter                              | …         |                               |           |
-|            |             | sample_height                                | …         |                               |           |
-|            |             | sample_mass                                  | …         |                               |           |
-|            |             | loading_rate                                 | …         |                               |           |
-|            |             | failure_load                                 | …         |                               |           |
-|            |             | density                                      | …         |                               |           |
-|            |             | strength                                     | …         |                               |           |
+---
+
+**`overview.csv`**
+
+|Columns                        | Units      |
+|-------------------------------|------------|
+| deposition_date               | yyyy-MM-dd |
+| deposition_time_start         | hh:mm:ss   |
+| deposition_time_end           | hh:mm:ss   |
+| testing_date                  | yyyy-MM-dd |
+| testing_time_start            | hh:mm:ss   |
+| file_name                     | -          |
+
+**`sample_i.csv`**
+
+|Columns                        | Units      |
+|-------------------------------|------------|
+| time                          | hh:mm:ss   |
+| age                           | hh:mm:ss   |
+| velocity                      | m/s        |
+| acceleration                  | m/s²       |
+| temperature                   | °C         |
+
+## Temperature
+
+The `processed_data` folder contains at least the following files:
+
+---
+
+**`overview.csv`**
+
+|Columns                        | Units      |
+|-------------------------------|------------|
+| deposition_date               | yyyy-MM-dd |
+| deposition_time_start         | hh:mm:ss   |
+| deposition_time_end           | hh:mm:ss   |
+| testing_date                  | yyyy-MM-dd |
+| testing_time_start            | hh:mm:ss   |
+| file_name                     | -          |
+
+**`sample_i.csv`**
+
+|Columns                        | Units      |
+|-------------------------------|------------|
+| time                          | hh:mm:ss   |
+| age                           | hh:mm:ss   |
+| temperature                   | °C         |
+
+## Unconfined Uniaxial Compresstion Test (UUCT)
+
+The `processed_data` folder contains at least the following files:
+
+---
+
+**`overview.csv`**
+
+|Columns                        | Units      |
+|-------------------------------|------------|
+| deposition_date               | yyyy-MM-dd |
+| deposition_time_start         | hh:mm:ss   |
+| deposition_time_end           | hh:mm:ss   |
+| testing_date                  | yyyy-MM-dd |
+| testing_time_start            | hh:mm:ss   |
+| file_name                     | -          |
+| loading_rate                  | mm/s       |
+| sample_radius                 | mm         |
+| sample_height                 | mm         |
+| stiffness_modulus             | MPa        |
+| compressive_strength          | MPa        |
+
+**`sample_i.csv`**
+
+|Columns                        | Units      |
+|-------------------------------|------------|
+| time                          | hh:mm:ss   |
+| age                           | hh:mm:ss   |
+| load                         | N          |
+| displacement                  | mm         |
+| width                         | mm         |
+| true_stress                   | MPa        |
+| true_strain                   | N          |
+
+## Flat Punch Indentation Test (FPIT)
+
+The `processed_data` folder contains at least the following files:
+
+---
+
+**`overview.csv`**
+
+|Columns                        | Units      |
+|-------------------------------|------------|
+| deposition_date               | yyyy-MM-dd |
+| deposition_time_start         | hh:mm:ss   |
+| deposition_time_end           | hh:mm:ss   |
+| testing_date                  | yyyy-MM-dd |
+| testing_time_start            | hh:mm:ss   |
+| file_name                     | -          |
+| loading_rate                  | mm/s       |
+| indenter_radius               | mm         |
+| sample_radius                 | mm         |
+| stiffness_modulus             | MPa        |
+| compressive_strength          | MPa        |
+| cohesion                      | MPa        |
+| friction_angle                | degrees    |
+
+**`sample_i.csv`**
+
+|Columns                        | Units      |
+|-------------------------------|------------|
+| time                          | hh:mm:ss   |
+| age                           | hh:mm:ss   |
+| load                          | N          |
+| depth                         | mm         |
+
+## Pocket shear vane
+
+The `processed_data` folder contains at least the following files:
+
+---
+
+**`overview.csv`**
+
+|Columns                        | Units      |
+|-------------------------------|------------|
+| deposition_date               | yyyy-MM-dd |
+| deposition_time_start         | hh:mm:ss   |
+| deposition_time_end           | hh:mm:ss   |
+| testing_date                  | yyyy-MM-dd |
+| testing_time_start            | hh:mm:ss   |
+| vane_diameter                 | mm         |
+| vane_height                   | mm         |
+| vane_material                 | mm         |
+| shear_strength                | kPa        |
+
+## Compression test
+
+The `processed_data` folder contains at least the following files:
+
+---
+
+**`overview.csv`**
+
+|Columns                        | Units      |
+|-------------------------------|------------|
+| deposition_date               | yyyy-MM-dd |
+| deposition_time_start         | hh:mm:ss   |
+| deposition_time_end           | hh:mm:ss   |
+| testing_date                  | yyyy-MM-dd |
+| testing_time_start            | hh:mm:ss   |
+| sample_diameter               | mm         |
+| sample_height                 | mm         |
+| sample_mass                   | g          |
+| loading_rate                  | kN/s       |
+| density                       | kg/m³      |
+| failure_load                  | kN         |
+| compressive_strength          | MPa        |
