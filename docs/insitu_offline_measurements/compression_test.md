@@ -2,6 +2,12 @@
 
 ## Description of the experiment
 
+...
+
+## Data collection
+
+Data collection depends on the test rig that is used. 
+
 ## Processed data files
 
 The `processed_data` folder contains at least the following files:

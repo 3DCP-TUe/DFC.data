@@ -2,6 +2,12 @@
 
 ## Description of the experiment
 
+...
+
+## Data collection
+
+...
+
 ## Processed data files
 
 The `processed_data` folder contains at least the following files:
