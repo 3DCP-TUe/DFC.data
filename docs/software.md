@@ -4,9 +4,9 @@
 
 Currently, three software packages are in use and maintained.
 
-General tools: 
+General tool to acquire the system data: 
 
-- **[NodeRED-3DSeeP](https://github.com/3DCP-TUe/Node-RED-3DSeeP):** General dashboard and data logger.
+- **[NodeRED-3DSeeP](https://github.com/3DCP-TUe/Node-RED-3DSeeP):** General dashboard and data logger for the modular 3DCP system.
 
 Measurement / experiment specific tools: 
 
@@ -39,7 +39,7 @@ Each software package includes four standard folders:
 |   |   +-- acquisition
 |   |   |   +-- file1.py
 |   |   |   +-- file1.py
-|   |   ...
+|   |   |   +-- ...
 |   +-- utils
 |   |   ...
 |   +-- README.md
