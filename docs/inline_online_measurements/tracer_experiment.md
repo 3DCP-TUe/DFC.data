@@ -1,6 +1,8 @@
-# In-line and on-line measurements
+# Tracer experiments
 
-## Tracer experiments
+## Description of the experiment
+
+## Processed data files
 
 The `processed_data` folder contains the following files:
 
@@ -54,19 +56,17 @@ Contains metadata and statistical summaries for each tracer experiment.
 
 Each experiment has a corresponding CSV file containing the response values over time.
 
-| Column         | Description |
-|----------------|-------------|
-| `time`         | Clock time in HH:mm:ss format |
-| `time_response`| Time since start of experiment, starting from 00:00:00 (HH:mm:ss) |
-| `value`        | Normalized response value |
-| `R`            | Red value (RGB color space) |
-| `G`            | Green value (RGB color space) |
-| `B`            | Blue value (RGB color space) |
-| `X`            | X value (CIE 1931 XYZ color space) |
-| `Y`            | Y value (CIE 1931 XYZ color space) |
-| `Z`            | Z value (CIE 1931 XYZ color space) |
-| `L`            | L* value (CIELAB color space) |
-| `a`            | a* value (CIELAB color space) |
-| `b`            | b* value (CIELAB color space) |
-
-## Slug test
+| Column         | Description                                                              |
+|----------------|--------------------------------------------------------------------------|
+| `time`         | Clock time in HH:mm:ss format                                            |
+| `time_response`| Time since start of experiment, starting from 00:00:00 (HH:mm:ss)        |
+| `value`        | Normalized response value                                                |
+| `R`            | Red value (RGB color space)                                              |
+| `G`            | Green value (RGB color space)                                            |
+| `B`            | Blue value (RGB color space)                                             |
+| `X`            | X value (CIE 1931 XYZ color space)                                       |
+| `Y`            | Y value (CIE 1931 XYZ color space)                                       |
+| `Z`            | Z value (CIE 1931 XYZ color space)                                       |
+| `L`            | L* value (CIELAB color space)                                            |
+| `a`            | a* value (CIELAB color space)                                            |
+| `b`            | b* value (CIELAB color space)                                            |

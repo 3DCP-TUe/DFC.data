@@ -8,10 +8,18 @@ This repository contains the template and setup information library for the 3D S
 
 In the following README, the structure and more detailed information of the various parts of this project are provided. 
 
-- [Data record](docs/data_record.md)
-- [System data](docs/system_data.md)
-- [In-line and on-line measurements](docs/inline_online_measurements.md)
-- [In-situ and off-line measurements](docs/insitu_offline_measurements.md)
+- [Data record structure](docs/data_record_structure.md)
+- [In-line and on-line measurements](docs/inline_online_measurements/index.md)
+    - [System data](docs/inline_online_measurements/system_data.md)
+    - [Slugs test](docs/inline_online_measurements/slugs_test.md)
+    - [Tracer experiment](docs/inline_online_measurements/tracer_experiment.md)
+- [In-situ and off-line measurements](docs/insitu_offline_measurements/index.md)
+    - [Compression test](docs/insitu_offline_measurements/compression_test.md)
+    - [Flat punch indentation test](docs/insitu_offline_measurements/flat_punch_indentation_test.md) (FPIT)
+    - [Pocket shear vane test](docs/insitu_offline_measurements/pocket_shear_vane_test.md)
+    - [Temperature](docs/insitu_offline_measurements/temperature.md)
+    - [Ultrasound wave transmission test (UWTT)](docs/insitu_offline_measurements/ultrasonic_wave_transmission_test.md) (UWTT)
+    - [Unconfined uniaxial compresstion test](docs/insitu_offline_measurements/unconfined_uniaxial_compression_test.md) (UUCT)
 - [Software structure](docs/software.md)
 
 ## Explanation of the files
