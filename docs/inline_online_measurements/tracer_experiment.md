@@ -2,6 +2,8 @@
 
 ## Description of the experiment
 
+Tracer experiments are used to analyze material flow within the system. In this experiment, a dye or pigment is injected at a specific location into the system, and digital image processing (DIP) is used to detect its presence at the nozzle outlet. By correlating the color intensity of the material from the images to the tracer concentration, the residence time functions can be determined. From impulse inputs, the residence time distribution is obtained, while step-up and step-down inputs provide the cumulative residence function and wash-out function, respectively. The experiment can be performed both in-line and on-line, though on-line measurements are more practical, as in-line implementation would require the camera to rotate with the nozzle to follow the printing trajectory. For this experiment, the software package [Concrete Candy Tracker](https://github.com/3DCP-TUe/ConcreteCandyTracker) was developed. Concrete Candy Tracker is developed in Python and built around pypylon, the official Python wrapper for Basler cameras. It calculates mean color values (RGB, CIELAB, and CIEXYZ) in real-time within a specified region of interest at a frequency of 10 to 60 Hz, depending on camera settings. The software includes functionality for writing measured color values to an external or local OPC UA server, enabling real-time visualization and interaction on a Node-RED dashboard with the system data. The experiment is described in detail in [Deetman et al. (2024)](https://doi.org/10.1617/s11527-024-02378-y)
+
 ## Processed data files
 
 The `processed_data` folder contains the following files:
