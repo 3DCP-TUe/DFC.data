@@ -10,7 +10,7 @@ Data acquisition is managed by a Python program that reads load cell data from i
 
 The __raw data__ folder for the slug test typically contains a time series file with load cell data and a subfolder with captured images. The __setupinfo__ folder contains a metadata file in YAML file format that details the hardware used and its settings, including the load cell and its signal filters, as well as the camera and its settings. The __processed data__ folder contains four files with time series data: the first file provides the yield stress derived from the droplet mass; the second, the mass flow rate; the third, the volume of a droplet obtained from the acquired images; and the last, the volume flow rate. The __scripts__ folder contains all the analysis files used to get these properties from the raw data.
 
-## Processed data files
+## Processed data file format
 
 The `processed_data` folder contains the following files:
 

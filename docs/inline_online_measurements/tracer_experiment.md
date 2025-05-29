@@ -10,7 +10,7 @@ For this experiment, the software package [Concrete Candy Tracker](https://githu
 
 The __raw data__ contains a log file providing time-series data of the measured color values. Additionally, short measurements on grey and white cards used for color calibration can be stored. The __setupinfo__ folder contains a YAML metadata file describing the hardware and software settings. The hardware described includes the camera, lens, filters, and lighting, while the software settings include, among others, the white balance ratios, gain level, and exposure time. The __processed data__ consists of a time series table with the color values but with outliers removed. Additionally, for each experiment, a separate file is stored that contains, depending on how the tracer material was applied, the residence time distribution, step-up response, or step-down response in a time series format. An overview file is provided, listing the experiments with details such as start time, end time, input type used, and a reference to the individual experiment file. The __scripts__ folder contains the files used to produce the files in the processed data folder from the raw data. 
 
-## Processed data files
+## Processed data file format
 
 The `processed_data` folder contains the following files:
 

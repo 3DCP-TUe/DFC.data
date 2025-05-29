@@ -8,7 +8,7 @@ The FPIT is a compression test where a cylindrical flat punch indenter is presse
 
 Data collection depends on the test rig that is used. 
 
-## Processed data files
+## Processed data file format
 
 The `processed_data` folder contains at least the following files:
 

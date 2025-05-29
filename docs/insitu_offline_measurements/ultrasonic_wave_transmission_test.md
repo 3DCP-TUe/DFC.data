@@ -8,7 +8,7 @@ The UWTT can be used in-situ, but is used in our facilities as an off-line test 
 
 The commercially available software that comes with the device is used to acquire the data.
 
-## Processed data files
+## Processed data file format
 
 The `processed_data` folder contains at least the following files:
 

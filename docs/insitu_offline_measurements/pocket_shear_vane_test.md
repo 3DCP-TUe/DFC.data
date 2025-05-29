@@ -8,7 +8,7 @@ The pocket shear vane test estimates the shear strength of cohesive materials by
 
 Torque values are manually recorded during the pocket shear vane test. 
 
-## Processed data files
+## Processed data file format
 
 The `processed_data` folder contains at least the following files:
 

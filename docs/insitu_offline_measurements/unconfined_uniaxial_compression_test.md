@@ -8,7 +8,7 @@ The UUCT is typically used to determine the early-age mechanical properties of t
 
 Data collection depends on the test rig that is used. 
 
-## Processed data files
+## Processed data file format
 
 The `processed_data` folder contains at least the following files:
 

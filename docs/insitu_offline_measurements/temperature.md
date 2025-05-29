@@ -8,7 +8,7 @@
 
 ...
 
-## Processed data files
+## Processed data file format
 
 The `processed_data` folder contains at least the following files:
 
