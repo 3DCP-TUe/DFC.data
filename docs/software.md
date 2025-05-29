@@ -1,6 +1,6 @@
 # Software
 
-## Avaialbe software packages
+## Available software packages
 
 Currently, three software packages are in use and maintained.
 
