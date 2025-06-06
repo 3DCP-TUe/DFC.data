@@ -15,8 +15,9 @@ path = mfilename('fullpath');
 [filepath, name, ext] = fileparts(path);
 cd(filepath);
 
-%% Find componts in sessions and fill system_data\setupinfo
+%% Find components in sessions and fill system_data\setupinfo
 
+%{
 % Folder path to setupinfo library
 cd(filepath);
 cd('../setupinfo/')
@@ -26,6 +27,21 @@ library = pwd;
 cd(filepath);
 cd('..\template')
 record = pwd;
+%}
+
+% Folder path to setupinfo library
+library = uigetdir(); % Open a dialog to select the folder
+
+% Folder path to record
+record = uigetdir(); % Open a dialog to select the folder
+
+if library == 0
+    error('No libary folder selected.');
+end
+
+if record == 0
+    error('No record folder selected.');
+end
 
 % Fil the setupinfo of the session system_data folders
 sneakpeek.fill_record_setupinfo(library, record, true);
