@@ -16,9 +16,7 @@ The `processed_data` folder contains the following files:
 
 ---
 
-**`color_values.csv`**
-
-Contains color measurement data over time.
+**`color_values.csv`** contains color measurement data over time.
 
 | Column     | Description                                      |
 |------------|--------------------------------------------------|
@@ -35,9 +33,7 @@ Contains color measurement data over time.
 
 ---
 
-**`overview.csv`**
-
-Contains metadata and statistical summaries for each tracer experiment.
+**`overview.csv`** contains metadata and statistical summaries for each tracer experiment.
 
 | Column       | Description                                                                 |
 |--------------|-----------------------------------------------------------------------------|
