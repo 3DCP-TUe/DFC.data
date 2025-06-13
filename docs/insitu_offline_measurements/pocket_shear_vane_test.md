@@ -12,8 +12,6 @@ Torque values are manually recorded during the pocket shear vane test.
 
 The `processed_data` folder contains at least the following files:
 
----
-
 **`overview.csv`**
 
 |Columns                        | Units      |
