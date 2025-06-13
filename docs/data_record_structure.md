@@ -5,17 +5,17 @@ The data record is organized in a folder structure containing:
   - **data_source**: For each data source folder, three subfolders exist: setupinfo, raw data, processed data, and scripts. The **setupinfo** folder contains metadata that describes the experiment. The **scripts** folder contains only the scripts that process the **raw_data** of that specific experiment and saves it in the **processed_data** folder, allowing for reproducibility. The format of the process_data folder is predifined for the _following sources:
     
     In-line and on-line measurements　    
-      - [system_data](docs/inline_online_measurements/system_data.md)
-      - [slugs_test](docs/inline_online_measurements/slugs_test.md)
-      - [tracer_experiment](docs/inline_online_measurements/tracer_experiment.md)
+      - [system_data](inline_online_measurements/system_data.md)
+      - [slugs_test](inline_online_measurements/slugs_test.md)
+      - [tracer_experiment](inline_online_measurements/tracer_experiment.md)
         
     In-situ and off-line measurements
-      - [compression_test](docs/insitu_offline_measurements/compression_test.md)
-      - [flat_punch_indentation_test](docs/insitu_offline_measurements/flat_punch_indentation_test.md) (FPIT)
-      - [pocket_shear_vane](docs/insitu_offline_measurements/pocket_shear_vane_test.md)
-      - [temperature](docs/insitu_offline_measurements/temperature.md)
-      - [ultrasound_wave_transmission_test](docs/insitu_offline_measurements/ultrasonic_wave_transmission_test.md) (UWTT)
-      - [unconfined_uniaxial_compresstion_test](docs/insitu_offline_measurements/unconfined_uniaxial_compression_test.md) (UUCT)
+      - [compression_test](insitu_offline_measurements/compression_test.md)
+      - [flat_punch_indentation_test](insitu_offline_measurements/flat_punch_indentation_test.md) (FPIT)
+      - [pocket_shear_vane](insitu_offline_measurements/pocket_shear_vane_test.md)
+      - [temperature](insitu_offline_measurements/temperature.md)
+      - [ultrasound_wave_transmission_test](insitu_offline_measurements/ultrasonic_wave_transmission_test.md) (UWTT)
+      - [unconfined_uniaxial_compresstion_test](insitu_offline_measurements/unconfined_uniaxial_compression_test.md) (UUCT)
 - **analysis**: contains scripts to perform analysis over multiple sessions.
 - **metadata_record.yml**: Each record contains a metadata file that includes information about the authors and a description of the data record, explaining the purpose for which it was created.
 
