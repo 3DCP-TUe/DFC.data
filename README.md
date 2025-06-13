@@ -24,12 +24,12 @@ In the following README, the structure and more detailed information of the vari
 
 ## Explanation of the files
 
-[**docs**](docs): ...
+[**docs**](docs): Contains detailed description of the database structure and various data sources. Importantly, it contains the predefined structure of the processed_data folder, which is critical to allow for automated data processing.
 
-[**src**](src): ...
-- [**src/analysis**](src/analysis): ...
-- [**src/setupinfo**](src/setupinfo): ..
-- [**src/template**](src/template): ...
+[**src**](src): 
+- [**src/analysis**](src/analysis): Contains files to perform analysis over a session and data record
+- [**src/setupinfo**](src/setupinfo): Containing the component classes
+- [**src/template**](src/template): A folder structure that can be used as a template for constructing a database
 
 [**utils**](utils): ...
 
