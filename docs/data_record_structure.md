@@ -1,6 +1,25 @@
 # Data record 
 
-The data record is organized in a folder structure. First, each record contains a metadata file that includes information about the authors and a description of the data record, explaining the purpose for which it was created. Second, each data record is divided into sub-folders, with each sub-folder corresponding to a session. Consequently, a single data record can contain multiple sessions, which may be grouped by topic, theme or publication. Besides the folders with sessions, it also includes a folder with scripts to perform analysis over multiple sessions. The figure below shows the standard format for a data record.
+The data record is organized in a folder structure containing: 
+- **yyymmdd_session_i**: A single data record can contain multiple sessions, which may be grouped by topic, theme or publication. A session folder contains a session metadata file that describes the software versions used, the system layout (location of system components), the materials used and to which system component the materials were fed. Each session contains several folders, each holding the data acquired from a specific data source. Two additional folders are included for videos and photos of the session. These can contain, for example, photos of the printed objects and the assembled system.
+  - **data source**: For each data source folder, three subfolders exist: setupinfo, raw data, processed data, and scripts. The **setupinfo** folder contains metadata that describes the experiment. The **scripts** folder contains only the scripts that process the **raw data** of that specific experiment and saves it in the **processed_data** folder, allowing for reproducibility. The format of the process_data folder is predifined for the following sources:
+    
+    In-line and on-line measurements　    
+      - [system_data](docs/inline_online_measurements/system_data.md)
+      - [slugs_test](docs/inline_online_measurements/slugs_test.md)
+      - [tracer_experiment](docs/inline_online_measurements/tracer_experiment.md)
+        
+    In-situ and off-line measurements
+      - [compression_test](docs/insitu_offline_measurements/compression_test.md)
+      - [flat_punch_indentation_test](docs/insitu_offline_measurements/flat_punch_indentation_test.md) (FPIT)
+      - [pocket_shear_vane](docs/insitu_offline_measurements/pocket_shear_vane_test.md)
+      - [temperature](docs/insitu_offline_measurements/temperature.md)
+      - [ultrasound_wave_transmission_test](docs/insitu_offline_measurements/ultrasonic_wave_transmission_test.md) (UWTT)
+      - [unconfined_uniaxial_compresstion_test](docs/insitu_offline_measurements/unconfined_uniaxial_compression_test.md) (UUCT)
+- **analysis**: contains scripts to perform analysis over multiple sessions.
+- **metadata_record.yml**: Each record contains a metadata file that includes information about the authors and a description of the data record, explaining the purpose for which it was created.
+
+The figure below shows a typical folder structure of a dataset.
 
 ```
 +-- datarecord
@@ -60,14 +79,3 @@ The data record is organized in a folder structure. First, each record contains 
 |   +-- metadata_record.yml
 |   +-- LICENSE
 ```
-
-## Session folder
-A session folder contains a session metadata file that describes the software versions used, the system layout (location of system components), the materials used and to which system component the materials were fed. Each session contains several folders, each holding the data acquired from a specific experiment. Two additional folders are included for videos and photos of the session. These can contain, for example, photos of the printed objects and the assembled system.
-
-## Experiment folder
-
-For each experiment folder, three subfolders exist: raw data, processed data, setupinfo, and scripts. The organization of the folders with raw and processed data depends on the experiment and the typical data acquired. The scripts folder contains only the files necessary to perform analysis for this particular experiment.
-
-## Analysis folder
-
-Each data record contains an analysis folder that contains all files used to analyse the whole session, such as finding correlations between the different sessions and experiments in the data record. In addition to the scripts, the folder can contain subfolders to store figures and tables. This provides quick insights for first-time users of the dataset without requiring them to perform any analysis themselves. 
