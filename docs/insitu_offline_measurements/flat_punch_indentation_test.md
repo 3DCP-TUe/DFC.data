@@ -22,7 +22,7 @@ The `processed_data` folder contains at least the following files:
 | deposition_time_start         | HH:mm:ss   |
 | deposition_time_end           | HH:mm:ss   |
 | testing_date                  | yyyy-MM-dd |
-| testing_time_start            | HH:mm:ss   |
+| testing_time                  | HH:mm:ss   |
 | file_name                     | -          |
 | loading_rate                  | mm/s       |
 | indenter_radius               | mm         |
