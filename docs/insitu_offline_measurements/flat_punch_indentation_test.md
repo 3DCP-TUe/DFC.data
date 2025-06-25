@@ -34,9 +34,9 @@ The `processed_data` folder contains at least the following files:
 
 **`sample_i.csv`**
 
-|Columns                        | Units      |
-|-------------------------------|------------|
-| time                          | HH:mm:ss   |
-| age                           | HH:mm:ss   |
-| load                          | N          |
-| depth                         | mm         |
+|Columns                        | Units          |
+|-------------------------------|----------------|
+| time                          | HH:mm:ss.SSS   |
+| age                           | HH:mm:ss.SSS   |
+| load                          | N              |
+| depth                         | mm             |
