@@ -37,6 +37,5 @@ The `processed_data` folder contains at least the following files:
 |Columns                        | Units          |
 |-------------------------------|----------------|
 | time                          | HH:mm:ss.SSS   |
-| age                           | HH:mm:ss.SSS   |
 | load                          | N              |
 | depth                         | mm             |
