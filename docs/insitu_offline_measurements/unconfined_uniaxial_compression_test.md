@@ -22,7 +22,7 @@ The `processed_data` folder contains at least the following files:
 | deposition_time_start         | HH:mm:ss   |
 | deposition_time_end           | HH:mm:ss   |
 | testing_date                  | yyyy-MM-dd |
-| testing_time_start            | HH:mm:ss   |
+| testing_time                  | HH:mm:ss   |
 | file_name                     | -          |
 | loading_rate                  | mm/s       |
 | sample_radius                 | mm         |
@@ -34,12 +34,12 @@ The `processed_data` folder contains at least the following files:
 
 **`sample_i.csv`**
 
-|Columns                        | Units      |
-|-------------------------------|------------|
-| time                          | HH:mm:ss   |
-| age                           | HH:mm:ss   |
-| load                          | N          |
-| displacement                  | mm         |
-| width                         | mm         |
-| true_stress                   | MPa        |
-| true_strain                   | N          |
+|Columns                        | Units          |
+|-------------------------------|----------------|
+| time                          | HH:mm:ss.SSS   |
+| age                           | HH:mm:ss.SSS   |
+| load                          | N              |
+| displacement                  | mm             |
+| width                         | mm             |
+| true_stress                   | MPa            |
+| true_strain                   | N              |
