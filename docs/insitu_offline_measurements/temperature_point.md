@@ -1,8 +1,8 @@
-# Temperature
+# Temperature: single-point
 
 ## Description of the experiment
 
-...
+Single-point temperature measurements. 
 
 ## Data collection
 
@@ -24,10 +24,15 @@ The `processed_data` folder contains at least the following files:
 | testing_date                  | yyyy-MM-dd |
 | testing_time_start            | HH:mm:ss   |
 | file_name                     | -          |
+| position_x                    | mm         |
+| position_y                    | mm         |
+| position_z                    | mm         |
+
+*Note:* If the sample position is not applicable (e.g., a non-spatial, off-line measurement), the position_x/y/z columns should still exist and be filled with `NaN`.
 
 ---
 
-**`sample_i.csv`**
+**`sample_i.csv`** or **`measurement_i.csv`**
 
 |Columns                        | Units      |
 |-------------------------------|------------|
