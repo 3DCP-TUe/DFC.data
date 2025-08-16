@@ -1,8 +1,9 @@
-# 3D Sneak Peek: 3DCP Database Framework TU/e
+<h1 align="center">DFC.data</h1>
+<h3 align="center">A database framework for Digital Fabrication with Concrete</h3>
 
 ## Introduction 
 
-This repository contains the template and setup information library for the 3D Sneak Peek database. The aim of this project is to collect experimental data about 3D concrete printing in a structured way and distribute this data to the community. This repository includes the system library of the equipment at TU/e and the templates for data records and software packages.
+This repository contains the templates, libraries, and structure information for _DFC.data_. The aim of this project is to collect experimental data about Digital Fabrication with Concrete processes in a structured way and distribute this data to the community. This repository includes the system library of the equipment at TU/e and the templates for data records and software packages.
 
 ## Documentation
 
@@ -24,7 +25,7 @@ In the following README, the structure and more detailed information of the vari
 
 ## Explanation of the files
 
-[**docs**](docs): Contains detailed description of the database structure and various data sources. Importantly, it contains the predefined structure of the processed_data folder, which is critical to allow for automated data processing.
+[**docs**](docs): Contains a detailed description of the database structure and various data sources. Importantly, it contains the predefined structure of the _processed_data_ folder, which is critical to allow for automated data processing.
 
 [**src**](src): 
 - [**src/analysis**](src/analysis): Contains files to perform analysis over a session and data record
