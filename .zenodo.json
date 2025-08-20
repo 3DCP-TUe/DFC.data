@@ -19,13 +19,18 @@
 
 	"license": "CC-BY-SA-4.0",
 
-	"title": "3D Sneak Peek: 3DCP Database structure and system library TU/e",
+	"title": "DFC.data: A database framework for digital fabrication with concrete.",
 
-	"description": "This record contains the template and setup information library for the 3D Sneak Peek database. The aim of this project is to collect experimental data about 3D concrete printing in a structured way and distribute this data to the community. This record includes the system library of the equipment at TU/e and the templates for data records and software packages.",
+	"description": "This record contains the template and setup information library for DFC.data. The aim of this project is to collect experimental data about 3D concrete printing in a structured way and distribute this data to the community. This record includes the system library of the equipment at TU/e and the templates for data records and software packages.",
 
 	"keywords": [
 		"3d concrete printing",
-        "data structures"
+        "database",
+		"digital fabrication",
+		"concrete processing",
+		"open acces",
+		"data storage",
+		"data collection"
 	],
 
 	"upload_type": "dataset"
