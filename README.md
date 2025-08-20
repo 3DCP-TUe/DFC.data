@@ -27,11 +27,11 @@ In the following README, the structure and more detailed information of the vari
 [**docs**](docs): Contains a detailed description of the database structure and various data sources. Importantly, it contains the predefined structure of the _processed_data_ folder, which is critical to allow for automated data processing.
 
 [**src**](src): 
-- [**src/analysis**](src/analysis): Contains files to perform analysis over a session and data record
-- [**src/setupinfo**](src/setupinfo): Containing the component classes
-- [**src/template**](src/template): A folder structure that can be used as a template for constructing a database
+- [**src/analysis**](src/analysis): Contains files to perform analysis over a session and data record.
+- [**src/libraries**](src/libraries): Containing the material and system component libraries.
+- [**src/template**](src/template): A folder structure that can be used as a template for constructing a database.
 
-[**utils**](utils): ...
+[**utils**](utils): This folder contains helper files and resources used throughout the project, such as figures for README files and the scripts used to generate them.
 
 ## Version numbering
 
