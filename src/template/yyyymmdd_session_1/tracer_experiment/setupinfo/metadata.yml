@@ -1,3 +1,7 @@
+software:
+  - name: Concrete Candy Tracker
+    version: 0.4.0
+
 software_settings:
   roi:
     width: 848
@@ -15,13 +19,25 @@ software_settings:
 
 hardware:
   camera: 
-    name: Basler a2A1920-51gcPRO
-    shutter: global shutter
-    resolution:
-      width: 1920
-      height: 1200
+    manufacturer: Basler
+    model: a2A1920-51gcPRO
+    interface: GigE
+    sensor:
+      vendor: Sony
+      sensor: IMX392
+      shutter: global shutter
+      format: 1/2.3"
+      diagonal: 7.77 mm
+      type: CMOS
+      size:
+        width: 6.6 mm
+        height: 4.1 mm
+      resolution:
+        width: 1920
+        height: 1200
+      frame_rate: 51
   lens:
-    name: Edmund Optics 16MM Compact Fixed Focal Length
+    name: Edmund Optics 16mm C Series Fixed Focal Length Lens
     focal_length: 0.1
     aperture: f/8
     filters:
