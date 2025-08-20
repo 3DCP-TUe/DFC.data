@@ -35,7 +35,7 @@ In the following README, the structure and more detailed information of the vari
 
 ## Version numbering
 
-The 3D Sneak Peak project uses the following versioning scheme: 
+This project uses the following versioning scheme: 
 
 ```
 0.x.x ---> MAJOR version: Incompatible changes; for example, restructuring the database format and metadata files.
@@ -56,7 +56,7 @@ Since it took a lot of time and effort to make our data and software available, 
 
 ### Documentation
 
-The documentation of 3D Sneak Peak is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+The documentation of DFC.data is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 
 Copyright (c) 2024-2025 [3D Concrete Printing Research Group at Eindhoven University of Technology](https://www.tue.nl/en/research/research-groups/structural-engineering-and-design/3d-concrete-printing)
 
@@ -78,11 +78,11 @@ The software components are licensed under the GNU General Public License versio
 
 Copyright (c) 2024-2025 [3D Concrete Printing Research Group at Eindhoven University of Technology](https://www.tue.nl/en/research/research-groups/structural-engineering-and-design/3d-concrete-printing)
 
-3D Sneak Peek contains free software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 3.0 as published by the Free Software Foundation. 
+DFC.data contains free software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 3.0 as published by the Free Software Foundation. 
 
 The software components are distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with 3D Sneak Peek; If not, see <http://www.gnu.org/licenses/>.
+You should have received a copy of the GNU General Public License along with DFC.data; If not, see <http://www.gnu.org/licenses/>.
 
 @license GPL-3.0 <https://www.gnu.org/licenses/gpl-3.0.html>
 
