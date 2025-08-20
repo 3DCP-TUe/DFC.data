@@ -28,7 +28,7 @@ if folder == 0
 end
 
 % Rename files in folder
-rename_files(folder, 'photo');
+dfc_data.rename_files(folder, 'photo');
 
 %% End
 disp('End')

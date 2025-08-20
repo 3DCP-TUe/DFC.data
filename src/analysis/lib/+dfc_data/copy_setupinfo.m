@@ -15,7 +15,7 @@ function copy_setupinfo(root, destination, components, swipe_destination)
     %   - swipe_destination: if true, clears destination before copying
 
     % Get all component names and their folders from the library
-    [lib_names, lib_folders] = get_components_from_folder(root);
+    [lib_names, lib_folders] = dfc_data.get_components_from_folder(root);
 
     % Match requested components to library components
     indices = zeros(size(components));

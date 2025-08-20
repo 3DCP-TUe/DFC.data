@@ -20,6 +20,7 @@ addpath('lib');
 
 %% Find components in sessions and fill system_data\setupinfo
 
+%{
 % Folder path to setupinfo library
 cd(filepath);
 cd('../libraries/system_components')
@@ -29,8 +30,8 @@ library = pwd;
 cd(filepath);
 cd('..\template')
 record = pwd;
+%}
 
-%{
 % Folder path to setupinfo library
 library = uigetdir(); % Open a dialog to select the folder
 
@@ -44,10 +45,9 @@ end
 if record == 0
     error('No record folder selected.');
 end
-%}
 
 % Fil the setupinfo of the session system_data folders
-fill_record_system_data_components(library, record, 'system', true); % use 'system' for system components and 'material' for material components
+dfc_data.fill_record_system_data_components(library, record, 'system', true); % use 'system' for system components and 'material' for material components
 
 %% End
 disp('End')

@@ -24,10 +24,10 @@ addpath('lib');
 cd(filepath);
 cd('../template/yyyymmdd_session_1/system_data/setupinfo')
 folder = pwd;
-metadata = readyaml(folder + "/metadata.yml");
+metadata = dfc_data.readyaml(folder + "/metadata.yml");
 
 % Get graph and figure
-[graph, fig] = get_system_ontology(metadata);
+[graph, fig] = dfc_data.get_system_ontology(metadata);
 
 %% End
 disp('End')

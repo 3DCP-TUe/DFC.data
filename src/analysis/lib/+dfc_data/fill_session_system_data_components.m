@@ -32,20 +32,20 @@ function fill_session_system_data_components(library, folder, subfolder, swipe_d
     end
 
     % Read system metadata
-    metadata = readyaml(metadata_file);
+    metadata = dfc_data.readyaml(metadata_file);
 
     % Extract components based on subfolder type
     switch lower(subfolder)
         case "system"
-            components = get_system_components_from_system_metadata(metadata);
+            components = dfc_data.get_system_components_from_system_metadata(metadata);
             destination = fullfile(path, 'system_data', 'setupinfo', 'system_components');
         case "materials"
-            components = get_material_components_from_system_metadata(metadata);
+            components = dfc_data.get_material_components_from_system_metadata(metadata);
             destination = fullfile(path, 'system_data', 'setupinfo', 'material_components');
         otherwise
             error('Invalid input: subfolder must be "system" or "materials".');
     end
 
     % Copy setupinfo for used components
-    copy_setupinfo(library, destination, components, swipe_destination);
+    dfc_data.copy_setupinfo(library, destination, components, swipe_destination);
 end

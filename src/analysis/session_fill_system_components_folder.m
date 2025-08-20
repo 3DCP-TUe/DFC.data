@@ -16,7 +16,7 @@ path = mfilename('fullpath');
 cd(filepath);
 
 %% Add lib
-addpath('lib');
+addpath('lib/');
 
 %% Find components and copy paste to data record (destination)
 
@@ -33,11 +33,11 @@ destination = pwd;
 % Get components from record
 cd(filepath);
 cd('../template/yyyymmdd_session_1')
-metadata = readyaml(pwd + "\system_data\setupinfo\metadata.yml");
-components = get_system_components_from_system_metadata(metadata);
+metadata = dfc_data.readyaml(pwd + "\system_data\setupinfo\metadata.yml");
+components = dfc_data.get_system_components_from_system_metadata(metadata);
 
 % Copy used components to destination folder
-copy_setupinfo(library, destination, components, true);
+dfc_data.copy_setupinfo(library, destination, components, true);
 
 %% End
 disp('End')

@@ -23,5 +23,5 @@ function result = read_system_component_metadata(folder, component)
     end
 
     % Read and return the YAML content
-    result = readyaml(metadata_path);
+    result = dfc_data.readyaml(metadata_path);
 end

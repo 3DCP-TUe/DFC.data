@@ -36,7 +36,7 @@ function fill_record_system_data_components(library, folder, subfolder, swipe_de
 
         % Check for session folders
         if subfolders(i).isdir && contains(name, 'session')
-            fill_session_system_data_components(library, full_path, subfolder, swipe_destination);
+            dfc_data.fill_session_system_data_components(library, full_path, subfolder, swipe_destination);
         end
     end
 end
