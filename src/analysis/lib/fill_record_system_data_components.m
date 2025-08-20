@@ -6,8 +6,8 @@ Foundation. For more information and the LICENSE file, see
 %}
 
 function fill_record_system_data_components(library, folder, subfolder, swipe_destination)
-%FILL_RECORD_SYSTEM_DATA_COMPONENTS Fills setupinfo system components folders for all session subfolders
-
+    
+    %FILL_RECORD_SYSTEM_DATA_COMPONENTS Fills setupinfo system components folders for all session subfolders
     %   fill_record_system_data_components(library, folder, swipe_destination)
     %   - library: component library
     %   - folder: path to the data record folder or a struct from dir

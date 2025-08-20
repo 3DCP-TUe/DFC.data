@@ -8,7 +8,7 @@ Foundation. For more information and the LICENSE file, see
 function components = get_material_components_from_system_metadata(metadata)
 
     %GET_MATERIAL_COMPONENTS_FROM_SYSTEM_METADATA Extracts unique components used in a session
-    %   components = get_material_components_from_system_metadata(session)
+    %   components = get_material_components_from_system_metadata(metadata)
     %   Returns a list of unique materials component names used of the metadata structure.
 
     % Extract components from materials
