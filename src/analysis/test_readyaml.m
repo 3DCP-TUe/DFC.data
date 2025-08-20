@@ -1,8 +1,8 @@
 %{
-This file is part of 3D Sneak Peek. 3D Sneak Peek code is licensed under 
-the terms of GNU General Public License as published by the Free Software 
+This file is part of DFC.data. DFC.data is licensed under the 
+terms of GNU General Public License as published by the Free Software 
 Foundation. For more information and the LICENSE file, see 
-<https://github.com/3DCP-TUe/3DSneakPeek>.
+<https://github.com/3DCP-TUe/DFC.data>.
 %}
 
 %% Clear and close
@@ -15,6 +15,9 @@ path = mfilename('fullpath');
 [filepath, name, ext] = fileparts(path);
 cd(filepath);
 
+%% Add lib
+addpath('lib');
+
 %% Read file
 
 cd(filepath)
@@ -24,9 +27,9 @@ yml = readyaml(file);
 fields = fieldnames(yml.software_settings.white_balance_ratio);
 
 for i = 1:numel(fields)
-    fieldName = fields{i};
-    fieldValue = yml.software_settings.white_balance_ratio.(fieldName);
-    fprintf('%s: %f\n', fieldName, fieldValue);
+    field_name = fields{i};
+    field_value = yml.software_settings.white_balance_ratio.(field_name);
+    fprintf('%s: %f\n', field_name, field_value);
 end
 
 

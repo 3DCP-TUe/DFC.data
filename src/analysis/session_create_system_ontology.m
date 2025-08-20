@@ -20,15 +20,14 @@ addpath('lib');
 
 %% Import session
 
-% Folder path
-folder = uigetdir(); % Open a dialog to select the folder
+% Read session metadata file
+cd(filepath);
+cd('../template/yyyymmdd_session_1/system_data/setupinfo')
+folder = pwd;
+metadata = readyaml(folder + "/metadata.yml");
 
-if folder == 0
-    error('No folder selected.');
-end
-
-% Remove files with extension '.asv'
-remove_files_by_extension(folder, '.asv');
+% Get graph and figure
+[graph, fig] = get_system_ontology(metadata);
 
 %% End
 disp('End')

@@ -2,8 +2,15 @@
 
 This folder contains files to perform analysis over a session and data record. The purpose is to store a collection of standard functions that act as a library. Store these files together with your dataset and adjust them if needed. If you add new functionality, please push these updates to the templates provided here so that others can also benefit from them.
 
-## Explanation of the files
+## Explanation of the files and folders
 
-- **[sneakpeek.m](sneakpeek.m):** Provides a collection of functions for analyzing sessions and preparing data records. 
-- **[readyaml.m](readyaml.m):** A MATLAB function for reading YAML files, originally developed by Maarten Jongeneel and distributed under the BSD-3 License.
-- **[extract_setupinfo.m](extract_setupinfo.m):** Demonstrates how to extract component information from session metadata and copy the setup information of the used components to a destination folder (e.g., storing setup details of a data record).
+- **[/lib](/lib):** This folder contains a collection of standard utility functions for analyzing sessions and preparing data records within the DFC.data framework.
+- **[record_fill_system_components_foldersm](record_fill_system_components_folders.m):** Example script that fills all system component folders in the system data of every session within a data record.
+- **[session_create_system_ontology.m](session_create_system_ontology.m):** Demonstrates how to generate an ontology graph from the defined system metadata of a session. 
+- **[session_fill_system_components_folder.m](session_fill_system_components_folder.m):** Example script that populates the system component folder for the system data of a specific session. 
+- **[session_read_io_configuration.m](session_read_io_configurationm):** Reads the I/O configuration from a session’s system data. This example shows how to navigate the configuration and distinguish between hosts (e.g., data acquisition units) and clients (e.g., sensors)
+- **[test_readyaml.m](test_readyaml.m):** Test script for reading a YAML file. Demonstrates how to navigate its structure and validate its correctness.
+- **[test_remove_files.m](test_remove_files.m):** Utility script to remove files with a specific extension—useful for cleaning up files like `.asv` from a data record. 
+- **[test_rename_files.m](test_rename_files.m):** Renames files in a folder sequentially. Handy for renaming session photos or other files that require consistent numbering.
+
+

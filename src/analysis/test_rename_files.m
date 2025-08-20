@@ -1,8 +1,8 @@
 %{
-This file is part of 3D Sneak Peek. 3D Sneak Peek code is licensed under 
-the terms of GNU General Public License as published by the Free Software 
+This file is part of DFC.data. DFC.data is licensed under the 
+terms of GNU General Public License as published by the Free Software 
 Foundation. For more information and the LICENSE file, see 
-<https://github.com/3DCP-TUe/3DSneakPeek>.
+<https://github.com/3DCP-TUe/DFC.data>.
 %}
 
 %% Clear and close
@@ -15,6 +15,9 @@ path = mfilename('fullpath');
 [filepath, name, ext] = fileparts(path);
 cd(filepath);
 
+%% Add lib
+addpath('lib');
+
 %% Import session
 
 % Folder path
@@ -25,7 +28,7 @@ if folder == 0
 end
 
 % Rename files in folder
-sneakpeek.rename_files(folder, 'photo');
+rename_files(folder, 'photo');
 
 %% End
 disp('End')
