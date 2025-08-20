@@ -5,12 +5,23 @@ Foundation. For more information and the LICENSE file, see
 <https://github.com/3DCP-TUe/DFC.data>.
 %}
 
+%RENAME_FILES Renames all files in a folder with a sequential suffix
+%
+%   rename_files(FOLDER, SUFFIX) renames all files in the specified FOLDER
+%   by appending a sequential number to the given SUFFIX while preserving
+%   the original file extensions.
+%
+%   Inputs:
+%       FOLDER  Path to the folder containing files
+%       SUFFIX  Prefix to use for renamed files
+%
+%   Example:
+%       rename_files('C:\project\data', 'image')
+%
+%   This will rename all files in 'C:\project\data' as:
+%       image_1.ext, image_2.ext, image_3.ext, ...
+%   where '.ext' is the original file extension.
 function rename_files(folder, suffix)
-
-    %RENAME_FILES Renames all files in a folder with a sequential suffix
-    %   rename_files(folder, suffix)
-    %   - folder: path to the folder containing files
-    %   - suffix: prefix to use for renamed files
 
     % Get all files (excluding directories)
     files = dir(fullfile(folder, '*.*'));

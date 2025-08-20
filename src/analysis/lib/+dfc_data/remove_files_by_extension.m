@@ -5,12 +5,23 @@ Foundation. For more information and the LICENSE file, see
 <https://github.com/3DCP-TUe/DFC.data>.
 %}
 
+%REMOVE_FILES_BY_EXTENSION Recursively deletes files with a given extension
+%
+%   remove_files_by_extension(FOLDER, EXTENSION) searches recursively in 
+%   FOLDER for files matching the specified EXTENSION and deletes them after 
+%   user confirmation.
+%
+%   Inputs:
+%       FOLDER      Root folder to start searching
+%       EXTENSION   File extension to delete (e.g., '.txt' or 'txt')
+%
+%   Example:
+%       remove_files_by_extension('C:\project\data', '.log')
+%
+%   This function will prompt the user before deleting all '.log' files 
+%   under 'C:\project\data' and its subfolders. If confirmed, the files 
+%   will be deleted, otherwise no action is taken.
 function remove_files_by_extension(folder, extension)
-
-    %REMOVE_FILES_BY_EXTENSION Recursively deletes files with a given extension
-    %   remove_files_by_extension(folder, extension)
-    %   - folder: root folder to start searching
-    %   - extension: file extension to delete (e.g., '.txt' or 'txt')
 
     % Ensure extension starts with a dot
     if extension(1) ~= '.'

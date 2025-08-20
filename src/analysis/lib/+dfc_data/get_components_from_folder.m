@@ -5,13 +5,26 @@ Foundation. For more information and the LICENSE file, see
 <https://github.com/3DCP-TUe/DFC.data>.
 %}
 
+%GET_COMPONENTS_FROM_FOLDER Retrieves component names and folders from .yml files
+%
+%   [NAMES, FOLDERS] = get_components_from_folder(ROOT_FOLDER) searches
+%   recursively in ROOT_FOLDER for .yml files and returns:
+%       NAMES   - Folder names where each .yml file is found
+%       FOLDERS - Full paths to those folders
+%
+%   Inputs:
+%       ROOT_FOLDER  Path to the library folder containing component .yml files
+%
+%   Outputs:
+%       NAMES        Cell array of folder names containing the .yml files
+%       FOLDERS      Cell array of full paths to the folders
+%
+%   Example:
+%       [names, folders] = get_components_from_folder('C:\lib\components')
+%
+%   This function is useful for locating component setupinfo files in a library
+%   and retrieving both their folder names and full paths.
 function [names, folders] = get_components_from_folder(root_folder)
-    
-    %GET_COMPONENTS_FROM_FOLDER Retrieves component names and folders from .yml files
-    %   [names, folders] = get_components_from_folder(root_folder)
-    %   Searches recursively in root_folder for .yml files and returns:
-    %   - names: folder names where each .yml file is found
-    %   - folders: full paths to those folders
 
     % Find all .yml files recursively
     files = dir(fullfile(root_folder, '**', '*.yml'));

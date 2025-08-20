@@ -5,15 +5,25 @@ Foundation. For more information and the LICENSE file, see
 <https://github.com/3DCP-TUe/DFC.data>.
 %}
 
+%FILL_RECORD_SYSTEM_DATA_COMPONENTS Fills setupinfo system components for all session subfolders
+%
+%   fill_record_system_data_components(LIBRARY, FOLDER, SUBFOLDER, SWIPE_DESTINATION)
+%   iterates through all session subfolders in FOLDER and fills the system
+%   components from the specified LIBRARY into each session subfolder.
+%
+%   Inputs:
+%       LIBRARY             Component library to copy from
+%       FOLDER              Path to the data record folder or a struct from dir
+%       SUBFOLDER           Either "system" or "materials"
+%       SWIPE_DESTINATION   Logical flag; if true, clears destination before copying
+%
+%   Example:
+%       fill_record_system_data_components('C:\lib', 'C:\records', 'system', true)
+%
+%   This function will populate the system components in all session subfolders
+%   under 'C:\records', deleting existing target folders first if SWIPE_DESTINATION is true.
 function fill_record_system_data_components(library, folder, subfolder, swipe_destination)
     
-    %FILL_RECORD_SYSTEM_DATA_COMPONENTS Fills setupinfo system components folders for all session subfolders
-    %   fill_record_system_data_components(library, folder, swipe_destination)
-    %   - library: component library
-    %   - folder: path to the data record folder or a struct from dir
-    %   - subfolder: either "system" or "materials"
-    %   - swipe_destination: destination for setupinfo data
-
     % Determine the folder path
     if isstruct(folder)
         path = folder(1).folder;  % Use first entry's folder

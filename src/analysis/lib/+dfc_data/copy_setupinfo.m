@@ -5,14 +5,25 @@ Foundation. For more information and the LICENSE file, see
 <https://github.com/3DCP-TUe/DFC.data>.
 %}
 
+%COPY_SETUPINFO Copy setupinfo folders for specified components
+%
+%   copy_setupinfo(ROOT, DESTINATION, COMPONENTS, SWIPE_DESTINATION) copies
+%   the setupinfo folders of the specified COMPONENTS from the library ROOT
+%   to the DESTINATION folder.
+%
+%   Inputs:
+%       ROOT                Path to the library containing setupinfo folders
+%       DESTINATION         Target folder to copy setupinfo into
+%       COMPONENTS          Cell array of component names to copy
+%       SWIPE_DESTINATION   Logical flag; if true, clears DESTINATION before copying
+%
+%   Example:
+%       copy_setupinfo('C:\lib', 'C:\project\setup', {'compA','compB'}, true)
+%
+%   This function will copy the folders for compA and compB from
+%   'C:\lib' to 'C:\project\setup', deleting the target folder first if
+%   SWIPE_DESTINATION is true.
 function copy_setupinfo(root, destination, components, swipe_destination)
-
-    %COPY_SETUPINFO Copies setupinfo folders for specified components
-    %   copy_setupinfo(root, destination, components, swipe_destination)
-    %   - root: path to the library containing setupinfo folders
-    %   - destination: target folder to copy setupinfo into
-    %   - components: cell array of component names to copy
-    %   - swipe_destination: if true, clears destination before copying
 
     % Get all component names and their folders from the library
     [lib_names, lib_folders] = dfc_data.get_components_from_folder(root);

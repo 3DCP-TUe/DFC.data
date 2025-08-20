@@ -5,13 +5,36 @@ Foundation. For more information and the LICENSE file, see
 <https://github.com/3DCP-TUe/DFC.data>.
 %}
 
+%GET_SYSTEM_ONTOLOGY Constructs and visualizes a system ontology graph
+%
+%   [GRAPH, FIG] = get_system_ontology(METADATA) creates a directed graph 
+%   representing the system components and their relationships based on 
+%   the METADATA structure. The function also returns a figure handle of 
+%   the plotted graph.
+%
+%   Inputs:
+%       METADATA  Struct containing:
+%                 - system_layout: components and their connections
+%                 - materials: material components and supplied_to fields
+%                 - io_configuration: input/output component channels
+%
+%   Outputs:
+%       GRAPH     MATLAB digraph object representing components and edges
+%       FIG       Handle of the figure showing the plotted graph
+%
+%   Example:
+%       metadata = dfc_data.readyaml('session_metadata.yml');
+%       [G, F] = get_system_ontology(metadata);
+%
+%   Edge weights and colors:
+%       0 - Concrete flow (black, width 3)
+%       1 - Insert (blue, width 3)
+%       2 - IO (red, width 1.5)
+%       3 - Material supply (green, width 1.5)
+%
+%   Nodes are colored according to their participation in the edges of 
+%   each type.
 function [graph, fig] = get_system_ontology(metadata)
-
-    %GET_SYSTEM_ONTOLOGY Constructs and visualizes a system ontology graph
-    %   [graph, fig] = get_system_ontology(metadata)
-    %   - metadata: metadata struct containing system_layout, materials, io_configuration
-    %   - graph: MATLAB digraph object
-    %   - fig: figure handle of the plotted graph
 
     % Initialize containers
     nodes = {};

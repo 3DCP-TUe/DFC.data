@@ -5,14 +5,26 @@ Foundation. For more information and the LICENSE file, see
 <https://github.com/3DCP-TUe/DFC.data>.
 %}
 
+%FILL_SESSION_SYSTEM_DATA_COMPONENTS Populates system or material components folder
+%
+%   fill_session_system_data_components(LIBRARY, FOLDER, SUBFOLDER, SWIPE_DESTINATION)
+%   copies the relevant setupinfo components from the LIBRARY into the session
+%   folder FOLDER. The components copied depend on SUBFOLDER, which can be
+%   either "system" or "materials".
+%
+%   Inputs:
+%       LIBRARY             Source of component setupinfo
+%       FOLDER              Session folder (string, char array, or dir struct)
+%       SUBFOLDER           Either "system" or "materials"
+%       SWIPE_DESTINATION   Logical flag; if true, clears destination before copying
+%
+%   Example:
+%       fill_session_system_data_components('C:\lib', 'C:\records\session1', 'system', true)
+%
+%   This function reads the metadata file in the session folder to determine
+%   which components to copy, then populates the appropriate system or material
+%   components folder.
 function fill_session_system_data_components(library, folder, subfolder, swipe_destination)
-
-    %FILL_SESSION_SYSTEM_DATA_COMPONENTS Populates system or material components folder
-    %   fill_session_system_data_components(library, folder, subfolder, swipe_destination)
-    %   - library: source of component setupinfo
-    %   - folder: session folder (string or dir struct)
-    %   - subfolder: either "system" or "materials"
-    %   - swipe_destination: true to clear destination before copying
 
     % Resolve folder path
     if isstruct(folder)
