@@ -26,6 +26,7 @@ The `processed_data` folder contains at least the following files:
 | testing_date                  | yyyy-MM-dd |
 | testing_time_start            | HH:mm:ss   |
 | file_name                     | -          |
+| distance                      | mm         |
 
 ---
 
