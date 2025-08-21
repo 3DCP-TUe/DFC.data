@@ -16,6 +16,7 @@ The data record is organized in a folder structure containing:
       - [temperature_point](insitu_offline_measurements/temperature_point.md)
       - [ultrasound_wave_transmission_test](insitu_offline_measurements/ultrasonic_wave_transmission_test.md) (UWTT)
       - [unconfined_uniaxial_compresstion_test](insitu_offline_measurements/unconfined_uniaxial_compression_test.md) (UUCT)
+        
 - **analysis**: contains scripts to perform analysis over multiple sessions.
 - **metadata_record.yml**: Each record contains a metadata file that includes information about the authors and a description of the data record, explaining the purpose for which it was created.
 
