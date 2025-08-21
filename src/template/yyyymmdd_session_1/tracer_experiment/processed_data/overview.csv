@@ -1,0 +1,2 @@
+experiment,serie,input,component,inlet,time_start,time_end,file_name,mean,variance,std,p1,p5,p50,p95,p99
+1,1,impulse,mai multimix-1,injection port at start of horizontal mixer,09:50:51,10:25:51,response_1.csv,00:11:58,22:59:23,00:04:47,00:06:45,00:07:21,00:10:25,00:22:21,00:30:44
