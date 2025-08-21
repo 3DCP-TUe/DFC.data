@@ -1,0 +1,16 @@
+attr:
+  class: blends
+  name: weber-3d 160-2
+  friendly_name: Weber 3D 160-2
+  description: Weber 3D 160-2 is a factory-produced dry mortar - C50/60 - 4 mm - CEM I.
+  note: Commercially available printable mortar from Saint-Gobain Weber-Beamix.
+
+general_properties:
+  supplier: Saint-Gobain Weber-Beamix
+  state: dry  # dry or wet
+  blend: true
+
+blend:
+  - component:
+    - name: confidential
+    - mass_fraction: confidential 

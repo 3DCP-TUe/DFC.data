@@ -1,0 +1,11 @@
+attr:
+  class: additives
+  subclass: pigments
+  name: bayferrox-130
+  friendly_name: Bayferrox 130
+  description: Synthetic iron oxide (Fe2O3) red pigment, powder form.
+
+general_properties:
+  supplier: LANXESS Deutschland GmbH
+  state: dry
+  blend: false

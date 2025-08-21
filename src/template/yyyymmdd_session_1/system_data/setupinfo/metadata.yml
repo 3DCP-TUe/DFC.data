@@ -2,12 +2,12 @@
 materials:
   - name: tap water
     supplied_to: mai multimix-1
-  - name: Weber 3D 160-2
+  - name: weber-3d 160-2
     supplied_to: silo-1
     production_date: 2024-06-05
-  - name: Sika ViscoCrete RM-800
+  - name: sika viscocrete rm-800
     supplied_to: liquid dosing bronkhorst-1
-  - name: Glass fibres 12 mm
+  - name: glass fibres 12 mm
     supplied_to: solid dosing van-beek-1
 
 # Motion system
