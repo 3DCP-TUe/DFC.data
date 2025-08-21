@@ -1,5 +1,7 @@
 # Tracer experiments
 
+Data source folder: `tracer_experiment`
+
 ## Description of the experiment
 
 Tracer experiments are used to analyze material flow within the system. In this experiment, a dye or pigment is injected at a specific location into the system, and digital image processing (DIP) is used to detect its presence at the nozzle outlet. By correlating the color intensity of the material from the images to the tracer concentration, the residence time functions can be determined. From impulse inputs, the residence time distribution is obtained, while step-up and step-down inputs provide the cumulative residence function and wash-out function, respectively. The experiment can be performed both in-line and on-line, though on-line measurements are more practical, as in-line implementation would require the camera to rotate with the nozzle to follow the printing trajectory. The experiment is described in detail in [Deetman et al. (2024)](https://doi.org/10.1617/s11527-024-02378-y)

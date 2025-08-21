@@ -1,5 +1,7 @@
 # Compression test
 
+Data source folder: `compression_test`
+
 ## Description of the experiment
 
 Compression tests are performed by placing a cylindrical specimen in a hydraulic press and measuring it's resistance according to EN 12390-3.

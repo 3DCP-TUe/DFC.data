@@ -1,12 +1,14 @@
 # Temperature: single-point
 
+Data source folder: `temperature_point`
+
 ## Description of the experiment
 
 Single-point temperature measurements. 
 
 ## Data collection
 
-...
+Data collection depends on used measurement setup. 
 
 ## Processed data file format
 

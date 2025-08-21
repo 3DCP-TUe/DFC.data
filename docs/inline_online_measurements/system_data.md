@@ -1,8 +1,48 @@
-# Setupinfo structure
+# System data
 
-## Categorization
+Data source folder: `system_data`
 
-The components are categorized as follows: 
+## Description of the experiment
+
+TODO...
+
+## Data collection
+
+TODO... 
+
+## File formats
+
+### Libraries
+
+The system data is defined for both the material and system components. This repositorie includes a libary with templates for the used components. 
+
+For all components, the following general structure is used. 
+
+```
++-- component
+|   +-- name
+|   |   +-- docs
+|   |   |   +-- doc.pdf
+|   |   |   +-- ...
+|   |   +-- metadata.yml
+|   |   +-- name.stl
+|   |   +-- name.jpg
+|   |   +-- ...
+```
+
+#### Material components
+
+##### Categorization
+
+The material components are categorized as follows: 
+
+TODO...
+
+#### System components
+
+##### Categorization
+
+The system components are categorized as follows: 
 
 ```
 class: conduit
@@ -11,6 +51,7 @@ class: material delivery systems
     subclass: dosing systems
     subclass: inserts
     subclass: mixer pumps
+    subclass: mixers
     subclass: pumps
     subclass: silos/storage
 class: motion systems
@@ -25,21 +66,9 @@ class: sensors
 
 Inserts are components that are placed inside other components. Examples include feeding screws used in dosing systems and mixing blades.
 
-## Component structure
+##### Coding system
 
-```
-+-- component
-|   +-- name
-|   |   +-- docs
-|   |   |   +-- doc.pdf
-|   |   |   +-- ...
-|   |   +-- metadata.yml
-|   |   +-- name.stl
-|   |   +-- name.jpg
-|   |   +-- ...
-```
-
-## Coding system
+System components follow a coding structure for their names. 
 
 ```
 mc25f   Mortar coupling, 25 mm, female          (options: 25, 35, 50, female, male)

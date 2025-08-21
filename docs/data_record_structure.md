@@ -26,34 +26,36 @@ The figure below shows a typical folder structure of a dataset.
 |   +-- yyyymmdd_session_i
 |   |   +-- system_data
 |   |   |   +-- raw_data
-|   |   |   |   +-- yyyymmdd_name.csv
-|   |   |   |   +-- yyyymmdd_name_event_comments.csv
+|   |   |   |   +-- *.csv
+|   |   |   |   +-- *_event_comments.csv
 |   |   |   +-- processed_data
 |   |   |   |   +-- plot1.pdf
 |   |   |   |   +-- ...
 |   |   |   +-- setupinfo
-|   |   |   |   +-- component-1
-|   |   |   |   +-- component-2
+|   |   |   |   +-- material_components
+|   |   |   |   |   +-- component-1
+|   |   |   |   |   +-- component-2
+|   |   |   |   +-- system_components
+|   |   |   |   |   +-- component-1
+|   |   |   |   |   +-- component-2
+|   |   |   |   +-- metadata.yml
 |   |   |   +-- scripts
 |   |   |   |   +-- analysis.m
 |   |   +-- tracer_experiment
 |   |   |   +-- raw_data
-|   |   |   |   +-- yyyymmdd_name.csv
-|   |   |   |   +-- yyyymmdd_name_event_comments.csv
+|   |   |   |   +-- *.csv
 |   |   |   +-- processed_data
-|   |   |   |   +-- yyyymmdd_name.csv
-|   |   |   |   +-- plot1.pdf
+|   |   |   |   +-- *.csv
 |   |   |   |   +-- ...
 |   |   |   +-- setupinfo
 |   |   |   |   +-- metadata.yml
 |   |   |   +-- scripts
 |   |   |   |   +-- concrete_candy_tracker.m
-|   |   |   +-- metadata_setup.yml
 |   |   +-- slug_test
 |   |   |   +-- raw_data
-|   |   |   |   +-- yyyymmdd_name.csv
+|   |   |   |   +-- *.csv
 |   |   |   +-- processed_data
-|   |   |   |   +-- yyyymmdd_name_results.csv
+|   |   |   |   +-- *.csv
 |   |   |   |   +-- plot1.pdf
 |   |   |   |   +-- ...
 |   |   |   +-- setupinfo
@@ -61,10 +63,10 @@ The figure below shows a typical folder structure of a dataset.
 |   |   |   +-- scripts
 |   |   |   |   +-- droplet_detective.m
 |   |   +-- photos
-|   |   |   +-- photo1.jpg
+|   |   |   +-- photo_1.jpg
 |   |   |   +-- ...
 |   |   +-- videos
-|   |   |   +-- video1.mp4
+|   |   |   +-- video_1.mp4
 |   |   |   +-- ...    
 |   |   +-- metadata_session.yml
 |   +-- yyyymmdd_session_i+1
