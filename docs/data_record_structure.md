@@ -11,11 +11,11 @@ The data record is organized in a folder structure containing:
         
     In-situ and off-line measurements
       - [compression_test](insitu_offline_measurements/compression_test.md)
-      - [flat_punch_indentation_test](insitu_offline_measurements/flat_punch_indentation_test.md) (FPIT)
+      - [fpit](insitu_offline_measurements/flat_punch_indentation_test.md) (flat punch indentation test)
       - [pocket_shear_vane](insitu_offline_measurements/pocket_shear_vane_test.md)
       - [temperature_point](insitu_offline_measurements/temperature_point.md)
-      - [ultrasound_wave_transmission_test](insitu_offline_measurements/ultrasonic_wave_transmission_test.md) (UWTT)
-      - [unconfined_uniaxial_compresstion_test](insitu_offline_measurements/unconfined_uniaxial_compression_test.md) (UUCT)
+      - [uwtt](insitu_offline_measurements/ultrasonic_wave_transmission_test.md) (ultrasound wave transmission test)
+      - [uuct](insitu_offline_measurements/unconfined_uniaxial_compression_test.md) (unconfined uniaxial compression test)
         
 - **analysis**: contains scripts to perform analysis over multiple sessions.
 - **metadata_record.yml**: Each record contains a metadata file that includes information about the authors and a description of the data record, explaining the purpose for which it was created.
