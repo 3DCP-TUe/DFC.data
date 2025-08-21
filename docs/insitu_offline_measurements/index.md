@@ -2,9 +2,9 @@
 
 ## Overview of the experiments
 
-- [Compression test](docs/insitu_offline_measurements/compression_test.md)
-- [Flat punch indentation test](docs/insitu_offline_measurements/flat_punch_indentation_test.md) (FPIT)
-- [Pocket shear vane test](docs/insitu_offline_measurements/pocket_shear_vane_test.md)
-- [Temperature single-point](docs/insitu_offline_measurements/temperature_point.md)
-- [Ultrasound wave transmission test](docs/insitu_offline_measurements/ultrasonic_wave_transmission_test.md) (UWTT)
-- [Unconfined uniaxial compresstion test](docs/insitu_offline_measurements/unconfined_uniaxial_compression_test.md) (UUCT)
+- [Compression test](compression_test.md)
+- [Flat punch indentation test](flat_punch_indentation_test.md) (FPIT)
+- [Pocket shear vane test](pocket_shear_vane_test.md)
+- [Temperature single-point](temperature_point.md)
+- [Ultrasound wave transmission test](ultrasonic_wave_transmission_test.md) (UWTT)
+- [Unconfined uniaxial compresstion test](unconfined_uniaxial_compression_test.md) (UUCT)
