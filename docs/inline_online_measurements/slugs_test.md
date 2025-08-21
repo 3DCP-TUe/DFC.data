@@ -1,6 +1,6 @@
 # Slugs test
 
-Data source folder: `slugs_test`
+Data source folder: `slug_test`
 
 ## Description of the experiment
 
