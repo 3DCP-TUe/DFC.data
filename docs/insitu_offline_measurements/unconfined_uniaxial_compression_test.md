@@ -42,5 +42,3 @@ The `processed_data` folder contains at least the following files:
 | load                          | N              |
 | displacement                  | mm             |
 | width                         | mm             |
-| true_stress                   | MPa            |
-| true_strain                   | -              |
