@@ -14,6 +14,8 @@ The maximum resistance is manually recorded in a csv file that follows the struc
 
 The `processed_data` folder contains at least the following files:
 
+---
+
 **`overview.csv`**
 
 |Columns                        | Units      |
