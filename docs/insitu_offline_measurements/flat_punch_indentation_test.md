@@ -34,6 +34,8 @@ The `processed_data` folder contains at least the following files:
 | cohesion                      | MPa        |
 | friction_angle                | degrees    |
 
+---
+
 **`sample_i.csv`**
 
 |Columns                        | Units          |
