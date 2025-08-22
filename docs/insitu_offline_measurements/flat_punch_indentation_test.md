@@ -30,7 +30,6 @@ The `processed_data` folder contains at least the following files:
 | indenter_radius               | mm         |
 | sample_radius                 | mm         |
 | stiffness_modulus             | MPa        |
-| compressive_strength          | MPa        |
 | cohesion                      | MPa        |
 | friction_angle                | degrees    |
 
