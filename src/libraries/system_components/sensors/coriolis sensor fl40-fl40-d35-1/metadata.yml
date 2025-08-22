@@ -41,7 +41,7 @@ io:
     type: analog output 4-20 mA active
     signal_limits: [4, 20]
     assigned_value: mass flow
-    reading_limits: [0, 16]
+    reading_limits: [0, 32]
     interpolation: linear
     unit: kg/min
     damping: 90
@@ -50,7 +50,7 @@ io:
     type: analog output 4-20 mA active
     signal_limits: [4, 20]
     assigned_value: density
-    reading_limits: [2000, 2400]
+    reading_limits: [0, 3200]
     interpolation: linear
     unit: kg/m3
     damping: 90
