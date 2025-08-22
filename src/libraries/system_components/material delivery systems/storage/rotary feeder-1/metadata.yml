@@ -1,0 +1,19 @@
+attr:
+  class: material delivery systems
+  subclass: storage
+  name: rotary-feeder-1
+  description: Rotary feeder for mortar silo.
+  note: Can be mounted underneath a mortar silo.
+
+dimensions:
+  volume: null  
+
+couplings:
+  inlets:
+    - name: inlet
+      type: flange
+      size: DN250
+  outlets:
+    - name: outlet
+      type: flange
+      size: DN250
