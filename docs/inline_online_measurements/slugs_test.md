@@ -24,7 +24,7 @@ The `processed_data` folder contains the following files:
 | `droplet_mass` | Individual droplet mass [N]                      |
 | `yield_stress` | Corresponding yield stress [kPa]                |
 
-**`mass_flow.csv`** contains mass flow calculated per bucket.
+**`mass_flow.csv`** contains mass flow rate calculated per bucket.
 
 | Column     | Description                                      |
 |------------    |--------------------------------------------------|
@@ -47,3 +47,12 @@ The `processed_data` folder contains the following files:
 | `time`         | Time in HH:mm:ss.SSS format                    |
 | `mean_droplet_volume` | Mean droplet volume [cm³]                      |
 | `std_droplet_volume` | Standard deviation of droplet volume [cm³]                      |
+
+**`volumetric_flow.csv`** contains volumetric flow rate calculated per bucket.
+
+| Column     | Description                                      |
+|------------    |--------------------------------------------------|
+| `deposition_time_start`         | Starting time of collecting material in the bucket in HH:mm:ss.SSS format                    |
+| `deposition_time_mid`         | Mean time of collecting material in the bucket in HH:mm:ss.SSS format                    |
+| `deposition_time_end`         | Ending time of collecting material in the bucket in HH:mm:ss.SSS format                    |
+| `volumetric_flow_rate` | Volumetric flow rate over the time window [L/min]                      |
