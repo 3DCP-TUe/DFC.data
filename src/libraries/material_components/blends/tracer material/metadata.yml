@@ -1,9 +1,9 @@
 attr:
   class: blends
-  name: tracer-material
+  name: tracer material
   friendly_name: Tracer material
   description: Tracer material made from a red iron oxide pigment and water.
-  note: Manually mixed per dose (15 mL) and immediately sucked up and injected with a syringe.
+  note: Manually mixed per dose (~10 mL) and immediately sucked up and injected with a syringe.
 
 general_properties:
   supplier: Self-made
@@ -13,7 +13,7 @@ general_properties:
 blend:
   - component:
       name: tap-water  # refers to another material component
-      mass_fraction: 0.50
+      mass_fraction: 0.8
   - component:
-      name: bayferrox-130  # refers to another material component
-      mass_fraction: 0.50
+      name: bayferrox-130
+      mass_fraction: 0.2
