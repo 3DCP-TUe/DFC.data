@@ -10,9 +10,9 @@ In the following README, the structure and more detailed information of the vari
 
 - [Data record structure](docs/data_record_structure.md)
 - [System data](docs/system_data/README.md)
-    - [system metadata file](docs/system_data/metadata_file.md)
-    - [material_components](docs/system_data/material_components.md)
-    - [system_components](docs/system_data/system_components.md)
+    - [System metadata file](docs/system_data/metadata_file.md)
+    - [Material components](docs/system_data/material_components.md)
+    - [System components](docs/system_data/system_components.md)
 - [In-line and on-line measurements](docs/inline_online_measurements/README.md)
     - [Slugs test](docs/inline_online_measurements/slugs_test.md)
     - [Tracer experiment](docs/inline_online_measurements/tracer_experiment.md)
