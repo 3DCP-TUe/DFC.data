@@ -91,7 +91,7 @@ You should have received a copy of the GNU General Public License along with DFC
 
 ### Readyaml
 
-The [readyaml](src/analysis/readyaml.m) file to import YAML metadata into MATLAB is obtained via [Maarten Jongeneel](https://github.com/MaartenJongeneel/readyaml). 
+The [readyaml](src/analysis/lib/+dfc_data/readyaml.m) file to import YAML metadata into MATLAB is obtained via [Maarten Jongeneel](https://github.com/MaartenJongeneel/readyaml). 
 
 BSD 3-Clause License
 
