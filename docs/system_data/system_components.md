@@ -13,11 +13,16 @@ Each system component is described using a dedicated metadata file. This file is
 - **parts**: If the component consists of multiple elements (excluding sensors), they are listed here. 
 - **compatible with**: Only for inserts, specifies in which component this insert can be placed.
 
-To add a new component, browse the [library](scr/libraries/system_components) for similar components. Use them as a reference to fill in the metadata file and structure any related files.
+To add a new component, browse the [system components library](/src/libraries/system_components) for similar components. Use them as a reference to fill in the metadata file and structure any related files.
+
+> **Note:**  
+> When adding a component from the library to your data records, always verify that its settings match those described in your metadata file. This is especially important for:
+> - **Coriolis sensors**: Settings and signal conversions can be changed.
+> - **Dosing systems**: Calibration curves (e.g., motor frequency vs. flow rate) depend on the material being fed.
 
 ## Library
 
-The [system components library](scr/libraries/system_components) is organized into categories such as conduits, material delivery systems, motion systems, printheads, and sensors. Some of these categories contain subcategories—for example, the material delivery systems and printheads classes include inserts, which contain components like mixing blades and dosing screws that can be placed inside other system components. The complete categorization can be foind below. 
+The [system components library](/src/libraries/system_components) is organized into categories such as conduits, material delivery systems, motion systems, printheads, and sensors. Some of these categories contain subcategories—for example, the material delivery systems and printheads classes include inserts, which contain components like mixing blades and dosing screws that can be placed inside other system components. The complete categorization can be foind below. 
 
 ```
 class: conduit
@@ -73,8 +78,3 @@ pressure sensor mc35f-mc35m-d35-25bar-1
 pressure sensor mc35f-mc35m-d35-25bar-2
 pressure sensor mc35f-mc35m-d35-10bar-1
 ```
-
-> **Note:**  
-> When adding a component from the library to your data records, always verify that its settings match those described in your metadata file. This is especially important for:
-> - **Coriolis sensors**: Settings and signal conversions can be changed.
-> - **Dosing systems**: Calibration curves (e.g., motor frequency vs. flow rate) depend on the material being fed.
