@@ -21,15 +21,14 @@ The __setupinfo__ data is organized into a structured folder layout designed to 
 For each component, a dedicated folder is created. This folder always contains a base YAML metadata file with the necessary component details. Additional resources may also be included. For system components, at least one photo is always added. Depending on the component’s characteristics and available resources, extra files may be added—such as a 3D model (`.stl`), or a `docs` folder with schematics, calibration reports, or manufacturer documentation. The general structure for both material and system components looks like this:
 
 ```
-+-- component
-|   +-- name
-|   |   +-- docs
-|   |   |   +-- doc.pdf
-|   |   |   +-- ...
-|   |   +-- metadata.yml
-|   |   +-- name.stl
-|   |   +-- name.jpg
++-- component-name
+|   +-- docs
+|   |   +-- doc.pdf
 |   |   +-- ...
+|   +-- metadata.yml
+|   +-- name.stl
+|   +-- name.jpg
+|   +-- ...
 ```
 
 System components are described using metadata files that define attributes, dimensions, couplings, I/O interfaces, sensors, and logged data. These follow a standardized format, as outlined in the [system components documentation](system_components.md). Material components are also described by metadata files; however, their content and sections differ depending on the nature of the component, as explained in the [material components documentation](system_components.md).
