@@ -9,14 +9,14 @@ This repository contains the templates, libraries, and structure information for
 In the following README, the structure and more detailed information of the various parts of this project are provided. 
 
 - [Data record structure](docs/data_record_structure.md)
-- [System data](docs/system_data/index.md)
+- [System data](docs/system_data/README.md)
     - [system metadata file](docs/system_data/metadata_file.md)
     - [material_components](docs/system_data/material_components.md)
     - [system_components](docs/system_data/system_components.md)
-- [In-line and on-line measurements](docs/inline_online_measurements/index.md)
+- [In-line and on-line measurements](docs/inline_online_measurements/README.md)
     - [Slugs test](docs/inline_online_measurements/slugs_test.md)
     - [Tracer experiment](docs/inline_online_measurements/tracer_experiment.md)
-- [In-situ and off-line measurements](docs/insitu_offline_measurements/index.md)
+- [In-situ and off-line measurements](docs/insitu_offline_measurements/README.md)
     - [Compression test](docs/insitu_offline_measurements/compression_test.md)
     - [Flat punch indentation test](docs/insitu_offline_measurements/flat_punch_indentation_test.md) (FPIT)
     - [Pocket shear vane test](docs/insitu_offline_measurements/pocket_shear_vane_test.md)
