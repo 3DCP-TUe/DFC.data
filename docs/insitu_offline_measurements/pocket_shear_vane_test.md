@@ -2,7 +2,7 @@
 
 Data source folder: `pocket_shear_vane`
 
-## Description of the experiment
+## Description of the data source
 
 The pocket shear vane test estimates the shear strength of cohesive materials by pressing a vane into the surface and rotating it until failure occurs, with the maximum torque recorded to determine shear strength. For printed samples, the vane is pressed into the concrete as soon as possible after deposition. The test is then conducted at distinct concrete ages by rotating the vane and recording the torque value. The test follows the ASTM D8121/D8121M-19 standard. 
 
@@ -10,7 +10,9 @@ The pocket shear vane test estimates the shear strength of cohesive materials by
 
 Torque values are manually recorded during the pocket shear vane test. 
 
-## Processed data file format
+## Data storage
+
+### Processed data file format
 
 The `processed_data` folder contains at least the following files:
 

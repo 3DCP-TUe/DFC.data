@@ -2,7 +2,7 @@
 
 Data source folder: `temperature_point`
 
-## Description of the experiment
+## Description of the data source
 
 Single-point temperature measurements. 
 
@@ -10,7 +10,9 @@ Single-point temperature measurements.
 
 Data collection depends on used measurement setup. 
 
-## Processed data file format
+## Data storage
+
+### Processed data file format
 
 The `processed_data` folder contains at least the following files:
 

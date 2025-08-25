@@ -1,11 +1,15 @@
 # Data record 
 
 The data record is organized in a folder structure containing: 
-- **yyymmdd_session_i**: A single data record can contain multiple sessions, which may be grouped by topic, theme or publication. A session folder contains a session metadata file that describes the software versions used, the system layout (location of system components), the materials used and to which system component the materials were fed. Each session contains several folders, each holding the data acquired from a specific data source. Two additional folders are included for videos and photos of the session. These can contain, for example, photos of the printed objects and the assembled system.
+  - **yyymmdd_session_i**: A single data record can contain multiple sessions, which may be grouped by topic, theme or publication. A session folder contains a session metadata file that describes the software versions used, the system layout (location of system components), the materials used and to which system component the materials were fed. Each session contains several folders, each holding the data acquired from a specific data source. Two additional folders are included for videos and photos of the session. These can contain, for example, photos of the printed objects and the assembled system.
   - **data_source**: For each data source folder, three subfolders exist: setupinfo, raw data, processed data, and scripts. The **setupinfo** folder contains metadata that describes the experiment. The **scripts** folder contains only the scripts that process the **raw_data** of that specific experiment and saves it in the **processed_data** folder, allowing for reproducibility. The format of the process_data folder is predefined for the following sources:
+
+    [System data]](system_data/index.md) 
+      - [system metadata file](system_data/metadata_file.md)
+      - [material_components](system_data/material_components.md)
+      - [system_components](system_data/system_components.md)
     
     In-line and on-line measurements　    
-      - [system_data](inline_online_measurements/system_data.md)
       - [slugs_test](inline_online_measurements/slugs_test.md)
       - [tracer_experiment](inline_online_measurements/tracer_experiment.md)
         
@@ -17,10 +21,11 @@ The data record is organized in a folder structure containing:
       - [uwtt](insitu_offline_measurements/ultrasonic_wave_transmission_test.md) (ultrasound wave transmission test)
       - [uuct](insitu_offline_measurements/unconfined_uniaxial_compression_test.md) (unconfined uniaxial compression test)
         
-- **analysis**: contains scripts to perform analysis over multiple sessions.
-- **metadata_record.yml**: Each record contains a metadata file that includes information about the authors and a description of the data record, explaining the purpose for which it was created.
+- **analysis**: Contains scripts to perform analysis over multiple sessions. For example, to find correlations between experiments. 
+- **misc**: An optional folder that contains all other material that is not (yet) categorized, such as small additional experiments, preliminary analyses, or miscellaneous data files.
+- **metadata_record.yml**: Each record contains a metadata file that includes information about the authors and a description of the data record, explaining the purpose for which it was created. This metadata file follows the structure of zenodo. A template/example can be found [here](src/template/metadata_record.yml).
 
-The figure below shows a typical folder structure of a dataset.
+The figure below shows a typical folder structure of a data record.
 
 ```
 +-- datarecord
@@ -74,6 +79,8 @@ The figure below shows a typical folder structure of a dataset.
 |   |   +-- system_data
 |   |   +-- metadata_session.yml
 |   |   +-- ...
+|   +-- misc
+|   |   +-- ...
 |   +-- analysis
 |   |   +-- figures
 |   |   +-- tables
@@ -82,3 +89,5 @@ The figure below shows a typical folder structure of a dataset.
 |   +-- metadata_record.yml
 |   +-- LICENSE
 ```
+
+A template/example of a data record can be found [here](src/template).
