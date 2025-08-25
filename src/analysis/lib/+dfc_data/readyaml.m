@@ -298,16 +298,15 @@ elseif startsWith(value,"'") && endsWith(value,"'")
 end
 
 try
-    [convertedValue, success] = str2num(value);
-    if success
+    convertedValue = str2double(value);
+    if ~isnan(convertedValue)
         value = convertedValue;
-    end
-    if ~success && ~isempty(value)
+    else
         %In this case value is text, and we save it as a string
         value = (value);
     end
 catch
-    value= value;
+    value = value;
 end
 
 end
