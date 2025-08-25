@@ -1,6 +1,6 @@
 # Slugs test
 
-Data source folder: `slug_test`
+Data source folder: `slugs_test`
 
 ## Description of the experiment
 
@@ -10,7 +10,7 @@ Upon extrusion, material droplets are analyzed using the "slugs test", where a l
 
 Data acquisition is managed by a Python program that reads load cell data from its OPC UA server, while images are captured using NI Vision Builder for Automated Inspection. All tools required for data acquisition and analysis are integrated into the software package [Droplet Detective](https://github.com/3DCP-TUe/DropletDetective). 
 
-The __raw_data__ folder for the slug test typically contains a time series file with load cell data and a subfolder with captured images. The __setupinfo__ folder contains a metadata file in YAML file format that details the hardware used and its settings, including the load cell and its signal filters, as well as the camera and its settings. The __processed_data__ folder contains four files with time series data: the first file provides the yield stress derived from the droplet mass; the second, the mass flow rate; the third, the volume of a droplet obtained from the acquired images; and the last, the volume flow rate. The __scripts__ folder contains all the analysis files used to get these properties from the raw data.
+The __raw_data__ folder for the slugs test typically contains a time series file with load cell data and a subfolder with captured images. The __setupinfo__ folder contains a metadata file in YAML file format that details the hardware used and its settings, including the load cell and its signal filters, as well as the camera and its settings. The __processed_data__ folder contains four files with time series data: the first file provides the yield stress derived from the droplet mass; the second, the mass flow rate; the third, the volume of a droplet obtained from the acquired images; and the last, the volume flow rate. The __scripts__ folder contains all the analysis files used to get these properties from the raw data.
 
 ## Processed data file format
 
