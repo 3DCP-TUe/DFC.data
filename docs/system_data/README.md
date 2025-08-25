@@ -14,15 +14,11 @@ At TU/e the system data is collected via the software package [Node-RED 3DSeeP](
 
 The __raw data__ contains a log file with time-series data collected using the Node-RED-based data logger. The __setupinfo__ folder includes subfolders for material components and system components, where all used materials and system components are described. Alongside these, a YAML metadata file defines how materials and components interact—specifically, which component each material was fed into and how the components were assembled. The __processed data__ consists of a cleaned time-series table derived from the raw log file. Cleaning typically involves removing columns related to unused system components and applying corrections if errors occurred during data logging (e.g., incorrect signal conversion settings in the data logger). The __scripts__ folder contains the files used to generate the processed data from the raw data.
 
-### File formats and structure
+### Setupinfo structure
 
-The system data is organized into a structured folder layout that supports both documentation and automated processing. The format is based on YAML metadata files and time-series logs.
+The __setupinfo__ data is organized into a structured folder layout designed to support both documentation and automated processing. Inside the `setupinfo` folder, two subfolders exist: `material_components` and `system_components`. These hold the respective material and system components.  
 
-System components are described using individual metadata files that detail their attributes, dimensions, couplings, I/O interfaces, sensors, and logged data. These files follow a standardized format, as outlined in the [system components documentation](system_components.md). Each material component is also described by a metadata file, as explained in the [material components documentation](system_components.md). Both material and system components follow the same folder structure; only the content of the metadata file differs.
-
-The metadata file is stored within the component’s folder, which may also include additional resources. For system components, at least one photo is always included. Depending on the component’s characteristics and availability of resources, other files—such as a 3D model (e.g., `.stl` file) or a `docs` folder containing electrical schematics, calibration reports, or manufacturer documentation can also be provided.
-
-For all components, the following general folder structure is used:
+For each component, a dedicated folder is created. This folder always contains a base YAML metadata file with the necessary component details. Additional resources may also be included. For system components, at least one photo is always added. Depending on the component’s characteristics and available resources, extra files may be added—such as a 3D model (`.stl`), or a `docs` folder with schematics, calibration reports, or manufacturer documentation. The general structure for both material and system components looks like this:
 
 ```
 +-- component
@@ -36,4 +32,6 @@ For all components, the following general folder structure is used:
 |   |   +-- ...
 ```
 
-The overall system configuration—including how materials are fed into components and how components are connected—is defined in the system data metadata file. This file contains structured sections describing the materials, motion systems, software, system layout, and I/O configuration. These sections allow the system setup to be reconstructed and the relationships between materials, components, and signals to be understood. More details can be found in the [system metadata file documentation](metadata_file.md).
+System components are described using metadata files that define attributes, dimensions, couplings, I/O interfaces, sensors, and logged data. These follow a standardized format, as outlined in the [system components documentation](system_components.md). Material components are also described by metadata files; however, their content and sections differ depending on the nature of the component, as explained in the [material components documentation](system_components.md).
+
+The overall system setup—including material flow, component connections, and configuration—is defined in a dedicated system data metadata file. This file contains structured sections describing materials, motion systems, software, system layout, and I/O configuration. These sections allow the system setup to be fully reconstructed and the relationships between materials, components, and signals to be understood. More details can be found in the [system metadata file documentation](metadata_file.md).
