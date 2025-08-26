@@ -19,6 +19,7 @@ To add a new component, browse the [system components library](/src/libraries/sy
 > When adding a component from the library to your data records, always verify that its settings match those described in your metadata file. This is especially important for:
 > - **Coriolis sensors**: Settings and signal conversions can be changed.
 > - **Dosing systems**: Calibration curves (e.g., motor frequency vs. flow rate) depend on the material being fed.
+> - **Free programmable parameters**: Some devices (e.g., gantry robot, printhead plc, material delivery plc) have free programmable parameters (readable and writable via OPC UA). Their use depends on the application. Always check and update the function description of these parameters in the `processed_system_data` section of the system component.   
 
 ## Library
 
