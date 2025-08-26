@@ -46,7 +46,7 @@ class: sensors
 
 ### Naming convention
 
-System components follow a structured naming format based on the inlet and outlets of the component to make identification and compatibility easier. Here are some examples:
+Most system components follow a structured naming format based on the inlet and outlets of the component to make identification and compatibility easier. Here are some examples:
 
 ```
 mc25f   Mortar coupling, 25 mm, female          (options: 25, 35, 50, female, male)
