@@ -2,7 +2,7 @@
 
 ## Introduction 
 
-This repository contains the templates, libraries, and structure information for _DFC.data - A database framework for Digital Fabrication with Concrete_. The aim of this project is to collect experimental data about Digital Fabrication with Concrete processes in a structured way and distribute this data to the community. This repository includes the system library of the equipment at TU/e and the templates for data records and software packages.
+This repository contains the templates, libraries, and structure information for _DFC.data - A database framework for Digital Fabrication with Concrete_. The aim of this project is to collect experimental data about Digital Fabrication with Concrete processes in a structured way and distribute this data to the community. This repository includes the component libraries of the equipment and materials at TU/e and the templates for data records and software packages.
 
 ## Documentation
 
