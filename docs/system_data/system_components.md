@@ -22,7 +22,7 @@ To add a new component, browse the [system components library](/src/libraries/sy
 
 ## Library
 
-The [system components library](/src/libraries/system_components) is organized into categories such as conduits, material delivery systems, motion systems, printheads, and sensors. Some of these categories contain subcategories—for example, the material delivery systems and printheads classes include inserts, which contain components like mixing blades and dosing screws that can be placed inside other system components. The complete categorization can be foind below. 
+The [system components library](/src/libraries/system_components) is organized into categories such as conduits, material delivery systems, motion systems, printheads, and sensors. Some of these categories contain subcategories—for example, the material delivery systems and printheads classes include inserts, which contain components like mixing blades and dosing screws that can be placed inside other system components. The complete categorization can be found below. 
 
 ```
 class: conduit
@@ -46,7 +46,7 @@ class: sensors
 
 ### Naming convention
 
-Most system components follow a structured naming format based on the inlet and outlets of the component to make identification and compatibility easier. Here are some examples:
+Most system components follow a structured naming format based on the inlet and outlets of the component to make identification and compatibility easier. Here are some examples of the names of the inlets and outlets:
 
 ```
 mc25f   Mortar coupling, 25 mm, female          (options: 25, 35, 50, female, male)
@@ -60,10 +60,10 @@ pfd     Pressure flange for D-pump              (options: A, B, C, D, R, T, L-pu
 sfr     Suction flange for R-pump               (options: A, B, C, D, R, T, L-pump)
 ```
 
-The general format is: 
+The general format for a component's name is: 
 
 ```
-COUPLING_IN-COUPLING_OUT-DIAMETER-OPTIONAL_DIAMETER_2-CUSTOM_PROPERTY-ID_NUMBER`. 
+TYPE COUPLING_IN-COUPLING_OUT-DIAMETER-OPTIONAL_DIAMETER_2-CUSTOM_PROPERTY-ID_NUMBER`. 
 ```
  
 Examples:
