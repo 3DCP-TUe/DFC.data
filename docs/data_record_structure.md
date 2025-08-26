@@ -25,7 +25,7 @@ The data record is organized in a folder structure containing:
 - **misc**: An optional folder that contains all other material that is not (yet) categorized, such as small additional experiments, preliminary analyses, or miscellaneous data files.
 - **metadata_record.yml**: Each record contains a metadata file that includes information about the authors and a description of the data record, explaining the purpose for which it was created. This metadata file follows the structure of zenodo. A template/example can be found [here](../src/template/metadata_record.yml).
 
-The figure below shows a typical folder structure of a data record.
+The figure below shows a typical folder structure of a data record. A template/example of a data record can be found [here](src/template).
 
 ```
 +-- datarecord
@@ -89,5 +89,3 @@ The figure below shows a typical folder structure of a data record.
 |   +-- metadata_record.yml
 |   +-- LICENSE
 ```
-
-A template/example of a data record can be found [here](src/template).
