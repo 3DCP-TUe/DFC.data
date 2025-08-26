@@ -2,7 +2,7 @@
 
 The data record is organized in a folder structure containing: 
   - **yyymmdd_session_i**: A single data record can contain multiple sessions, which may be grouped by topic, theme or publication. A session folder contains a session metadata file that describes the software versions used, the system layout (location of system components), the materials used and to which system component the materials were fed. Each session contains several folders, each holding the data acquired from a specific data source. Two additional folders are included for videos and photos of the session. These can contain, for example, photos of the printed objects and the assembled system.
-  - **data_source**: For each data source folder, three subfolders exist: setupinfo, raw data, processed data, and scripts. The **setupinfo** folder contains metadata that describes the experiment. The **scripts** folder contains only the scripts that process the **raw_data** of that specific experiment and saves it in the **processed_data** folder, allowing for reproducibility. The format of the __process_data folder__ is predefined for the following sources:
+  - **data_source**: For each data source folder, three subfolders exist: setupinfo, raw data, processed data, and scripts. The **setupinfo** folder contains metadata that describes the experiment. The **scripts** folder contains only the scripts that process the **raw_data** of that specific experiment and saves it in the **processed_data** folder, allowing for reproducibility. The format of the __process_data__ folder is predefined for the following sources:
 
     [System data](system_data/README.md) 
       - [system metadata file](system_data/metadata_file.md)
