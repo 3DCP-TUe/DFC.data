@@ -10,7 +10,6 @@
 % For license details, see the LICENSE file in the project root.
 
 function rename_files(folder, suffix)
-
 %RENAME_FILES Renames all files in a folder with a sequential suffix
 %
 % This function renames all non-directory files in the specified FOLDER
