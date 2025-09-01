@@ -10,22 +10,35 @@
 % For license details, see the LICENSE file in the project root.
 
 function rename_files(folder, suffix)
+
 %RENAME_FILES Renames all files in a folder with a sequential suffix
 %
-%   rename_files(FOLDER, SUFFIX) renames all files in the specified FOLDER
-%   by appending a sequential number to the given SUFFIX while preserving
-%   the original file extensions.
+% This function renames all non-directory files in the specified FOLDER
+% by appending a sequential index to the provided SUFFIX while preserving
+% the original file extensions. Files are processed in alphabetical order.
 %
-%   Inputs:
-%       FOLDER  Path to the folder containing files
-%       SUFFIX  Prefix to use for renamed files
+% Syntax: rename_files(folder, suffix)
 %
-%   Example:
-%       rename_files('C:\project\data', 'image')
+% Inputs:
+%   folder  - Path to the folder containing files (char vector or string scalar)
+%   suffix  - Base name/prefix for renamed files (e.g., 'image')
 %
-%   This will rename all files in 'C:\project\data' as:
-%       image_1.ext, image_2.ext, image_3.ext, ...
-%   where '.ext' is the original file extension.
+% Outputs:
+%   (none)
+%
+% Notes:
+%   - Only files in the top-level FOLDER are renamed (non-recursive).
+%   - Original file extensions are preserved.
+%   - Files are sorted alphabetically before renaming; indices start at 1.
+%   - If a target filename already exists, the behavior depends on the platform.
+%     Consider ensuring unique target names before running.
+%   - Existing files whose names already match the target pattern for their
+%     position are left unchanged.
+%
+% Example:
+%   rename_files('C:\project\data', 'image')
+%   % This will rename files to: image_1.ext, image_2.ext, image_3.ext, ...
+%   % where '.ext' is each file's original extension.
 
 %------------- BEGIN CODE --------------
 

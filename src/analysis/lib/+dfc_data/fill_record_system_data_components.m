@@ -10,23 +10,35 @@
 % For license details, see the LICENSE file in the project root.
 
 function fill_record_system_data_components(library, folder, subfolder, swipe_destination)
-%FILL_RECORD_SYSTEM_DATA_COMPONENTS Fills setupinfo system components for all session subfolders
+%FILL_RECORD_SYSTEM_DATA_COMPONENTS Fill setupinfo system components for session subfolders
 %
-%   fill_record_system_data_components(LIBRARY, FOLDER, SUBFOLDER, SWIPE_DESTINATION)
-%   iterates through all session subfolders in FOLDER and fills the system
-%   components from the specified LIBRARY into each session subfolder.
+% This function iterates through all session subfolders within a specified 
+% data record folder and fills the system or materials components from a 
+% given component library. The function ensures that each session subfolder 
+% contains the required setupinfo components. Optionally, the destination 
+% folders can be cleared before copying.
 %
-%   Inputs:
-%       LIBRARY             Component library to copy from
-%       FOLDER              Path to the data record folder or a struct from dir
-%       SUBFOLDER           Either "system" or "materials"
-%       SWIPE_DESTINATION   Logical flag; if true, clears destination before copying
+% Syntax: fill_record_system_data_components(library, folder, subfolder, swipe_destination)
 %
-%   Example:
-%       fill_record_system_data_components('C:\lib', 'C:\records', 'system', true)
+% Inputs:
+%   library           - string or char array specifying the path to the component library
+%   folder            - string, char array, or struct from `dir` specifying the data record folder
+%   subfolder         - string specifying the type of components to copy; must be either "system" or "materials"
+%   swipe_destination - logical flag; if true, clears destination before copying
 %
-%   This function will populate the system components in all session subfolders
-%   under 'C:\records', deleting existing target folders first if SWIPE_DESTINATION is true.
+% Outputs:
+%   (none)
+%
+% Notes:
+%   - If `folder` is a struct (from `dir`), the path is extracted from the first entry.
+%   - An error is thrown if the provided folder does not exist or if the input type is invalid.
+%   - Only subfolders containing "session" in their name are processed.
+%   - The actual population of components is handled by `dfc_data.fill_session_system_data_components`.
+%
+% Example:
+%   fill_record_system_data_components('C:\lib', 'C:\records', 'system', true)
+%   % Populates system components in all session subfolders under C:\records,
+%   % deleting existing targets first if swipe_destination is true.
 
 %------------- BEGIN CODE --------------
 

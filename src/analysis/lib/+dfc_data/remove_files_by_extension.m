@@ -12,20 +12,32 @@
 function remove_files_by_extension(folder, extension)
 %REMOVE_FILES_BY_EXTENSION Recursively deletes files with a given extension
 %
-%   remove_files_by_extension(FOLDER, EXTENSION) searches recursively in 
-%   FOLDER for files matching the specified EXTENSION and deletes them after 
-%   user confirmation.
+% This function searches recursively in the input folder FOLDER for files
+% matching the specified EXTENSION. For each folder visited, it collects the
+% files with the given extension and prompts the user for confirmation via a
+% dialog before deleting them. The extension check is case-insensitive, and
+% the leading dot is optional (e.g., '.asv'  or 'asv').
 %
-%   Inputs:
-%       FOLDER      Root folder to start searching
-%       EXTENSION   File extension to delete (e.g., '.txt' or 'txt')
+% Syntax: remove_files_by_extension(folder, extension)
 %
-%   Example:
-%       remove_files_by_extension('C:\project\data', '.log')
+% Inputs:
+%   folder    - Root folder to start searching (char vector or string scalar)
+%   extension - File extension to delete (e.g., '.txt' or 'txt'); case-insensitive
 %
-%   This function will prompt the user before deleting all '.log' files 
-%   under 'C:\project\data' and its subfolders. If confirmed, the files 
-%   will be deleted, otherwise no action is taken.
+% Outputs:
+%  (none)
+%
+% Notes:
+%   - The function prompts once per folder encountered during recursion
+%     (i.e., confirmation dialogs are shown for each folder that contains
+%     matching files).
+%   - The match on EXTENSION is case-insensitive.
+%   - EXTENSION may be provided with or without a leading dot; both are accepted.
+%   - FOLDER must exist and be accessible.
+%   - Requires interactive use (uses QUESTDLG for confirmation).
+%
+% Example:
+%   remove_files_by_extension('C:\project\data', '.asv')
 
 %------------- BEGIN CODE --------------
 

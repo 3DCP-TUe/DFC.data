@@ -10,24 +10,28 @@
 % For license details, see the LICENSE file in the project root.
 
 function result = read_system_component_metadata(folder, component)
-%READ_SYSTEM_COMPONENT_METADATA Loads metadata for a specific component
+%READ_SYSTEM_COMPONENT_METADATA Load metadata for a system component
 %
-%   RESULT = read_system_component_metadata(FOLDER, COMPONENT) reads the 
-%   YAML metadata file for a specified COMPONENT stored in FOLDER and 
-%   returns it as a MATLAB struct.
+% Syntax:
+%   result = read_system_component_metadata(folder, component)
 %
-%   Inputs:
-%       FOLDER      Path to the directory containing component folders
-%       COMPONENT   Name of the component whose metadata is to be loaded
+% Description:
+%   Reads the YAML metadata file for the specified system COMPONENT stored
+%   in FOLDER, and returns it as a MATLAB struct.
 %
-%   Outputs:
-%       RESULT      Struct containing parsed YAML metadata of the component
+% Inputs:
+%   folder    - Path to the directory containing component subfolders
+%   component - Name of the component whose metadata should be loaded
 %
-%   Example:
-%       metadata = read_system_component_metadata('C:\lib', 'motorA');
+% Outputs:
+%   result    - Struct containing parsed YAML metadata of the component
 %
-%   This function will read 'C:\lib\motorA\metadata.yml' and parse its
-%   contents into a MATLAB struct.
+% Notes:
+%   - The function expects the file <folder>\<component>\metadata.yml to exist.
+%   - Parsing is performed with dfc_data.readyaml.
+%
+% Example:
+%   metadata = read_system_component_metadata('C:\lib', 'motorA');
 
 %------------- BEGIN CODE --------------
 

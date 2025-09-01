@@ -12,22 +12,41 @@
 function copy_setupinfo(root, destination, components, swipe_destination)
 %COPY_SETUPINFO Copy setupinfo folders for specified components
 %
-%   copy_setupinfo(ROOT, DESTINATION, COMPONENTS, SWIPE_DESTINATION) copies
-%   the setupinfo folders of the specified COMPONENTS from the library ROOT
-%   to the DESTINATION folder.
+% This function copies the setupinfo folders of specified components 
+% from a source library to a destination folder. Optionally, the 
+% destination folder can be cleared before copying. The function 
+% validates the requested components against the available components 
+% in the library and raises an error if any are missing. 
 %
-%   Inputs:
-%       ROOT                Path to the library containing setupinfo folders
-%       DESTINATION         Target folder to copy setupinfo into
-%       COMPONENTS          Cell array of component names to copy
-%       SWIPE_DESTINATION   Logical flag; if true, clears DESTINATION before copying
+% Syntax: copy_setupinfo(root, destination, components, swipe_destination)
 %
-%   Example:
-%       copy_setupinfo('C:\lib', 'C:\project\setup', {'compA','compB'}, true)
+% Inputs:
+%   root              - string or char array specifying the path to the 
+%                       library containing setupinfo folders
+%   destination       - string or char array specifying the target folder 
+%                       to copy setupinfo into
+%   components        - cell array of strings containing the names of the 
+%                       components to copy
+%   swipe_destination - logical flag; if true, clears the destination 
+%                       folder before copying
 %
-%   This function will copy the folders for compA and compB from
-%   'C:\lib' to 'C:\project\setup', deleting the target folder first if
-%   SWIPE_DESTINATION is true.
+% Outputs:
+%   (none)
+%
+% Notes:
+%   - The function relies on `dfc_data.get_components_from_folder` to 
+%     retrieve available components in the library.
+%   - If one or more requested components are not found in the library, 
+%     an error is thrown.
+%   - If `swipe_destination` is true, the entire destination folder is 
+%     deleted before copying.
+%   - Each component setupinfo folder is copied into the destination 
+%     under its own subfolder.
+%
+% Example:
+%   copy_setupinfo('C:\lib', 'C:\project\setup', {'compA','compB'}, true)
+%   % Copies setupinfo for compA and compB from C:\lib into 
+%   % C:\project\setup, deleting the target folder first.
 
 %------------- BEGIN CODE --------------
 

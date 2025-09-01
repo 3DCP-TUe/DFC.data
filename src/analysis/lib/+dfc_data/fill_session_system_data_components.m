@@ -10,25 +10,37 @@
 % For license details, see the LICENSE file in the project root.
 
 function fill_session_system_data_components(library, folder, subfolder, swipe_destination)
-%FILL_SESSION_SYSTEM_DATA_COMPONENTS Populates system or material components folder
+%FILL_SESSION_SYSTEM_DATA_COMPONENTS Populate system or material components folder
 %
-%   fill_session_system_data_components(LIBRARY, FOLDER, SUBFOLDER, SWIPE_DESTINATION)
-%   copies the relevant setupinfo components from the LIBRARY into the session
-%   folder FOLDER. The components copied depend on SUBFOLDER, which can be
-%   either "system" or "materials".
+% This function populates the `system_components` or `material_components` 
+% folder inside a session by copying the relevant setupinfo components 
+% from a component library. The function reads the sessions metadata file 
+% to determine which components are required and copies them accordingly. 
+% Optionally, existing destination folders can be cleared before copying.
 %
-%   Inputs:
-%       LIBRARY             Source of component setupinfo
-%       FOLDER              Session folder (string, char array, or dir struct)
-%       SUBFOLDER           Either "system" or "materials"
-%       SWIPE_DESTINATION   Logical flag; if true, clears destination before copying
+% Syntax: fill_session_system_data_components(library, folder, subfolder, swipe_destination)
 %
-%   Example:
-%       fill_session_system_data_components('C:\lib', 'C:\records\session1', 'system', true)
+% Inputs:
+%   library           - string or char array specifying the source path of the component library
+%   folder            - string, char array, or struct from `dir` specifying the session folder
+%   subfolder         - string specifying the type of components to copy; must be either "system" or "materials"
+%   swipe_destination - logical flag; if true, clears the destination folder before copying
 %
-%   This function reads the metadata file in the session folder to determine
-%   which components to copy, then populates the appropriate system or material
-%   components folder.
+% Outputs:
+%   (none)
+%
+% Notes:
+%   - The session folder must contain a metadata file located at `system_data/setupinfo/metadata.yml`.
+%   - Components are determined by parsing the metadata:
+%       - For "system", uses `dfc_data.get_system_components_from_system_metadata`.
+%       - For "materials", uses `dfc_data.get_material_components_from_system_metadata`.
+%   - If the metadata file does not exist, an error is thrown.
+%   - Actual copying is handled by `dfc_data.copy_setupinfo`.
+%
+% Example:
+%   fill_session_system_data_components('C:\lib', ...
+%       'C:\records\session1', 'system', true)
+%   % Populates system components in session1, clearing the target folder first.
 
 %------------- BEGIN CODE --------------
 

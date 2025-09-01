@@ -10,25 +10,30 @@
 % For license details, see the LICENSE file in the project root.
 
 function [names, folders] = get_components_from_folder(root_folder)
-%GET_COMPONENTS_FROM_FOLDER Retrieves component names and folders from .yml files
+%GET_COMPONENTS_FROM_FOLDER Retrieve component names and folders from .yml files
 %
-%   [NAMES, FOLDERS] = get_components_from_folder(ROOT_FOLDER) searches
-%   recursively in ROOT_FOLDER for .yml files and returns:
-%       NAMES   - Folder names where each .yml file is found
-%       FOLDERS - Full paths to those folders
+% This function searches recursively in a given library folder for `.yml` 
+% files that represent component definitions. It returns the folder names 
+% and corresponding full paths for each `.yml` file found.
 %
-%   Inputs:
-%       ROOT_FOLDER  Path to the library folder containing component .yml files
+% Syntax: [names, folders] = get_components_from_folder(root_folder)
 %
-%   Outputs:
-%       NAMES        Cell array of folder names containing the .yml files
-%       FOLDERS      Cell array of full paths to the folders
+% Inputs:
+%   root_folder - string or char array specifying the path to the library 
+%                 folder containing component `.yml` files
 %
-%   Example:
-%       [names, folders] = get_components_from_folder('C:\lib\components')
+% Outputs:
+%   names   - cell array of folder names containing `.yml` files
+%   folders - cell array of full folder paths where `.yml` files are located
 %
-%   This function is useful for locating component setupinfo files in a library
-%   and retrieving both their folder names and full paths.
+% Notes:
+%   - The search is recursive and includes all subfolders under root_folder.
+%   - Each entry in `names` corresponds to the folder where the `.yml` file 
+%     resides, not the file itself.
+%
+% Example:
+%   [names, folders] = get_components_from_folder('C:\lib\components')
+%   % Returns all component folders under the library that contain .yml files.
 
 %------------- BEGIN CODE --------------
 

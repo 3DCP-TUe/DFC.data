@@ -10,35 +10,31 @@
 % For license details, see the LICENSE file in the project root.
 
 function [graph, fig] = get_system_ontology(metadata)
-%GET_SYSTEM_ONTOLOGY Constructs and visualizes a system ontology graph
+%GET_SYSTEM_ONTOLOGY Build and visualize a system ontology graph
 %
-%   [GRAPH, FIG] = get_system_ontology(METADATA) creates a directed graph 
-%   representing the system components and their relationships based on 
-%   the METADATA structure. The function also returns a figure handle of 
-%   the plotted graph.
+% This function constructs a directed graph representing system components
+% and their relationships, based on the given session metadata. Optionally,
+% it plots the ontology with color-coded edges and nodes.
 %
-%   Inputs:
-%       METADATA  Struct containing:
-%                 - system_layout: components and their connections
-%                 - materials: material components and supplied_to fields
-%                 - io_configuration: input/output component channels
+% Syntax: [G, fig] = get_system_ontology(metadata)
 %
-%   Outputs:
-%       GRAPH     MATLAB digraph object representing components and edges
-%       FIG       Handle of the figure showing the plotted graph
+% Inputs:
+%   metadata - struct containing at least the following fields:
+%              - system_layout: cell array of structs with "component",optionally "connected_to" or "inserted_in"
+%              - (optional) materials: cell array with "name" and "supplied_to"
+%              - (optional) io_configuration: cell array with "component" and "channels", each with a "component"
 %
-%   Example:
-%       metadata = dfc_data.readyaml('session_metadata.yml');
-%       [G, F] = get_system_ontology(metadata);
+% Outputs:
+%   G   - MATLAB digraph object representing system components and edges
+%   fig - (optional) handle of the plotted figure
 %
-%   Edge weights and colors:
-%       0 - Concrete flow (black, width 3)
-%       1 - Insert (blue, width 3)
-%       2 - IO (red, width 1.5)
-%       3 - Material supply (green, width 1.5)
+% Notes:
+%   - Nodes are colored according to the edge types they participate in.
+%   - If called with only one output, no figure is plotted.
 %
-%   Nodes are colored according to their participation in the edges of 
-%   each type.
+% Example:
+%   metadata = dfc_data.readyaml('session_metadata.yml');
+%   [G, fig] = get_system_ontology(metadata);
 
 %------------- BEGIN CODE --------------
 
