@@ -1,10 +1,15 @@
-%{
-This file is part of DFC.data. DFC.data is licensed under the 
-terms of GNU General Public License as published by the Free Software 
-Foundation. For more information and the LICENSE file, see 
-<https://github.com/3DCP-TUe/DFC.data>.
-%}
+% SPDX-License-Identifier: GPL-3.0-or-later
+% DFC.data
+% Project: https://github.com/3DCP-TUe/DFC.data
+%
+% Copyright (c) 2024-2025 Endhoven University of Technology
+%
+% Authors:
+%   - Arjen Deetman (2024-2025)
+%
+% For license details, see the LICENSE file in the project root.
 
+function rename_files(folder, suffix)
 %RENAME_FILES Renames all files in a folder with a sequential suffix
 %
 %   rename_files(FOLDER, SUFFIX) renames all files in the specified FOLDER
@@ -21,7 +26,8 @@ Foundation. For more information and the LICENSE file, see
 %   This will rename all files in 'C:\project\data' as:
 %       image_1.ext, image_2.ext, image_3.ext, ...
 %   where '.ext' is the original file extension.
-function rename_files(folder, suffix)
+
+%------------- BEGIN CODE --------------
 
     % Get all files (excluding directories)
     files = dir(fullfile(folder, '*.*'));

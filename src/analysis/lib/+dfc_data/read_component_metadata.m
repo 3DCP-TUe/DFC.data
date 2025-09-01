@@ -1,10 +1,15 @@
-%{
-This file is part of DFC.data. DFC.data is licensed under the 
-terms of GNU General Public License as published by the Free Software 
-Foundation. For more information and the LICENSE file, see 
-<https://github.com/3DCP-TUe/DFC.data>.
-%}
+% SPDX-License-Identifier: GPL-3.0-or-later
+% DFC.data
+% Project: https://github.com/3DCP-TUe/DFC.data
+%
+% Copyright (c) 2024-2025 Endhoven University of Technology
+%
+% Authors:
+%   - Arjen Deetman (2024-2025)
+%
+% For license details, see the LICENSE file in the project root.
 
+function result = read_system_component_metadata(folder, component)
 %READ_SYSTEM_COMPONENT_METADATA Loads metadata for a specific component
 %
 %   RESULT = read_system_component_metadata(FOLDER, COMPONENT) reads the 
@@ -23,8 +28,9 @@ Foundation. For more information and the LICENSE file, see
 %
 %   This function will read 'C:\lib\motorA\metadata.yml' and parse its
 %   contents into a MATLAB struct.
-function result = read_system_component_metadata(folder, component)
-    
+
+%------------- BEGIN CODE --------------
+
     % Construct full path to the metadata file
     metadata_path = fullfile(folder, component, 'metadata.yml');
 

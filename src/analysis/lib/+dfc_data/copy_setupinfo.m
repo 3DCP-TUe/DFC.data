@@ -1,10 +1,15 @@
-%{
-This file is part of DFC.data. DFC.data is licensed under the 
-terms of GNU General Public License as published by the Free Software 
-Foundation. For more information and the LICENSE file, see 
-<https://github.com/3DCP-TUe/DFC.data>.
-%}
+% SPDX-License-Identifier: GPL-3.0-or-later
+% DFC.data
+% Project: https://github.com/3DCP-TUe/DFC.data
+%
+% Copyright (c) 2024-2025 Endhoven University of Technology
+%
+% Authors:
+%   - Arjen Deetman (2024-2025)
+%
+% For license details, see the LICENSE file in the project root.
 
+function copy_setupinfo(root, destination, components, swipe_destination)
 %COPY_SETUPINFO Copy setupinfo folders for specified components
 %
 %   copy_setupinfo(ROOT, DESTINATION, COMPONENTS, SWIPE_DESTINATION) copies
@@ -23,7 +28,8 @@ Foundation. For more information and the LICENSE file, see
 %   This function will copy the folders for compA and compB from
 %   'C:\lib' to 'C:\project\setup', deleting the target folder first if
 %   SWIPE_DESTINATION is true.
-function copy_setupinfo(root, destination, components, swipe_destination)
+
+%------------- BEGIN CODE --------------
 
     % Get all component names and their folders from the library
     [lib_names, lib_folders] = dfc_data.get_components_from_folder(root);

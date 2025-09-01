@@ -1,10 +1,15 @@
-%{
-This file is part of DFC.data. DFC.data is licensed under the 
-terms of GNU General Public License as published by the Free Software 
-Foundation. For more information and the LICENSE file, see 
-<https://github.com/3DCP-TUe/DFC.data>.
-%}
+% SPDX-License-Identifier: GPL-3.0-or-later
+% DFC.data
+% Project: https://github.com/3DCP-TUe/DFC.data
+%
+% Copyright (c) 2024-2025 Endhoven University of Technology
+%
+% Authors:
+%   - Arjen Deetman (2024-2025)
+%
+% For license details, see the LICENSE file in the project root.
 
+function fill_record_system_data_components(library, folder, subfolder, swipe_destination)
 %FILL_RECORD_SYSTEM_DATA_COMPONENTS Fills setupinfo system components for all session subfolders
 %
 %   fill_record_system_data_components(LIBRARY, FOLDER, SUBFOLDER, SWIPE_DESTINATION)
@@ -22,8 +27,9 @@ Foundation. For more information and the LICENSE file, see
 %
 %   This function will populate the system components in all session subfolders
 %   under 'C:\records', deleting existing target folders first if SWIPE_DESTINATION is true.
-function fill_record_system_data_components(library, folder, subfolder, swipe_destination)
-    
+
+%------------- BEGIN CODE --------------
+
     % Determine the folder path
     if isstruct(folder)
         path = folder(1).folder;  % Use first entry's folder

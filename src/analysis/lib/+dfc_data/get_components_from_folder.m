@@ -1,10 +1,15 @@
-%{
-This file is part of DFC.data. DFC.data is licensed under the 
-terms of GNU General Public License as published by the Free Software 
-Foundation. For more information and the LICENSE file, see 
-<https://github.com/3DCP-TUe/DFC.data>.
-%}
+% SPDX-License-Identifier: GPL-3.0-or-later
+% DFC.data
+% Project: https://github.com/3DCP-TUe/DFC.data
+%
+% Copyright (c) 2024-2025 Endhoven University of Technology
+%
+% Authors:
+%   - Arjen Deetman (2024-2025)
+%
+% For license details, see the LICENSE file in the project root.
 
+function [names, folders] = get_components_from_folder(root_folder)
 %GET_COMPONENTS_FROM_FOLDER Retrieves component names and folders from .yml files
 %
 %   [NAMES, FOLDERS] = get_components_from_folder(ROOT_FOLDER) searches
@@ -24,7 +29,8 @@ Foundation. For more information and the LICENSE file, see
 %
 %   This function is useful for locating component setupinfo files in a library
 %   and retrieving both their folder names and full paths.
-function [names, folders] = get_components_from_folder(root_folder)
+
+%------------- BEGIN CODE --------------
 
     % Find all .yml files recursively
     files = dir(fullfile(root_folder, '**', '*.yml'));
