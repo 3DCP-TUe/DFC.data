@@ -5,6 +5,7 @@ This folder contains files to perform analysis over a session and data record. T
 ## Explanation of the files and folders
 
 - **[lib](lib):** This folder contains a collection of standard utility functions for analyzing sessions and preparing data records within the DFC.data framework.
+- **[record_update_libs.m](record_update_libs.m):** Example script that can be used to update/replace all lib folders in a data record.
 - **[record_fill_system_components_folders.m](record_fill_system_components_folders.m):** Example script that fills all system component folders in the system data of every session within a data record.
 - **[session_create_system_ontology.m](session_create_system_ontology.m):** Demonstrates how to generate an ontology graph from the defined system metadata of a session. 
 - **[session_fill_system_components_folder.m](session_fill_system_components_folder.m):** Example script that populates the system component folder for the system data of a specific session. 
