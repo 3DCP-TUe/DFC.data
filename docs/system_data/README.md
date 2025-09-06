@@ -63,7 +63,7 @@ This example indicates that the data logged is the mass flow rate in kg/min, and
 
 The processing system uses modular inputs and outputs (i/o) where sensors and devices can be connected to control or read data from them. As these can be connected to different locations in the system, it needs to be documented where a modular input or output is connected to, what its signals represent, and from which system component the signal is sent or received. This is illustrated below for a pressure sensor.  
 
-First, in the system metadata file, in the section `io_configuratio`, the system components are listed that can receive and send data to and from other system components, and log this data to the main system logger. Below, an example is given (a snippet from the material delivery plc component). The system component `material delivery plc` receives a signal from the system component `pressure sensor mc35f-mc35m-d35-25bar-1`. In the example, it is an analog input (AI). The material delivery plc receives a signal from the pressure sensor on channel `AI0` from the channel `pressure sensor` of the pressure sensor.  
+First, in the system metadata file, in the section `io_configuration`, the system components are listed that can receive and send data to and from other system components, and log this data to the main system logger. Below, an example is given (a snippet from the material delivery plc component). The system component `material delivery plc` receives a signal from the system component `pressure sensor mc35f-mc35m-d35-25bar-1`. In the example, it is an analog input (AI). The material delivery plc receives a signal from the pressure sensor on channel `AI0` from the channel `pressure sensor` of the pressure sensor.  
 
 ```yaml
 # IO configuration
