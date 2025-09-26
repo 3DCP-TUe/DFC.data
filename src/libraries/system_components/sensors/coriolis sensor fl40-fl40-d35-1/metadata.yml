@@ -69,59 +69,73 @@ processed_system_data:
     function: mass flow rate measurement
     unit: kg/min
     damping: 0
+    filename: system_data.csv
     header: material_coriolis_mass_flow_kg_min
   - name: volume flow rate
     function: volume flow rate measurement
     unit: l/min
     damping: 0
+    filename: system_data.csv
     header: material_coriolis_volume_flow_l_min
   - name: density
     function: density measurement
     unit: kg/m3
     damping: 0
+    filename: system_data.csv
     header: material_coriolis_density_kg_m3
   - name: dynamic viscocity
     function: viscocity measurement
     unit: cP
+    filename: system_data.csv
     header: material_coriolis_dynamic_viscocity_cp
   - name: temperature
     function: temperature measurement
     damping: 0
     unit: degree Celsius
+    filename: system_data.csv
     header: material_coriolis_temperature_c
   - name: exciter current 0
     function: exciter current of lateral movement
     unit: mA
+    filename: system_data.csv
     header: material_coriolis_exciter_current_0_ma
   - name: oscillation frequency 0
     function: oscillation frequency  of lateral movement
     unit: Hz
+    filename: system_data.csv
     header: material_coriolis_oscillation_frequency_0_hz
   - name: oscillation amplitude 0
     function: osccilation amplitude of lateral movement
     unit: \%
+    filename: system_data.csv
     header: material_coriolis_oscillation_amplitude_0_perc
   - name: oscillation damping 0
     function: osccilation damping of lateral movement
     unit: A/m
+    filename: system_data.csv
     header: material_coriolis_oscillation_damping_0_m_a
   - name: signal asymmetry
     function: signal asymmetry of lateral movement
     unit: \%
+    filename: system_data.csv
     header: material_coriolis_signal_asymmetry_perc
   - name: exciter current 1
     function: exciter current of torsional movement
     unit: mA
+    filename: system_data.csv
     header: material_coriolis_exciter_current_1_ma
   - name: oscillation frequency 1
     function: oscillation frequency of torsional movement
     unit: Hz
+    filename: system_data.csv
     header: material_coriolis_oscillation_frequency_1_hz
   - name: oscillation amplitude 1
     function: oscillation amplitude of torsional movement
     unit: \% 
+    filename: system_data.csv
     header: material_coriolis_oscillation_amplitude_1_perc
   - name: oscillation damping 1
     function: oscillation damping of torsional movement
     unit: A/m
+    filename: system_data.csv
     header: material_coriolis_oscillation_damping_1_m_a

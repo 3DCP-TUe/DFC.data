@@ -3,7 +3,7 @@ attr:
   subclass: dynamic
   name: servo motor-1
   description: Siemens servo motor. 
-  note: Connected to the printhead PLC and are remote controlled via the OPC UA server.
+  note: Can only be remote controlled via the OPC UA server of the printhead PLC. 
 
 parts:
   - name: motor
@@ -27,32 +27,40 @@ processed_system_data:
   - name: motor power
     function: motor power
     unit: bool
+    filename: system_data.csv
     header: printhead_motor_1_power_on_bool
   - name: job backward
     function: indicates if the motor jogs backward
     unit: bool
+    filename: system_data.csv
     header: printhead_motor_1_move_jog_backward_bool
   - name: jog foward
     function: indicates if the motor jogs foward
     unit: bool
+    filename: system_data.csv
     header: printhead_motor_1_move_jog_forward_bool
   - name: velocity jog
     function: velocity setpoint
     unit: RPM
+    filename: system_data.csv
     header: printhead_motor_1_velocity_jog_rpm
   - name: actual velocity
     function: actual velocity
     unit: RPM
+    filename: system_data.csv
     header: printhead_motor_1_actual_velocity_rpm
   - name: actual motor power
     function: actual motor power
     unit: kW
+    filename: system_data.csv
     header: printhead_motor_1_actual_power_kw
   - name: actual motor current
     function: actual motor current
     unit: A
+    filename: system_data.csv
     header: printhead_motor_1_actual_current_a
   - name: actual motor torque
     function: actual motor torque
     unit: Nm
+    filename: system_data.csv
     header: printhead_motor_1_actual_torque_nm

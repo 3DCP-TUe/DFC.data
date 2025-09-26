@@ -49,16 +49,20 @@ processed_system_data:
   - name: motor velocity
     plc: material delivery plc
     unit: RPM
-    tag: material_peristaltic_pump_velocity_rpm
+    filename: system_data.csv
+    header: material_peristaltic_pump_velocity_rpm
   - name: motor power
     plc: material delivery plc
     unit: kW
-    tag: material_peristaltic_pump_power_kw
+    filename: system_data.csv
+    header: material_peristaltic_pump_power_kw
   - name: motor current
     plc: material delivery plc
     unit: A
-    tag: material_peristaltic_pump_current_a
+    filename: system_data.csv
+    header: material_peristaltic_pump_current_a
   - name: motor torque
     plc: material delivery plc
     unit: Nm
-    tag: material_peristaltic_pump_torque_nm
+    filename: system_data.csv
+    header: material_peristaltic_pump_torque_nm

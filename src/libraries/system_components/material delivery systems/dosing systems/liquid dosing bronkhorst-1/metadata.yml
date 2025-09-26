@@ -38,32 +38,40 @@ processed_system_data:
   - name: alarm info
     function: alarm info
     unit: integer
+    filename: system_data.csv
     header: material_bronkhorst_alarm_info
   - name: setpoint
     function: setpoint
     unit: gr/min
+    filename: system_data.csv
     header: material_bronkhorst_setpoint_gmin
   - name: actual mass flow rate
     function: actual mass flow rate
     unit: gr/min
+    filename: system_data.csv
     header: material_bronkhorst_measure_gmin
   - name: tempature
     function: medium temperature
     unit: degree Celsius
+    filename: system_data.csv
     header: material_bronkhorst_temperature
   - name: density
     function: actual density
     unit: kg/m3
+    filename: system_data.csv
     header: material_bronkhorst_density_kg_m3
   - name: analog input
     function: analog input for gear pump
     unit: \-
+    filename: system_data.csv
     header: material_bronkhorst_analog_input
   - name: valve output
     function: valve output
     unit: \-
+    filename: system_data.csv
     header: material_bronkhorst_valve_output
   - name: setpoint slope
     function: setpoint slope
     unit: seconds
+    filename: system_data.csv
     header: material_bronkhorst_setpoint_slope_s

@@ -17,8 +17,10 @@ processed_system_data:
   - name: relative humidity
     function: relative humidity of environment
     unit: "%"
+    filename: system_data.csv
     header: material_io_ai6_relative_humidity_perc
   - name: ambient temperature
     function: ambient temperature
     unit: degree Celsius
+    filename: system_data.csv
     header: material_io_ai7_ambient_temperature_c

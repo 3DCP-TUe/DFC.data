@@ -137,60 +137,75 @@ processed_system_data:
   - name: source time
     function: opc ua server time
     unit: hh:mm:ss
+    filename: system_data.csv
     header: vertico_source_time
   - name: is remote
     function: indicates if the system is remote controlled
     unit: bool
+    filename: system_data.csv
     header: vertico_is_remote_bool
   - name: is open loop
     function: indicates if the system is running in open loop
     unit: bool
+    filename: system_data.csv
     header: vertico_is_open_loop_bool
   - name: motor velocity
     function: motor velocity
     unit: RPM
+    filename: system_data.csv
     header: vertico_actual_motor_velocity_rpm
   - name: actual volume flow rate
     function: actual volume flow rate
     unit: ml/min
+    filename: system_data.csv
     header: vertico_actual_flow_ml_min
   - name: raw signal volume flow rate 
     function: signal value of the actual volume flow rate
     unit: mA
+    filename: system_data.csv
     header: vertico_actual_flow_ma
   - name: actual pressure
     function: actual pressure
     unit: bar
+    filename: system_data.csv
     header: vertico_actual_pressure_bar
   - name: local setpoint open loop
     function: local setpoint open loop from adjustment dial
     unit: RPM
+    filename: system_data.csv
     header: vertico_local_setpoint_open_loop_rpm
   - name: local setpoint close loop
     function: local setpoint closed loop from adjustment dial
     unit: ml/min
+    filename: system_data.csv
     header: vertico_local_setpoint_closed_loop_mlmin
   - name: remote control start/stop via OPC-UA
     function: remote control start/stop
     unit: bool
+    filename: system_data.csv
     header: vertico_remote_start_stop_bool
   - name: remote setpoint open loop
     function: remote setpoint open loop via OPC-UA
     unit: RPM
+    filename: system_data.csv
     header: vertico_remote_setpoint_open_loop_rpm
   - name: remote setpoint closed loop
     function: remote setpoint closed loop via OPC-UA
     unit: ml/min
+    filename: system_data.csv
     header: vertico_remote_setpoint_closed_loop_mlmin
   - name: closed loop PID parameter P
     function: closed loop PID parameter P
     unit: real number
+    filename: system_data.csv
     header: vertico_pid_p
   - name: closed loop PID parameter I
     function: closed loop PID parameter I
     unit: real number
+    filename: system_data.csv
     header: vertico_pid_i
   - name: closed loop PID parameter D
     function: closed loop PID parameter D
     unit: real number
+    filename: system_data.csv
     header: vertico_pid_d

@@ -41,7 +41,7 @@ The `processed_data` folder contains a `.csv` log file with **time-series data**
 
 #### Example 1: Direct sensor reading
 
-The system metadata file indicates the overall **system layout**, including how components are connected and where they are located. Within the `processed_system_data` section of an individual system component, the metadata specifies which data is saved and in which column of the log file it can be found. As an example, a snippet of a component metadata file:  
+The system metadata file indicates the overall **system layout**, including how components are connected and where they are located. Within the `processed_system_data` section of an individual system component, the metadata specifies which data is saved, in which log file, and in wich column of the log file it can be found. As an example, a snippet of a component metadata file:  
 
 ```yaml
 attr:
@@ -54,6 +54,7 @@ processed_system_data:
     function: mass flow rate measurement
     unit: kg/min
     damping: 0
+    filename: system_data.csv
     header: material_coriolis_mass_flow_kg_min
 ```
 
