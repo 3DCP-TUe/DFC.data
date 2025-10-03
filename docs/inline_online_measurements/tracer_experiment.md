@@ -39,24 +39,26 @@ The `processed_data` folder contains the following files:
 
 **`overview.csv`** contains metadata and statistical summaries for each tracer experiment.
 
-| Column       | Description                                                                 |
-|--------------|-----------------------------------------------------------------------------|
-| `experiment` | Identifier for the experiment number                                        |
-| `serie`      | Series number the experiment belongs to                                     |
-| `input`      | Input type: `impulse`, `step_up`, or `step_down`                            |
-| `component`  | System component where tracer was added (must match system setup info)      |
-| `inlet`      | Inlet of the component (must match system setup info)                       |
-| `time_start` | Start time of experiment (HH:mm:ss), when material was injected             |
-| `time_end`   | End time of experiment (HH:mm:ss)                                           |
-| `file_name`  | Filename containing the response data                                       |
-| `mean`       | Mean residence time (HH:mm:ss)                                              |
-| `variance`   | Variance of the residence time (HH:mm:ss)                                   |
-| `std`        | Standard deviation of the residence time (HH:mm:ss)                         |
-| `p1`         | 1st percentile of the residence time (HH:mm:ss)                             |
-| `p5`         | 5th percentile of the residence time (HH:mm:ss)                             |
-| `p50`        | 50th percentile (median) of the residence time (HH:mm:ss)                   |
-| `p95`        | 95th percentile of the residence time (HH:mm:ss)                            |
-| `p99`        | 99th percentile of the residence time (HH:mm:ss)                            |
+| Column                     | Description                                                                 |
+|----------------------------|-----------------------------------------------------------------------------|
+| `experiment`               | Identifier for the experiment number (integer)                              |
+| `serie`                    | Series number the experiment belongs to (integer)                           |
+| `input`                    | Input type: `impulse`, `step_up`, or `step_down`                            |
+| `material_component`       | Material component used as tracer material (must match material data)       |
+| `system_component`         | System component where tracer was added (must match system setup info)      |
+| `system_component_inlet`   | Inlet of the system component (must match system setup info)                |
+| `size`                     | Impulse size in grams, step size in grams/min                               |
+| `time_start`               | Start time of experiment (HH:mm:ss), when material was injected             |
+| `time_end`                 | End time of experiment (HH:mm:ss)                                           |
+| `file_name`                | Filename containing the response data                                       |
+| `mean`                     | Mean residence time (HH:mm:ss)                                              |
+| `variance`                 | Variance of the residence time (HH:mm:ss)                                   |
+| `std`                      | Standard deviation of the residence time (HH:mm:ss)                         |
+| `p1`                       | 1st percentile of the residence time (HH:mm:ss)                             |
+| `p5`                       | 5th percentile of the residence time (HH:mm:ss)                             |
+| `p50`                      | 50th percentile (median) of the residence time (HH:mm:ss)                   |
+| `p95`                      | 95th percentile of the residence time (HH:mm:ss)                            |
+| `p99`                      | 99th percentile of the residence time (HH:mm:ss)                            |
 
 ---
 
