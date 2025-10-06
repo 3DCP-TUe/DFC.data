@@ -1,8 +1,8 @@
 attr:
   class: blends
-  name: tracer material
-  friendly_name: Tracer material
-  description: Tracer material made from a red iron oxide pigment and water.
+  name: pigment-slurry-red-1
+  friendly_name: Red pigment slurry
+  description: Pigment slurry made from red iron oxide pigment and water, typically used for tracer experiments.
   note: Manually mixed per dose (~10 mL) and immediately sucked up and injected with a syringe.
 
 general_properties:
