@@ -10,4 +10,10 @@ This dataset contains measurements collected from tracer experiments conducted o
 
 ---
 
-**#2 Coming soon...**
+[**#2 Data for "Correlating in-line sensor data to hardened state material properties in Digital Fabrication with Concrete".**](https://doi.org/10.5281/zenodo.16837346)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17191646.svg)](https://doi.org/10.5281/zenodo.16837346)
+
+Dataset that contains the datas and scripts that were used in the publication: "Correlating in-line sensor data to hardened state material properties in Digital Fabrication with Concrete". It includes data obtained from in-line sensors, the slugs test, as well as data from uniaxial compression tests that were performed at material ages of 15 minutes to 28 days.
+
+---
