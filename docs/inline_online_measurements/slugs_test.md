@@ -4,7 +4,7 @@ Data source folder: `slugs_test`
 
 ## Description of the data source
 
-Upon extrusion, material droplets are analyzed using the "slugs test", where a load cell measures the droplet mass as it falls into a bucket placed on a load cell, and a camera captures images to estimate its volume under the assumption of axisymmetry, for details see [Bos & Wolfs (2022)](https://doi.org/10.1007/978-3-031-06116-5_67). From the droplet mass, the tensile strength and mass flow rate are predicted. Additionally, the density and volumetric flow rate are calculated from the droplet mass and volume. 
+Upon extrusion, material droplets are analyzed using the "slugs test", where a load cell measures the droplet mass as it falls into a bucket placed on a load cell, and a camera captures images to estimate its volume under the assumption of axisymmetry, for details see [Bos & Wolfs (2022)](https://doi.org/10.1007/978-3-031-06116-5_67). From the droplet mass, the tensile strength and mass flow rate are predicted. Additionally, the density and volumetric flow rate are calculated from the droplet mass and volume. The use of the camera and image analysis are optional and the corresponding files are not present when the camera is not used.
 
 ## Data collection
 
@@ -18,7 +18,7 @@ The __raw_data__ folder for the slugs test typically contains a time series file
 ### Processed data file format
 
 The `processed_data` folder contains the following files:
-
+   
 ---
 
 **`yield_stress.csv`** contains droplet mass and yield stress measurement data over time.
@@ -42,7 +42,7 @@ The `processed_data` folder contains the following files:
 
 ---
 
-**`volumes.csv`** contains droplet volume data over time.
+**`volumes.csv`** contains droplet volume data over time. Present when camera is used.
 
 | Column           | Description                                      |
 |------------------|--------------------------------------------------|
@@ -51,7 +51,7 @@ The `processed_data` folder contains the following files:
 
 ---
 
-**`volumes_grouped.csv`** contains droplet volume data that are grouped when duplicate measures of the same droplet have been taken.
+**`volumes_grouped.csv`** contains droplet volume data that are grouped when duplicate measures of the same droplet have been taken. Present when camera is used.
 
 | Column                   | Description                                      |
 |--------------------------|--------------------------------------------------|
@@ -61,7 +61,7 @@ The `processed_data` folder contains the following files:
 
 ---
 
-**`volumetric_flow.csv`** contains volumetric flow rate calculated per bucket.
+**`volumetric_flow.csv`** contains volumetric flow rate calculated per bucket. Present when camera is used.
 
 | Column                        | Description                                                                      |
 |-------------------------------|----------------------------------------------------------------------------------|
